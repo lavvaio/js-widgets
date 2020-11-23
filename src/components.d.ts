@@ -5,57 +5,59 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { WebsocketConnection } from "@anadyme/lavva-js-sdk";
 export namespace Components {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+    interface OwmDaily {
+        "channel": string;
+        "connection": WebsocketConnection;
+        "namespace": string;
+    }
+    interface OwmDailyItem {
+        "day": any;
+        "seq": number;
+        "weekDays": string[];
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLOwmDailyElement extends Components.OwmDaily, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLOwmDailyElement: {
+        prototype: HTMLOwmDailyElement;
+        new (): HTMLOwmDailyElement;
+    };
+    interface HTMLOwmDailyItemElement extends Components.OwmDailyItem, HTMLStencilElement {
+    }
+    var HTMLOwmDailyItemElement: {
+        prototype: HTMLOwmDailyItemElement;
+        new (): HTMLOwmDailyItemElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "owm-daily": HTMLOwmDailyElement;
+        "owm-daily-item": HTMLOwmDailyItemElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+    interface OwmDaily {
+        "channel"?: string;
+        "connection"?: WebsocketConnection;
+        "namespace"?: string;
+    }
+    interface OwmDailyItem {
+        "day"?: any;
+        "seq"?: number;
+        "weekDays"?: string[];
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "owm-daily": OwmDaily;
+        "owm-daily-item": OwmDailyItem;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "owm-daily": LocalJSX.OwmDaily & JSXBase.HTMLAttributes<HTMLOwmDailyElement>;
+            "owm-daily-item": LocalJSX.OwmDailyItem & JSXBase.HTMLAttributes<HTMLOwmDailyItemElement>;
         }
     }
 }

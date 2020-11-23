@@ -1,0 +1,68 @@
+:host {
+    display: inline-block;
+}
+
+.owm-daily {
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    box-sizing: border-box;
+    height: 100%;
+    background: #6da3c5;
+    padding: 20px;
+
+    &.seq-0 {
+        background: #6da3c5;
+    }
+
+    &.seq-1 {
+        background: #5787ab;
+    }
+
+    &.seq-2 {
+        background: #446f91;
+    }
+
+    &.seq-3 {
+        background: #35597b;
+    }
+
+    &.seq-4 {
+        background: #294666;
+    }
+
+    &.seq-5 {
+        background: #243956;
+    }
+
+    .daily {
+        height: inherit;
+
+        label {
+            font-size: 28px;
+        }
+
+        .temp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            .wi {
+                margin-right: 5px;
+            }
+
+            &.temp2 {
+                margin-top: 35px;
+                margin-bottom: 0;
+            }
+        }
+
+        .weather {
+            font-size: 48px;
+            margin: 26px 0;
+        }
+    }
+}

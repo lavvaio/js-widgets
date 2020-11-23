@@ -1,0 +1,44 @@
+.owm {
+    display: flex;
+    color: #fff;
+    text-align: center;
+
+    .current {
+        width: 180px;
+        padding: 20px;
+        box-sizing: border-box;
+        background: #8bc1d9;
+
+        label {
+            font-size: 28px;
+        }
+
+        .temp {
+            font-size: 40px;
+        }
+
+        .weather {
+            font-size: 60px;
+            margin: 20px 0;
+        }
+
+        .humidity {
+            display: flex;
+            font-size: 24px;
+            margin: 4px 0;
+            .wi {
+                margin-right: 5px;
+            }
+        }
+
+        .pressure {
+            display: flex;
+            font-size: 24px;
+            margin: 8px 0;
+            .wi {
+                margin-right: 5px;
+            }
+        }
+    }
+
+}
