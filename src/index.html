@@ -11,13 +11,11 @@
         <script type="module" src="/build/lavva-js-widgets.esm.js"></script>
         <script nomodule src="/build/lavva-js-widgets.js"></script>
         <script src="/build/anadyme-lavva-js-sdk.umd.js"></script>
-        <script src="/build/reconnecting-websocket.js"></script>
         <style>body{margin:0;padding:0;font-family: 'Roboto', sans-serif;}</style>
     </head>
     <body>
         <owm-daily></owm-daily>
         <script>
-            // window.WebSocket = ReconnectingWebSocket
             var connection = new anadyme.lavva.WebsocketConnection({
                 host: 'a3bz-kqvc-b5u7-iwcs.cloud.lavva.io',
                 channels: [ 'iss', 'owm' ],
@@ -27,14 +25,11 @@
 
             const widget = document.querySelector('owm-daily');
 
-            connection.channelStream('iss').subscribe(msg => {
-                widget.log(['iss', msg, connection.clientId]);
-            });
+            widget.connection = connection
+            widget.dataChannel = 'iss';
+            widget.dataKey = '-37.465200:-101.317100';
 
             connection.connect();
-
-            widget.connection = connection
-            widget.channel = 'owm';
         </script>
     </body>
 </html>

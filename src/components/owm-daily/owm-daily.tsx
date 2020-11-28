@@ -17,7 +17,10 @@ export class OpenWeatherComponent {
     connection: WebsocketConnection;
 
     @Prop()
-    channel: string;
+    dataChannel: string;
+
+    @Prop()
+    dataKey: string = undefined;
 
     @Prop()
     namespace = 'own';
@@ -26,7 +29,7 @@ export class OpenWeatherComponent {
     data: any;
 
     @Method()
-    log(args: any[]) {
+    async log(...args: any[]) {
         this.logger.log(...args);
     }
 
@@ -35,7 +38,7 @@ export class OpenWeatherComponent {
     private subscriptions = new Subscription();
 
     connectedCallback() {
-        this.log(['host connected']);
+        this.logger.log('host connected');
 
         this.loadWeather();
 
@@ -43,12 +46,14 @@ export class OpenWeatherComponent {
             throw new Error('connection was not found');
         }
 
-        this.log(['connection found', this.channel]);
+        this.logger.log('connection found', this.dataChannel);
 
-        this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
+        this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
             filter(message => message.type === ClientMessageDataType.DATA),
+            filter(message => this.dataKey === undefined ? true : message.key === this.dataKey),
             debounceTime(150),
         ).subscribe(message => {
+            // this.logger.log('message arrived', this.dataKey, message);
             this.saveWeather(message.value);
         }));
     }
@@ -57,13 +62,14 @@ export class OpenWeatherComponent {
         this.logger.log('saving weather', weather);
         this.data = weather;
         const ns = store.namespace(this.namespace);
-        ns.set(this.channel, weather);
+        ns.set(this.dataChannel, weather);
     }
 
     loadWeather() {
         this.logger.log('loading weather');
         const ns = store.namespace(this.namespace);
-        this.data = ns.get(this.channel, this.data);
+        this.data = ns.get(this.dataChannel, this.data);
+        this.logger.log('data loaded', this.data);
     }
 
     disconnectedCallback() {

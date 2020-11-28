@@ -28,7 +28,6 @@
     "dependencies": {
         "@anadyme/lavva-js-sdk": "file:../lavva-js-sdk/dist/sdk/anadyme-lavva-js-sdk-0.9.2.tgz",
         "@stencil/core": "^2.3.0",
-        "reconnecting-websocket": "^4.4.0",
         "rxjs": "^6.6.3",
         "store2": "^2.12.0"
     },

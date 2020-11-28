@@ -6,6 +6,9 @@ export const config: Config = {
     plugins: [
         sass()
     ],
+    bundles: [
+        { components: ['owm-daily'] },
+    ],
     outputTargets: [
         {
             type: 'dist',
@@ -36,10 +39,6 @@ export const config: Config = {
                 {
                     src: '../node_modules/@anadyme/lavva-js-sdk/fesm2015/anadyme-lavva-js-sdk.js.map',
                     dest: '../www/build/anadyme-lavva-js-sdk.js.map'
-                },
-                {
-                    src: '../node_modules/reconnecting-websocket/dist/reconnecting-websocket-iife.min.js',
-                    dest: '../www/build/reconnecting-websocket.js'
                 }
             ],
         },

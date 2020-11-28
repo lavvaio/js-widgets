@@ -8,9 +8,10 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { WebsocketConnection } from "@anadyme/lavva-js-sdk";
 export namespace Components {
     interface OwmDaily {
-        "channel": string;
         "connection": WebsocketConnection;
-        "log": (args: any[]) => Promise<void>;
+        "dataChannel": string;
+        "dataKey": string;
+        "log": (...args: any[]) => Promise<void>;
         "namespace": string;
     }
     interface OwmDailyItem {
@@ -39,8 +40,9 @@ declare global {
 }
 declare namespace LocalJSX {
     interface OwmDaily {
-        "channel"?: string;
         "connection"?: WebsocketConnection;
+        "dataChannel"?: string;
+        "dataKey"?: string;
         "namespace"?: string;
     }
     interface OwmDailyItem {
