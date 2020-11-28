@@ -4,32 +4,35 @@
         <title>Anadyme Lavva widgets</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
         <script type="module" src="/build/lavva-js-widgets.esm.js"></script>
         <script nomodule src="/build/lavva-js-widgets.js"></script>
         <script src="/build/anadyme-lavva-js-sdk.umd.js"></script>
         <script src="/build/reconnecting-websocket.js"></script>
-        <style>body{margin:0;padding:0}</style>
+        <style>body{margin:0;padding:0;font-family: 'Roboto', sans-serif;}</style>
     </head>
     <body>
         <owm-daily></owm-daily>
         <script>
             // window.WebSocket = ReconnectingWebSocket
             var connection = new anadyme.lavva.WebsocketConnection({
-                host: 'vqfv-h1xc-b9f8-x84e.cloud.lavva.io',
+                host: 'a3bz-kqvc-b5u7-iwcs.cloud.lavva.io',
                 channels: [ 'iss', 'owm' ],
-                apiKey: 'nKMXs40ujoq7KMb9hWvFDAW6Xv5QY3DToU1HXS1cBtGZ/CEc3qkEMO7PHDyR6vuUKaqWzWIuZKvir5YPaGnWkg==',
+                apiKey: '8MaA7aR/DelTbVUm5TBdNIs5xxCT1nfyNXjLTcUHLxr8DCo4FMmTBmX9bvjYf+Jsb8mXrQcdkFlu8zCuvy03lA==',
                 format: 'text',
             });
 
+            const widget = document.querySelector('owm-daily');
+
             connection.channelStream('iss').subscribe(msg => {
-                console.log('iss', msg, connection.clientId);
+                widget.log(['iss', msg, connection.clientId]);
             });
 
             connection.connect();
 
-            const widget = document.querySelector('owm-daily');
             widget.connection = connection
             widget.channel = 'owm';
         </script>

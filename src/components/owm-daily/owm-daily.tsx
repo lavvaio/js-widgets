@@ -1,10 +1,10 @@
 import { ClientMessageDataType, WebsocketConnection } from '@anadyme/lavva-js-sdk';
-import { Component, h, Prop, State } from '@stencil/core';
+import { Component, h, Method, Prop, State } from '@stencil/core';
 import { Subscription } from 'rxjs';
 import { debounceTime, filter } from 'rxjs/operators';
 
 import store from 'store2';
-import { capitalize } from '../../shared/utils';
+import { createLogger, capitalize } from '../../shared/utils';
 
 @Component({
     tag: 'owm-daily',
@@ -25,10 +25,17 @@ export class OpenWeatherComponent {
     @State()
     data: any;
 
+    @Method()
+    log(args: any[]) {
+        this.logger.log(...args);
+    }
+
+    private logger = createLogger('owm');
+
     private subscriptions = new Subscription();
 
     connectedCallback() {
-        console.log('>> host connected');
+        this.log(['host connected']);
 
         this.loadWeather();
 
@@ -36,7 +43,7 @@ export class OpenWeatherComponent {
             throw new Error('connection was not found');
         }
 
-        console.log('>> connection found', this.channel);
+        this.log(['connection found', this.channel]);
 
         this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.DATA),
@@ -47,14 +54,14 @@ export class OpenWeatherComponent {
     }
 
     saveWeather(weather: any) {
-        console.log('saving weather', weather);
+        this.logger.log('saving weather', weather);
         this.data = weather;
         const ns = store.namespace(this.namespace);
         ns.set(this.channel, weather);
     }
 
     loadWeather() {
-        console.log('loading weather');
+        this.logger.log('loading weather');
         const ns = store.namespace(this.namespace);
         this.data = ns.get(this.channel, this.data);
     }
@@ -66,7 +73,7 @@ export class OpenWeatherComponent {
 
     render() {
         if (!this.data) {
-            return ( <span>loading</span> );
+            return ( <span class="loading">loading</span> );
         }
 
         const wiClass = `weather wi wi-owm-${ this.data.current.weather[0].id }`;

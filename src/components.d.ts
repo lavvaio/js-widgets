@@ -10,6 +10,7 @@ export namespace Components {
     interface OwmDaily {
         "channel": string;
         "connection": WebsocketConnection;
+        "log": (args: any[]) => Promise<void>;
         "namespace": string;
     }
     interface OwmDailyItem {
