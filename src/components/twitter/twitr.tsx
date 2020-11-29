@@ -40,15 +40,11 @@ export class TwitrComponent {
     private subscriptions = new Subscription();
 
     connectedCallback() {
-        this.logger.log('host connected');
-
         this.loadTwits();
 
         if (!this.connection)  {
             throw new Error('connection was not found');
         }
-
-        this.logger.log('connection found', this.dataChannel);
 
         this.connection.channelStream(this.dataChannel).pipe(
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
@@ -70,7 +66,6 @@ export class TwitrComponent {
     loadTwits() {
         const ns = store.namespace(this.namespace);
         this.data = ns.get(this.dataChannel, this.data);
-        this.logger.log('data loaded');
     }
 
     saveTwit(twit: any) {

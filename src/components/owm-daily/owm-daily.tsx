@@ -38,15 +38,11 @@ export class OpenWeatherComponent {
     private subscriptions = new Subscription();
 
     connectedCallback() {
-        this.logger.log('host connected');
-
         this.loadWeather();
 
         if (!this.connection)  {
             throw new Error('connection was not found');
         }
-
-        this.logger.log('connection found', this.dataChannel);
 
         this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
@@ -65,17 +61,14 @@ export class OpenWeatherComponent {
     }
 
     saveWeather(weather: any) {
-        this.logger.log('weather update', weather);
         this.data = weather;
         const ns = store.namespace(this.namespace);
         ns.set(this.dataChannel, weather);
     }
 
     loadWeather() {
-        this.logger.log('loading weather');
         const ns = store.namespace(this.namespace);
         this.data = ns.get(this.dataChannel, this.data);
-        this.logger.log('data loaded', this.data);
     }
 
     disconnectedCallback() {

@@ -40,15 +40,11 @@ export class YahooQuotesComponent {
     private subscriptions = new Subscription();
 
     connectedCallback() {
-        this.logger.log('host connected');
-
         this.loadQuotes();
 
         if (!this.connection)  {
             throw new Error('connection was not found');
         }
-
-        this.logger.log('connection found', this.dataChannel);
 
         this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
@@ -67,7 +63,6 @@ export class YahooQuotesComponent {
     }
 
     saveQuote(quote: any) {
-        this.logger.log('update quote', quote);
         this.symbols.set(quote.symbol, quote);
         this.data = Array.from(this.symbols, ([name, value]) => ({ name, value }));
         const ns = store.namespace(this.namespace);
@@ -75,11 +70,9 @@ export class YahooQuotesComponent {
     }
 
     loadQuotes() {
-        this.logger.log('loading quotes');
         const ns = store.namespace(this.namespace);
         this.data = ns.get(this.dataChannel, this.data);
         this.symbols = new Map<string, any>((this.data || []).map(x => [x.name, x.value] as [string, any]));
-        this.logger.log('data loaded', this.data);
     }
 
     disconnectedCallback() {
