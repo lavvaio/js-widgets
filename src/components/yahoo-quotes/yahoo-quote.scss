@@ -1,0 +1,76 @@
+.yquote {
+    display: block;
+    width: 180px;
+    position: relative;
+
+    .title {
+        font-weight: 500;
+        font-size: 13px;
+
+        .move {
+            margin: 0 5px;
+
+            .change {
+                //
+            }
+
+            .changePerCent {
+                margin-left: 5px;
+                &:before {
+                    content: '( ';
+                }
+                &:after {
+                    content: ' )';
+                }
+            }
+        }
+    }
+
+    &.up .title .move { .change, .changePerCent  {
+        color: #7bee5b;
+    }}
+
+    &.down .title .move { .change, .changePerCent  {
+        color: #ee5b5b;
+    }}
+
+    .subtitle {
+        font-size: 13px;
+        color: #5d81a6;
+    }
+
+    .rate {
+        margin: 5px 0;
+        font-weight: 300;
+        font-size: 24px;
+
+        .currency {
+            margin: 0 5px;
+            color: #5d81a6;
+        }
+    }
+
+    .rates {
+        font-size: 13px;
+        display: flex;
+
+        .bid, .ask {
+            margin-right: 10px;
+            .label {
+                color: #5d81a6;
+                display: inline-block;
+                width: 28px;
+            }
+        }
+    }
+
+    /*
+    .rate {
+        font-weight: 300;
+        font-size: 20px;
+
+        .symbol {
+            color: #5d81a6;
+        }
+    }*/
+}

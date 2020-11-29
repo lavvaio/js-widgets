@@ -8,6 +8,7 @@ export const config: Config = {
     ],
     bundles: [
         { components: ['owm-daily'] },
+        { components: ['yahoo-quotes'] },
     ],
     outputTargets: [
         {

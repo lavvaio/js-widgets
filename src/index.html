@@ -15,19 +15,26 @@
     </head>
     <body>
         <owm-daily></owm-daily>
+        <br />
+        <yahoo-quotes style="max-width: 780px;display: block;"></yahoo-quotes>
         <script>
             var connection = new anadyme.lavva.WebsocketConnection({
                 host: 'a3bz-kqvc-b5u7-iwcs.cloud.lavva.io',
-                channels: [ 'iss', 'owm' ],
+                channels: [ 'iss', 'owm', 'yquotes' ],
                 apiKey: '8MaA7aR/DelTbVUm5TBdNIs5xxCT1nfyNXjLTcUHLxr8DCo4FMmTBmX9bvjYf+Jsb8mXrQcdkFlu8zCuvy03lA==',
                 format: 'text',
             });
 
-            const widget = document.querySelector('owm-daily');
+            const owm = document.querySelector('owm-daily');
 
-            widget.connection = connection
-            widget.dataChannel = 'iss';
-            widget.dataKey = '-37.465200:-101.317100';
+            owm.connection = connection
+            owm.dataChannel = 'iss';
+            owm.dataKey = '-37.465200:-101.317100';
+
+            const yquotes = document.querySelector('yahoo-quotes');
+
+            yquotes.connection = connection
+            yquotes.dataChannel = 'yquotes';
 
             connection.connect();
         </script>

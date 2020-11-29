@@ -6,6 +6,13 @@
     display: inline-block;
 }
 
+.powered-by {
+    font-size: 9px;
+    font-family: 'monospace';
+    opacity: 0.5;
+    padding: 2px 0;
+}
+
 .owm {
     display: flex;
     color: #fff;

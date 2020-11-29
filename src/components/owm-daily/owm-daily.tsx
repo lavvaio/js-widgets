@@ -14,10 +14,10 @@ import { createLogger, capitalize } from '../../shared/utils';
 export class OpenWeatherComponent {
 
     @Prop()
-    connection: WebsocketConnection;
+    connection!: WebsocketConnection;
 
     @Prop()
-    dataChannel: string;
+    dataChannel!: string;
 
     @Prop()
     dataKey: string = undefined;
@@ -59,7 +59,7 @@ export class OpenWeatherComponent {
     }
 
     saveWeather(weather: any) {
-        this.logger.log('saving weather', weather);
+        this.logger.log('weather update', weather);
         this.data = weather;
         const ns = store.namespace(this.namespace);
         ns.set(this.dataChannel, weather);
@@ -86,27 +86,30 @@ export class OpenWeatherComponent {
         const wsDescription = capitalize(this.data.current.weather[0].description);
 
         return (
-            <div class="owm">
-                <div class="current">
-                    <label>Today</label>
-                    <div title="Temperature" class="temp">{this.data.current.temp}&deg;</div>
-                    <i title={ wsDescription } class={ wiClass }></i>
-                    <div class="humidity" title="Humidity">
-                        <div>
-                            <i class="wi wi-humidity"></i>
+            <div>
+                <div class="owm">
+                    <div class="current">
+                        <label>Today</label>
+                        <div title="Temperature" class="temp">{this.data.current.temp}&deg;</div>
+                        <i title={ wsDescription } class={ wiClass }></i>
+                        <div class="humidity" title="Humidity">
+                            <div>
+                                <i class="wi wi-humidity"></i>
+                            </div>
+                            <div>{this.data.current.humidity} %</div>
                         </div>
-                        <div>{this.data.current.humidity} %</div>
-                    </div>
-                    <div class="pressure" title="Pressure">
-                        <div>
-                            <i class="wi wi-barometer"></i>
+                        <div class="pressure" title="Pressure">
+                            <div>
+                                <i class="wi wi-barometer"></i>
+                            </div>
+                            <div>{this.data.current.pressure} hPa</div>
                         </div>
-                        <div>{this.data.current.pressure} hPa</div>
                     </div>
+                    {this.data.daily.filter((_, i) => i > 0 && i < 7).map((day, i) => {
+                        return <owm-daily-item seq={ i } day={ day }></owm-daily-item>
+                    })}
                 </div>
-                {this.data.daily.filter((_, i) => i > 0 && i < 7).map((day, i) => {
-                    return <owm-daily-item seq={ i } day={ day }></owm-daily-item>
-                })}
+                <div class="powered-by">Powered by OpenWeather</div>
             </div>
         );
     }
