@@ -6,11 +6,11 @@ import store from 'store2';
 import { createLogger } from '../../shared/utils';
 
 @Component({
-    tag: 'twit-ter',
-    styleUrl: './twitr.scss',
+    tag: 'finnhub-news',
+    styleUrl: './finnhub-news.scss',
     shadow: false,
 })
-export class TwitrComponent {
+export class FinnhubNewsComponent {
 
     @Prop()
     connection!: WebsocketConnection;
@@ -22,7 +22,7 @@ export class TwitrComponent {
     dataKey: string = undefined;
 
     @Prop()
-    namespace = 'twitr';
+    namespace = 'finnhub-news';
 
     @State()
     size = 1;
@@ -35,12 +35,12 @@ export class TwitrComponent {
         this.logger.log(...args);
     }
 
-    private logger = createLogger('twitr');
+    private logger = createLogger('finnhub-news');
 
     private subscriptions = new Subscription();
 
     connectedCallback() {
-        this.loadTwits();
+        this.loadNews();
 
         if (!this.connection)  {
             throw new Error('connection was not found');
@@ -58,18 +58,18 @@ export class TwitrComponent {
             filter(message => message.type === ClientMessageDataType.DATA),
             filter(message => this.dataKey === undefined ? true : message.key === this.dataKey),
         ).subscribe(message => {
-            // this.logger.log('message arrived', this.dataKey, message);
-            this.saveTwit(message.value);
+            this.logger.log('message arrived', message);
+            this.saveNews(message.value);
         }));
     }
 
-    loadTwits() {
+    loadNews() {
         const ns = store.namespace(this.namespace);
         this.data = ns.get(this.dataChannel, this.data);
     }
 
-    saveTwit(twit: any) {
-        this.data = [ twit, ...this.data.slice(0, this.size - 1) ];
+    saveNews(news: any) {
+        this.data = [ news, ...this.data.slice(0, this.size - 1) ];
         const ns = store.namespace(this.namespace);
         ns.set(this.dataChannel, this.data);
     }
@@ -81,33 +81,31 @@ export class TwitrComponent {
     render() {
         return (
             <div>
-                <div class="twitr">
-                    <ul class="twits">
-                    {this.data.map(twit => {
-                        return <li class="twit">
-                            <img class="avatar" title={ twit.user.name } src={ twit.user.profile_image_url_https } />
-                            <div class="body">
-                                <div class="user">
-                                    <div>{ twit.user.name }</div>
-                                    { twit.user.verified ?
-                                    <div class="verified"></div>
-                                    : null }
-                                    <div class="handler">@{ twit.user.screen_name }</div>
+                <div class="finnhub">
+                    <ul class="news">
+                        {this.data.map(news => {
+                            return <li>
+                                <div class="news-item">
+                                    <div class="cover">
+                                        <img src={ news.image } alt={ news.headline } title={ news.headline } />
+                                    </div>
+                                    <div class="body">
+                                        <div class="title">{ news.headline }</div>
+                                        <div class="date">{ new Date(news.datetime * 1000).toISOString() }</div>
+                                        <div class="summary" innerHTML={ news.summary }></div>
+                                        <div class="footer">
+                                            <div class="source">
+                                                <span class="label">Source: </span>{ news.source }
+                                            </div>
+                                            <a href={ news.url } class="learnmore" target="_blank">Learn more</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="msg">{ twit.text }</div>
-                                <div class="time">{ twit.created_at }</div>
-                                { twit.source ?
-                                <div class="source">
-                                    <span>Source:</span>
-                                    <span innerHTML={ twit.source }></span>
-                                </div>
-                                : null }
-                            </div>
-                        </li>
-                    })}
+                            </li>
+                        })}
                     </ul>
                 </div>
-                <div class="powered-by">Powered by Twitter</div>
+                <div class="powered-by">Powered by Finnhub</div>
             </div>
         );
     }

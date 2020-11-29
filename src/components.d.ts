@@ -7,6 +7,13 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { WebsocketConnection } from "@anadyme/lavva-js-sdk";
 export namespace Components {
+    interface FinnhubNews {
+        "connection": WebsocketConnection;
+        "dataChannel": string;
+        "dataKey": string;
+        "log": (...args: any[]) => Promise<void>;
+        "namespace": string;
+    }
     interface OwmDaily {
         "connection": WebsocketConnection;
         "dataChannel": string;
@@ -39,6 +46,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLFinnhubNewsElement extends Components.FinnhubNews, HTMLStencilElement {
+    }
+    var HTMLFinnhubNewsElement: {
+        prototype: HTMLFinnhubNewsElement;
+        new (): HTMLFinnhubNewsElement;
+    };
     interface HTMLOwmDailyElement extends Components.OwmDaily, HTMLStencilElement {
     }
     var HTMLOwmDailyElement: {
@@ -70,6 +83,7 @@ declare global {
         new (): HTMLYahooQuotesElement;
     };
     interface HTMLElementTagNameMap {
+        "finnhub-news": HTMLFinnhubNewsElement;
         "owm-daily": HTMLOwmDailyElement;
         "owm-daily-item": HTMLOwmDailyItemElement;
         "twit-ter": HTMLTwitTerElement;
@@ -78,6 +92,12 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface FinnhubNews {
+        "connection": WebsocketConnection;
+        "dataChannel": string;
+        "dataKey"?: string;
+        "namespace"?: string;
+    }
     interface OwmDaily {
         "connection": WebsocketConnection;
         "dataChannel": string;
@@ -106,6 +126,7 @@ declare namespace LocalJSX {
         "namespace"?: string;
     }
     interface IntrinsicElements {
+        "finnhub-news": FinnhubNews;
         "owm-daily": OwmDaily;
         "owm-daily-item": OwmDailyItem;
         "twit-ter": TwitTer;
@@ -117,6 +138,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "finnhub-news": LocalJSX.FinnhubNews & JSXBase.HTMLAttributes<HTMLFinnhubNewsElement>;
             "owm-daily": LocalJSX.OwmDaily & JSXBase.HTMLAttributes<HTMLOwmDailyElement>;
             "owm-daily-item": LocalJSX.OwmDailyItem & JSXBase.HTMLAttributes<HTMLOwmDailyItemElement>;
             "twit-ter": LocalJSX.TwitTer & JSXBase.HTMLAttributes<HTMLTwitTerElement>;

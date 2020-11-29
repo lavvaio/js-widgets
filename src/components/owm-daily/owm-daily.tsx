@@ -72,7 +72,6 @@ export class OpenWeatherComponent {
     }
 
     disconnectedCallback() {
-        this.logger.log('host disconnected');
         this.subscriptions.unsubscribe();
     }
 

@@ -14,15 +14,35 @@
         <style>body{margin:0;padding:0;font-family: 'Roboto', sans-serif;}</style>
     </head>
     <body>
-        <owm-daily></owm-daily>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <owm-daily></owm-daily>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <yahoo-quotes style="max-width: 1110px;display: block;"></yahoo-quotes>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" style="width: 50%;">
+                    <twit-ter></twit-ter>
+                    <br />
+                </td>
+                <td valign="top" style="width: 50%;">
+                    <finnhub-news></finnhub-news>
+                    <br />
+                </td>
+            </tr>
+        </table>
         <br />
-        <yahoo-quotes style="max-width: 1110px;display: block;"></yahoo-quotes>
-        <br />
-        <twit-ter></twit-ter>
         <script>
             var connection = new anadyme.lavva.WebsocketConnection({
                 host: 'a3bz-kqvc-b5u7-iwcs.cloud.lavva.io',
-                channels: [ 'iss', 'owm', 'yquotes', 'forextweets' ],
+                channels: [ 'iss', 'owm', 'yquotes', 'forextweets', 'finnhub' ],
                 apiKey: '8MaA7aR/DelTbVUm5TBdNIs5xxCT1nfyNXjLTcUHLxr8DCo4FMmTBmX9bvjYf+Jsb8mXrQcdkFlu8zCuvy03lA==',
                 format: 'text',
             });
@@ -30,7 +50,6 @@
             // owm
 
             const owm = document.querySelector('owm-daily');
-
             owm.connection = connection
             owm.dataChannel = 'owm';
             owm.dataKey = '52.524370:13.410530';
@@ -38,16 +57,22 @@
             // yahoo
 
             const yquotes = document.querySelector('yahoo-quotes');
-
             yquotes.connection = connection
             yquotes.dataChannel = 'yquotes';
 
             // twitter
 
             const twitr = document.querySelector('twit-ter');
-
             twitr.connection = connection
             twitr.dataChannel = 'forextweets';
+
+            // finnhub news
+
+            const finnhub = document.querySelector('finnhub-news');
+            finnhub.connection = connection
+            finnhub.dataChannel = 'finnhub';
+
+            // connection
 
             connection.connect();
         </script>

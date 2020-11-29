@@ -76,7 +76,6 @@ export class YahooQuotesComponent {
     }
 
     disconnectedCallback() {
-        this.logger.log('host disconnected');
         this.subscriptions.unsubscribe();
     }
 
