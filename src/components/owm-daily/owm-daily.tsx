@@ -49,6 +49,12 @@ export class OpenWeatherComponent {
         this.logger.log('connection found', this.dataChannel);
 
         this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
+            filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
+        ).subscribe(message => {
+            this.logger.log('client connected', message.value.client_id);
+        }));
+
+        this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
             filter(message => message.type === ClientMessageDataType.DATA),
             filter(message => this.dataKey === undefined ? true : message.key === this.dataKey),
             debounceTime(150),
@@ -73,7 +79,7 @@ export class OpenWeatherComponent {
     }
 
     disconnectedCallback() {
-        console.log('>> host disconnected');
+        this.logger.log('host disconnected');
         this.subscriptions.unsubscribe();
     }
 

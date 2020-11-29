@@ -2,15 +2,14 @@ import { ClientMessageDataType, WebsocketConnection } from '@anadyme/lavva-js-sd
 import { Component, h, Method, Prop, State } from '@stencil/core';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
-import store from 'store2';
-import { createLogger } from "../../shared/utils";
+import { createLogger } from '../../shared/utils';
 
 @Component({
-    tag: 'yahoo-quotes',
-    styleUrl: './yahoo-quotes.scss',
+    tag: 'twit-ter',
+    styleUrl: './twitr.scss',
     shadow: false,
 })
-export class YahooQuotesComponent {
+export class TwitrComponent {
 
     @Prop()
     connection!: WebsocketConnection;
@@ -22,10 +21,7 @@ export class YahooQuotesComponent {
     dataKey: string = undefined;
 
     @Prop()
-    namespace = 'yahoo-quotes';
-
-    @State()
-    symbols = new Map<string, any>();
+    namespace = 'twitr';
 
     @State()
     data = [];
@@ -35,14 +31,14 @@ export class YahooQuotesComponent {
         this.logger.log(...args);
     }
 
-    private logger = createLogger('yahoo-quotes');
+    private logger = createLogger('twitr');
 
     private subscriptions = new Subscription();
 
     connectedCallback() {
         this.logger.log('host connected');
 
-        this.loadQuotes();
+        this.loadTwits();
 
         if (!this.connection)  {
             throw new Error('connection was not found');
@@ -61,25 +57,21 @@ export class YahooQuotesComponent {
             filter(message => this.dataKey === undefined ? true : message.key === this.dataKey),
             // debounceTime(150),
         ).subscribe(message => {
-            // this.logger.log('message arrived', this.dataKey, message);
-            this.saveQuote(message.value);
+            this.logger.log('message arrived', this.dataKey, message);
+            this.saveTwit(message.value);
         }));
     }
 
-    saveQuote(quote: any) {
-        this.logger.log('update quote', quote);
-        this.symbols.set(quote.symbol, quote);
-        this.data = Array.from(this.symbols, ([name, value]) => ({ name, value }));
-        const ns = store.namespace(this.namespace);
-        ns.set(this.dataChannel, this.data);
+    loadTwits() {
+        //
     }
 
-    loadQuotes() {
-        this.logger.log('loading quotes');
-        const ns = store.namespace(this.namespace);
-        this.data = ns.get(this.dataChannel, this.data);
-        this.symbols = new Map<string, any>((this.data || []).map(x => [x.name, x.value] as [string, any]));
-        this.logger.log('data loaded', this.data);
+    saveTwit(twit: any) {
+        if (this.data.length > 0) {
+            this.data.pop();
+        }
+
+        this.data.unshift(twit);
     }
 
     disconnectedCallback() {
@@ -90,12 +82,11 @@ export class YahooQuotesComponent {
     render() {
         return (
             <div>
-                <div class="yquotes">
-                    {this.data.map((quote) => {
-                        return <yahoo-quote class={ quote.name } data={ quote.value }></yahoo-quote>
-                    })}
-                </div>
-                <div class="powered-by">Powered by Yahoo quotes</div>
+                <ul>
+                {this.data.map(twit => {
+                    return <li>{ twit.text }</li>
+                })}
+                </ul>
             </div>
         );
     }

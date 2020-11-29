@@ -17,24 +17,37 @@
         <owm-daily></owm-daily>
         <br />
         <yahoo-quotes style="max-width: 1110px;display: block;"></yahoo-quotes>
+        <br />
+        <twit-ter></twit-ter>
         <script>
             var connection = new anadyme.lavva.WebsocketConnection({
                 host: 'a3bz-kqvc-b5u7-iwcs.cloud.lavva.io',
-                channels: [ 'iss', 'owm', 'yquotes' ],
+                channels: [ 'iss', 'owm', 'yquotes', 'forextweets' ],
                 apiKey: '8MaA7aR/DelTbVUm5TBdNIs5xxCT1nfyNXjLTcUHLxr8DCo4FMmTBmX9bvjYf+Jsb8mXrQcdkFlu8zCuvy03lA==',
                 format: 'text',
             });
 
+            // owm
+
             const owm = document.querySelector('owm-daily');
 
             owm.connection = connection
-            owm.dataChannel = 'iss';
-            owm.dataKey = '-37.465200:-101.317100';
+            owm.dataChannel = 'owm';
+            owm.dataKey = '52.524370:13.410530';
+
+            // yahoo
 
             const yquotes = document.querySelector('yahoo-quotes');
 
             yquotes.connection = connection
             yquotes.dataChannel = 'yquotes';
+
+            // twitter
+
+            const twitr = document.querySelector('twit-ter');
+
+            twitr.connection = connection
+            twitr.dataChannel = 'forextweets';
 
             connection.connect();
         </script>

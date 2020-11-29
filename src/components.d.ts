@@ -19,6 +19,13 @@ export namespace Components {
         "seq": number;
         "weekDays": string[];
     }
+    interface TwitTer {
+        "connection": WebsocketConnection;
+        "dataChannel": string;
+        "dataKey": string;
+        "log": (...args: any[]) => Promise<void>;
+        "namespace": string;
+    }
     interface YahooQuote {
         "data": any;
         "symbol": string;
@@ -44,6 +51,12 @@ declare global {
         prototype: HTMLOwmDailyItemElement;
         new (): HTMLOwmDailyItemElement;
     };
+    interface HTMLTwitTerElement extends Components.TwitTer, HTMLStencilElement {
+    }
+    var HTMLTwitTerElement: {
+        prototype: HTMLTwitTerElement;
+        new (): HTMLTwitTerElement;
+    };
     interface HTMLYahooQuoteElement extends Components.YahooQuote, HTMLStencilElement {
     }
     var HTMLYahooQuoteElement: {
@@ -59,6 +72,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "owm-daily": HTMLOwmDailyElement;
         "owm-daily-item": HTMLOwmDailyItemElement;
+        "twit-ter": HTMLTwitTerElement;
         "yahoo-quote": HTMLYahooQuoteElement;
         "yahoo-quotes": HTMLYahooQuotesElement;
     }
@@ -75,6 +89,12 @@ declare namespace LocalJSX {
         "seq"?: number;
         "weekDays"?: string[];
     }
+    interface TwitTer {
+        "connection": WebsocketConnection;
+        "dataChannel": string;
+        "dataKey"?: string;
+        "namespace"?: string;
+    }
     interface YahooQuote {
         "data"?: any;
         "symbol"?: string;
@@ -88,6 +108,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "owm-daily": OwmDaily;
         "owm-daily-item": OwmDailyItem;
+        "twit-ter": TwitTer;
         "yahoo-quote": YahooQuote;
         "yahoo-quotes": YahooQuotes;
     }
@@ -98,6 +119,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "owm-daily": LocalJSX.OwmDaily & JSXBase.HTMLAttributes<HTMLOwmDailyElement>;
             "owm-daily-item": LocalJSX.OwmDailyItem & JSXBase.HTMLAttributes<HTMLOwmDailyItemElement>;
+            "twit-ter": LocalJSX.TwitTer & JSXBase.HTMLAttributes<HTMLTwitTerElement>;
             "yahoo-quote": LocalJSX.YahooQuote & JSXBase.HTMLAttributes<HTMLYahooQuoteElement>;
             "yahoo-quotes": LocalJSX.YahooQuotes & JSXBase.HTMLAttributes<HTMLYahooQuotesElement>;
         }
