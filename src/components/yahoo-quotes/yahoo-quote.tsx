@@ -40,7 +40,7 @@ export class YahooQuoteComponent {
                         <span class="changePerCent">{this.data.regularMarketChangePercent > 0 ? `+${Number(this.data.regularMarketChangePercent).toFixed(2)}` :  Number(this.data.regularMarketChangePercent).toFixed(2) }%</span>
                     </span></div>
                     <div class="subtitle">{ this.data.shortName }</div>
-                    <div class="rate">{ this.data.regularMarketPrice }<span class="currency">{ this.data.currency }</span></div>
+                    <div class="rate">{ Number(this.data.regularMarketPrice).toFixed(2) }<span class="currency">{ this.data.currency }</span></div>
                     <div class="rates">
                         <div class="bid">
                             <span class="label">Bid:</span>
