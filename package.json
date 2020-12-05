@@ -33,6 +33,6 @@
     },
     "license": "Apache-2.0",
     "devDependencies": {
-        "@stencil/sass": "^1.4.0"
+        "@stencil/sass": "^1.4.1"
     }
 }

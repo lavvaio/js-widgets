@@ -1,7 +1,7 @@
 import { ClientMessageDataType, WebsocketConnection } from '@anadyme/lavva-js-sdk';
 import { Component, h, Method, Prop, State } from '@stencil/core';
 import { Subscription } from 'rxjs';
-import { filter, first } from 'rxjs/operators';
+import { filter } from 'rxjs/operators';
 import store from 'store2';
 import { createLogger } from '../../shared/utils';
 
@@ -46,19 +46,18 @@ export class FinnhubNewsComponent {
             throw new Error('connection was not found');
         }
 
-        this.connection.channelStream(this.dataChannel).pipe(
+        this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
-            first(),
         ).subscribe(message => {
             this.logger.log('client connected', message.value.client_id);
             this.size = message.value.channel_size;
-        });
+        }));
 
         this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
             filter(message => message.type === ClientMessageDataType.DATA),
             filter(message => this.dataKey === undefined ? true : message.key === this.dataKey),
         ).subscribe(message => {
-            this.logger.log('message arrived', message);
+            // this.logger.log('message arrived', message);
             this.saveNews(message.value);
         }));
     }

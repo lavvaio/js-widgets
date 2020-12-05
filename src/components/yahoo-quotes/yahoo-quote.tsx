@@ -36,7 +36,7 @@ export class YahooQuoteComponent {
             <div>
                 <div class={ wiClass }>
                     <div class="title">{ this.data.symbol }<span class="move">
-                        <span class="change">{ this.data.regularMarketChangePercent > 0 ? `+${Number(this.data.regularMarketChange).toFixed(2)}` : Number(this.data.regularMarketChangePercent).toFixed(2) }</span>
+                        <span class="change">{ this.data.regularMarketChange > 0 ? `+${Number(this.data.regularMarketChange).toFixed(2)}` : Number(this.data.regularMarketChange).toFixed(2) }</span>
                         <span class="changePerCent">{this.data.regularMarketChangePercent > 0 ? `+${Number(this.data.regularMarketChangePercent).toFixed(2)}` :  Number(this.data.regularMarketChangePercent).toFixed(2) }%</span>
                     </span></div>
                     <div class="subtitle">{ this.data.shortName }</div>
