@@ -2,16 +2,16 @@ import { ClientMessageDataType, WebsocketConnection } from '@anadyme/lavva-js-sd
 import { Component, h, Method, Prop, State } from '@stencil/core';
 import { Subscription } from 'rxjs';
 import { debounceTime, filter } from 'rxjs/operators';
-
 import store from 'store2';
 import { createLogger, capitalize } from '../../shared/utils';
+import { LavvaWidget } from '../../shared/model';
 
 @Component({
     tag: 'owm-daily',
     styleUrl: './owm-daily.scss',
     shadow: false,
 })
-export class OpenWeatherComponent {
+export class OpenWeatherComponent implements LavvaWidget {
 
     @Prop()
     connection!: WebsocketConnection;
@@ -27,6 +27,9 @@ export class OpenWeatherComponent {
 
     @State()
     data: any;
+
+    @Prop()
+    useCache = true;
 
     @Method()
     async log(...args: any[]) {
@@ -62,13 +65,17 @@ export class OpenWeatherComponent {
 
     saveWeather(weather: any) {
         this.data = weather;
-        const ns = store.namespace(this.namespace);
-        ns.set(this.dataChannel, weather);
+        if (this.useCache) {
+            const ns = store.namespace(this.namespace);
+            ns.set(this.dataChannel, weather);
+        }
     }
 
     loadWeather() {
-        const ns = store.namespace(this.namespace);
-        this.data = ns.get(this.dataChannel, this.data);
+        if (this.useCache) {
+            const ns = store.namespace(this.namespace);
+            this.data = ns.get(this.dataChannel, this.data);
+        }
     }
 
     disconnectedCallback() {

@@ -4,13 +4,14 @@ import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import store from 'store2';
 import { createLogger } from "../../shared/utils";
+import { LavvaWidget } from '../../shared/model';
 
 @Component({
     tag: 'yahoo-quotes',
     styleUrl: './yahoo-quotes.scss',
     shadow: false,
 })
-export class YahooQuotesComponent {
+export class YahooQuotesComponent implements LavvaWidget {
 
     @Prop()
     connection!: WebsocketConnection;
@@ -23,6 +24,9 @@ export class YahooQuotesComponent {
 
     @Prop()
     namespace = 'yahoo-quotes';
+
+    @Prop()
+    useCache = true;
 
     @State()
     symbols = new Map<string, any>();
@@ -65,14 +69,18 @@ export class YahooQuotesComponent {
     saveQuote(quote: any) {
         this.symbols.set(quote.symbol, quote);
         this.data = Array.from(this.symbols, ([name, value]) => ({ name, value }));
-        const ns = store.namespace(this.namespace);
-        ns.set(this.dataChannel, this.data);
+        if (this.useCache) {
+            const ns = store.namespace(this.namespace);
+            ns.set(this.dataChannel, this.data);
+        }
     }
 
     loadQuotes() {
-        const ns = store.namespace(this.namespace);
-        this.data = ns.get(this.dataChannel, this.data);
-        this.symbols = new Map<string, any>((this.data || []).map(x => [x.name, x.value] as [string, any]));
+        if (this.useCache) {
+            const ns = store.namespace(this.namespace);
+            this.data = ns.get(this.dataChannel, this.data);
+            this.symbols = new Map<string, any>((this.data || []).map(x => [x.name, x.value] as [string, any]));
+        }
     }
 
     disconnectedCallback() {

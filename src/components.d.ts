@@ -8,18 +8,56 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { WebsocketConnection } from "@anadyme/lavva-js-sdk";
 export namespace Components {
     interface FinnhubNews {
+        /**
+          * Prop
+         */
         "connection": WebsocketConnection;
+        /**
+          * Prop
+         */
         "dataChannel": string;
+        /**
+          * Prop (optional)
+         */
         "dataKey": string;
+        /**
+          * Method
+         */
         "log": (...args: any[]) => Promise<void>;
+        /**
+          * Prop (optional)
+         */
         "namespace": string;
+        /**
+          * Prop
+         */
+        "useCache": boolean;
     }
     interface OwmDaily {
+        /**
+          * Prop
+         */
         "connection": WebsocketConnection;
+        /**
+          * Prop
+         */
         "dataChannel": string;
+        /**
+          * Prop (optional)
+         */
         "dataKey": string;
+        /**
+          * Method
+         */
         "log": (...args: any[]) => Promise<void>;
+        /**
+          * Prop (optional)
+         */
         "namespace": string;
+        /**
+          * Prop
+         */
+        "useCache": boolean;
     }
     interface OwmDailyItem {
         "day": any;
@@ -27,22 +65,60 @@ export namespace Components {
         "weekDays": string[];
     }
     interface TwitTer {
+        /**
+          * Prop
+         */
         "connection": WebsocketConnection;
+        /**
+          * Prop
+         */
         "dataChannel": string;
+        /**
+          * Prop (optional)
+         */
         "dataKey": string;
+        /**
+          * Method
+         */
         "log": (...args: any[]) => Promise<void>;
+        /**
+          * Prop (optional)
+         */
         "namespace": string;
+        /**
+          * Prop
+         */
+        "useCache": boolean;
     }
     interface YahooQuote {
         "data": any;
         "symbol": string;
     }
     interface YahooQuotes {
+        /**
+          * Prop
+         */
         "connection": WebsocketConnection;
+        /**
+          * Prop
+         */
         "dataChannel": string;
+        /**
+          * Prop (optional)
+         */
         "dataKey": string;
+        /**
+          * Method
+         */
         "log": (...args: any[]) => Promise<void>;
+        /**
+          * Prop (optional)
+         */
         "namespace": string;
+        /**
+          * Prop
+         */
+        "useCache": boolean;
     }
 }
 declare global {
@@ -93,16 +169,48 @@ declare global {
 }
 declare namespace LocalJSX {
     interface FinnhubNews {
+        /**
+          * Prop
+         */
         "connection": WebsocketConnection;
+        /**
+          * Prop
+         */
         "dataChannel": string;
+        /**
+          * Prop (optional)
+         */
         "dataKey"?: string;
+        /**
+          * Prop (optional)
+         */
         "namespace"?: string;
+        /**
+          * Prop
+         */
+        "useCache"?: boolean;
     }
     interface OwmDaily {
+        /**
+          * Prop
+         */
         "connection": WebsocketConnection;
+        /**
+          * Prop
+         */
         "dataChannel": string;
+        /**
+          * Prop (optional)
+         */
         "dataKey"?: string;
+        /**
+          * Prop (optional)
+         */
         "namespace"?: string;
+        /**
+          * Prop
+         */
+        "useCache"?: boolean;
     }
     interface OwmDailyItem {
         "day"?: any;
@@ -110,20 +218,52 @@ declare namespace LocalJSX {
         "weekDays"?: string[];
     }
     interface TwitTer {
+        /**
+          * Prop
+         */
         "connection": WebsocketConnection;
+        /**
+          * Prop
+         */
         "dataChannel": string;
+        /**
+          * Prop (optional)
+         */
         "dataKey"?: string;
+        /**
+          * Prop (optional)
+         */
         "namespace"?: string;
+        /**
+          * Prop
+         */
+        "useCache"?: boolean;
     }
     interface YahooQuote {
         "data"?: any;
         "symbol"?: string;
     }
     interface YahooQuotes {
+        /**
+          * Prop
+         */
         "connection": WebsocketConnection;
+        /**
+          * Prop
+         */
         "dataChannel": string;
+        /**
+          * Prop (optional)
+         */
         "dataKey"?: string;
+        /**
+          * Prop (optional)
+         */
         "namespace"?: string;
+        /**
+          * Prop
+         */
+        "useCache"?: boolean;
     }
     interface IntrinsicElements {
         "finnhub-news": FinnhubNews;

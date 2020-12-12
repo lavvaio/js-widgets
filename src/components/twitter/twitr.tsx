@@ -1,16 +1,17 @@
 import { ClientMessageDataType, WebsocketConnection } from '@anadyme/lavva-js-sdk';
 import { Component, h, Method, Prop, State } from '@stencil/core';
 import { Subscription } from 'rxjs';
-import { filter, first } from 'rxjs/operators';
+import { filter } from 'rxjs/operators';
 import store from 'store2';
-import { createLogger } from '../../shared/utils';
+import { createLogger, loadImage } from '../../shared/utils';
+import { LavvaWidget } from '../../shared/model';
 
 @Component({
     tag: 'twit-ter',
     styleUrl: './twitr.scss',
     shadow: false,
 })
-export class TwitrComponent {
+export class TwitrComponent implements LavvaWidget {
 
     @Prop()
     connection!: WebsocketConnection;
@@ -23,6 +24,9 @@ export class TwitrComponent {
 
     @Prop()
     namespace = 'twitr';
+
+    @Prop()
+    useCache = true;
 
     @State()
     size = 1;
@@ -48,7 +52,6 @@ export class TwitrComponent {
 
         this.connection.channelStream(this.dataChannel).pipe(
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
-            first(),
         ).subscribe(message => {
             this.logger.log('client connected', message.value.client_id);
             this.size = message.value.channel_size;
@@ -64,14 +67,20 @@ export class TwitrComponent {
     }
 
     loadTwits() {
-        const ns = store.namespace(this.namespace);
-        this.data = ns.get(this.dataChannel, this.data);
+        if (this.useCache) {
+            const ns = store.namespace(this.namespace);
+            this.data = ns.get(this.dataChannel, this.data);
+        }
     }
 
     saveTwit(twit: any) {
-        this.data = [ twit, ...this.data.slice(0, this.size - 1) ];
-        const ns = store.namespace(this.namespace);
-        ns.set(this.dataChannel, this.data);
+        loadImage(twit.user.profile_image_url_https).then(_ => {
+            this.data = [ twit, ...this.data.slice(0, this.size - 1) ];
+            if (this.useCache) {
+                const ns = store.namespace(this.namespace);
+                ns.set(this.dataChannel, this.data);
+            }
+        });
     }
 
     disconnectedCallback() {

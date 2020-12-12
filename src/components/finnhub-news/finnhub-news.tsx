@@ -3,14 +3,16 @@ import { Component, h, Method, Prop, State } from '@stencil/core';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import store from 'store2';
-import { createLogger } from '../../shared/utils';
+import { createLogger, loadImage } from '../../shared/utils';
+import { LavvaWidget } from '../../shared/model';
+import { FinnhubNewsItem } from './finnhub';
 
 @Component({
     tag: 'finnhub-news',
     styleUrl: './finnhub-news.scss',
     shadow: false,
 })
-export class FinnhubNewsComponent {
+export class FinnhubNewsComponent implements LavvaWidget {
 
     @Prop()
     connection!: WebsocketConnection;
@@ -24,11 +26,14 @@ export class FinnhubNewsComponent {
     @Prop()
     namespace = 'finnhub-news';
 
+    @Prop()
+    useCache = true;
+
     @State()
     size = 1;
 
     @State()
-    data = [];
+    data: FinnhubNewsItem[] = [];
 
     @Method()
     async log(...args: any[]) {
@@ -53,24 +58,33 @@ export class FinnhubNewsComponent {
             this.size = message.value.channel_size;
         }));
 
-        this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
+        this.subscriptions.add(this.connection.channelStream<FinnhubNewsItem>(this.dataChannel).pipe(
             filter(message => message.type === ClientMessageDataType.DATA),
             filter(message => this.dataKey === undefined ? true : message.key === this.dataKey),
         ).subscribe(message => {
-            // this.logger.log('message arrived', message);
             this.saveNews(message.value);
         }));
     }
 
     loadNews() {
-        const ns = store.namespace(this.namespace);
-        this.data = ns.get(this.dataChannel, this.data);
+        if (this.useCache) {
+            const ns = store.namespace(this.namespace);
+            this.data = ns.get(this.dataChannel, this.data);
+        }
     }
 
-    saveNews(news: any) {
-        this.data = [ news, ...this.data.slice(0, this.size - 1) ];
-        const ns = store.namespace(this.namespace);
-        ns.set(this.dataChannel, this.data);
+    saveNews(news: FinnhubNewsItem) {
+        if (this.data.find(item => item.id === news.id)) {
+            return;
+        }
+
+        loadImage(news.image).then(_ => {
+            this.data = [ news, ...this.data.slice(0, this.size - 1) ].sort((a, b) => b.datetime - a.datetime);
+            if (this.useCache) {
+                const ns = store.namespace(this.namespace);
+                ns.set(this.dataChannel, this.data);
+            }
+        });
     }
 
     disconnectedCallback() {

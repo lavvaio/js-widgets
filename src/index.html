@@ -42,9 +42,15 @@
         <script>
             var connection = new anadyme.lavva.WebsocketConnection({
                 host: 'a3bz-kqvc-b5u7-iwcs.cloud.lavva.io',
+                // host: 'echo.websocket.org',
+                // path: '',
                 channels: [ 'iss', 'owm', 'yquotes', 'forextweets', 'finnhub' ],
                 apiKey: '8MaA7aR/DelTbVUm5TBdNIs5xxCT1nfyNXjLTcUHLxr8DCo4FMmTBmX9bvjYf+Jsb8mXrQcdkFlu8zCuvy03lA==',
                 format: 'text',
+            });
+
+            connection.eventStream('error', 'close').subscribe(xevent => {
+                console.warn('xevent arrived', xevent);
             });
 
             // owm
@@ -74,7 +80,29 @@
 
             // connection
 
-            connection.connect();
+            const sub = connection.connect();
+
+            console.log('SUB', sub);
+
+            function online() {
+                // console.log(connection.isConnected());
+                setTimeout(online, 5000);
+            }
+
+            online();
+
+            function updateOnlineStatus()
+            {
+                // console.log('online');
+            }
+
+            function updateOfflineStatus()
+            {
+                // console.log('offline');
+            }
+
+            window.addEventListener('online',  updateOnlineStatus);
+            window.addEventListener('offline', updateOfflineStatus);
         </script>
     </body>
 </html>
