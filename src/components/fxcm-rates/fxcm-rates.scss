@@ -1,0 +1,58 @@
+.powered-by {
+    font-size: 10px;
+    font-family: 'monospace';
+    opacity: 0.5;
+    padding: 2px 0;
+}
+
+.fxcm-rates {
+    display: block;
+    max-width: 700px;
+    margin-bottom: 2px;
+    padding: 15px;
+    border: 1px solid #e0e3eb;
+    font: 14px Roboto, Helvetica, Arial, Tahoma, sans-serif;
+
+    .top {
+        display: flex;
+
+        div {
+            flex: 1;
+            color: #9598a1;
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+    }
+
+    .entries {
+        max-height: 210px;
+        overflow-y: overlay;
+
+        .entry {
+            display: flex;
+            border-bottom: 1px solid #e0e3eb;
+
+            &.direction-none {
+                color: #131722;
+            }
+
+            &.direction-up {
+                color: rgb(60, 188, 152);
+            }
+
+            &.direction-down {
+                color: rgb(255, 74, 104);
+            }
+
+            &:hover {
+                background-color: #f7f8fa;
+            }
+
+            div {
+                flex: 1;
+                padding: 9px 0;
+            }
+        }
+    }
+}

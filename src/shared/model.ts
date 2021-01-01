@@ -12,7 +12,7 @@ export interface LavvaWidget {
     /**
      * Prop (optional)
      */
-    dataKey?: string;
+    dataKey?: string | string[];
     /**
      * Prop (optional)
      */

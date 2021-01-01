@@ -50,12 +50,12 @@ export class TwitrComponent implements LavvaWidget {
             throw new Error('connection was not found');
         }
 
-        this.connection.channelStream(this.dataChannel).pipe(
+        this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
         ).subscribe(message => {
             this.logger.log('client connected', message.value.client_id);
             this.size = message.value.channel_size;
-        });
+        }));
 
         this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
             filter(message => message.type === ClientMessageDataType.DATA),

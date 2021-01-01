@@ -33,6 +33,33 @@ export namespace Components {
          */
         "useCache": boolean;
     }
+    interface FxcmRates {
+        /**
+          * Prop
+         */
+        "connection": WebsocketConnection;
+        /**
+          * Prop
+         */
+        "dataChannel": string;
+        /**
+          * Prop (optional)
+         */
+        "dataKey": string[];
+        /**
+          * Method
+         */
+        "log": (...args: any[]) => Promise<void>;
+        /**
+          * Prop (optional)
+         */
+        "namespace": string;
+        "symbolNames": any[];
+        /**
+          * Prop
+         */
+        "useCache": boolean;
+    }
     interface OwmDaily {
         /**
           * Prop
@@ -128,6 +155,12 @@ declare global {
         prototype: HTMLFinnhubNewsElement;
         new (): HTMLFinnhubNewsElement;
     };
+    interface HTMLFxcmRatesElement extends Components.FxcmRates, HTMLStencilElement {
+    }
+    var HTMLFxcmRatesElement: {
+        prototype: HTMLFxcmRatesElement;
+        new (): HTMLFxcmRatesElement;
+    };
     interface HTMLOwmDailyElement extends Components.OwmDaily, HTMLStencilElement {
     }
     var HTMLOwmDailyElement: {
@@ -160,6 +193,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "finnhub-news": HTMLFinnhubNewsElement;
+        "fxcm-rates": HTMLFxcmRatesElement;
         "owm-daily": HTMLOwmDailyElement;
         "owm-daily-item": HTMLOwmDailyItemElement;
         "twit-ter": HTMLTwitTerElement;
@@ -185,6 +219,29 @@ declare namespace LocalJSX {
           * Prop (optional)
          */
         "namespace"?: string;
+        /**
+          * Prop
+         */
+        "useCache"?: boolean;
+    }
+    interface FxcmRates {
+        /**
+          * Prop
+         */
+        "connection": WebsocketConnection;
+        /**
+          * Prop
+         */
+        "dataChannel": string;
+        /**
+          * Prop (optional)
+         */
+        "dataKey"?: string[];
+        /**
+          * Prop (optional)
+         */
+        "namespace"?: string;
+        "symbolNames"?: any[];
         /**
           * Prop
          */
@@ -267,6 +324,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "finnhub-news": FinnhubNews;
+        "fxcm-rates": FxcmRates;
         "owm-daily": OwmDaily;
         "owm-daily-item": OwmDailyItem;
         "twit-ter": TwitTer;
@@ -279,6 +337,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "finnhub-news": LocalJSX.FinnhubNews & JSXBase.HTMLAttributes<HTMLFinnhubNewsElement>;
+            "fxcm-rates": LocalJSX.FxcmRates & JSXBase.HTMLAttributes<HTMLFxcmRatesElement>;
             "owm-daily": LocalJSX.OwmDaily & JSXBase.HTMLAttributes<HTMLOwmDailyElement>;
             "owm-daily-item": LocalJSX.OwmDailyItem & JSXBase.HTMLAttributes<HTMLOwmDailyItemElement>;
             "twit-ter": LocalJSX.TwitTer & JSXBase.HTMLAttributes<HTMLTwitTerElement>;

@@ -17,6 +17,12 @@
         <table>
             <tr>
                 <td colspan="2">
+                    <fxcm-rates></fxcm-rates>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
                     <owm-daily></owm-daily>
                     <br />
                 </td>
@@ -41,10 +47,10 @@
         <br />
         <script>
             var connection = new anadyme.lavva.WebsocketConnection({
-                host: 'a3bz-kqvc-b5u7-iwcs.cloud.lavva.io',
+                host: '3tr5-zbqh-bvyd-1fl2.cloud.lavva.io',
                 // host: 'echo.websocket.org',
                 // path: '',
-                channels: [ 'iss', 'owm', 'yquotes', 'forextweets', 'finnhub' ],
+                channels: [ 'fxcm', 'iss', 'owm', 'yquotes', 'forextweets', 'finnhub', 'test' ],
                 apiKey: '8MaA7aR/DelTbVUm5TBdNIs5xxCT1nfyNXjLTcUHLxr8DCo4FMmTBmX9bvjYf+Jsb8mXrQcdkFlu8zCuvy03lA==',
                 format: 'text',
             });
@@ -58,7 +64,6 @@
             const owm = document.querySelector('owm-daily');
             owm.connection = connection
             owm.dataChannel = 'owm';
-            owm.dataKey = '52.524370:13.410530';
 
             // yahoo
 
@@ -77,6 +82,13 @@
             const finnhub = document.querySelector('finnhub-news');
             finnhub.connection = connection
             finnhub.dataChannel = 'finnhub';
+
+            // fxcm rates
+
+            const fxcm = document.querySelector('fxcm-rates');
+            fxcm.connection = connection
+            fxcm.dataChannel = 'fxcm';
+            // fxcm.dataKey = [ 'EURSEK' ];
 
             // connection
 
