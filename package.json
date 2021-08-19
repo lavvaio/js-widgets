@@ -26,12 +26,12 @@
         "generate": "stencil generate"
     },
     "dependencies": {
-        "@anadyme/lavva-js-sdk": "file:../lavva-js-sdk/dist/sdk/anadyme-lavva-js-sdk-0.9.3.tgz",
-        "@stencil/core": "^2.3.0",
-        "rxjs": "^6.6.3",
-        "store2": "^2.12.0"
+        "@anadyme/lavva-js-sdk": "file:./anadyme-lavva-js-sdk-1.0.1.tgz",
+        "@stencil/core": "2.6.0",
+        "store2": "2.12.0",
+        "rxjs": "7.3.0"
     },
-    "license": "Apache-2.0",
+    "license": "MIT",
     "devDependencies": {
         "@stencil/sass": "^1.4.1"
     }

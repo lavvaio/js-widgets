@@ -2,5 +2,5 @@ run:
 	yarn start
 
 prod:
-	npm run build
+	yarn build
 	npm pack
