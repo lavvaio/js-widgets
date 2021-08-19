@@ -1,2 +1,6 @@
 run:
-	npm start
+	yarn start
+
+prod:
+	npm run build
+	npm pack
