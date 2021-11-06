@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-11-06T10:47:21",
+  "timestamp": "2021-11-06T11:01:49",
   "compiler": {
     "name": "node",
     "version": "14.15.0"
@@ -145,7 +145,7 @@
           "lavva-js-sdk.esm-8f3890c5.js",
           "store2-f3f72e93.js"
         ],
-        "originalByteSize": 5936
+        "originalByteSize": 5881
       },
       {
         "key": "owm-daily.entry",

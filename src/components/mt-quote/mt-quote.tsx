@@ -49,7 +49,7 @@ export class MTQuote {
     namespace = 'mt-quote';
 
     @Watch('namespace')
-    createLogger(newValue: string, oldValue: string) {
+    createLogger(newValue: string, _: string) {
         this.logger = createLogger(newValue, 'background-color:red;color:#fff;padding: 2px 4px;font-size:10px;border-radius:4px;');
     }
 

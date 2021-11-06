@@ -1,7 +1,6 @@
 :host {
 
     --padding: 20px 30px;
-    --font-size: 0.875rem;
     --border-radius: 14px;
     --background-color: #151415;
 
@@ -18,7 +17,6 @@
     .size-default {
         box-sizing: border-box;
         padding: var(--padding);
-        font-size: var(--font-size);
         background: var(--background-color);
         border-radius: var(--border-radius);
 
