@@ -1,4 +1,4 @@
-import { ClientMessageDataType, LVLogger, WebsocketConnection } from "@anadyme/lavva-js-sdk";
+import { ClientMessageDataType, LVLogger, WebsocketConnection, WebsocketConnectionEncoding, WebsocketConnectionFormat } from "@anadyme/lavva-js-sdk";
 import { Component, Prop, h, State, Watch } from "@stencil/core";
 import { filter, Subscription } from "rxjs";
 import store from "store2";
@@ -34,7 +34,10 @@ export class MTQuote {
     locale = 'en';
 
     @Prop()
-    format: 'text' | 'binary' = 'binary';
+    format: WebsocketConnectionFormat = 'binary';
+
+    @Prop()
+    encoding: WebsocketConnectionEncoding = 'msgpack';
 
     @Prop()
     apiKey = 'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee';
@@ -114,6 +117,7 @@ export class MTQuote {
         this.connection = new WebsocketConnection({
             host: this.host,
             format: this.format,
+            encoding: this.encoding,
             channels: this.channel ? [this.channel] : [],
             apiKey: this.apiKey,
         });
