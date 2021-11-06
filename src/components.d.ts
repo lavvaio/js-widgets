@@ -5,7 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { WebsocketConnection } from "@anadyme/lavva-js-sdk";
+import { WebsocketConnection, WebsocketConnectionEncoding, WebsocketConnectionFormat } from "@anadyme/lavva-js-sdk";
 export namespace Components {
     interface FinnhubNews {
         /**
@@ -63,7 +63,8 @@ export namespace Components {
     interface MtQuote {
         "apiKey": string;
         "channel": string;
-        "format": 'text' | 'binary';
+        "encoding": WebsocketConnectionEncoding;
+        "format": WebsocketConnectionFormat;
         "host": string;
         "label": string;
         "locale": string;
@@ -274,7 +275,8 @@ declare namespace LocalJSX {
     interface MtQuote {
         "apiKey"?: string;
         "channel"?: string;
-        "format"?: 'text' | 'binary';
+        "encoding"?: WebsocketConnectionEncoding;
+        "format"?: WebsocketConnectionFormat;
         "host"?: string;
         "label"?: string;
         "locale"?: string;

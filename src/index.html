@@ -32,19 +32,27 @@
             }
 
             mt-quote:nth-child(1) {
-                --background-color: cyan;
-                --symbol-name-color: gray;
-                --symbol-value-color: #000;
+                --padding: 20px 30px;
+                --border-radius: 14px;
+                --border-color: #151415;
+                --background-color: #151415;
+                --symbol-name-font-size: 1rem;
+                --symbol-name-color: #fed831;
+                --symbol-value-font-size: 2.25rem;
+                --symbol-value-color: #fff;
+                --symbol-percent-font-size: 1.25rem;
+                --symbol-percent-up: #4B8AE9;
+                --symbol-percent-down: #DA361B;
             }
 
         </style>
     </head>
     <body>
         <div class="quotes">
-            <mt-quote style="margin-right: 10px;" format="binary" host="6ed636b3659b.cloud.anadyme.com" channel="mt4"></mt-quote>
-            <mt-quote symbol="EURUSDm" label="EUR vs USD" style="margin-right: 10px;" format="binary" host="6ed636b3659b.cloud.anadyme.com" channel="mt4"></mt-quote>
-            <mt-quote symbol="AAPLm" label="APPLE" style="margin-right: 10px;" format="binary" host="6ed636b3659b.cloud.anadyme.com" channel="mt4"></mt-quote>
-            <mt-quote symbol="USOILm" label="US Crude Oil" format="binary" host="6ed636b3659b.cloud.anadyme.com" channel="mt4"></mt-quote>
+            <mt-quote style="margin-right: 10px;" encoding="json" host="6ed636b3659b.cloud.anadyme.com" channel="mt4"></mt-quote>
+            <mt-quote symbol="EURUSDm" label="EUR vs USD" style="margin-right: 10px;" encoding="json" host="6ed636b3659b.cloud.anadyme.com" channel="mt4"></mt-quote>
+            <mt-quote symbol="AAPLm" label="APPLE" style="margin-right: 10px;" encoding="json" host="6ed636b3659b.cloud.anadyme.com" channel="mt4"></mt-quote>
+            <mt-quote symbol="USOILm" label="US Crude Oil" encoding="json" host="6ed636b3659b.cloud.anadyme.com" channel="mt4"></mt-quote>
         </div>
     </body>
 </html>

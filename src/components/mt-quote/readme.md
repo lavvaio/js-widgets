@@ -11,6 +11,7 @@
 | -------------- | ----------- | ----------- | ------------------------------------------------ | ---------------------------------------- |
 | `apiKey`       | `api-key`   |             | `string`                                         | `'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'` |
 | `channel`      | `channel`   |             | `string`                                         | `undefined`                              |
+| `encoding`     | `encoding`  |             | `"json" \| "msgpack"`                            | `'msgpack'`                              |
 | `format`       | `format`    |             | `"binary" \| "text"`                             | `'binary'`                               |
 | `host`         | `host`      |             | `string`                                         | `'xxxxxxxxxx.apps.anadyme.com'`          |
 | `label`        | `label`     |             | `string`                                         | `""`                                     |

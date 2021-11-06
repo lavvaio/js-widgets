@@ -1,24 +1,27 @@
 :host {
 
-    --padding: 20px 30px;
-    --border-radius: 14px;
-    --background-color: #151415;
+    --padding: 20px;
+    --border-radius: 0;
+    --border-color: rgb(38, 38, 38);
+    --background-color: rgb(38, 38, 38);
 
     --symbol-name-font-size: 1rem;
-    --symbol-name-color: #fed831;
+    --symbol-name-color: #f8bf1e;
 
     --symbol-value-font-size: 2.25rem;
     --symbol-value-color: #fff;
 
     --symbol-percent-font-size: 1.25rem;
-    --symbol-percent-up: #4B8AE9;
-    --symbol-percent-down: #DA361B;
+    --symbol-percent-up: rgb(0, 217, 100);
+    --symbol-percent-down: rgb(255, 0, 0);
 
     .size-default {
         box-sizing: border-box;
         padding: var(--padding);
         background: var(--background-color);
         border-radius: var(--border-radius);
+        border: 1px solid transparent;
+        border-color: var(--border-color);
 
         .loader {
             font-family: inherit;

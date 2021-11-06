@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-11-06T11:11:06",
+  "timestamp": "2021-11-06T15:18:17",
   "compiler": {
     "name": "node",
     "version": "14.15.0"
@@ -42,18 +42,18 @@
           "./dist/lavva-js-widgets/dom-a712b575.js",
           "./dist/lavva-js-widgets/finnhub-news.entry.js",
           "./dist/lavva-js-widgets/fxcm-rates.entry.js",
+          "./dist/lavva-js-widgets/index-983da20a.js",
           "./dist/lavva-js-widgets/index-a591f369.js",
-          "./dist/lavva-js-widgets/index-bba3d233.js",
           "./dist/lavva-js-widgets/index.esm.js",
-          "./dist/lavva-js-widgets/lavva-js-sdk.esm-8f3890c5.js",
+          "./dist/lavva-js-widgets/lavva-js-sdk.esm-009d2509.js",
           "./dist/lavva-js-widgets/lavva-js-widgets.esm.js",
           "./dist/lavva-js-widgets/mt-quote.entry.js",
           "./dist/lavva-js-widgets/owm-daily-item.entry.js",
           "./dist/lavva-js-widgets/owm-daily.entry.js",
           "./dist/lavva-js-widgets/shadow-css-1e16431b.js",
-          "./dist/lavva-js-widgets/store2-f3f72e93.js",
+          "./dist/lavva-js-widgets/store2-69a72535.js",
           "./dist/lavva-js-widgets/twit-ter.entry.js",
-          "./dist/lavva-js-widgets/utils-10508b1d.js",
+          "./dist/lavva-js-widgets/utils-556d5604.js",
           "./dist/lavva-js-widgets/yahoo-quote.entry.js",
           "./dist/lavva-js-widgets/yahoo-quotes.entry.js",
           "./www/build/app-globals-0f993ce5.js",
@@ -61,18 +61,18 @@
           "./www/build/dom-a712b575.js",
           "./www/build/finnhub-news.entry.js",
           "./www/build/fxcm-rates.entry.js",
+          "./www/build/index-983da20a.js",
           "./www/build/index-a591f369.js",
-          "./www/build/index-bba3d233.js",
           "./www/build/index.esm.js",
-          "./www/build/lavva-js-sdk.esm-8f3890c5.js",
+          "./www/build/lavva-js-sdk.esm-009d2509.js",
           "./www/build/lavva-js-widgets.esm.js",
           "./www/build/mt-quote.entry.js",
           "./www/build/owm-daily-item.entry.js",
           "./www/build/owm-daily.entry.js",
           "./www/build/shadow-css-1e16431b.js",
-          "./www/build/store2-f3f72e93.js",
+          "./www/build/store2-69a72535.js",
           "./www/build/twit-ter.entry.js",
-          "./www/build/utils-10508b1d.js",
+          "./www/build/utils-556d5604.js",
           "./www/build/yahoo-quote.entry.js",
           "./www/build/yahoo-quotes.entry.js"
         ]
@@ -112,11 +112,12 @@
         "fileName": "finnhub-news.entry.js",
         "imports": [
           "index-a591f369.js",
-          "lavva-js-sdk.esm-8f3890c5.js",
-          "store2-f3f72e93.js",
-          "utils-10508b1d.js"
+          "lavva-js-sdk.esm-009d2509.js",
+          "store2-69a72535.js",
+          "index-983da20a.js",
+          "utils-556d5604.js"
         ],
-        "originalByteSize": 4093
+        "originalByteSize": 4123
       },
       {
         "key": "fxcm-rates.entry",
@@ -127,11 +128,12 @@
         "fileName": "fxcm-rates.entry.js",
         "imports": [
           "index-a591f369.js",
-          "lavva-js-sdk.esm-8f3890c5.js",
-          "store2-f3f72e93.js",
-          "utils-10508b1d.js"
+          "lavva-js-sdk.esm-009d2509.js",
+          "store2-69a72535.js",
+          "index-983da20a.js",
+          "utils-556d5604.js"
         ],
-        "originalByteSize": 3952
+        "originalByteSize": 3982
       },
       {
         "key": "mt-quote.entry",
@@ -142,10 +144,10 @@
         "fileName": "mt-quote.entry.js",
         "imports": [
           "index-a591f369.js",
-          "lavva-js-sdk.esm-8f3890c5.js",
-          "store2-f3f72e93.js"
+          "lavva-js-sdk.esm-009d2509.js",
+          "store2-69a72535.js"
         ],
-        "originalByteSize": 5881
+        "originalByteSize": 6052
       },
       {
         "key": "owm-daily.entry",
@@ -156,11 +158,12 @@
         "fileName": "owm-daily.entry.js",
         "imports": [
           "index-a591f369.js",
-          "lavva-js-sdk.esm-8f3890c5.js",
-          "store2-f3f72e93.js",
-          "utils-10508b1d.js"
+          "lavva-js-sdk.esm-009d2509.js",
+          "store2-69a72535.js",
+          "index-983da20a.js",
+          "utils-556d5604.js"
         ],
-        "originalByteSize": 3549
+        "originalByteSize": 3579
       },
       {
         "key": "twit-ter.entry",
@@ -171,11 +174,12 @@
         "fileName": "twit-ter.entry.js",
         "imports": [
           "index-a591f369.js",
-          "lavva-js-sdk.esm-8f3890c5.js",
-          "store2-f3f72e93.js",
-          "utils-10508b1d.js"
+          "lavva-js-sdk.esm-009d2509.js",
+          "store2-69a72535.js",
+          "index-983da20a.js",
+          "utils-556d5604.js"
         ],
-        "originalByteSize": 5396
+        "originalByteSize": 5426
       },
       {
         "key": "yahoo-quotes.entry",
@@ -186,11 +190,12 @@
         "fileName": "yahoo-quotes.entry.js",
         "imports": [
           "index-a591f369.js",
-          "lavva-js-sdk.esm-8f3890c5.js",
-          "store2-f3f72e93.js",
-          "utils-10508b1d.js"
+          "lavva-js-sdk.esm-009d2509.js",
+          "store2-69a72535.js",
+          "index-983da20a.js",
+          "utils-556d5604.js"
         ],
-        "originalByteSize": 2529
+        "originalByteSize": 2559
       },
       {
         "key": "owm-daily-item.entry",
@@ -201,8 +206,8 @@
         "fileName": "owm-daily-item.entry.js",
         "imports": [
           "index-a591f369.js",
-          "utils-10508b1d.js",
-          "lavva-js-sdk.esm-8f3890c5.js"
+          "utils-556d5604.js",
+          "lavva-js-sdk.esm-009d2509.js"
         ],
         "originalByteSize": 1998
       },
@@ -689,9 +694,39 @@
           "optional": false,
           "defaultValue": "'binary'",
           "complexType": {
-            "original": "'text' | 'binary'",
+            "original": "WebsocketConnectionFormat",
             "resolved": "\"binary\" | \"text\"",
-            "references": {}
+            "references": {
+              "WebsocketConnectionFormat": {
+                "location": "import",
+                "path": "@anadyme/lavva-js-sdk"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "encoding",
+          "type": "string",
+          "attribute": "encoding",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'msgpack'",
+          "complexType": {
+            "original": "WebsocketConnectionEncoding",
+            "resolved": "\"json\" | \"msgpack\"",
+            "references": {
+              "WebsocketConnectionEncoding": {
+                "location": "import",
+                "path": "@anadyme/lavva-js-sdk"
+              }
+            }
           },
           "docs": {
             "tags": [],
@@ -2106,9 +2141,39 @@
               "optional": false,
               "defaultValue": "'binary'",
               "complexType": {
-                "original": "'text' | 'binary'",
+                "original": "WebsocketConnectionFormat",
                 "resolved": "\"binary\" | \"text\"",
-                "references": {}
+                "references": {
+                  "WebsocketConnectionFormat": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "encoding",
+              "type": "string",
+              "attribute": "encoding",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'msgpack'",
+              "complexType": {
+                "original": "WebsocketConnectionEncoding",
+                "resolved": "\"json\" | \"msgpack\"",
+                "references": {
+                  "WebsocketConnectionEncoding": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
               },
               "docs": {
                 "tags": [],
@@ -3432,46 +3497,51 @@
   "componentGraph": {
     "sc-finnhub-news": [
       "index-a591f369.js",
-      "lavva-js-sdk.esm-8f3890c5.js",
-      "store2-f3f72e93.js",
-      "utils-10508b1d.js"
+      "lavva-js-sdk.esm-009d2509.js",
+      "store2-69a72535.js",
+      "index-983da20a.js",
+      "utils-556d5604.js"
     ],
     "sc-fxcm-rates": [
       "index-a591f369.js",
-      "lavva-js-sdk.esm-8f3890c5.js",
-      "store2-f3f72e93.js",
-      "utils-10508b1d.js"
+      "lavva-js-sdk.esm-009d2509.js",
+      "store2-69a72535.js",
+      "index-983da20a.js",
+      "utils-556d5604.js"
     ],
     "sc-mt-quote": [
       "index-a591f369.js",
-      "lavva-js-sdk.esm-8f3890c5.js",
-      "store2-f3f72e93.js"
+      "lavva-js-sdk.esm-009d2509.js",
+      "store2-69a72535.js"
     ],
     "sc-owm-daily": [
       "index-a591f369.js",
-      "lavva-js-sdk.esm-8f3890c5.js",
-      "store2-f3f72e93.js",
-      "utils-10508b1d.js"
+      "lavva-js-sdk.esm-009d2509.js",
+      "store2-69a72535.js",
+      "index-983da20a.js",
+      "utils-556d5604.js"
     ],
     "sc-owm-daily-item": [
       "index-a591f369.js",
-      "utils-10508b1d.js",
-      "lavva-js-sdk.esm-8f3890c5.js"
+      "utils-556d5604.js",
+      "lavva-js-sdk.esm-009d2509.js"
     ],
     "sc-twit-ter": [
       "index-a591f369.js",
-      "lavva-js-sdk.esm-8f3890c5.js",
-      "store2-f3f72e93.js",
-      "utils-10508b1d.js"
+      "lavva-js-sdk.esm-009d2509.js",
+      "store2-69a72535.js",
+      "index-983da20a.js",
+      "utils-556d5604.js"
     ],
     "sc-yahoo-quote": [
       "index-a591f369.js"
     ],
     "sc-yahoo-quotes": [
       "index-a591f369.js",
-      "lavva-js-sdk.esm-8f3890c5.js",
-      "store2-f3f72e93.js",
-      "utils-10508b1d.js"
+      "lavva-js-sdk.esm-009d2509.js",
+      "store2-69a72535.js",
+      "index-983da20a.js",
+      "utils-556d5604.js"
     ]
   },
   "sourceGraph": {
