@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-11-06T17:41:41",
+  "timestamp": "2021-11-06T18:01:37",
   "compiler": {
     "name": "node",
     "version": "14.15.0"
@@ -9,142 +9,77 @@
     "fsNamespace": "lavva-js-widgets",
     "components": 9,
     "entries": 9,
-    "bundles": 115,
+    "bundles": 56,
     "outputs": [
       {
-        "name": "dist-collection",
-        "files": 16,
-        "generatedFiles": [
-          "./dist/collection/components/finnhub-news/finnhub-news.js",
-          "./dist/collection/components/finnhub-news/finnhub.js",
-          "./dist/collection/components/fxcm-rates/fxcm-rates.js",
-          "./dist/collection/components/fxcm-rates/fxcm.js",
-          "./dist/collection/components/mt-marquee/mt-marquee.js",
-          "./dist/collection/components/mt-quote/mt-quote.js",
-          "./dist/collection/components/owm-daily/owm-daily-item.js",
-          "./dist/collection/components/owm-daily/owm-daily.js",
-          "./dist/collection/components/twitter/twitr.js",
-          "./dist/collection/components/yahoo-quotes/yahoo-quote.js",
-          "./dist/collection/components/yahoo-quotes/yahoo-quotes.js",
-          "./dist/collection/index.js",
-          "./dist/collection/shared/model.js",
-          "./dist/collection/shared/mt-quote.js",
-          "./dist/collection/shared/utils.js",
-          "./dist/collection/utils.js"
-        ]
-      },
-      {
         "name": "dist-custom-elements",
-        "files": 26,
+        "files": 10,
         "generatedFiles": [
           "./dist/components/finnhub-news.d.ts",
-          "./dist/components/finnhub-news.js",
           "./dist/components/fxcm-rates.d.ts",
-          "./dist/components/fxcm-rates.js",
           "./dist/components/index.d.ts",
-          "./dist/components/index.js",
-          "./dist/components/lavva-js-sdk.esm.js",
           "./dist/components/mt-marquee.d.ts",
-          "./dist/components/mt-marquee.js",
           "./dist/components/mt-quote.d.ts",
-          "./dist/components/mt-quote.js",
           "./dist/components/owm-daily-item.d.ts",
-          "./dist/components/owm-daily-item.js",
-          "./dist/components/owm-daily-item2.js",
           "./dist/components/owm-daily.d.ts",
-          "./dist/components/owm-daily.js",
-          "./dist/components/store2.js",
           "./dist/components/twit-ter.d.ts",
-          "./dist/components/twit-ter.js",
-          "./dist/components/utils.js",
-          "./dist/components/utils2.js",
           "./dist/components/yahoo-quote.d.ts",
-          "./dist/components/yahoo-quote.js",
-          "./dist/components/yahoo-quote2.js",
-          "./dist/components/yahoo-quotes.d.ts",
-          "./dist/components/yahoo-quotes.js"
+          "./dist/components/yahoo-quotes.d.ts"
         ]
       },
       {
         "name": "dist-custom-elements-bundle",
-        "files": 2,
+        "files": 1,
         "generatedFiles": [
-          "./dist/custom-elements/index.d.ts",
-          "./dist/custom-elements/index.js"
+          "./dist/custom-elements/index.d.ts"
         ]
       },
       {
         "name": "dist-lazy",
-        "files": 68,
+        "files": 42,
         "generatedFiles": [
-          "./dist/cjs/finnhub-news.cjs.entry.js",
-          "./dist/cjs/fxcm-rates.cjs.entry.js",
-          "./dist/cjs/index-193016ab.js",
-          "./dist/cjs/index.cjs.js",
-          "./dist/cjs/lavva-js-sdk.esm-923380d5.js",
-          "./dist/cjs/lavva-js-widgets.cjs.js",
-          "./dist/cjs/loader.cjs.js",
-          "./dist/cjs/mt-marquee.cjs.entry.js",
-          "./dist/cjs/mt-quote.cjs.entry.js",
-          "./dist/cjs/owm-daily-item.cjs.entry.js",
-          "./dist/cjs/owm-daily.cjs.entry.js",
-          "./dist/cjs/store2-7b39dff4.js",
-          "./dist/cjs/twit-ter.cjs.entry.js",
-          "./dist/cjs/utils-1d7f6653.js",
-          "./dist/cjs/utils-cc2152bf.js",
-          "./dist/cjs/yahoo-quote.cjs.entry.js",
-          "./dist/cjs/yahoo-quotes.cjs.entry.js",
-          "./dist/esm/finnhub-news.entry.js",
-          "./dist/esm/fxcm-rates.entry.js",
-          "./dist/esm/index-212b5130.js",
-          "./dist/esm/index.js",
-          "./dist/esm/lavva-js-sdk.esm-85c8db81.js",
-          "./dist/esm/lavva-js-widgets.js",
-          "./dist/esm/loader.js",
-          "./dist/esm/mt-marquee.entry.js",
-          "./dist/esm/mt-quote.entry.js",
-          "./dist/esm/owm-daily-item.entry.js",
-          "./dist/esm/owm-daily.entry.js",
-          "./dist/esm/store2-a4d30a50.js",
-          "./dist/esm/twit-ter.entry.js",
-          "./dist/esm/utils-9cbe2827.js",
-          "./dist/esm/utils-d9cf31b4.js",
-          "./dist/esm/yahoo-quote.entry.js",
-          "./dist/esm/yahoo-quotes.entry.js",
-          "./dist/index.cjs.js",
-          "./dist/index.js",
+          "./dist/lavva-js-widgets/app-globals-0f993ce5.js",
+          "./dist/lavva-js-widgets/css-shim-c64026cd.js",
+          "./dist/lavva-js-widgets/dom-a712b575.js",
+          "./dist/lavva-js-widgets/finnhub-news.entry.js",
+          "./dist/lavva-js-widgets/fxcm-rates.entry.js",
+          "./dist/lavva-js-widgets/index-983da20a.js",
+          "./dist/lavva-js-widgets/index-c2c4f18a.js",
           "./dist/lavva-js-widgets/index.esm.js",
+          "./dist/lavva-js-widgets/lavva-js-sdk.esm-009d2509.js",
           "./dist/lavva-js-widgets/lavva-js-widgets.esm.js",
-          "./dist/lavva-js-widgets/p-19b0995e.js",
-          "./dist/lavva-js-widgets/p-27673bb7.entry.js",
-          "./dist/lavva-js-widgets/p-2e14092f.entry.js",
-          "./dist/lavva-js-widgets/p-3c0b3a80.entry.js",
-          "./dist/lavva-js-widgets/p-723d6e4d.js",
-          "./dist/lavva-js-widgets/p-7399e932.entry.js",
-          "./dist/lavva-js-widgets/p-8c673d31.js",
-          "./dist/lavva-js-widgets/p-900bb020.js",
-          "./dist/lavva-js-widgets/p-c7afe9f1.entry.js",
-          "./dist/lavva-js-widgets/p-ca3ec7cd.entry.js",
-          "./dist/lavva-js-widgets/p-cfb8f7f7.entry.js",
-          "./dist/lavva-js-widgets/p-dcc3deb3.entry.js",
-          "./dist/lavva-js-widgets/p-dee9458c.entry.js",
-          "./dist/lavva-js-widgets/p-fd2c4083.js",
+          "./dist/lavva-js-widgets/mt-marquee.entry.js",
+          "./dist/lavva-js-widgets/mt-quote.entry.js",
+          "./dist/lavva-js-widgets/owm-daily-item.entry.js",
+          "./dist/lavva-js-widgets/owm-daily.entry.js",
+          "./dist/lavva-js-widgets/shadow-css-1e16431b.js",
+          "./dist/lavva-js-widgets/store2-69a72535.js",
+          "./dist/lavva-js-widgets/twit-ter.entry.js",
+          "./dist/lavva-js-widgets/utils-381d3640.js",
+          "./dist/lavva-js-widgets/utils-556d5604.js",
+          "./dist/lavva-js-widgets/yahoo-quote.entry.js",
+          "./dist/lavva-js-widgets/yahoo-quotes.entry.js",
+          "./www/build/app-globals-0f993ce5.js",
+          "./www/build/css-shim-c64026cd.js",
+          "./www/build/dom-a712b575.js",
+          "./www/build/finnhub-news.entry.js",
+          "./www/build/fxcm-rates.entry.js",
+          "./www/build/index-983da20a.js",
+          "./www/build/index-c2c4f18a.js",
           "./www/build/index.esm.js",
+          "./www/build/lavva-js-sdk.esm-009d2509.js",
           "./www/build/lavva-js-widgets.esm.js",
-          "./www/build/p-19b0995e.js",
-          "./www/build/p-27673bb7.entry.js",
-          "./www/build/p-2e14092f.entry.js",
-          "./www/build/p-3c0b3a80.entry.js",
-          "./www/build/p-723d6e4d.js",
-          "./www/build/p-7399e932.entry.js",
-          "./www/build/p-8c673d31.js",
-          "./www/build/p-900bb020.js",
-          "./www/build/p-c7afe9f1.entry.js",
-          "./www/build/p-ca3ec7cd.entry.js",
-          "./www/build/p-cfb8f7f7.entry.js",
-          "./www/build/p-dcc3deb3.entry.js",
-          "./www/build/p-dee9458c.entry.js",
-          "./www/build/p-fd2c4083.js"
+          "./www/build/mt-marquee.entry.js",
+          "./www/build/mt-quote.entry.js",
+          "./www/build/owm-daily-item.entry.js",
+          "./www/build/owm-daily.entry.js",
+          "./www/build/shadow-css-1e16431b.js",
+          "./www/build/store2-69a72535.js",
+          "./www/build/twit-ter.entry.js",
+          "./www/build/utils-381d3640.js",
+          "./www/build/utils-556d5604.js",
+          "./www/build/yahoo-quote.entry.js",
+          "./www/build/yahoo-quotes.entry.js"
         ]
       },
       {
@@ -165,177 +100,14 @@
     ]
   },
   "options": {
-    "minifyJs": true,
-    "minifyCss": true,
-    "hashFileNames": true,
+    "minifyJs": false,
+    "minifyCss": false,
+    "hashFileNames": false,
     "hashedFileNameLength": 8,
     "buildEs5": false
   },
   "formats": {
     "esmBrowser": [
-      {
-        "key": "owm-daily.entry",
-        "components": [
-          "owm-daily"
-        ],
-        "bundleId": "p-cfb8f7f7",
-        "fileName": "p-cfb8f7f7.entry.js",
-        "imports": [
-          "p-900bb020.js",
-          "p-fd2c4083.js",
-          "p-8c673d31.js",
-          "p-723d6e4d.js"
-        ],
-        "originalByteSize": 9086
-      },
-      {
-        "key": "yahoo-quotes.entry",
-        "components": [
-          "yahoo-quotes"
-        ],
-        "bundleId": "p-7399e932",
-        "fileName": "p-7399e932.entry.js",
-        "imports": [
-          "p-900bb020.js",
-          "p-fd2c4083.js",
-          "p-8c673d31.js",
-          "p-723d6e4d.js"
-        ],
-        "originalByteSize": 2501
-      },
-      {
-        "key": "finnhub-news.entry",
-        "components": [
-          "finnhub-news"
-        ],
-        "bundleId": "p-ca3ec7cd",
-        "fileName": "p-ca3ec7cd.entry.js",
-        "imports": [
-          "p-900bb020.js",
-          "p-fd2c4083.js",
-          "p-8c673d31.js",
-          "p-723d6e4d.js"
-        ],
-        "originalByteSize": 4065
-      },
-      {
-        "key": "fxcm-rates.entry",
-        "components": [
-          "fxcm-rates"
-        ],
-        "bundleId": "p-27673bb7",
-        "fileName": "p-27673bb7.entry.js",
-        "imports": [
-          "p-900bb020.js",
-          "p-fd2c4083.js",
-          "p-8c673d31.js",
-          "p-723d6e4d.js"
-        ],
-        "originalByteSize": 3924
-      },
-      {
-        "key": "mt-marquee.entry",
-        "components": [
-          "mt-marquee"
-        ],
-        "bundleId": "p-c7afe9f1",
-        "fileName": "p-c7afe9f1.entry.js",
-        "imports": [
-          "p-900bb020.js",
-          "p-fd2c4083.js",
-          "p-8c673d31.js",
-          "p-19b0995e.js"
-        ],
-        "originalByteSize": 7814
-      },
-      {
-        "key": "mt-quote.entry",
-        "components": [
-          "mt-quote"
-        ],
-        "bundleId": "p-dee9458c",
-        "fileName": "p-dee9458c.entry.js",
-        "imports": [
-          "p-900bb020.js",
-          "p-fd2c4083.js",
-          "p-8c673d31.js",
-          "p-19b0995e.js"
-        ],
-        "originalByteSize": 5502
-      },
-      {
-        "key": "twit-ter.entry",
-        "components": [
-          "twit-ter"
-        ],
-        "bundleId": "p-dcc3deb3",
-        "fileName": "p-dcc3deb3.entry.js",
-        "imports": [
-          "p-900bb020.js",
-          "p-fd2c4083.js",
-          "p-8c673d31.js",
-          "p-723d6e4d.js"
-        ],
-        "originalByteSize": 5368
-      },
-      {
-        "key": "owm-daily-item.entry",
-        "components": [
-          "owm-daily-item"
-        ],
-        "bundleId": "p-2e14092f",
-        "fileName": "p-2e14092f.entry.js",
-        "imports": [
-          "p-900bb020.js",
-          "p-723d6e4d.js",
-          "p-fd2c4083.js"
-        ],
-        "originalByteSize": 1975
-      },
-      {
-        "key": "yahoo-quote.entry",
-        "components": [
-          "yahoo-quote"
-        ],
-        "bundleId": "p-3c0b3a80",
-        "fileName": "p-3c0b3a80.entry.js",
-        "imports": [
-          "p-900bb020.js"
-        ],
-        "originalByteSize": 2409
-      }
-    ],
-    "esm": [
-      {
-        "key": "owm-daily.entry",
-        "components": [
-          "owm-daily"
-        ],
-        "bundleId": "owm-daily",
-        "fileName": "owm-daily.entry.js",
-        "imports": [
-          "index-212b5130.js",
-          "lavva-js-sdk.esm-85c8db81.js",
-          "store2-a4d30a50.js",
-          "utils-d9cf31b4.js"
-        ],
-        "originalByteSize": 9114
-      },
-      {
-        "key": "yahoo-quotes.entry",
-        "components": [
-          "yahoo-quotes"
-        ],
-        "bundleId": "yahoo-quotes",
-        "fileName": "yahoo-quotes.entry.js",
-        "imports": [
-          "index-212b5130.js",
-          "lavva-js-sdk.esm-85c8db81.js",
-          "store2-a4d30a50.js",
-          "utils-d9cf31b4.js"
-        ],
-        "originalByteSize": 2529
-      },
       {
         "key": "finnhub-news.entry",
         "components": [
@@ -344,12 +116,13 @@
         "bundleId": "finnhub-news",
         "fileName": "finnhub-news.entry.js",
         "imports": [
-          "index-212b5130.js",
-          "lavva-js-sdk.esm-85c8db81.js",
-          "store2-a4d30a50.js",
-          "utils-d9cf31b4.js"
+          "index-c2c4f18a.js",
+          "lavva-js-sdk.esm-009d2509.js",
+          "store2-69a72535.js",
+          "index-983da20a.js",
+          "utils-556d5604.js"
         ],
-        "originalByteSize": 4093
+        "originalByteSize": 4123
       },
       {
         "key": "fxcm-rates.entry",
@@ -359,12 +132,13 @@
         "bundleId": "fxcm-rates",
         "fileName": "fxcm-rates.entry.js",
         "imports": [
-          "index-212b5130.js",
-          "lavva-js-sdk.esm-85c8db81.js",
-          "store2-a4d30a50.js",
-          "utils-d9cf31b4.js"
+          "index-c2c4f18a.js",
+          "lavva-js-sdk.esm-009d2509.js",
+          "store2-69a72535.js",
+          "index-983da20a.js",
+          "utils-556d5604.js"
         ],
-        "originalByteSize": 3952
+        "originalByteSize": 3982
       },
       {
         "key": "mt-marquee.entry",
@@ -374,10 +148,10 @@
         "bundleId": "mt-marquee",
         "fileName": "mt-marquee.entry.js",
         "imports": [
-          "index-212b5130.js",
-          "lavva-js-sdk.esm-85c8db81.js",
-          "store2-a4d30a50.js",
-          "utils-9cbe2827.js"
+          "index-c2c4f18a.js",
+          "lavva-js-sdk.esm-009d2509.js",
+          "store2-69a72535.js",
+          "utils-381d3640.js"
         ],
         "originalByteSize": 7842
       },
@@ -389,12 +163,28 @@
         "bundleId": "mt-quote",
         "fileName": "mt-quote.entry.js",
         "imports": [
-          "index-212b5130.js",
-          "lavva-js-sdk.esm-85c8db81.js",
-          "store2-a4d30a50.js",
-          "utils-9cbe2827.js"
+          "index-c2c4f18a.js",
+          "lavva-js-sdk.esm-009d2509.js",
+          "store2-69a72535.js",
+          "utils-381d3640.js"
         ],
         "originalByteSize": 5530
+      },
+      {
+        "key": "owm-daily.entry",
+        "components": [
+          "owm-daily"
+        ],
+        "bundleId": "owm-daily",
+        "fileName": "owm-daily.entry.js",
+        "imports": [
+          "index-c2c4f18a.js",
+          "lavva-js-sdk.esm-009d2509.js",
+          "store2-69a72535.js",
+          "index-983da20a.js",
+          "utils-556d5604.js"
+        ],
+        "originalByteSize": 3579
       },
       {
         "key": "twit-ter.entry",
@@ -404,12 +194,29 @@
         "bundleId": "twit-ter",
         "fileName": "twit-ter.entry.js",
         "imports": [
-          "index-212b5130.js",
-          "lavva-js-sdk.esm-85c8db81.js",
-          "store2-a4d30a50.js",
-          "utils-d9cf31b4.js"
+          "index-c2c4f18a.js",
+          "lavva-js-sdk.esm-009d2509.js",
+          "store2-69a72535.js",
+          "index-983da20a.js",
+          "utils-556d5604.js"
         ],
-        "originalByteSize": 5396
+        "originalByteSize": 5426
+      },
+      {
+        "key": "yahoo-quotes.entry",
+        "components": [
+          "yahoo-quotes"
+        ],
+        "bundleId": "yahoo-quotes",
+        "fileName": "yahoo-quotes.entry.js",
+        "imports": [
+          "index-c2c4f18a.js",
+          "lavva-js-sdk.esm-009d2509.js",
+          "store2-69a72535.js",
+          "index-983da20a.js",
+          "utils-556d5604.js"
+        ],
+        "originalByteSize": 2559
       },
       {
         "key": "owm-daily-item.entry",
@@ -419,9 +226,9 @@
         "bundleId": "owm-daily-item",
         "fileName": "owm-daily-item.entry.js",
         "imports": [
-          "index-212b5130.js",
-          "utils-d9cf31b4.js",
-          "lavva-js-sdk.esm-85c8db81.js"
+          "index-c2c4f18a.js",
+          "utils-556d5604.js",
+          "lavva-js-sdk.esm-009d2509.js"
         ],
         "originalByteSize": 1998
       },
@@ -433,146 +240,15 @@
         "bundleId": "yahoo-quote",
         "fileName": "yahoo-quote.entry.js",
         "imports": [
-          "index-212b5130.js"
+          "index-c2c4f18a.js"
         ],
         "originalByteSize": 2413
       }
     ],
+    "esm": [],
     "es5": [],
     "system": [],
-    "commonjs": [
-      {
-        "key": "owm-daily.entry",
-        "components": [
-          "owm-daily"
-        ],
-        "bundleId": "owm-daily.cjs",
-        "fileName": "owm-daily.cjs.entry.js",
-        "imports": [
-          "index-193016ab.js",
-          "lavva-js-sdk.esm-923380d5.js",
-          "store2-7b39dff4.js",
-          "utils-1d7f6653.js"
-        ],
-        "originalByteSize": 9286
-      },
-      {
-        "key": "yahoo-quotes.entry",
-        "components": [
-          "yahoo-quotes"
-        ],
-        "bundleId": "yahoo-quotes.cjs",
-        "fileName": "yahoo-quotes.cjs.entry.js",
-        "imports": [
-          "index-193016ab.js",
-          "lavva-js-sdk.esm-923380d5.js",
-          "store2-7b39dff4.js",
-          "utils-1d7f6653.js"
-        ],
-        "originalByteSize": 2661
-      },
-      {
-        "key": "finnhub-news.entry",
-        "components": [
-          "finnhub-news"
-        ],
-        "bundleId": "finnhub-news.cjs",
-        "fileName": "finnhub-news.cjs.entry.js",
-        "imports": [
-          "index-193016ab.js",
-          "lavva-js-sdk.esm-923380d5.js",
-          "store2-7b39dff4.js",
-          "utils-1d7f6653.js"
-        ],
-        "originalByteSize": 4287
-      },
-      {
-        "key": "fxcm-rates.entry",
-        "components": [
-          "fxcm-rates"
-        ],
-        "bundleId": "fxcm-rates.cjs",
-        "fileName": "fxcm-rates.cjs.entry.js",
-        "imports": [
-          "index-193016ab.js",
-          "lavva-js-sdk.esm-923380d5.js",
-          "store2-7b39dff4.js",
-          "utils-1d7f6653.js"
-        ],
-        "originalByteSize": 4168
-      },
-      {
-        "key": "mt-marquee.entry",
-        "components": [
-          "mt-marquee"
-        ],
-        "bundleId": "mt-marquee.cjs",
-        "fileName": "mt-marquee.cjs.entry.js",
-        "imports": [
-          "index-193016ab.js",
-          "lavva-js-sdk.esm-923380d5.js",
-          "store2-7b39dff4.js",
-          "utils-cc2152bf.js"
-        ],
-        "originalByteSize": 7993
-      },
-      {
-        "key": "mt-quote.entry",
-        "components": [
-          "mt-quote"
-        ],
-        "bundleId": "mt-quote.cjs",
-        "fileName": "mt-quote.cjs.entry.js",
-        "imports": [
-          "index-193016ab.js",
-          "lavva-js-sdk.esm-923380d5.js",
-          "store2-7b39dff4.js",
-          "utils-cc2152bf.js"
-        ],
-        "originalByteSize": 5681
-      },
-      {
-        "key": "twit-ter.entry",
-        "components": [
-          "twit-ter"
-        ],
-        "bundleId": "twit-ter.cjs",
-        "fileName": "twit-ter.cjs.entry.js",
-        "imports": [
-          "index-193016ab.js",
-          "lavva-js-sdk.esm-923380d5.js",
-          "store2-7b39dff4.js",
-          "utils-1d7f6653.js"
-        ],
-        "originalByteSize": 5590
-      },
-      {
-        "key": "owm-daily-item.entry",
-        "components": [
-          "owm-daily-item"
-        ],
-        "bundleId": "owm-daily-item.cjs",
-        "fileName": "owm-daily-item.cjs.entry.js",
-        "imports": [
-          "index-193016ab.js",
-          "utils-1d7f6653.js",
-          "lavva-js-sdk.esm-923380d5.js"
-        ],
-        "originalByteSize": 2120
-      },
-      {
-        "key": "yahoo-quote.entry",
-        "components": [
-          "yahoo-quote"
-        ],
-        "bundleId": "yahoo-quote.cjs",
-        "fileName": "yahoo-quote.cjs.entry.js",
-        "imports": [
-          "index-193016ab.js"
-        ],
-        "originalByteSize": 2572
-      }
-    ]
+    "commonjs": []
   },
   "components": [
     {
@@ -2235,506 +1911,6 @@
     {
       "cmps": [
         {
-          "tagName": "owm-daily",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "OpenWeatherComponent",
-          "elementRef": null,
-          "encapsulation": "none",
-          "shadowDelegatesFocus": null,
-          "properties": [
-            {
-              "name": "connection",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": true,
-              "optional": false,
-              "complexType": {
-                "original": "WebsocketConnection",
-                "resolved": "WebsocketConnection",
-                "references": {
-                  "WebsocketConnection": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "dataChannel",
-              "type": "string",
-              "attribute": "data-channel",
-              "reflect": false,
-              "mutable": false,
-              "required": true,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "dataKey",
-              "type": "string",
-              "attribute": "data-key",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "undefined",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop (optional)"
-              },
-              "internal": false
-            },
-            {
-              "name": "namespace",
-              "type": "string",
-              "attribute": "namespace",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'own'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop (optional)"
-              },
-              "internal": false
-            },
-            {
-              "name": "useCache",
-              "type": "boolean",
-              "attribute": "use-cache",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [
-            {
-              "name": "data"
-            }
-          ],
-          "methods": [
-            {
-              "name": "log",
-              "docs": {
-                "text": "Method",
-                "tags": []
-              },
-              "complexType": {
-                "signature": "(...args: any[]) => Promise<void>",
-                "parameters": [
-                  {
-                    "tags": [],
-                    "text": ""
-                  }
-                ],
-                "references": {
-                  "Promise": {
-                    "location": "global"
-                  }
-                },
-                "return": "Promise<void>"
-              },
-              "internal": false
-            }
-          ],
-          "listeners": [],
-          "events": [],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "OWM-DAILY",
-              "styleStr": null,
-              "styleIdentifier": "owmDailyStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/owm-daily/owm-daily.scss",
-                  "relativePath": "./owm-daily.scss",
-                  "originalComponentPath": "./owm-daily.scss"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/owm-daily/owm-daily.js",
-          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/owm-daily/owm-daily.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": true,
-          "hasDisconnectedCallbackFn": true,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": true,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": false,
-          "hasPropBoolean": true,
-          "hasPropString": true,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": true,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": true,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "class",
-            "title",
-            "seq",
-            "day"
-          ],
-          "htmlTagNames": [
-            "span",
-            "div",
-            "label",
-            "i",
-            "owm-daily-item"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [
-            "owm-daily-item"
-          ],
-          "directDependencies": [
-            "owm-daily-item"
-          ],
-          "dependencies": [
-            "owm-daily-item"
-          ],
-          "dependents": [],
-          "directDependents": []
-        }
-      ],
-      "entryKey": "owm-daily.entry"
-    },
-    {
-      "cmps": [
-        {
-          "tagName": "yahoo-quotes",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "YahooQuotesComponent",
-          "elementRef": null,
-          "encapsulation": "none",
-          "shadowDelegatesFocus": null,
-          "properties": [
-            {
-              "name": "connection",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": true,
-              "optional": false,
-              "complexType": {
-                "original": "WebsocketConnection",
-                "resolved": "WebsocketConnection",
-                "references": {
-                  "WebsocketConnection": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "dataChannel",
-              "type": "string",
-              "attribute": "data-channel",
-              "reflect": false,
-              "mutable": false,
-              "required": true,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "dataKey",
-              "type": "string",
-              "attribute": "data-key",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "undefined",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop (optional)"
-              },
-              "internal": false
-            },
-            {
-              "name": "namespace",
-              "type": "string",
-              "attribute": "namespace",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'yahoo-quotes'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop (optional)"
-              },
-              "internal": false
-            },
-            {
-              "name": "useCache",
-              "type": "boolean",
-              "attribute": "use-cache",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [
-            {
-              "name": "symbols"
-            },
-            {
-              "name": "data"
-            }
-          ],
-          "methods": [
-            {
-              "name": "log",
-              "docs": {
-                "text": "Method",
-                "tags": []
-              },
-              "complexType": {
-                "signature": "(...args: any[]) => Promise<void>",
-                "parameters": [
-                  {
-                    "tags": [],
-                    "text": ""
-                  }
-                ],
-                "references": {
-                  "Promise": {
-                    "location": "global"
-                  }
-                },
-                "return": "Promise<void>"
-              },
-              "internal": false
-            }
-          ],
-          "listeners": [],
-          "events": [],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "YAHOO-QUOTES",
-              "styleStr": null,
-              "styleIdentifier": "yahooQuotesStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/yahoo-quotes/yahoo-quotes.scss",
-                  "relativePath": "./yahoo-quotes.scss",
-                  "originalComponentPath": "./yahoo-quotes.scss"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/yahoo-quotes/yahoo-quotes.js",
-          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/yahoo-quotes/yahoo-quotes.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": true,
-          "hasDisconnectedCallbackFn": true,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": true,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": false,
-          "hasPropBoolean": true,
-          "hasPropString": true,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": true,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": true,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "class",
-            "data"
-          ],
-          "htmlTagNames": [
-            "div",
-            "yahoo-quote"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [
-            "yahoo-quote"
-          ],
-          "directDependencies": [
-            "yahoo-quote"
-          ],
-          "dependencies": [
-            "yahoo-quote"
-          ],
-          "dependents": [],
-          "directDependents": []
-        }
-      ],
-      "entryKey": "yahoo-quotes.entry"
-    },
-    {
-      "cmps": [
-        {
           "tagName": "finnhub-news",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -4075,6 +3251,257 @@
     {
       "cmps": [
         {
+          "tagName": "owm-daily",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "OpenWeatherComponent",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "connection",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "WebsocketConnection",
+                "resolved": "WebsocketConnection",
+                "references": {
+                  "WebsocketConnection": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "dataChannel",
+              "type": "string",
+              "attribute": "data-channel",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "dataKey",
+              "type": "string",
+              "attribute": "data-key",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "undefined",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'own'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "data"
+            }
+          ],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "Method",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "OWM-DAILY",
+              "styleStr": null,
+              "styleIdentifier": "owmDailyStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/owm-daily/owm-daily.scss",
+                  "relativePath": "./owm-daily.scss",
+                  "originalComponentPath": "./owm-daily.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/owm-daily/owm-daily.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/owm-daily/owm-daily.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "title",
+            "seq",
+            "day"
+          ],
+          "htmlTagNames": [
+            "span",
+            "div",
+            "label",
+            "i",
+            "owm-daily-item"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [
+            "owm-daily-item"
+          ],
+          "directDependencies": [
+            "owm-daily-item"
+          ],
+          "dependencies": [
+            "owm-daily-item"
+          ],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "owm-daily.entry"
+    },
+    {
+      "cmps": [
+        {
           "tagName": "twit-ter",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -4319,6 +3746,255 @@
         }
       ],
       "entryKey": "twit-ter.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "yahoo-quotes",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "YahooQuotesComponent",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "connection",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "WebsocketConnection",
+                "resolved": "WebsocketConnection",
+                "references": {
+                  "WebsocketConnection": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "dataChannel",
+              "type": "string",
+              "attribute": "data-channel",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "dataKey",
+              "type": "string",
+              "attribute": "data-key",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "undefined",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'yahoo-quotes'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "symbols"
+            },
+            {
+              "name": "data"
+            }
+          ],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "Method",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "YAHOO-QUOTES",
+              "styleStr": null,
+              "styleIdentifier": "yahooQuotesStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/yahoo-quotes/yahoo-quotes.scss",
+                  "relativePath": "./yahoo-quotes.scss",
+                  "originalComponentPath": "./yahoo-quotes.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/yahoo-quotes/yahoo-quotes.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/yahoo-quotes/yahoo-quotes.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "data"
+          ],
+          "htmlTagNames": [
+            "div",
+            "yahoo-quote"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [
+            "yahoo-quote"
+          ],
+          "directDependencies": [
+            "yahoo-quote"
+          ],
+          "dependencies": [
+            "yahoo-quote"
+          ],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "yahoo-quotes.entry"
     },
     {
       "cmps": [
@@ -4648,54 +4324,59 @@
   ],
   "componentGraph": {
     "sc-finnhub-news": [
-      "p-900bb020.js",
-      "p-fd2c4083.js",
-      "p-8c673d31.js",
-      "p-723d6e4d.js"
+      "index-c2c4f18a.js",
+      "lavva-js-sdk.esm-009d2509.js",
+      "store2-69a72535.js",
+      "index-983da20a.js",
+      "utils-556d5604.js"
     ],
     "sc-fxcm-rates": [
-      "p-900bb020.js",
-      "p-fd2c4083.js",
-      "p-8c673d31.js",
-      "p-723d6e4d.js"
+      "index-c2c4f18a.js",
+      "lavva-js-sdk.esm-009d2509.js",
+      "store2-69a72535.js",
+      "index-983da20a.js",
+      "utils-556d5604.js"
     ],
     "sc-mt-marquee": [
-      "p-900bb020.js",
-      "p-fd2c4083.js",
-      "p-8c673d31.js",
-      "p-19b0995e.js"
+      "index-c2c4f18a.js",
+      "lavva-js-sdk.esm-009d2509.js",
+      "store2-69a72535.js",
+      "utils-381d3640.js"
     ],
     "sc-mt-quote": [
-      "p-900bb020.js",
-      "p-fd2c4083.js",
-      "p-8c673d31.js",
-      "p-19b0995e.js"
+      "index-c2c4f18a.js",
+      "lavva-js-sdk.esm-009d2509.js",
+      "store2-69a72535.js",
+      "utils-381d3640.js"
     ],
     "sc-owm-daily": [
-      "p-900bb020.js",
-      "p-fd2c4083.js",
-      "p-8c673d31.js",
-      "p-723d6e4d.js"
+      "index-c2c4f18a.js",
+      "lavva-js-sdk.esm-009d2509.js",
+      "store2-69a72535.js",
+      "index-983da20a.js",
+      "utils-556d5604.js"
     ],
     "sc-owm-daily-item": [
-      "p-900bb020.js",
-      "p-723d6e4d.js",
-      "p-fd2c4083.js"
+      "index-c2c4f18a.js",
+      "utils-556d5604.js",
+      "lavva-js-sdk.esm-009d2509.js"
     ],
     "sc-twit-ter": [
-      "p-900bb020.js",
-      "p-fd2c4083.js",
-      "p-8c673d31.js",
-      "p-723d6e4d.js"
+      "index-c2c4f18a.js",
+      "lavva-js-sdk.esm-009d2509.js",
+      "store2-69a72535.js",
+      "index-983da20a.js",
+      "utils-556d5604.js"
     ],
     "sc-yahoo-quote": [
-      "p-900bb020.js"
+      "index-c2c4f18a.js"
     ],
     "sc-yahoo-quotes": [
-      "p-900bb020.js",
-      "p-fd2c4083.js",
-      "p-8c673d31.js",
-      "p-723d6e4d.js"
+      "index-c2c4f18a.js",
+      "lavva-js-sdk.esm-009d2509.js",
+      "store2-69a72535.js",
+      "index-983da20a.js",
+      "utils-556d5604.js"
     ]
   },
   "sourceGraph": {
