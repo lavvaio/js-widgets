@@ -15,7 +15,7 @@
 | `host`         | `host`      |             | `string`                                         | `'xxxxxxxxxx.apps.anadyme.com'`          |
 | `label`        | `label`     |             | `string`                                         | `""`                                     |
 | `locale`       | `locale`    |             | `string`                                         | `'en'`                                   |
-| `namespace`    | `namespace` |             | `string`                                         | `'mt4-quote'`                            |
+| `namespace`    | `namespace` |             | `string`                                         | `'mt-quote'`                             |
 | `snapshot`     | `snapshot`  |             | `boolean`                                        | `true`                                   |
 | `symbol`       | `symbol`    |             | `string`                                         | `"BTCUSDm"`                              |
 | `translations` | --          |             | `{ [key: string]: { [key: string]: string; }; }` | `null`                                   |
