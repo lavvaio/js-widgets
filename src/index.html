@@ -1,121 +1,50 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
     <head>
-        <title>Anadyme Lavva widgets</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <title>Anadyme Lavva widgets</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
+
         <script type="module" src="/build/lavva-js-widgets.esm.js"></script>
         <script nomodule src="/build/lavva-js-widgets.js"></script>
-        <script type="module" src="/build/lavva-js-sdk.esm.js"></script>
-        <script nomodule src="/build/lavva-js-sdk.js"></script>
-        <style>body{margin:0;padding:0;font-family: 'Roboto', sans-serif;}</style>
+
+        <style>html,body{ font-family: 'Roboto', sans-serif; padding: 0; margin: 0; }</style>
+        <style>
+            html, body {
+                padding: 0;
+                margin: 0;
+            }
+
+            .quotes {
+                display: flex;
+                overflow:hidden;
+                overflow-x: scroll;
+                -ms-overflow-style: none;  /* Internet Explorer 10+ */
+                scrollbar-width: none;  /* Firefox */
+            }
+
+            .quotes::-webkit-scrollbar {
+                display: none;
+            }
+
+            mt-quote:nth-child(1) {
+                --background-color: cyan;
+                --symbol-name-color: gray;
+                --symbol-value-color: #000;
+            }
+
+        </style>
     </head>
     <body>
-        <table>
-            <tr>
-                <td colspan="2">
-                    <fxcm-rates></fxcm-rates>
-                    <br />
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <owm-daily></owm-daily>
-                    <br />
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <yahoo-quotes style="max-width: 1110px;display: block;"></yahoo-quotes>
-                    <br />
-                </td>
-            </tr>
-            <tr>
-                <td valign="top" style="width: 50%;">
-                    <twit-ter></twit-ter>
-                    <br />
-                </td>
-                <td valign="top" style="width: 50%;">
-                    <finnhub-news></finnhub-news>
-                    <br />
-                </td>
-            </tr>
-        </table>
-        <br />
-        <script>
-            var connection = new anadyme.lavva.WebsocketConnection({
-                host: '3tr5-zbqh-bvyd-1fl2.cloud.lavva.io',
-                // host: 'echo.websocket.org',
-                // path: '',
-                channels: [ 'fxcm', 'iss', 'owm', 'yquotes', 'forextweets', 'finnhub', 'test' ],
-                apiKey: '8MaA7aR/DelTbVUm5TBdNIs5xxCT1nfyNXjLTcUHLxr8DCo4FMmTBmX9bvjYf+Jsb8mXrQcdkFlu8zCuvy03lA==',
-                format: 'text',
-            });
-
-            connection.eventStream('error', 'close').subscribe(xevent => {
-                console.warn('xevent arrived', xevent);
-            });
-
-            // owm
-
-            const owm = document.querySelector('owm-daily');
-            owm.connection = connection
-            owm.dataChannel = 'owm';
-
-            // yahoo
-
-            const yquotes = document.querySelector('yahoo-quotes');
-            yquotes.connection = connection
-            yquotes.dataChannel = 'yquotes';
-
-            // twitter
-
-            const twitr = document.querySelector('twit-ter');
-            twitr.connection = connection
-            twitr.dataChannel = 'forextweets';
-
-            // finnhub news
-
-            const finnhub = document.querySelector('finnhub-news');
-            finnhub.connection = connection
-            finnhub.dataChannel = 'finnhub';
-
-            // fxcm rates
-
-            const fxcm = document.querySelector('fxcm-rates');
-            fxcm.connection = connection
-            fxcm.dataChannel = 'fxcm';
-            // fxcm.dataKey = [ 'EURSEK' ];
-
-            // connection
-
-            const sub = connection.connect();
-
-            console.log('SUB', sub);
-
-            function online() {
-                // console.log(connection.isConnected());
-                setTimeout(online, 5000);
-            }
-
-            online();
-
-            function updateOnlineStatus()
-            {
-                // console.log('online');
-            }
-
-            function updateOfflineStatus()
-            {
-                // console.log('offline');
-            }
-
-            window.addEventListener('online',  updateOnlineStatus);
-            window.addEventListener('offline', updateOfflineStatus);
-        </script>
+        <div class="quotes">
+            <mt-quote style="margin-right: 10px;" format="binary" host="6ed636b3659b.cloud.anadyme.com" channel="mt4"></mt-quote>
+            <mt-quote symbol="EURUSDm" label="EUR vs USD" style="margin-right: 10px;" format="binary" host="6ed636b3659b.cloud.anadyme.com" channel="mt4"></mt-quote>
+            <mt-quote symbol="AAPLm" label="APPLE" style="margin-right: 10px;" format="binary" host="6ed636b3659b.cloud.anadyme.com" channel="mt4"></mt-quote>
+            <mt-quote symbol="USOILm" label="US Crude Oil" format="binary" host="6ed636b3659b.cloud.anadyme.com" channel="mt4"></mt-quote>
+        </div>
     </body>
 </html>

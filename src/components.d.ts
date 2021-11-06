@@ -60,6 +60,23 @@ export namespace Components {
          */
         "useCache": boolean;
     }
+    interface MtQuote {
+        "apiKey": string;
+        "channel": string;
+        "format": 'text' | 'binary';
+        "host": string;
+        "label": string;
+        "locale": string;
+        "namespace": string;
+        "snapshot": boolean;
+        "symbol": string;
+        "translations": {
+        [key: string]: {
+            [key: string]: string;
+        }
+    };
+        "useCache": boolean;
+    }
     interface OwmDaily {
         /**
           * Prop
@@ -161,6 +178,12 @@ declare global {
         prototype: HTMLFxcmRatesElement;
         new (): HTMLFxcmRatesElement;
     };
+    interface HTMLMtQuoteElement extends Components.MtQuote, HTMLStencilElement {
+    }
+    var HTMLMtQuoteElement: {
+        prototype: HTMLMtQuoteElement;
+        new (): HTMLMtQuoteElement;
+    };
     interface HTMLOwmDailyElement extends Components.OwmDaily, HTMLStencilElement {
     }
     var HTMLOwmDailyElement: {
@@ -194,6 +217,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "finnhub-news": HTMLFinnhubNewsElement;
         "fxcm-rates": HTMLFxcmRatesElement;
+        "mt-quote": HTMLMtQuoteElement;
         "owm-daily": HTMLOwmDailyElement;
         "owm-daily-item": HTMLOwmDailyItemElement;
         "twit-ter": HTMLTwitTerElement;
@@ -245,6 +269,23 @@ declare namespace LocalJSX {
         /**
           * Prop
          */
+        "useCache"?: boolean;
+    }
+    interface MtQuote {
+        "apiKey"?: string;
+        "channel"?: string;
+        "format"?: 'text' | 'binary';
+        "host"?: string;
+        "label"?: string;
+        "locale"?: string;
+        "namespace"?: string;
+        "snapshot"?: boolean;
+        "symbol"?: string;
+        "translations"?: {
+        [key: string]: {
+            [key: string]: string;
+        }
+    };
         "useCache"?: boolean;
     }
     interface OwmDaily {
@@ -325,6 +366,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "finnhub-news": FinnhubNews;
         "fxcm-rates": FxcmRates;
+        "mt-quote": MtQuote;
         "owm-daily": OwmDaily;
         "owm-daily-item": OwmDailyItem;
         "twit-ter": TwitTer;
@@ -338,6 +380,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "finnhub-news": LocalJSX.FinnhubNews & JSXBase.HTMLAttributes<HTMLFinnhubNewsElement>;
             "fxcm-rates": LocalJSX.FxcmRates & JSXBase.HTMLAttributes<HTMLFxcmRatesElement>;
+            "mt-quote": LocalJSX.MtQuote & JSXBase.HTMLAttributes<HTMLMtQuoteElement>;
             "owm-daily": LocalJSX.OwmDaily & JSXBase.HTMLAttributes<HTMLOwmDailyElement>;
             "owm-daily-item": LocalJSX.OwmDailyItem & JSXBase.HTMLAttributes<HTMLOwmDailyItemElement>;
             "twit-ter": LocalJSX.TwitTer & JSXBase.HTMLAttributes<HTMLTwitTerElement>;

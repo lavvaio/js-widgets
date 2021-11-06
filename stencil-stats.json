@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-11-06T10:32:18",
+  "timestamp": "2021-11-06T10:47:21",
   "compiler": {
     "name": "node",
     "version": "14.15.0"
@@ -7,17 +7,18 @@
   "app": {
     "namespace": "LavvaJsWidgets",
     "fsNamespace": "lavva-js-widgets",
-    "components": 7,
-    "entries": 7,
-    "bundles": 44,
+    "components": 8,
+    "entries": 8,
+    "bundles": 51,
     "outputs": [
       {
         "name": "dist-custom-elements",
-        "files": 8,
+        "files": 9,
         "generatedFiles": [
           "./dist/components/finnhub-news.d.ts",
           "./dist/components/fxcm-rates.d.ts",
           "./dist/components/index.d.ts",
+          "./dist/components/mt-quote.d.ts",
           "./dist/components/owm-daily-item.d.ts",
           "./dist/components/owm-daily.d.ts",
           "./dist/components/twit-ter.d.ts",
@@ -34,22 +35,25 @@
       },
       {
         "name": "dist-lazy",
-        "files": 32,
+        "files": 38,
         "generatedFiles": [
           "./dist/lavva-js-widgets/app-globals-0f993ce5.js",
           "./dist/lavva-js-widgets/css-shim-c64026cd.js",
           "./dist/lavva-js-widgets/dom-a712b575.js",
           "./dist/lavva-js-widgets/finnhub-news.entry.js",
           "./dist/lavva-js-widgets/fxcm-rates.entry.js",
-          "./dist/lavva-js-widgets/index-5b3c2fc9.js",
+          "./dist/lavva-js-widgets/index-a591f369.js",
+          "./dist/lavva-js-widgets/index-bba3d233.js",
           "./dist/lavva-js-widgets/index.esm.js",
+          "./dist/lavva-js-widgets/lavva-js-sdk.esm-8f3890c5.js",
           "./dist/lavva-js-widgets/lavva-js-widgets.esm.js",
+          "./dist/lavva-js-widgets/mt-quote.entry.js",
           "./dist/lavva-js-widgets/owm-daily-item.entry.js",
           "./dist/lavva-js-widgets/owm-daily.entry.js",
           "./dist/lavva-js-widgets/shadow-css-1e16431b.js",
           "./dist/lavva-js-widgets/store2-f3f72e93.js",
           "./dist/lavva-js-widgets/twit-ter.entry.js",
-          "./dist/lavva-js-widgets/utils-b55326e9.js",
+          "./dist/lavva-js-widgets/utils-10508b1d.js",
           "./dist/lavva-js-widgets/yahoo-quote.entry.js",
           "./dist/lavva-js-widgets/yahoo-quotes.entry.js",
           "./www/build/app-globals-0f993ce5.js",
@@ -57,15 +61,18 @@
           "./www/build/dom-a712b575.js",
           "./www/build/finnhub-news.entry.js",
           "./www/build/fxcm-rates.entry.js",
-          "./www/build/index-5b3c2fc9.js",
+          "./www/build/index-a591f369.js",
+          "./www/build/index-bba3d233.js",
           "./www/build/index.esm.js",
+          "./www/build/lavva-js-sdk.esm-8f3890c5.js",
           "./www/build/lavva-js-widgets.esm.js",
+          "./www/build/mt-quote.entry.js",
           "./www/build/owm-daily-item.entry.js",
           "./www/build/owm-daily.entry.js",
           "./www/build/shadow-css-1e16431b.js",
           "./www/build/store2-f3f72e93.js",
           "./www/build/twit-ter.entry.js",
-          "./www/build/utils-b55326e9.js",
+          "./www/build/utils-10508b1d.js",
           "./www/build/yahoo-quote.entry.js",
           "./www/build/yahoo-quotes.entry.js"
         ]
@@ -104,11 +111,12 @@
         "bundleId": "finnhub-news",
         "fileName": "finnhub-news.entry.js",
         "imports": [
-          "index-5b3c2fc9.js",
-          "utils-b55326e9.js",
-          "store2-f3f72e93.js"
+          "index-a591f369.js",
+          "lavva-js-sdk.esm-8f3890c5.js",
+          "store2-f3f72e93.js",
+          "utils-10508b1d.js"
         ],
-        "originalByteSize": 4044
+        "originalByteSize": 4093
       },
       {
         "key": "fxcm-rates.entry",
@@ -118,11 +126,26 @@
         "bundleId": "fxcm-rates",
         "fileName": "fxcm-rates.entry.js",
         "imports": [
-          "index-5b3c2fc9.js",
-          "utils-b55326e9.js",
+          "index-a591f369.js",
+          "lavva-js-sdk.esm-8f3890c5.js",
+          "store2-f3f72e93.js",
+          "utils-10508b1d.js"
+        ],
+        "originalByteSize": 3952
+      },
+      {
+        "key": "mt-quote.entry",
+        "components": [
+          "mt-quote"
+        ],
+        "bundleId": "mt-quote",
+        "fileName": "mt-quote.entry.js",
+        "imports": [
+          "index-a591f369.js",
+          "lavva-js-sdk.esm-8f3890c5.js",
           "store2-f3f72e93.js"
         ],
-        "originalByteSize": 3903
+        "originalByteSize": 5936
       },
       {
         "key": "owm-daily.entry",
@@ -132,11 +155,12 @@
         "bundleId": "owm-daily",
         "fileName": "owm-daily.entry.js",
         "imports": [
-          "index-5b3c2fc9.js",
-          "utils-b55326e9.js",
-          "store2-f3f72e93.js"
+          "index-a591f369.js",
+          "lavva-js-sdk.esm-8f3890c5.js",
+          "store2-f3f72e93.js",
+          "utils-10508b1d.js"
         ],
-        "originalByteSize": 3500
+        "originalByteSize": 3549
       },
       {
         "key": "twit-ter.entry",
@@ -146,11 +170,12 @@
         "bundleId": "twit-ter",
         "fileName": "twit-ter.entry.js",
         "imports": [
-          "index-5b3c2fc9.js",
-          "utils-b55326e9.js",
-          "store2-f3f72e93.js"
+          "index-a591f369.js",
+          "lavva-js-sdk.esm-8f3890c5.js",
+          "store2-f3f72e93.js",
+          "utils-10508b1d.js"
         ],
-        "originalByteSize": 5347
+        "originalByteSize": 5396
       },
       {
         "key": "yahoo-quotes.entry",
@@ -160,11 +185,12 @@
         "bundleId": "yahoo-quotes",
         "fileName": "yahoo-quotes.entry.js",
         "imports": [
-          "index-5b3c2fc9.js",
-          "utils-b55326e9.js",
-          "store2-f3f72e93.js"
+          "index-a591f369.js",
+          "lavva-js-sdk.esm-8f3890c5.js",
+          "store2-f3f72e93.js",
+          "utils-10508b1d.js"
         ],
-        "originalByteSize": 2480
+        "originalByteSize": 2529
       },
       {
         "key": "owm-daily-item.entry",
@@ -174,10 +200,11 @@
         "bundleId": "owm-daily-item",
         "fileName": "owm-daily-item.entry.js",
         "imports": [
-          "index-5b3c2fc9.js",
-          "utils-b55326e9.js"
+          "index-a591f369.js",
+          "utils-10508b1d.js",
+          "lavva-js-sdk.esm-8f3890c5.js"
         ],
-        "originalByteSize": 1957
+        "originalByteSize": 1998
       },
       {
         "key": "yahoo-quote.entry",
@@ -187,7 +214,7 @@
         "bundleId": "yahoo-quote",
         "fileName": "yahoo-quote.entry.js",
         "imports": [
-          "index-5b3c2fc9.js"
+          "index-a591f369.js"
         ],
         "originalByteSize": 2413
       }
@@ -540,6 +567,269 @@
         },
         {
           "name": "size"
+        }
+      ]
+    },
+    {
+      "tag": "mt-quote",
+      "path": "./src/components/mt-quote/mt-quote.js",
+      "source": "./src/components/mt-quote/mt-quote.tsx",
+      "elementRef": null,
+      "componentClassName": "MTQuote",
+      "assetsDirs": [
+        {
+          "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-quote/assets",
+          "cmpRelativePath": "./assets",
+          "originalComponentPath": "./assets"
+        }
+      ],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "host",
+          "type": "string",
+          "attribute": "host",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'xxxxxxxxxx.apps.anadyme.com'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "translations",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "null",
+          "complexType": {
+            "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
+            "resolved": "{ [key: string]: { [key: string]: string; }; }",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "channel",
+          "type": "string",
+          "attribute": "channel",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "locale",
+          "type": "string",
+          "attribute": "locale",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'en'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "attribute": "format",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'binary'",
+          "complexType": {
+            "original": "'text' | 'binary'",
+            "resolved": "\"binary\" | \"text\"",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "apiKey",
+          "type": "string",
+          "attribute": "api-key",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "snapshot",
+          "type": "boolean",
+          "attribute": "snapshot",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "useCache",
+          "type": "boolean",
+          "attribute": "use-cache",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "namespace",
+          "type": "string",
+          "attribute": "namespace",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'mt-quote'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "symbol",
+          "type": "string",
+          "attribute": "symbol",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "\"BTCUSDm\"",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "attribute": "label",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "\"\"",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": false,
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "loading"
+        },
+        {
+          "name": "storage"
         }
       ]
     },
@@ -1720,6 +2010,354 @@
     {
       "cmps": [
         {
+          "tagName": "mt-quote",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "MTQuote",
+          "elementRef": null,
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "host",
+              "type": "string",
+              "attribute": "host",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'xxxxxxxxxx.apps.anadyme.com'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "translations",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "null",
+              "complexType": {
+                "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
+                "resolved": "{ [key: string]: { [key: string]: string; }; }",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "channel",
+              "type": "string",
+              "attribute": "channel",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "locale",
+              "type": "string",
+              "attribute": "locale",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'en'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "format",
+              "type": "string",
+              "attribute": "format",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'binary'",
+              "complexType": {
+                "original": "'text' | 'binary'",
+                "resolved": "\"binary\" | \"text\"",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "apiKey",
+              "type": "string",
+              "attribute": "api-key",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "snapshot",
+              "type": "boolean",
+              "attribute": "snapshot",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'mt-quote'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "symbol",
+              "type": "string",
+              "attribute": "symbol",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "\"BTCUSDm\"",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "label",
+              "type": "string",
+              "attribute": "label",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "\"\"",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "data"
+            },
+            {
+              "name": "loading"
+            },
+            {
+              "name": "storage"
+            }
+          ],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [
+            {
+              "propName": "namespace",
+              "methodName": "createLogger"
+            }
+          ],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MT-QUOTE",
+              "styleStr": null,
+              "styleIdentifier": "mtQuoteStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-quote/mt-quote.scss",
+                  "relativePath": "mt-quote.scss",
+                  "originalComponentPath": "mt-quote.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [
+            {
+              "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-quote/assets",
+              "cmpRelativePath": "./assets",
+              "originalComponentPath": "./assets"
+            }
+          ],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-quote/mt-quote.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-quote/mt-quote.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": true,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class"
+          ],
+          "htmlTagNames": [
+            "div",
+            "span"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "mt-quote.entry"
+    },
+    {
+      "cmps": [
+        {
           "tagName": "owm-daily",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -2793,36 +3431,47 @@
   ],
   "componentGraph": {
     "sc-finnhub-news": [
-      "index-5b3c2fc9.js",
-      "utils-b55326e9.js",
-      "store2-f3f72e93.js"
+      "index-a591f369.js",
+      "lavva-js-sdk.esm-8f3890c5.js",
+      "store2-f3f72e93.js",
+      "utils-10508b1d.js"
     ],
     "sc-fxcm-rates": [
-      "index-5b3c2fc9.js",
-      "utils-b55326e9.js",
+      "index-a591f369.js",
+      "lavva-js-sdk.esm-8f3890c5.js",
+      "store2-f3f72e93.js",
+      "utils-10508b1d.js"
+    ],
+    "sc-mt-quote": [
+      "index-a591f369.js",
+      "lavva-js-sdk.esm-8f3890c5.js",
       "store2-f3f72e93.js"
     ],
     "sc-owm-daily": [
-      "index-5b3c2fc9.js",
-      "utils-b55326e9.js",
-      "store2-f3f72e93.js"
+      "index-a591f369.js",
+      "lavva-js-sdk.esm-8f3890c5.js",
+      "store2-f3f72e93.js",
+      "utils-10508b1d.js"
     ],
     "sc-owm-daily-item": [
-      "index-5b3c2fc9.js",
-      "utils-b55326e9.js"
+      "index-a591f369.js",
+      "utils-10508b1d.js",
+      "lavva-js-sdk.esm-8f3890c5.js"
     ],
     "sc-twit-ter": [
-      "index-5b3c2fc9.js",
-      "utils-b55326e9.js",
-      "store2-f3f72e93.js"
+      "index-a591f369.js",
+      "lavva-js-sdk.esm-8f3890c5.js",
+      "store2-f3f72e93.js",
+      "utils-10508b1d.js"
     ],
     "sc-yahoo-quote": [
-      "index-5b3c2fc9.js"
+      "index-a591f369.js"
     ],
     "sc-yahoo-quotes": [
-      "index-5b3c2fc9.js",
-      "utils-b55326e9.js",
-      "store2-f3f72e93.js"
+      "index-a591f369.js",
+      "lavva-js-sdk.esm-8f3890c5.js",
+      "store2-f3f72e93.js",
+      "utils-10508b1d.js"
     ]
   },
   "sourceGraph": {
@@ -2834,6 +3483,9 @@
       "./src/shared/utils"
     ],
     "./src/components/fxcm-rates/fxcm.ts": [],
+    "./src/components/mt-quote/mt-quote.tsx": [
+      "./src/utils"
+    ],
     "./src/components/owm-daily/owm-daily-item.tsx": [
       "./src/shared/utils"
     ],
@@ -2849,7 +3501,9 @@
     ],
     "./src/index.ts": [],
     "./src/shared/model.ts": [],
-    "./src/shared/utils.ts": []
+    "./src/shared/mt-quote.ts": [],
+    "./src/shared/utils.ts": [],
+    "./src/utils.ts": []
   },
   "collections": []
 }

@@ -1,0 +1,66 @@
+:host {
+
+    --padding: 20px 30px;
+    --font-size: 0.875rem;
+    --border-radius: 14px;
+    --background-color: #151415;
+
+    --symbol-name-font-size: 1rem;
+    --symbol-name-color: #fed831;
+
+    --symbol-value-font-size: 2.25rem;
+    --symbol-value-color: #fff;
+
+    --symbol-percent-font-size: 1.25rem;
+    --symbol-percent-up: #4B8AE9;
+    --symbol-percent-down: #DA361B;
+
+    .size-default {
+        box-sizing: border-box;
+        padding: var(--padding);
+        font-size: var(--font-size);
+        background: var(--background-color);
+        border-radius: var(--border-radius);
+
+        .loader {
+            font-family: inherit;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .quote {
+            .symbol {
+                font-weight: 400;
+                margin-right: 10px;
+                white-space: nowrap;
+                margin-bottom: 10px;
+                color: var(--symbol-name-color);
+                font-size: var(--symbol-name-font-size);
+            }
+
+            .bid {
+                font-weight: 500;
+                font-size: var(--symbol-value-font-size);
+                color: var(--symbol-value-color);
+            }
+
+            .change {
+                font-weight: 400;
+                margin-top: 10px;
+                font-size: var(--symbol-percent-font-size);
+
+                &.up {
+                    color: var(--symbol-percent-up);
+                }
+
+                &.down {
+                    color: var(--symbol-percent-down);;
+                }
+            }
+        }
+    }
+
+}
