@@ -1,7 +1,10 @@
+VERSION=`node -pe "require('./package.json').version"`
+
 run:
 	yarn start
 
 prod:
+	rm -rf dist
+	rm -rf www
 	yarn build
-	npx microbundle -i src/index.ts -o dist/bundle.js --no-pkg-main -f umd
 	npm pack

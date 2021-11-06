@@ -1,0 +1,2855 @@
+{
+  "timestamp": "2021-11-06T10:32:18",
+  "compiler": {
+    "name": "node",
+    "version": "14.15.0"
+  },
+  "app": {
+    "namespace": "LavvaJsWidgets",
+    "fsNamespace": "lavva-js-widgets",
+    "components": 7,
+    "entries": 7,
+    "bundles": 44,
+    "outputs": [
+      {
+        "name": "dist-custom-elements",
+        "files": 8,
+        "generatedFiles": [
+          "./dist/components/finnhub-news.d.ts",
+          "./dist/components/fxcm-rates.d.ts",
+          "./dist/components/index.d.ts",
+          "./dist/components/owm-daily-item.d.ts",
+          "./dist/components/owm-daily.d.ts",
+          "./dist/components/twit-ter.d.ts",
+          "./dist/components/yahoo-quote.d.ts",
+          "./dist/components/yahoo-quotes.d.ts"
+        ]
+      },
+      {
+        "name": "dist-custom-elements-bundle",
+        "files": 1,
+        "generatedFiles": [
+          "./dist/custom-elements/index.d.ts"
+        ]
+      },
+      {
+        "name": "dist-lazy",
+        "files": 32,
+        "generatedFiles": [
+          "./dist/lavva-js-widgets/app-globals-0f993ce5.js",
+          "./dist/lavva-js-widgets/css-shim-c64026cd.js",
+          "./dist/lavva-js-widgets/dom-a712b575.js",
+          "./dist/lavva-js-widgets/finnhub-news.entry.js",
+          "./dist/lavva-js-widgets/fxcm-rates.entry.js",
+          "./dist/lavva-js-widgets/index-5b3c2fc9.js",
+          "./dist/lavva-js-widgets/index.esm.js",
+          "./dist/lavva-js-widgets/lavva-js-widgets.esm.js",
+          "./dist/lavva-js-widgets/owm-daily-item.entry.js",
+          "./dist/lavva-js-widgets/owm-daily.entry.js",
+          "./dist/lavva-js-widgets/shadow-css-1e16431b.js",
+          "./dist/lavva-js-widgets/store2-f3f72e93.js",
+          "./dist/lavva-js-widgets/twit-ter.entry.js",
+          "./dist/lavva-js-widgets/utils-b55326e9.js",
+          "./dist/lavva-js-widgets/yahoo-quote.entry.js",
+          "./dist/lavva-js-widgets/yahoo-quotes.entry.js",
+          "./www/build/app-globals-0f993ce5.js",
+          "./www/build/css-shim-c64026cd.js",
+          "./www/build/dom-a712b575.js",
+          "./www/build/finnhub-news.entry.js",
+          "./www/build/fxcm-rates.entry.js",
+          "./www/build/index-5b3c2fc9.js",
+          "./www/build/index.esm.js",
+          "./www/build/lavva-js-widgets.esm.js",
+          "./www/build/owm-daily-item.entry.js",
+          "./www/build/owm-daily.entry.js",
+          "./www/build/shadow-css-1e16431b.js",
+          "./www/build/store2-f3f72e93.js",
+          "./www/build/twit-ter.entry.js",
+          "./www/build/utils-b55326e9.js",
+          "./www/build/yahoo-quote.entry.js",
+          "./www/build/yahoo-quotes.entry.js"
+        ]
+      },
+      {
+        "name": "dist-types",
+        "files": 1,
+        "generatedFiles": [
+          "./dist/types/stencil-public-runtime.d.ts"
+        ]
+      },
+      {
+        "name": "www",
+        "files": 2,
+        "generatedFiles": [
+          "./www/host.config.json",
+          "./www/index.html"
+        ]
+      }
+    ]
+  },
+  "options": {
+    "minifyJs": false,
+    "minifyCss": false,
+    "hashFileNames": false,
+    "hashedFileNameLength": 8,
+    "buildEs5": false
+  },
+  "formats": {
+    "esmBrowser": [
+      {
+        "key": "finnhub-news.entry",
+        "components": [
+          "finnhub-news"
+        ],
+        "bundleId": "finnhub-news",
+        "fileName": "finnhub-news.entry.js",
+        "imports": [
+          "index-5b3c2fc9.js",
+          "utils-b55326e9.js",
+          "store2-f3f72e93.js"
+        ],
+        "originalByteSize": 4044
+      },
+      {
+        "key": "fxcm-rates.entry",
+        "components": [
+          "fxcm-rates"
+        ],
+        "bundleId": "fxcm-rates",
+        "fileName": "fxcm-rates.entry.js",
+        "imports": [
+          "index-5b3c2fc9.js",
+          "utils-b55326e9.js",
+          "store2-f3f72e93.js"
+        ],
+        "originalByteSize": 3903
+      },
+      {
+        "key": "owm-daily.entry",
+        "components": [
+          "owm-daily"
+        ],
+        "bundleId": "owm-daily",
+        "fileName": "owm-daily.entry.js",
+        "imports": [
+          "index-5b3c2fc9.js",
+          "utils-b55326e9.js",
+          "store2-f3f72e93.js"
+        ],
+        "originalByteSize": 3500
+      },
+      {
+        "key": "twit-ter.entry",
+        "components": [
+          "twit-ter"
+        ],
+        "bundleId": "twit-ter",
+        "fileName": "twit-ter.entry.js",
+        "imports": [
+          "index-5b3c2fc9.js",
+          "utils-b55326e9.js",
+          "store2-f3f72e93.js"
+        ],
+        "originalByteSize": 5347
+      },
+      {
+        "key": "yahoo-quotes.entry",
+        "components": [
+          "yahoo-quotes"
+        ],
+        "bundleId": "yahoo-quotes",
+        "fileName": "yahoo-quotes.entry.js",
+        "imports": [
+          "index-5b3c2fc9.js",
+          "utils-b55326e9.js",
+          "store2-f3f72e93.js"
+        ],
+        "originalByteSize": 2480
+      },
+      {
+        "key": "owm-daily-item.entry",
+        "components": [
+          "owm-daily-item"
+        ],
+        "bundleId": "owm-daily-item",
+        "fileName": "owm-daily-item.entry.js",
+        "imports": [
+          "index-5b3c2fc9.js",
+          "utils-b55326e9.js"
+        ],
+        "originalByteSize": 1957
+      },
+      {
+        "key": "yahoo-quote.entry",
+        "components": [
+          "yahoo-quote"
+        ],
+        "bundleId": "yahoo-quote",
+        "fileName": "yahoo-quote.entry.js",
+        "imports": [
+          "index-5b3c2fc9.js"
+        ],
+        "originalByteSize": 2413
+      }
+    ],
+    "esm": [],
+    "es5": [],
+    "system": [],
+    "commonjs": []
+  },
+  "components": [
+    {
+      "tag": "finnhub-news",
+      "path": "./src/components/finnhub-news/finnhub-news.js",
+      "source": "./src/components/finnhub-news/finnhub-news.tsx",
+      "elementRef": null,
+      "componentClassName": "FinnhubNewsComponent",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [
+        {
+          "name": "log",
+          "docs": {
+            "text": "Method",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "(...args: any[]) => Promise<void>",
+            "parameters": [
+              {
+                "tags": [],
+                "text": ""
+              }
+            ],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        }
+      ],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "connection",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": true,
+          "optional": false,
+          "complexType": {
+            "original": "WebsocketConnection",
+            "resolved": "WebsocketConnection",
+            "references": {
+              "WebsocketConnection": {
+                "location": "import",
+                "path": "@anadyme/lavva-js-sdk"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop"
+          },
+          "internal": false
+        },
+        {
+          "name": "dataChannel",
+          "type": "string",
+          "attribute": "data-channel",
+          "reflect": false,
+          "mutable": false,
+          "required": true,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop"
+          },
+          "internal": false
+        },
+        {
+          "name": "dataKey",
+          "type": "string",
+          "attribute": "data-key",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "undefined",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop (optional)"
+          },
+          "internal": false
+        },
+        {
+          "name": "namespace",
+          "type": "string",
+          "attribute": "namespace",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'finnhub-news'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop (optional)"
+          },
+          "internal": false
+        },
+        {
+          "name": "useCache",
+          "type": "boolean",
+          "attribute": "use-cache",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop"
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": [
+        {
+          "name": "size"
+        },
+        {
+          "name": "data"
+        }
+      ]
+    },
+    {
+      "tag": "fxcm-rates",
+      "path": "./src/components/fxcm-rates/fxcm-rates.js",
+      "source": "./src/components/fxcm-rates/fxcm-rates.tsx",
+      "elementRef": null,
+      "componentClassName": "FXCMRatesComponent",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [
+        {
+          "name": "log",
+          "docs": {
+            "text": "Method",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "(...args: any[]) => Promise<void>",
+            "parameters": [
+              {
+                "tags": [],
+                "text": ""
+              }
+            ],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        }
+      ],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "connection",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": true,
+          "optional": false,
+          "complexType": {
+            "original": "WebsocketConnection",
+            "resolved": "WebsocketConnection",
+            "references": {
+              "WebsocketConnection": {
+                "location": "import",
+                "path": "@anadyme/lavva-js-sdk"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop"
+          },
+          "internal": false
+        },
+        {
+          "name": "dataChannel",
+          "type": "string",
+          "attribute": "data-channel",
+          "reflect": false,
+          "mutable": false,
+          "required": true,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop"
+          },
+          "internal": false
+        },
+        {
+          "name": "dataKey",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "[]",
+          "complexType": {
+            "original": "string[]",
+            "resolved": "string[]",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop (optional)"
+          },
+          "internal": false
+        },
+        {
+          "name": "namespace",
+          "type": "string",
+          "attribute": "namespace",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'fxcm-rates'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop (optional)"
+          },
+          "internal": false
+        },
+        {
+          "name": "useCache",
+          "type": "boolean",
+          "attribute": "use-cache",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop"
+          },
+          "internal": false
+        },
+        {
+          "name": "symbolNames",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "[]",
+          "complexType": {
+            "original": "any[]",
+            "resolved": "any[]",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": [
+        {
+          "name": "rates"
+        },
+        {
+          "name": "data"
+        },
+        {
+          "name": "size"
+        }
+      ]
+    },
+    {
+      "tag": "owm-daily",
+      "path": "./src/components/owm-daily/owm-daily.js",
+      "source": "./src/components/owm-daily/owm-daily.tsx",
+      "elementRef": null,
+      "componentClassName": "OpenWeatherComponent",
+      "assetsDirs": [],
+      "dependencies": [
+        "owm-daily-item"
+      ],
+      "dependents": [],
+      "directDependencies": [
+        "owm-daily-item"
+      ],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [
+        {
+          "name": "log",
+          "docs": {
+            "text": "Method",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "(...args: any[]) => Promise<void>",
+            "parameters": [
+              {
+                "tags": [],
+                "text": ""
+              }
+            ],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        }
+      ],
+      "potentialCmpRefs": [
+        "owm-daily-item"
+      ],
+      "properties": [
+        {
+          "name": "connection",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": true,
+          "optional": false,
+          "complexType": {
+            "original": "WebsocketConnection",
+            "resolved": "WebsocketConnection",
+            "references": {
+              "WebsocketConnection": {
+                "location": "import",
+                "path": "@anadyme/lavva-js-sdk"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop"
+          },
+          "internal": false
+        },
+        {
+          "name": "dataChannel",
+          "type": "string",
+          "attribute": "data-channel",
+          "reflect": false,
+          "mutable": false,
+          "required": true,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop"
+          },
+          "internal": false
+        },
+        {
+          "name": "dataKey",
+          "type": "string",
+          "attribute": "data-key",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "undefined",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop (optional)"
+          },
+          "internal": false
+        },
+        {
+          "name": "namespace",
+          "type": "string",
+          "attribute": "namespace",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'own'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop (optional)"
+          },
+          "internal": false
+        },
+        {
+          "name": "useCache",
+          "type": "boolean",
+          "attribute": "use-cache",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop"
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": [
+        {
+          "name": "data"
+        }
+      ]
+    },
+    {
+      "tag": "owm-daily-item",
+      "path": "./src/components/owm-daily/owm-daily-item.js",
+      "source": "./src/components/owm-daily/owm-daily-item.tsx",
+      "elementRef": null,
+      "componentClassName": "OpenWeatherDailyItemComponent",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [
+        "owm-daily"
+      ],
+      "directDependencies": [],
+      "directDependents": [
+        "owm-daily"
+      ],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "day",
+          "type": "any",
+          "attribute": "day",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "any",
+            "resolved": "any",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "seq",
+          "type": "number",
+          "attribute": "seq",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "0",
+          "complexType": {
+            "original": "number",
+            "resolved": "number",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "weekDays",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "[\n        'SUN',\n        'MON',\n        'TUE',\n        'WED',\n        'THU',\n        'FRI',\n        'SAT',\n    ]",
+          "complexType": {
+            "original": "string[]",
+            "resolved": "string[]",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": []
+    },
+    {
+      "tag": "twit-ter",
+      "path": "./src/components/twitter/twitr.js",
+      "source": "./src/components/twitter/twitr.tsx",
+      "elementRef": null,
+      "componentClassName": "TwitrComponent",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [
+        {
+          "name": "log",
+          "docs": {
+            "text": "Method",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "(...args: any[]) => Promise<void>",
+            "parameters": [
+              {
+                "tags": [],
+                "text": ""
+              }
+            ],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        }
+      ],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "connection",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": true,
+          "optional": false,
+          "complexType": {
+            "original": "WebsocketConnection",
+            "resolved": "WebsocketConnection",
+            "references": {
+              "WebsocketConnection": {
+                "location": "import",
+                "path": "@anadyme/lavva-js-sdk"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop"
+          },
+          "internal": false
+        },
+        {
+          "name": "dataChannel",
+          "type": "string",
+          "attribute": "data-channel",
+          "reflect": false,
+          "mutable": false,
+          "required": true,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop"
+          },
+          "internal": false
+        },
+        {
+          "name": "dataKey",
+          "type": "string",
+          "attribute": "data-key",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "undefined",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop (optional)"
+          },
+          "internal": false
+        },
+        {
+          "name": "namespace",
+          "type": "string",
+          "attribute": "namespace",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'twitr'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop (optional)"
+          },
+          "internal": false
+        },
+        {
+          "name": "useCache",
+          "type": "boolean",
+          "attribute": "use-cache",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop"
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": [
+        {
+          "name": "size"
+        },
+        {
+          "name": "data"
+        }
+      ]
+    },
+    {
+      "tag": "yahoo-quote",
+      "path": "./src/components/yahoo-quotes/yahoo-quote.js",
+      "source": "./src/components/yahoo-quotes/yahoo-quote.tsx",
+      "elementRef": null,
+      "componentClassName": "YahooQuoteComponent",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [
+        "yahoo-quotes"
+      ],
+      "directDependencies": [],
+      "directDependents": [
+        "yahoo-quotes"
+      ],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "symbol",
+          "type": "string",
+          "attribute": "symbol",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "data",
+          "type": "any",
+          "attribute": "data",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "any",
+            "resolved": "any",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": []
+    },
+    {
+      "tag": "yahoo-quotes",
+      "path": "./src/components/yahoo-quotes/yahoo-quotes.js",
+      "source": "./src/components/yahoo-quotes/yahoo-quotes.tsx",
+      "elementRef": null,
+      "componentClassName": "YahooQuotesComponent",
+      "assetsDirs": [],
+      "dependencies": [
+        "yahoo-quote"
+      ],
+      "dependents": [],
+      "directDependencies": [
+        "yahoo-quote"
+      ],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "none",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [
+        {
+          "name": "log",
+          "docs": {
+            "text": "Method",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "(...args: any[]) => Promise<void>",
+            "parameters": [
+              {
+                "tags": [],
+                "text": ""
+              }
+            ],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        }
+      ],
+      "potentialCmpRefs": [
+        "yahoo-quote"
+      ],
+      "properties": [
+        {
+          "name": "connection",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": true,
+          "optional": false,
+          "complexType": {
+            "original": "WebsocketConnection",
+            "resolved": "WebsocketConnection",
+            "references": {
+              "WebsocketConnection": {
+                "location": "import",
+                "path": "@anadyme/lavva-js-sdk"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop"
+          },
+          "internal": false
+        },
+        {
+          "name": "dataChannel",
+          "type": "string",
+          "attribute": "data-channel",
+          "reflect": false,
+          "mutable": false,
+          "required": true,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop"
+          },
+          "internal": false
+        },
+        {
+          "name": "dataKey",
+          "type": "string",
+          "attribute": "data-key",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "undefined",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop (optional)"
+          },
+          "internal": false
+        },
+        {
+          "name": "namespace",
+          "type": "string",
+          "attribute": "namespace",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'yahoo-quotes'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop (optional)"
+          },
+          "internal": false
+        },
+        {
+          "name": "useCache",
+          "type": "boolean",
+          "attribute": "use-cache",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop"
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": null,
+      "states": [
+        {
+          "name": "symbols"
+        },
+        {
+          "name": "data"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "cmps": [
+        {
+          "tagName": "finnhub-news",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "FinnhubNewsComponent",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "connection",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "WebsocketConnection",
+                "resolved": "WebsocketConnection",
+                "references": {
+                  "WebsocketConnection": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "dataChannel",
+              "type": "string",
+              "attribute": "data-channel",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "dataKey",
+              "type": "string",
+              "attribute": "data-key",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "undefined",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'finnhub-news'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "size"
+            },
+            {
+              "name": "data"
+            }
+          ],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "Method",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "FINNHUB-NEWS",
+              "styleStr": null,
+              "styleIdentifier": "finnhubNewsStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/finnhub-news/finnhub-news.scss",
+                  "relativePath": "./finnhub-news.scss",
+                  "originalComponentPath": "./finnhub-news.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/finnhub-news/finnhub-news.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/finnhub-news/finnhub-news.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "src",
+            "alt",
+            "title",
+            "innerHTML",
+            "href",
+            "target"
+          ],
+          "htmlTagNames": [
+            "div",
+            "ul",
+            "li",
+            "img",
+            "span",
+            "a"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "finnhub-news.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "fxcm-rates",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "FXCMRatesComponent",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "connection",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "WebsocketConnection",
+                "resolved": "WebsocketConnection",
+                "references": {
+                  "WebsocketConnection": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "dataChannel",
+              "type": "string",
+              "attribute": "data-channel",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "dataKey",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "[]",
+              "complexType": {
+                "original": "string[]",
+                "resolved": "string[]",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'fxcm-rates'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "symbolNames",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "[]",
+              "complexType": {
+                "original": "any[]",
+                "resolved": "any[]",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "rates"
+            },
+            {
+              "name": "data"
+            },
+            {
+              "name": "size"
+            }
+          ],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "Method",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "FXCM-RATES",
+              "styleStr": null,
+              "styleIdentifier": "fxcmRatesStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/fxcm-rates/fxcm-rates.scss",
+                  "relativePath": "./fxcm-rates.scss",
+                  "originalComponentPath": "./fxcm-rates.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/fxcm-rates/fxcm-rates.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/fxcm-rates/fxcm-rates.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class"
+          ],
+          "htmlTagNames": [
+            "div",
+            "section"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "fxcm-rates.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "owm-daily",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "OpenWeatherComponent",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "connection",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "WebsocketConnection",
+                "resolved": "WebsocketConnection",
+                "references": {
+                  "WebsocketConnection": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "dataChannel",
+              "type": "string",
+              "attribute": "data-channel",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "dataKey",
+              "type": "string",
+              "attribute": "data-key",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "undefined",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'own'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "data"
+            }
+          ],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "Method",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "OWM-DAILY",
+              "styleStr": null,
+              "styleIdentifier": "owmDailyStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/owm-daily/owm-daily.scss",
+                  "relativePath": "./owm-daily.scss",
+                  "originalComponentPath": "./owm-daily.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/owm-daily/owm-daily.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/owm-daily/owm-daily.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "title",
+            "seq",
+            "day"
+          ],
+          "htmlTagNames": [
+            "span",
+            "div",
+            "label",
+            "i",
+            "owm-daily-item"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [
+            "owm-daily-item"
+          ],
+          "directDependencies": [
+            "owm-daily-item"
+          ],
+          "dependencies": [
+            "owm-daily-item"
+          ],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "owm-daily.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "twit-ter",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "TwitrComponent",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "connection",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "WebsocketConnection",
+                "resolved": "WebsocketConnection",
+                "references": {
+                  "WebsocketConnection": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "dataChannel",
+              "type": "string",
+              "attribute": "data-channel",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "dataKey",
+              "type": "string",
+              "attribute": "data-key",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "undefined",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'twitr'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "size"
+            },
+            {
+              "name": "data"
+            }
+          ],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "Method",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "TWIT-TER",
+              "styleStr": null,
+              "styleIdentifier": "twitTerStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/twitter/twitr.scss",
+                  "relativePath": "./twitr.scss",
+                  "originalComponentPath": "./twitr.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/twitter/twitr.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/twitter/twitr.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "title",
+            "src",
+            "innerHTML"
+          ],
+          "htmlTagNames": [
+            "div",
+            "ul",
+            "li",
+            "img",
+            "span"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "twit-ter.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "yahoo-quotes",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "YahooQuotesComponent",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "connection",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "WebsocketConnection",
+                "resolved": "WebsocketConnection",
+                "references": {
+                  "WebsocketConnection": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "dataChannel",
+              "type": "string",
+              "attribute": "data-channel",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "dataKey",
+              "type": "string",
+              "attribute": "data-key",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "undefined",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'yahoo-quotes'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "symbols"
+            },
+            {
+              "name": "data"
+            }
+          ],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "Method",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "YAHOO-QUOTES",
+              "styleStr": null,
+              "styleIdentifier": "yahooQuotesStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/yahoo-quotes/yahoo-quotes.scss",
+                  "relativePath": "./yahoo-quotes.scss",
+                  "originalComponentPath": "./yahoo-quotes.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/yahoo-quotes/yahoo-quotes.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/yahoo-quotes/yahoo-quotes.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "data"
+          ],
+          "htmlTagNames": [
+            "div",
+            "yahoo-quote"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [
+            "yahoo-quote"
+          ],
+          "directDependencies": [
+            "yahoo-quote"
+          ],
+          "dependencies": [
+            "yahoo-quote"
+          ],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "yahoo-quotes.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "owm-daily-item",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "OpenWeatherDailyItemComponent",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "day",
+              "type": "any",
+              "attribute": "day",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "any",
+                "resolved": "any",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "seq",
+              "type": "number",
+              "attribute": "seq",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "0",
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "weekDays",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "[\n        'SUN',\n        'MON',\n        'TUE',\n        'WED',\n        'THU',\n        'FRI',\n        'SAT',\n    ]",
+              "complexType": {
+                "original": "string[]",
+                "resolved": "string[]",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "OWM-DAILY-ITEM",
+              "styleStr": null,
+              "styleIdentifier": "owmDailyItemStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/owm-daily/owm-daily-item.scss",
+                  "relativePath": "owm-daily-item.scss",
+                  "originalComponentPath": "owm-daily-item.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/owm-daily/owm-daily-item.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/owm-daily/owm-daily-item.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": false,
+          "hasDisconnectedCallbackFn": false,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": true,
+          "hasPropBoolean": false,
+          "hasPropString": false,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "title"
+          ],
+          "htmlTagNames": [
+            "section",
+            "div",
+            "label",
+            "i"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [
+            "owm-daily"
+          ],
+          "directDependents": [
+            "owm-daily"
+          ]
+        }
+      ],
+      "entryKey": "owm-daily-item.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "yahoo-quote",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "YahooQuoteComponent",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "symbol",
+              "type": "string",
+              "attribute": "symbol",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "data",
+              "type": "any",
+              "attribute": "data",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "any",
+                "resolved": "any",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [],
+          "methods": [],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "YAHOO-QUOTE",
+              "styleStr": null,
+              "styleIdentifier": "yahooQuoteStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/yahoo-quotes/yahoo-quote.scss",
+                  "relativePath": "./yahoo-quote.scss",
+                  "originalComponentPath": "./yahoo-quote.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/yahoo-quotes/yahoo-quote.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/yahoo-quotes/yahoo-quote.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": false,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": false,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class"
+          ],
+          "htmlTagNames": [
+            "div",
+            "span"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [
+            "yahoo-quotes"
+          ],
+          "directDependents": [
+            "yahoo-quotes"
+          ]
+        }
+      ],
+      "entryKey": "yahoo-quote.entry"
+    }
+  ],
+  "componentGraph": {
+    "sc-finnhub-news": [
+      "index-5b3c2fc9.js",
+      "utils-b55326e9.js",
+      "store2-f3f72e93.js"
+    ],
+    "sc-fxcm-rates": [
+      "index-5b3c2fc9.js",
+      "utils-b55326e9.js",
+      "store2-f3f72e93.js"
+    ],
+    "sc-owm-daily": [
+      "index-5b3c2fc9.js",
+      "utils-b55326e9.js",
+      "store2-f3f72e93.js"
+    ],
+    "sc-owm-daily-item": [
+      "index-5b3c2fc9.js",
+      "utils-b55326e9.js"
+    ],
+    "sc-twit-ter": [
+      "index-5b3c2fc9.js",
+      "utils-b55326e9.js",
+      "store2-f3f72e93.js"
+    ],
+    "sc-yahoo-quote": [
+      "index-5b3c2fc9.js"
+    ],
+    "sc-yahoo-quotes": [
+      "index-5b3c2fc9.js",
+      "utils-b55326e9.js",
+      "store2-f3f72e93.js"
+    ]
+  },
+  "sourceGraph": {
+    "./src/components/finnhub-news/finnhub-news.tsx": [
+      "./src/shared/utils"
+    ],
+    "./src/components/finnhub-news/finnhub.tsx": [],
+    "./src/components/fxcm-rates/fxcm-rates.tsx": [
+      "./src/shared/utils"
+    ],
+    "./src/components/fxcm-rates/fxcm.ts": [],
+    "./src/components/owm-daily/owm-daily-item.tsx": [
+      "./src/shared/utils"
+    ],
+    "./src/components/owm-daily/owm-daily.tsx": [
+      "./src/shared/utils"
+    ],
+    "./src/components/twitter/twitr.tsx": [
+      "./src/shared/utils"
+    ],
+    "./src/components/yahoo-quotes/yahoo-quote.tsx": [],
+    "./src/components/yahoo-quotes/yahoo-quotes.tsx": [
+      "./src/shared/utils"
+    ],
+    "./src/index.ts": [],
+    "./src/shared/model.ts": [],
+    "./src/shared/utils.ts": []
+  },
+  "collections": []
+}
