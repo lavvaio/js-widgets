@@ -26,22 +26,14 @@ export const config: Config = {
             serviceWorker: null, // disable service workers
             copy: [
                 {
-                    src: '../node_modules/@anadyme/lavva-js-sdk/bundles/anadyme-lavva-js-sdk.umd.js',
-                    dest: '../www/build/anadyme-lavva-js-sdk.umd.js'
+                    src: '../node_modules/@anadyme/lavva-js-sdk/dist/lavva-js-sdk.umd.js',
+                    dest: 'build/lavva-js-sdk.umd.js'
                 },
                 {
-                    src: '../node_modules/@anadyme/lavva-js-sdk/bundles/anadyme-lavva-js-sdk.umd.js.map',
-                    dest: '../www/build/anadyme-lavva-js-sdk.umd.js.map'
-                },
-                {
-                    src: '../node_modules/@anadyme/lavva-js-sdk/fesm2015/anadyme-lavva-js-sdk.js',
-                    dest: '../www/build/anadyme-lavva-js-sdk.js'
-                },
-                {
-                    src: '../node_modules/@anadyme/lavva-js-sdk/fesm2015/anadyme-lavva-js-sdk.js.map',
-                    dest: '../www/build/anadyme-lavva-js-sdk.js.map'
+                    src: '../node_modules/@anadyme/lavva-js-sdk/dist/lavva-js-sdk.esm.js',
+                    dest: 'build/lavva-js-sdk.esm.js'
                 }
-            ],
+            ]
         },
     ],
 };
