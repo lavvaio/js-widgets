@@ -15,6 +15,9 @@
     --symbol-percent-up: rgb(0, 217, 100);
     --symbol-percent-down: rgb(255, 0, 0);
 
+    --symbol-loading-font-size: 1rem;
+    --symbol-loading-color: #dadbdf;
+
     .size-default {
         box-sizing: border-box;
         padding: var(--padding);
@@ -26,6 +29,8 @@
         .loader {
             font-family: inherit;
             font-weight: 500;
+            color: var(--symbol-loading-color);
+            font-size: var(--symbol-loading-font-size);
             display: flex;
             justify-content: center;
             align-items: center;

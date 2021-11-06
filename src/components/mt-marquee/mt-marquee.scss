@@ -31,6 +31,9 @@
     --symbol-percent-up: #4B8AE9;
     --symbol-percent-down: #DA361B;
 
+    --symbol-loading-font-size: 0.875rem;
+    --symbol-loading-color: #dadbdf;
+
     .size-default {
         background: var(--background-color);
         font-size: var(--font-size);
@@ -44,6 +47,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            color: var(--symbol-loading-color);
+            font-size: var(--symbol-loading-font-size);
         }
 
         .quotes {
