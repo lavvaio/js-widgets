@@ -1,4 +1,4 @@
-# mt4-quote
+# mt-quote
 
 
 

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-11-06T15:21:36",
+  "timestamp": "2021-11-06T15:57:35",
   "compiler": {
     "name": "node",
     "version": "14.15.0"
@@ -7,17 +7,18 @@
   "app": {
     "namespace": "LavvaJsWidgets",
     "fsNamespace": "lavva-js-widgets",
-    "components": 8,
-    "entries": 8,
-    "bundles": 51,
+    "components": 9,
+    "entries": 9,
+    "bundles": 56,
     "outputs": [
       {
         "name": "dist-custom-elements",
-        "files": 9,
+        "files": 10,
         "generatedFiles": [
           "./dist/components/finnhub-news.d.ts",
           "./dist/components/fxcm-rates.d.ts",
           "./dist/components/index.d.ts",
+          "./dist/components/mt-marquee.d.ts",
           "./dist/components/mt-quote.d.ts",
           "./dist/components/owm-daily-item.d.ts",
           "./dist/components/owm-daily.d.ts",
@@ -35,7 +36,7 @@
       },
       {
         "name": "dist-lazy",
-        "files": 38,
+        "files": 42,
         "generatedFiles": [
           "./dist/lavva-js-widgets/app-globals-0f993ce5.js",
           "./dist/lavva-js-widgets/css-shim-c64026cd.js",
@@ -43,16 +44,18 @@
           "./dist/lavva-js-widgets/finnhub-news.entry.js",
           "./dist/lavva-js-widgets/fxcm-rates.entry.js",
           "./dist/lavva-js-widgets/index-983da20a.js",
-          "./dist/lavva-js-widgets/index-a591f369.js",
+          "./dist/lavva-js-widgets/index-c2c4f18a.js",
           "./dist/lavva-js-widgets/index.esm.js",
           "./dist/lavva-js-widgets/lavva-js-sdk.esm-009d2509.js",
           "./dist/lavva-js-widgets/lavva-js-widgets.esm.js",
+          "./dist/lavva-js-widgets/mt-marquee.entry.js",
           "./dist/lavva-js-widgets/mt-quote.entry.js",
           "./dist/lavva-js-widgets/owm-daily-item.entry.js",
           "./dist/lavva-js-widgets/owm-daily.entry.js",
           "./dist/lavva-js-widgets/shadow-css-1e16431b.js",
           "./dist/lavva-js-widgets/store2-69a72535.js",
           "./dist/lavva-js-widgets/twit-ter.entry.js",
+          "./dist/lavva-js-widgets/utils-381d3640.js",
           "./dist/lavva-js-widgets/utils-556d5604.js",
           "./dist/lavva-js-widgets/yahoo-quote.entry.js",
           "./dist/lavva-js-widgets/yahoo-quotes.entry.js",
@@ -62,16 +65,18 @@
           "./www/build/finnhub-news.entry.js",
           "./www/build/fxcm-rates.entry.js",
           "./www/build/index-983da20a.js",
-          "./www/build/index-a591f369.js",
+          "./www/build/index-c2c4f18a.js",
           "./www/build/index.esm.js",
           "./www/build/lavva-js-sdk.esm-009d2509.js",
           "./www/build/lavva-js-widgets.esm.js",
+          "./www/build/mt-marquee.entry.js",
           "./www/build/mt-quote.entry.js",
           "./www/build/owm-daily-item.entry.js",
           "./www/build/owm-daily.entry.js",
           "./www/build/shadow-css-1e16431b.js",
           "./www/build/store2-69a72535.js",
           "./www/build/twit-ter.entry.js",
+          "./www/build/utils-381d3640.js",
           "./www/build/utils-556d5604.js",
           "./www/build/yahoo-quote.entry.js",
           "./www/build/yahoo-quotes.entry.js"
@@ -111,7 +116,7 @@
         "bundleId": "finnhub-news",
         "fileName": "finnhub-news.entry.js",
         "imports": [
-          "index-a591f369.js",
+          "index-c2c4f18a.js",
           "lavva-js-sdk.esm-009d2509.js",
           "store2-69a72535.js",
           "index-983da20a.js",
@@ -127,13 +132,28 @@
         "bundleId": "fxcm-rates",
         "fileName": "fxcm-rates.entry.js",
         "imports": [
-          "index-a591f369.js",
+          "index-c2c4f18a.js",
           "lavva-js-sdk.esm-009d2509.js",
           "store2-69a72535.js",
           "index-983da20a.js",
           "utils-556d5604.js"
         ],
         "originalByteSize": 3982
+      },
+      {
+        "key": "mt-marquee.entry",
+        "components": [
+          "mt-marquee"
+        ],
+        "bundleId": "mt-marquee",
+        "fileName": "mt-marquee.entry.js",
+        "imports": [
+          "index-c2c4f18a.js",
+          "lavva-js-sdk.esm-009d2509.js",
+          "store2-69a72535.js",
+          "utils-381d3640.js"
+        ],
+        "originalByteSize": 7699
       },
       {
         "key": "mt-quote.entry",
@@ -143,11 +163,12 @@
         "bundleId": "mt-quote",
         "fileName": "mt-quote.entry.js",
         "imports": [
-          "index-a591f369.js",
+          "index-c2c4f18a.js",
           "lavva-js-sdk.esm-009d2509.js",
-          "store2-69a72535.js"
+          "store2-69a72535.js",
+          "utils-381d3640.js"
         ],
-        "originalByteSize": 6052
+        "originalByteSize": 5391
       },
       {
         "key": "owm-daily.entry",
@@ -157,7 +178,7 @@
         "bundleId": "owm-daily",
         "fileName": "owm-daily.entry.js",
         "imports": [
-          "index-a591f369.js",
+          "index-c2c4f18a.js",
           "lavva-js-sdk.esm-009d2509.js",
           "store2-69a72535.js",
           "index-983da20a.js",
@@ -173,7 +194,7 @@
         "bundleId": "twit-ter",
         "fileName": "twit-ter.entry.js",
         "imports": [
-          "index-a591f369.js",
+          "index-c2c4f18a.js",
           "lavva-js-sdk.esm-009d2509.js",
           "store2-69a72535.js",
           "index-983da20a.js",
@@ -189,7 +210,7 @@
         "bundleId": "yahoo-quotes",
         "fileName": "yahoo-quotes.entry.js",
         "imports": [
-          "index-a591f369.js",
+          "index-c2c4f18a.js",
           "lavva-js-sdk.esm-009d2509.js",
           "store2-69a72535.js",
           "index-983da20a.js",
@@ -205,7 +226,7 @@
         "bundleId": "owm-daily-item",
         "fileName": "owm-daily-item.entry.js",
         "imports": [
-          "index-a591f369.js",
+          "index-c2c4f18a.js",
           "utils-556d5604.js",
           "lavva-js-sdk.esm-009d2509.js"
         ],
@@ -219,7 +240,7 @@
         "bundleId": "yahoo-quote",
         "fileName": "yahoo-quote.entry.js",
         "imports": [
-          "index-a591f369.js"
+          "index-c2c4f18a.js"
         ],
         "originalByteSize": 2413
       }
@@ -576,11 +597,371 @@
       ]
     },
     {
+      "tag": "mt-marquee",
+      "path": "./src/components/mt-marquee/mt-marquee.js",
+      "source": "./src/components/mt-marquee/mt-marquee.tsx",
+      "elementRef": null,
+      "componentClassName": "MtMarquee",
+      "assetsDirs": [
+        {
+          "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-marquee/assets",
+          "cmpRelativePath": "./assets",
+          "originalComponentPath": "./assets"
+        }
+      ],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [
+        {
+          "name": "symbolClick",
+          "method": "symbolClick",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "complexType": {
+            "original": "TradeSymbol",
+            "resolved": "TradeSymbol",
+            "references": {
+              "TradeSymbol": {
+                "location": "import",
+                "path": "../../shared/mt-quote"
+              }
+            }
+          },
+          "internal": false
+        }
+      ],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "host",
+          "type": "string",
+          "attribute": "host",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'xxxxxxxxxx.apps.anadyme.com'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "translations",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "null",
+          "complexType": {
+            "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
+            "resolved": "{ [key: string]: { [key: string]: string; }; }",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "channel",
+          "type": "string",
+          "attribute": "channel",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "locale",
+          "type": "string",
+          "attribute": "locale",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'en'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "attribute": "format",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'binary'",
+          "complexType": {
+            "original": "WebsocketConnectionFormat",
+            "resolved": "\"binary\" | \"text\"",
+            "references": {
+              "WebsocketConnectionFormat": {
+                "location": "import",
+                "path": "@anadyme/lavva-js-sdk"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "encoding",
+          "type": "string",
+          "attribute": "encoding",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'msgpack'",
+          "complexType": {
+            "original": "WebsocketConnectionEncoding",
+            "resolved": "\"json\" | \"msgpack\"",
+            "references": {
+              "WebsocketConnectionEncoding": {
+                "location": "import",
+                "path": "@anadyme/lavva-js-sdk"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "size",
+          "type": "string",
+          "attribute": "size",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'default'",
+          "complexType": {
+            "original": "'default' | 'large'",
+            "resolved": "\"default\" | \"large\"",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "center",
+          "type": "boolean",
+          "attribute": "center",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "animation",
+          "type": "boolean",
+          "attribute": "animation",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "symbols",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "[\n        { key: \"BTCUSDm\", label: \"BTC/USD\" },\n        { key: \"XAUUSDm\", label: \"Gold/USD\" },\n        { key: \"EURUSDm\",  label: \"EUR/USD\" },\n        { key: \"USOILm\", label: \"US Oil\" },\n        { key: \"ETHUSDm\", label: \"ETH/USD\" },\n        //\n        { key: \"USTECm\", label: \"US Tech 100\" },\n        { key: \"UK100m\", label: \"UK 100 Index\" },\n        { key: \"STOXX50m\",  label: \"EU 50 Index\" },\n        { key: \"HK50m\", label: \"HK 50 Index\" },\n        { key: \"DE30m\", label: \"DE 30 Index\" },\n        //\n        { key: \"BTCUSDm\", label: \"BTC/USD\" },\n        { key: \"BTCJPYm\", label: \"BTC/JPY\" },\n        { key: \"ETHUSDm\", label: \"ETH/USD\" },\n        { key: \"LTCUSDm\", label: \"LTC/USD\" },\n        { key: \"XRPUSDm\", label: \"XRP/USD\" },\n        //\n        { key: \"AAPLm\", label: \"Apple\" },\n        { key: \"BABAm\", label: \"AliBaba\" },\n        { key: \"Cm\", label: \"CitiGroup\" },\n        { key: \"KOm\", label: \"CocaCola\" },\n        { key: \"NFLXm\", label: \"Netflix\" },\n        //\n        { key: \"XAUUSDm\", label: \"Gold/USD\" },\n        { key: \"XAGUSDm\", label: \"Silver/USD\" },\n        { key: \"USOILm\", label: \"US Crude Oil\" },\n        { key: \"XPDUSDm\", label: \"Palladium/USD\" },\n        { key: \"XPTUSDm\", label: \"Platinum/USD\" },\n    ]",
+          "complexType": {
+            "original": "TradeSymbol[]",
+            "resolved": "TradeSymbol[]",
+            "references": {
+              "TradeSymbol": {
+                "location": "import",
+                "path": "../../shared/mt-quote"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "apiKey",
+          "type": "string",
+          "attribute": "api-key",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "snapshot",
+          "type": "boolean",
+          "attribute": "snapshot",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "useCache",
+          "type": "boolean",
+          "attribute": "use-cache",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "namespace",
+          "type": "string",
+          "attribute": "namespace",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'mt-marquee'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": false,
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "loading"
+        },
+        {
+          "name": "storage"
+        }
+      ]
+    },
+    {
       "tag": "mt-quote",
       "path": "./src/components/mt-quote/mt-quote.js",
       "source": "./src/components/mt-quote/mt-quote.tsx",
       "elementRef": null,
-      "componentClassName": "MTQuote",
+      "componentClassName": "MtQuote",
       "assetsDirs": [
         {
           "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-quote/assets",
@@ -2045,10 +2426,457 @@
     {
       "cmps": [
         {
+          "tagName": "mt-marquee",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "MtMarquee",
+          "elementRef": null,
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "host",
+              "type": "string",
+              "attribute": "host",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'xxxxxxxxxx.apps.anadyme.com'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "translations",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "null",
+              "complexType": {
+                "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
+                "resolved": "{ [key: string]: { [key: string]: string; }; }",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "channel",
+              "type": "string",
+              "attribute": "channel",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "locale",
+              "type": "string",
+              "attribute": "locale",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'en'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "format",
+              "type": "string",
+              "attribute": "format",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'binary'",
+              "complexType": {
+                "original": "WebsocketConnectionFormat",
+                "resolved": "\"binary\" | \"text\"",
+                "references": {
+                  "WebsocketConnectionFormat": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "encoding",
+              "type": "string",
+              "attribute": "encoding",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'msgpack'",
+              "complexType": {
+                "original": "WebsocketConnectionEncoding",
+                "resolved": "\"json\" | \"msgpack\"",
+                "references": {
+                  "WebsocketConnectionEncoding": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "size",
+              "type": "string",
+              "attribute": "size",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'default'",
+              "complexType": {
+                "original": "'default' | 'large'",
+                "resolved": "\"default\" | \"large\"",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "center",
+              "type": "boolean",
+              "attribute": "center",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "animation",
+              "type": "boolean",
+              "attribute": "animation",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "symbols",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "[\n        { key: \"BTCUSDm\", label: \"BTC/USD\" },\n        { key: \"XAUUSDm\", label: \"Gold/USD\" },\n        { key: \"EURUSDm\",  label: \"EUR/USD\" },\n        { key: \"USOILm\", label: \"US Oil\" },\n        { key: \"ETHUSDm\", label: \"ETH/USD\" },\n        //\n        { key: \"USTECm\", label: \"US Tech 100\" },\n        { key: \"UK100m\", label: \"UK 100 Index\" },\n        { key: \"STOXX50m\",  label: \"EU 50 Index\" },\n        { key: \"HK50m\", label: \"HK 50 Index\" },\n        { key: \"DE30m\", label: \"DE 30 Index\" },\n        //\n        { key: \"BTCUSDm\", label: \"BTC/USD\" },\n        { key: \"BTCJPYm\", label: \"BTC/JPY\" },\n        { key: \"ETHUSDm\", label: \"ETH/USD\" },\n        { key: \"LTCUSDm\", label: \"LTC/USD\" },\n        { key: \"XRPUSDm\", label: \"XRP/USD\" },\n        //\n        { key: \"AAPLm\", label: \"Apple\" },\n        { key: \"BABAm\", label: \"AliBaba\" },\n        { key: \"Cm\", label: \"CitiGroup\" },\n        { key: \"KOm\", label: \"CocaCola\" },\n        { key: \"NFLXm\", label: \"Netflix\" },\n        //\n        { key: \"XAUUSDm\", label: \"Gold/USD\" },\n        { key: \"XAGUSDm\", label: \"Silver/USD\" },\n        { key: \"USOILm\", label: \"US Crude Oil\" },\n        { key: \"XPDUSDm\", label: \"Palladium/USD\" },\n        { key: \"XPTUSDm\", label: \"Platinum/USD\" },\n    ]",
+              "complexType": {
+                "original": "TradeSymbol[]",
+                "resolved": "TradeSymbol[]",
+                "references": {
+                  "TradeSymbol": {
+                    "location": "import",
+                    "path": "../../shared/mt-quote"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "apiKey",
+              "type": "string",
+              "attribute": "api-key",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "snapshot",
+              "type": "boolean",
+              "attribute": "snapshot",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'mt-marquee'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "data"
+            },
+            {
+              "name": "loading"
+            },
+            {
+              "name": "storage"
+            }
+          ],
+          "methods": [],
+          "listeners": [],
+          "events": [
+            {
+              "name": "symbolClick",
+              "method": "symbolClick",
+              "bubbles": true,
+              "cancelable": true,
+              "composed": true,
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "complexType": {
+                "original": "TradeSymbol",
+                "resolved": "TradeSymbol",
+                "references": {
+                  "TradeSymbol": {
+                    "location": "import",
+                    "path": "../../shared/mt-quote"
+                  }
+                }
+              },
+              "internal": false
+            }
+          ],
+          "watchers": [
+            {
+              "propName": "namespace",
+              "methodName": "createLogger"
+            }
+          ],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MT-MARQUEE",
+              "styleStr": null,
+              "styleIdentifier": "mtMarqueeStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-marquee/mt-marquee.scss",
+                  "relativePath": "mt-marquee.scss",
+                  "originalComponentPath": "mt-marquee.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [
+            {
+              "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-marquee/assets",
+              "cmpRelativePath": "./assets",
+              "originalComponentPath": "./assets"
+            }
+          ],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-marquee/mt-marquee.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-marquee/mt-marquee.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": true,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": true,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": true,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": true,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": true,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "onClick",
+            "ref"
+          ],
+          "htmlTagNames": [
+            "div",
+            "span"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "mt-marquee.entry"
+    },
+    {
+      "cmps": [
+        {
           "tagName": "mt-quote",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
-          "componentClassName": "MTQuote",
+          "componentClassName": "MtQuote",
           "elementRef": null,
           "encapsulation": "shadow",
           "shadowDelegatesFocus": false,
@@ -3496,48 +4324,55 @@
   ],
   "componentGraph": {
     "sc-finnhub-news": [
-      "index-a591f369.js",
+      "index-c2c4f18a.js",
       "lavva-js-sdk.esm-009d2509.js",
       "store2-69a72535.js",
       "index-983da20a.js",
       "utils-556d5604.js"
     ],
     "sc-fxcm-rates": [
-      "index-a591f369.js",
+      "index-c2c4f18a.js",
       "lavva-js-sdk.esm-009d2509.js",
       "store2-69a72535.js",
       "index-983da20a.js",
       "utils-556d5604.js"
     ],
-    "sc-mt-quote": [
-      "index-a591f369.js",
+    "sc-mt-marquee": [
+      "index-c2c4f18a.js",
       "lavva-js-sdk.esm-009d2509.js",
-      "store2-69a72535.js"
+      "store2-69a72535.js",
+      "utils-381d3640.js"
+    ],
+    "sc-mt-quote": [
+      "index-c2c4f18a.js",
+      "lavva-js-sdk.esm-009d2509.js",
+      "store2-69a72535.js",
+      "utils-381d3640.js"
     ],
     "sc-owm-daily": [
-      "index-a591f369.js",
+      "index-c2c4f18a.js",
       "lavva-js-sdk.esm-009d2509.js",
       "store2-69a72535.js",
       "index-983da20a.js",
       "utils-556d5604.js"
     ],
     "sc-owm-daily-item": [
-      "index-a591f369.js",
+      "index-c2c4f18a.js",
       "utils-556d5604.js",
       "lavva-js-sdk.esm-009d2509.js"
     ],
     "sc-twit-ter": [
-      "index-a591f369.js",
+      "index-c2c4f18a.js",
       "lavva-js-sdk.esm-009d2509.js",
       "store2-69a72535.js",
       "index-983da20a.js",
       "utils-556d5604.js"
     ],
     "sc-yahoo-quote": [
-      "index-a591f369.js"
+      "index-c2c4f18a.js"
     ],
     "sc-yahoo-quotes": [
-      "index-a591f369.js",
+      "index-c2c4f18a.js",
       "lavva-js-sdk.esm-009d2509.js",
       "store2-69a72535.js",
       "index-983da20a.js",
@@ -3553,6 +4388,9 @@
       "./src/shared/utils"
     ],
     "./src/components/fxcm-rates/fxcm.ts": [],
+    "./src/components/mt-marquee/mt-marquee.tsx": [
+      "./src/utils"
+    ],
     "./src/components/mt-quote/mt-quote.tsx": [
       "./src/utils"
     ],

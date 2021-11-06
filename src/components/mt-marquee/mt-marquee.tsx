@@ -1,17 +1,17 @@
-import { ClientMessageDataType, LVLogger, WebsocketConnection, WebsocketConnectionEncoding, WebsocketConnectionFormat } from "@anadyme/lavva-js-sdk";
-import { Component, Prop, h, State, Watch } from "@stencil/core";
-import { filter, Subscription } from "rxjs";
-import store from "store2";
-import { Quote } from "../../shared/mt-quote";
+import { ClientMessageDataType, LVLogger, WebsocketConnection, WebsocketConnectionEncoding, WebsocketConnectionFormat } from '@anadyme/lavva-js-sdk';
+import { Component, Event, EventEmitter, h, Prop, State, Watch } from '@stencil/core';
+import { filter, Subscription } from 'rxjs';
+import store from 'store2';
 import { createLogger, translate } from "../../utils";
+import { Quote, TradeSymbol } from '../../shared/mt-quote';
 
 @Component({
-    tag: 'mt-quote',
-    styleUrls: [ 'mt-quote.scss' ],
+    tag: 'mt-marquee',
+    styleUrls: [ 'mt-marquee.scss' ],
     shadow: true,
     assetsDirs: [ './assets' ]
 })
-export class MtQuote {
+export class MtMarquee {
 
     private logger: LVLogger;
     private connection: WebsocketConnection;
@@ -40,6 +40,51 @@ export class MtQuote {
     encoding: WebsocketConnectionEncoding = 'msgpack';
 
     @Prop()
+    size: 'default' | 'large' = 'default'
+
+    @Prop()
+    center = false;
+
+    @Prop()
+    animation = true;
+
+    @Prop()
+    symbols: TradeSymbol[] = [
+        { key: "BTCUSDm", label: "BTC/USD" },
+        { key: "XAUUSDm", label: "Gold/USD" },
+        { key: "EURUSDm",  label: "EUR/USD" },
+        { key: "USOILm", label: "US Oil" },
+        { key: "ETHUSDm", label: "ETH/USD" },
+        //
+        { key: "USTECm", label: "US Tech 100" },
+        { key: "UK100m", label: "UK 100 Index" },
+        { key: "STOXX50m",  label: "EU 50 Index" },
+        { key: "HK50m", label: "HK 50 Index" },
+        { key: "DE30m", label: "DE 30 Index" },
+        //
+        { key: "BTCUSDm", label: "BTC/USD" },
+        { key: "BTCJPYm", label: "BTC/JPY" },
+        { key: "ETHUSDm", label: "ETH/USD" },
+        { key: "LTCUSDm", label: "LTC/USD" },
+        { key: "XRPUSDm", label: "XRP/USD" },
+        //
+        { key: "AAPLm", label: "Apple" },
+        { key: "BABAm", label: "AliBaba" },
+        { key: "Cm", label: "CitiGroup" },
+        { key: "KOm", label: "CocaCola" },
+        { key: "NFLXm", label: "Netflix" },
+        //
+        { key: "XAUUSDm", label: "Gold/USD" },
+        { key: "XAGUSDm", label: "Silver/USD" },
+        { key: "USOILm", label: "US Crude Oil" },
+        { key: "XPDUSDm", label: "Palladium/USD" },
+        { key: "XPTUSDm", label: "Platinum/USD" },
+    ];
+
+    @Event()
+    symbolClick: EventEmitter<TradeSymbol>;
+
+    @Prop()
     apiKey = 'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee';
 
     @Prop()
@@ -49,18 +94,12 @@ export class MtQuote {
     useCache = true;
 
     @Prop()
-    namespace = 'mt-quote';
+    namespace = 'mt-marquee';
 
     @Watch('namespace')
     createLogger(newValue: string, _: string) {
         this.logger = createLogger(newValue, 'background-color:red;color:#fff;padding: 2px 4px;font-size:10px;border-radius:4px;');
     }
-
-    @Prop()
-    symbol = "BTCUSDm";
-
-    @Prop()
-    label = "";
 
     @State()
     data = [];
@@ -70,6 +109,9 @@ export class MtQuote {
 
     @State()
     storage = new Map<string, Quote>();
+
+    private marqueeSet = false;
+    private ref: HTMLElement = null;
 
     private translate(key, fallback: string) {
         return translate(key, fallback, this.translations, this.locale);
@@ -138,8 +180,28 @@ export class MtQuote {
         this.subscriptions.add(this.connection.connect());
     }
 
+    componentWillUpdate() {
+        if (!this.ref) return;
+        if (this.marqueeSet) return;
+        this.marqueeSet = true;
+    }
+
     disconnectedCallback() {
         this.subscriptions.unsubscribe();
+    }
+
+    renderSymbol(symbol: TradeSymbol) {
+        const quote = this.storage.get(symbol.key);
+        const change = parseFloat(`${quote.Change || 0}`).toFixed(3);
+        const bid = !!quote.Digits ? parseFloat(`${quote.Bid}`).toFixed(quote.Digits) : quote.Bid;
+
+        return (
+            <div class="quote" onClick={_ => this.symbolClick.emit(symbol)}>
+                <span class="symbol">{symbol.label}</span>
+                <span class="bid">{bid}</span>
+                <span class={quote.Change > 0 ? "change up" : (quote.Change < 0 ? "change down" : "change")}>{quote.Change > 0 ? "+" : ""}{change}%</span>
+            </div>
+        )
     }
 
     renderLoading() {
@@ -150,32 +212,28 @@ export class MtQuote {
         )
     }
 
-    renderSymbol() {
-        if (!this.symbol) {
-            return this.renderLoading();
-        }
-
-        if (!this.storage.has(this.symbol)) {
-            return this.renderLoading();
-        }
-
-        const quote = this.storage.get(this.symbol);
-        const change = parseFloat(`${quote.Change || 0}`).toFixed(3);
-        const bid = !!quote.Digits ? parseFloat(`${quote.Bid}`).toFixed(quote.Digits) : quote.Bid;
-
-        return <div class="quote">
-            {this.label ? <div class="symbol">{this.symbol} ({this.label})</div> : <div class="symbol">{this.symbol}</div>}
-            <div class="bid">{bid}</div>
-            <div class={quote.Change > 0 ? "change up" : (quote.Change < 0 ? "change down" : "change")}>({quote.Change > 0 ? "+" : ""}{change}%)</div>
-        </div>
-    }
-
     render() {
         const classes = [ "size-default" ];
+        if (this.center) classes.push("center");
+        const tickerClass = [ "ticker__list" ];
+        if (!this.animation) tickerClass.push("no-animation");
         return (
             <div class={classes.join(" ")}>
                 {this.loading && this.renderLoading()}
-                {!this.loading && this.renderSymbol()}
+                {!this.loading &&
+                    <div class="quotes" ref={el => this.ref = el}>
+                        <div class={tickerClass.join(" ")}>
+                            {this.symbols.filter(symbol => this.storage.has(symbol.key)).map(symbol => {
+                                return this.renderSymbol(symbol);
+                            })}
+                        </div>
+                        {this.animation &&
+                        <div class={tickerClass.join(" ")}>
+                            {this.symbols.filter(symbol => this.storage.has(symbol.key)).map(symbol => {
+                                return this.renderSymbol(symbol);
+                            })}
+                        </div>}
+                    </div>}
             </div>
         );
     }
