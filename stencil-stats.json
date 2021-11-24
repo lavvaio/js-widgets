@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-11-24T14:06:49",
+  "timestamp": "2021-11-24T15:58:45",
   "compiler": {
     "name": "node",
     "version": "14.15.0"
@@ -164,7 +164,7 @@
           "store2-f3f72e93.js",
           "utils-47bf880f.js"
         ],
-        "originalByteSize": 406979
+        "originalByteSize": 407880
       },
       {
         "key": "owm-daily.entry",
@@ -1169,6 +1169,26 @@
           "internal": false
         },
         {
+          "name": "size",
+          "type": "number",
+          "attribute": "size",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "20",
+          "complexType": {
+            "original": "number",
+            "resolved": "number",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
           "name": "namespace",
           "type": "string",
           "attribute": "namespace",
@@ -1232,13 +1252,16 @@
       "shadowDelegatesFocus": false,
       "states": [
         {
-          "name": "quoteData"
-        },
-        {
           "name": "loading"
         },
         {
+          "name": "quoteData"
+        },
+        {
           "name": "quotes"
+        },
+        {
+          "name": "historical"
         }
       ]
     },
@@ -3063,6 +3086,26 @@
               "internal": false
             },
             {
+              "name": "size",
+              "type": "number",
+              "attribute": "size",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "20",
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
               "name": "namespace",
               "type": "string",
               "attribute": "namespace",
@@ -3126,13 +3169,16 @@
           "virtualProperties": [],
           "states": [
             {
-              "name": "quoteData"
-            },
-            {
               "name": "loading"
             },
             {
+              "name": "quoteData"
+            },
+            {
               "name": "quotes"
+            },
+            {
+              "name": "historical"
             }
           ],
           "methods": [],
@@ -3202,7 +3248,7 @@
           "hasMode": false,
           "hasAttribute": true,
           "hasProp": true,
-          "hasPropNumber": false,
+          "hasPropNumber": true,
           "hasPropBoolean": true,
           "hasPropString": true,
           "hasPropMutable": false,

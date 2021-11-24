@@ -90,6 +90,7 @@ export namespace Components {
         "label": string;
         "locale": string;
         "namespace": string;
+        "size": number;
         "snapshot": boolean;
         "symbol": string;
         "translations": {
@@ -330,6 +331,7 @@ declare namespace LocalJSX {
         "label"?: string;
         "locale"?: string;
         "namespace"?: string;
+        "size"?: number;
         "snapshot"?: boolean;
         "symbol"?: string;
         "translations"?: {

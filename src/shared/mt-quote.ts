@@ -14,7 +14,7 @@ export interface Quote {
     Volume: number;
 }
 
-export interface History {
+export interface Historical {
     Close: number;
     Digits: number;
     High: number;

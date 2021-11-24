@@ -11,6 +11,7 @@
     --symbol-value-font-size: 2.25rem;
     --symbol-value-color: #fff;
 
+    --symbol-percent-color: #aaa;
     --symbol-percent-font-size: 1.25rem;
     --symbol-percent-up: rgb(0, 217, 100);
     --symbol-percent-down: rgb(255, 0, 0);
@@ -56,6 +57,7 @@
             .change {
                 font-weight: 400;
                 margin-top: 10px;
+                color: var(--symbol-percent-color);
                 font-size: var(--symbol-percent-font-size);
 
                 &.up {
