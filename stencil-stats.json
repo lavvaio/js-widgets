@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-11-06T18:01:37",
+  "timestamp": "2021-11-24T14:06:49",
   "compiler": {
     "name": "node",
     "version": "14.15.0"
@@ -9,7 +9,7 @@
     "fsNamespace": "lavva-js-widgets",
     "components": 9,
     "entries": 9,
-    "bundles": 56,
+    "bundles": 54,
     "outputs": [
       {
         "name": "dist-custom-elements",
@@ -36,48 +36,46 @@
       },
       {
         "name": "dist-lazy",
-        "files": 42,
+        "files": 40,
         "generatedFiles": [
           "./dist/lavva-js-widgets/app-globals-0f993ce5.js",
-          "./dist/lavva-js-widgets/css-shim-c64026cd.js",
-          "./dist/lavva-js-widgets/dom-a712b575.js",
+          "./dist/lavva-js-widgets/css-shim-aac75381.js",
+          "./dist/lavva-js-widgets/dom-c7604576.js",
           "./dist/lavva-js-widgets/finnhub-news.entry.js",
           "./dist/lavva-js-widgets/fxcm-rates.entry.js",
-          "./dist/lavva-js-widgets/index-983da20a.js",
-          "./dist/lavva-js-widgets/index-c2c4f18a.js",
+          "./dist/lavva-js-widgets/index-ffa3d190.js",
           "./dist/lavva-js-widgets/index.esm.js",
-          "./dist/lavva-js-widgets/lavva-js-sdk.esm-009d2509.js",
+          "./dist/lavva-js-widgets/lavva-js-sdk.esm-e185e4d4.js",
           "./dist/lavva-js-widgets/lavva-js-widgets.esm.js",
           "./dist/lavva-js-widgets/mt-marquee.entry.js",
           "./dist/lavva-js-widgets/mt-quote.entry.js",
           "./dist/lavva-js-widgets/owm-daily-item.entry.js",
           "./dist/lavva-js-widgets/owm-daily.entry.js",
-          "./dist/lavva-js-widgets/shadow-css-1e16431b.js",
-          "./dist/lavva-js-widgets/store2-69a72535.js",
+          "./dist/lavva-js-widgets/shadow-css-83bb1d14.js",
+          "./dist/lavva-js-widgets/store2-f3f72e93.js",
           "./dist/lavva-js-widgets/twit-ter.entry.js",
-          "./dist/lavva-js-widgets/utils-381d3640.js",
-          "./dist/lavva-js-widgets/utils-556d5604.js",
+          "./dist/lavva-js-widgets/utils-47bf880f.js",
+          "./dist/lavva-js-widgets/utils-6f0cae60.js",
           "./dist/lavva-js-widgets/yahoo-quote.entry.js",
           "./dist/lavva-js-widgets/yahoo-quotes.entry.js",
           "./www/build/app-globals-0f993ce5.js",
-          "./www/build/css-shim-c64026cd.js",
-          "./www/build/dom-a712b575.js",
+          "./www/build/css-shim-aac75381.js",
+          "./www/build/dom-c7604576.js",
           "./www/build/finnhub-news.entry.js",
           "./www/build/fxcm-rates.entry.js",
-          "./www/build/index-983da20a.js",
-          "./www/build/index-c2c4f18a.js",
+          "./www/build/index-ffa3d190.js",
           "./www/build/index.esm.js",
-          "./www/build/lavva-js-sdk.esm-009d2509.js",
+          "./www/build/lavva-js-sdk.esm-e185e4d4.js",
           "./www/build/lavva-js-widgets.esm.js",
           "./www/build/mt-marquee.entry.js",
           "./www/build/mt-quote.entry.js",
           "./www/build/owm-daily-item.entry.js",
           "./www/build/owm-daily.entry.js",
-          "./www/build/shadow-css-1e16431b.js",
-          "./www/build/store2-69a72535.js",
+          "./www/build/shadow-css-83bb1d14.js",
+          "./www/build/store2-f3f72e93.js",
           "./www/build/twit-ter.entry.js",
-          "./www/build/utils-381d3640.js",
-          "./www/build/utils-556d5604.js",
+          "./www/build/utils-47bf880f.js",
+          "./www/build/utils-6f0cae60.js",
           "./www/build/yahoo-quote.entry.js",
           "./www/build/yahoo-quotes.entry.js"
         ]
@@ -116,13 +114,12 @@
         "bundleId": "finnhub-news",
         "fileName": "finnhub-news.entry.js",
         "imports": [
-          "index-c2c4f18a.js",
-          "lavva-js-sdk.esm-009d2509.js",
-          "store2-69a72535.js",
-          "index-983da20a.js",
-          "utils-556d5604.js"
+          "index-ffa3d190.js",
+          "lavva-js-sdk.esm-e185e4d4.js",
+          "store2-f3f72e93.js",
+          "utils-6f0cae60.js"
         ],
-        "originalByteSize": 4123
+        "originalByteSize": 4093
       },
       {
         "key": "fxcm-rates.entry",
@@ -132,13 +129,12 @@
         "bundleId": "fxcm-rates",
         "fileName": "fxcm-rates.entry.js",
         "imports": [
-          "index-c2c4f18a.js",
-          "lavva-js-sdk.esm-009d2509.js",
-          "store2-69a72535.js",
-          "index-983da20a.js",
-          "utils-556d5604.js"
+          "index-ffa3d190.js",
+          "lavva-js-sdk.esm-e185e4d4.js",
+          "store2-f3f72e93.js",
+          "utils-6f0cae60.js"
         ],
-        "originalByteSize": 3982
+        "originalByteSize": 3952
       },
       {
         "key": "mt-marquee.entry",
@@ -148,12 +144,12 @@
         "bundleId": "mt-marquee",
         "fileName": "mt-marquee.entry.js",
         "imports": [
-          "index-c2c4f18a.js",
-          "lavva-js-sdk.esm-009d2509.js",
-          "store2-69a72535.js",
-          "utils-381d3640.js"
+          "index-ffa3d190.js",
+          "lavva-js-sdk.esm-e185e4d4.js",
+          "store2-f3f72e93.js",
+          "utils-47bf880f.js"
         ],
-        "originalByteSize": 7842
+        "originalByteSize": 7879
       },
       {
         "key": "mt-quote.entry",
@@ -163,12 +159,12 @@
         "bundleId": "mt-quote",
         "fileName": "mt-quote.entry.js",
         "imports": [
-          "index-c2c4f18a.js",
-          "lavva-js-sdk.esm-009d2509.js",
-          "store2-69a72535.js",
-          "utils-381d3640.js"
+          "index-ffa3d190.js",
+          "lavva-js-sdk.esm-e185e4d4.js",
+          "store2-f3f72e93.js",
+          "utils-47bf880f.js"
         ],
-        "originalByteSize": 5530
+        "originalByteSize": 406979
       },
       {
         "key": "owm-daily.entry",
@@ -178,13 +174,12 @@
         "bundleId": "owm-daily",
         "fileName": "owm-daily.entry.js",
         "imports": [
-          "index-c2c4f18a.js",
-          "lavva-js-sdk.esm-009d2509.js",
-          "store2-69a72535.js",
-          "index-983da20a.js",
-          "utils-556d5604.js"
+          "index-ffa3d190.js",
+          "lavva-js-sdk.esm-e185e4d4.js",
+          "store2-f3f72e93.js",
+          "utils-6f0cae60.js"
         ],
-        "originalByteSize": 3579
+        "originalByteSize": 3549
       },
       {
         "key": "twit-ter.entry",
@@ -194,13 +189,12 @@
         "bundleId": "twit-ter",
         "fileName": "twit-ter.entry.js",
         "imports": [
-          "index-c2c4f18a.js",
-          "lavva-js-sdk.esm-009d2509.js",
-          "store2-69a72535.js",
-          "index-983da20a.js",
-          "utils-556d5604.js"
+          "index-ffa3d190.js",
+          "lavva-js-sdk.esm-e185e4d4.js",
+          "store2-f3f72e93.js",
+          "utils-6f0cae60.js"
         ],
-        "originalByteSize": 5426
+        "originalByteSize": 5396
       },
       {
         "key": "yahoo-quotes.entry",
@@ -210,13 +204,12 @@
         "bundleId": "yahoo-quotes",
         "fileName": "yahoo-quotes.entry.js",
         "imports": [
-          "index-c2c4f18a.js",
-          "lavva-js-sdk.esm-009d2509.js",
-          "store2-69a72535.js",
-          "index-983da20a.js",
-          "utils-556d5604.js"
+          "index-ffa3d190.js",
+          "lavva-js-sdk.esm-e185e4d4.js",
+          "store2-f3f72e93.js",
+          "utils-6f0cae60.js"
         ],
-        "originalByteSize": 2559
+        "originalByteSize": 2529
       },
       {
         "key": "owm-daily-item.entry",
@@ -226,9 +219,9 @@
         "bundleId": "owm-daily-item",
         "fileName": "owm-daily-item.entry.js",
         "imports": [
-          "index-c2c4f18a.js",
-          "utils-556d5604.js",
-          "lavva-js-sdk.esm-009d2509.js"
+          "index-ffa3d190.js",
+          "utils-6f0cae60.js",
+          "lavva-js-sdk.esm-e185e4d4.js"
         ],
         "originalByteSize": 1998
       },
@@ -240,7 +233,7 @@
         "bundleId": "yahoo-quote",
         "fileName": "yahoo-quote.entry.js",
         "imports": [
-          "index-c2c4f18a.js"
+          "index-ffa3d190.js"
         ],
         "originalByteSize": 2413
       }
@@ -960,7 +953,7 @@
       "tag": "mt-quote",
       "path": "./src/components/mt-quote/mt-quote.js",
       "source": "./src/components/mt-quote/mt-quote.tsx",
-      "elementRef": null,
+      "elementRef": "element",
       "componentClassName": "MtQuote",
       "assetsDirs": [
         {
@@ -1239,13 +1232,13 @@
       "shadowDelegatesFocus": false,
       "states": [
         {
-          "name": "data"
+          "name": "quoteData"
         },
         {
           "name": "loading"
         },
         {
-          "name": "storage"
+          "name": "quotes"
         }
       ]
     },
@@ -2877,7 +2870,7 @@
           "excludeFromCollection": false,
           "isCollectionDependency": false,
           "componentClassName": "MtQuote",
-          "elementRef": null,
+          "elementRef": "element",
           "encapsulation": "shadow",
           "shadowDelegatesFocus": false,
           "properties": [
@@ -3133,13 +3126,13 @@
           "virtualProperties": [],
           "states": [
             {
-              "name": "data"
+              "name": "quoteData"
             },
             {
               "name": "loading"
             },
             {
-              "name": "storage"
+              "name": "quotes"
             }
           ],
           "methods": [],
@@ -3223,19 +3216,22 @@
           "hasVdomFunctional": false,
           "hasVdomKey": false,
           "hasVdomListener": false,
-          "hasVdomPropOrAttr": false,
-          "hasVdomRef": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": true,
           "hasVdomRender": true,
           "hasVdomStyle": false,
           "hasVdomText": true,
           "hasWatchCallback": true,
           "isPlain": false,
           "htmlAttrNames": [
-            "class"
+            "class",
+            "ref",
+            "height"
           ],
           "htmlTagNames": [
             "div",
-            "span"
+            "span",
+            "canvas"
           ],
           "htmlParts": [],
           "isUpdateable": true,
@@ -4324,59 +4320,54 @@
   ],
   "componentGraph": {
     "sc-finnhub-news": [
-      "index-c2c4f18a.js",
-      "lavva-js-sdk.esm-009d2509.js",
-      "store2-69a72535.js",
-      "index-983da20a.js",
-      "utils-556d5604.js"
+      "index-ffa3d190.js",
+      "lavva-js-sdk.esm-e185e4d4.js",
+      "store2-f3f72e93.js",
+      "utils-6f0cae60.js"
     ],
     "sc-fxcm-rates": [
-      "index-c2c4f18a.js",
-      "lavva-js-sdk.esm-009d2509.js",
-      "store2-69a72535.js",
-      "index-983da20a.js",
-      "utils-556d5604.js"
+      "index-ffa3d190.js",
+      "lavva-js-sdk.esm-e185e4d4.js",
+      "store2-f3f72e93.js",
+      "utils-6f0cae60.js"
     ],
     "sc-mt-marquee": [
-      "index-c2c4f18a.js",
-      "lavva-js-sdk.esm-009d2509.js",
-      "store2-69a72535.js",
-      "utils-381d3640.js"
+      "index-ffa3d190.js",
+      "lavva-js-sdk.esm-e185e4d4.js",
+      "store2-f3f72e93.js",
+      "utils-47bf880f.js"
     ],
     "sc-mt-quote": [
-      "index-c2c4f18a.js",
-      "lavva-js-sdk.esm-009d2509.js",
-      "store2-69a72535.js",
-      "utils-381d3640.js"
+      "index-ffa3d190.js",
+      "lavva-js-sdk.esm-e185e4d4.js",
+      "store2-f3f72e93.js",
+      "utils-47bf880f.js"
     ],
     "sc-owm-daily": [
-      "index-c2c4f18a.js",
-      "lavva-js-sdk.esm-009d2509.js",
-      "store2-69a72535.js",
-      "index-983da20a.js",
-      "utils-556d5604.js"
+      "index-ffa3d190.js",
+      "lavva-js-sdk.esm-e185e4d4.js",
+      "store2-f3f72e93.js",
+      "utils-6f0cae60.js"
     ],
     "sc-owm-daily-item": [
-      "index-c2c4f18a.js",
-      "utils-556d5604.js",
-      "lavva-js-sdk.esm-009d2509.js"
+      "index-ffa3d190.js",
+      "utils-6f0cae60.js",
+      "lavva-js-sdk.esm-e185e4d4.js"
     ],
     "sc-twit-ter": [
-      "index-c2c4f18a.js",
-      "lavva-js-sdk.esm-009d2509.js",
-      "store2-69a72535.js",
-      "index-983da20a.js",
-      "utils-556d5604.js"
+      "index-ffa3d190.js",
+      "lavva-js-sdk.esm-e185e4d4.js",
+      "store2-f3f72e93.js",
+      "utils-6f0cae60.js"
     ],
     "sc-yahoo-quote": [
-      "index-c2c4f18a.js"
+      "index-ffa3d190.js"
     ],
     "sc-yahoo-quotes": [
-      "index-c2c4f18a.js",
-      "lavva-js-sdk.esm-009d2509.js",
-      "store2-69a72535.js",
-      "index-983da20a.js",
-      "utils-556d5604.js"
+      "index-ffa3d190.js",
+      "lavva-js-sdk.esm-e185e4d4.js",
+      "store2-f3f72e93.js",
+      "utils-6f0cae60.js"
     ]
   },
   "sourceGraph": {

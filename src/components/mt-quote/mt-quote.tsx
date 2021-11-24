@@ -1,9 +1,10 @@
 import { ClientMessageDataType, LVLogger, WebsocketConnection, WebsocketConnectionEncoding, WebsocketConnectionFormat } from "@anadyme/lavva-js-sdk";
-import { Component, Prop, h, State, Watch } from "@stencil/core";
+import { Component, Prop, h, State, Watch, Element } from "@stencil/core";
 import { filter, Subscription } from "rxjs";
 import store from "store2";
 import { Quote } from "../../shared/mt-quote";
 import { createLogger, translate } from "../../utils";
+import Chart from 'chart.js/auto';
 
 @Component({
     tag: 'mt-quote',
@@ -16,6 +17,17 @@ export class MtQuote {
     private logger: LVLogger;
     private connection: WebsocketConnection;
     private subscriptions = new Subscription();
+
+    private graph: HTMLCanvasElement;
+    private graphLoaded = false;
+
+    public chart: Chart;
+
+    private chartUp: string;
+    private chartDown: string;
+
+    @Element()
+    element: HTMLElement;
 
     @Prop()
     host = 'xxxxxxxxxx.apps.anadyme.com';
@@ -63,13 +75,13 @@ export class MtQuote {
     label = "";
 
     @State()
-    data = [];
+    quoteData = [];
 
     @State()
     loading = true;
 
     @State()
-    storage = new Map<string, Quote>();
+    quotes = new Map<string, Quote>();
 
     private translate(key, fallback: string) {
         return translate(key, fallback, this.translations, this.locale);
@@ -80,30 +92,37 @@ export class MtQuote {
 
         if (this.useCache) {
             const ns = store.namespace(this.namespace);
-            this.data = ns.get(this.channel, this.data);
-            this.storage = new Map<string, any>((this.data || []).map(x => {
+            this.quoteData = ns.get(this.channel, this.quoteData);
+
+            this.quotes = new Map<string, any>((this.quoteData || []).map(x => {
                 return [x.Symbol, x] as [string, any]
             }));
 
-            this.logger.log('cached quotes found', this.data);
+            this.logger.log('cached quotes found', this.quoteData);
         }
     }
 
+    saveHistory(history: History) {
+        this.logger.log('>> saving history', history);
+    }
+
     saveQuote(quote: Quote) {
-        if (this.storage.has(quote.Symbol)) {
-            if (this.storage.get(quote.Symbol).Timestamp > quote.Timestamp) {
+        this.logger.log('>> saving quote', quote);
+
+        if (this.quotes.has(quote.Symbol)) {
+            if (this.quotes.get(quote.Symbol).Time > quote.Time) {
                 this.logger.log("detected older quote", quote);
                 return;
             }
         }
 
         if (this.loading) this.loading = false;
-        this.storage.set(quote.Symbol, quote);
-        this.data = Array.from(this.storage, ([_, value]) => (value));
+        this.quotes.set(quote.Symbol, quote);
+        this.quoteData = Array.from(this.quotes, ([_, value]) => (value));
 
         if (this.useCache) {
             const ns = store.namespace(this.namespace);
-            ns.set(this.channel, this.data);
+            ns.set(this.channel, this.quoteData);
         }
     }
 
@@ -131,8 +150,11 @@ export class MtQuote {
         this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.DATA),
         ).subscribe(message => {
-            // this.logger.log('message received', message.value);
-            this.saveQuote(message.value);
+            if (message.category === 'history') {
+                this.saveHistory(message.value);
+            } else {
+                this.saveQuote(message.value);
+            }
         }));
 
         this.subscriptions.add(this.connection.connect());
@@ -150,23 +172,111 @@ export class MtQuote {
         )
     }
 
+    getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+    }
+
+    renderChart(values: { data: number[], direction: 'up' | 'down' }) {
+        this.chartUp = getComputedStyle(this.element, null).
+            getPropertyValue('--symbol-percent-up');
+
+        this.chartDown = getComputedStyle(this.element, null).
+            getPropertyValue('--symbol-percent-down');
+
+        const data = {
+            // labels : ["January", "February", "March","April","May","June","July"],
+            labels: values.data.map(value => `${value}`),
+
+            datasets : [
+                {
+                    borderColor: values.direction === 'up' ?
+                        this.chartUp : this.chartDown,
+                    borderWidth: 1,
+                    data: values.data,
+                }
+            ]
+        }
+
+        this.chart = new Chart(this.graph.getContext('2d'), {
+            type: 'line',
+            data: data,
+            options: {
+                elements: {
+                    point: {
+                        radius: 0,
+                    }
+                },
+
+                plugins: {
+                    legend: {
+                        display: false,
+                    },
+                    tooltip: {
+                        // https://www.chartjs.org/docs/latest/configuration/tooltip.html#tooltip-callbacks
+                        enabled: true,
+                    },
+                },
+
+                scales: {
+                    y: {
+                        display: false // Hide Y axis labels
+                    },
+                    x: {
+                        display: false // Hide X axis labels
+                    }
+                }
+            }
+        });
+
+        console.log( getComputedStyle(this.element, null).getPropertyValue('--symbol-percent-up') );
+
+    }
+
     renderSymbol() {
         if (!this.symbol) {
             return this.renderLoading();
         }
 
-        if (!this.storage.has(this.symbol)) {
+        if (!this.quotes.has(this.symbol)) {
             return this.renderLoading();
         }
 
-        const quote = this.storage.get(this.symbol);
-        const change = parseFloat(`${quote.Change || 0}`).toFixed(3);
+        if (!this.graphLoaded) {
+            if (this.graph) {
+                this.graphLoaded = true;
+                this.renderChart({
+                    data: [
+                        1.233, 1.445, 1.245,
+                        1.67, 1.333, 1.123,
+                        1.245, 1.67, 1.333,
+                        1.445, 1.245, 1.67,
+                        1.67, 1.67, 1.11,
+                        1.333, 1.123, 1.245,
+                        1.333, 1.123, 1.245,
+                        1.245, 1.333, 1.332,
+                        1.445, 1.245, 1.67,
+                        1.67, 1.67, 1.11,
+                    ],
+                    direction: 'down'
+                });
+            }
+        }
+
+        const quote = this.quotes.get(this.symbol);
+        const change = parseFloat(`${quote.PerChange || 0}`).toFixed(3);
         const bid = !!quote.Digits ? parseFloat(`${quote.Bid}`).toFixed(quote.Digits) : quote.Bid;
 
-        return <div class="quote">
-            {this.label ? <div class="symbol">{this.symbol} ({this.label})</div> : <div class="symbol">{this.symbol}</div>}
-            <div class="bid">{bid}</div>
-            <div class={quote.Change > 0 ? "change up" : (quote.Change < 0 ? "change down" : "change")}>({quote.Change > 0 ? "+" : ""}{change}%)</div>
+        return <div>
+            <div class="quote">
+                {this.label ? <div class="symbol">{this.symbol} ({this.label})</div> : <div class="symbol">{this.symbol}</div>}
+                <div class="bid">{bid}</div>
+                <div class={quote.PerChange > 0 ? "change up" : (quote.PerChange < 0 ? "change down" : "change")}>({quote.PerChange > 0 ? "+" : ""}{change}%)</div>
+            </div>
+            <div class="graph">
+                <canvas ref={el => this.graph = el} height="70px"></canvas>
+            </div>
         </div>
     }
 

@@ -1,11 +1,29 @@
 export interface Quote {
-    Symbol: string;
     Ask: number;
     Bid: number;
-    Change: number;
-    Spread: number;
-    Timestamp: number;
+    Changes: string;
     Digits: number;
+    Direction: number;
+    Last: number;
+    PerChange: number;
+    Period: string;
+    PrevClose: number;
+    Spread: number;
+    Symbol: string;
+    Time: number;
+    Volume: number;
+}
+
+export interface History {
+    Close: number;
+    Digits: number;
+    High: number;
+    Low: number;
+    Open: number;
+    Period: string;
+    Time: number;
+    Symbol: string;
+    Volume: number;
 }
 
 export interface TradeSymbol {

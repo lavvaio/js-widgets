@@ -132,8 +132,10 @@ export class MtMarquee {
     }
 
     saveQuote(quote: Quote) {
+        this.logger.log('>> saving quote', quote);
+
         if (this.storage.has(quote.Symbol)) {
-            if (this.storage.get(quote.Symbol).Timestamp > quote.Timestamp) {
+            if (this.storage.get(quote.Symbol).Time > quote.Time) {
                 this.logger.log("detected older quote", quote);
                 return;
             }
@@ -172,8 +174,8 @@ export class MtMarquee {
 
         this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.DATA),
+            filter(message => message.category === 'ticks'),
         ).subscribe(message => {
-            // this.logger.log('message received', message.value);
             this.saveQuote(message.value);
         }));
 
@@ -192,14 +194,14 @@ export class MtMarquee {
 
     renderSymbol(symbol: TradeSymbol) {
         const quote = this.storage.get(symbol.key);
-        const change = parseFloat(`${quote.Change || 0}`).toFixed(3);
+        const change = parseFloat(`${quote.PerChange || 0}`).toFixed(3);
         const bid = !!quote.Digits ? parseFloat(`${quote.Bid}`).toFixed(quote.Digits) : quote.Bid;
 
         return (
             <div class="quote" onClick={_ => this.symbolClick.emit(symbol)}>
                 <span class="symbol">{symbol.label}</span>
                 <span class="bid">{bid}</span>
-                <span class={quote.Change > 0 ? "change up" : (quote.Change < 0 ? "change down" : "change")}>{quote.Change > 0 ? "+" : ""}{change}%</span>
+                <span class={quote.PerChange > 0 ? "change up" : (quote.PerChange < 0 ? "change down" : "change")}>{quote.PerChange > 0 ? "+" : ""}{change}%</span>
             </div>
         )
     }
