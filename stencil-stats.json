@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-11-24T15:58:45",
+  "timestamp": "2021-11-24T19:18:27",
   "compiler": {
     "name": "node",
     "version": "14.15.0"
@@ -9,7 +9,7 @@
     "fsNamespace": "lavva-js-widgets",
     "components": 9,
     "entries": 9,
-    "bundles": 54,
+    "bundles": 56,
     "outputs": [
       {
         "name": "dist-custom-elements",
@@ -36,13 +36,14 @@
       },
       {
         "name": "dist-lazy",
-        "files": 40,
+        "files": 42,
         "generatedFiles": [
           "./dist/lavva-js-widgets/app-globals-0f993ce5.js",
           "./dist/lavva-js-widgets/css-shim-aac75381.js",
           "./dist/lavva-js-widgets/dom-c7604576.js",
           "./dist/lavva-js-widgets/finnhub-news.entry.js",
           "./dist/lavva-js-widgets/fxcm-rates.entry.js",
+          "./dist/lavva-js-widgets/index-eb926e82.js",
           "./dist/lavva-js-widgets/index-ffa3d190.js",
           "./dist/lavva-js-widgets/index.esm.js",
           "./dist/lavva-js-widgets/lavva-js-sdk.esm-e185e4d4.js",
@@ -63,6 +64,7 @@
           "./www/build/dom-c7604576.js",
           "./www/build/finnhub-news.entry.js",
           "./www/build/fxcm-rates.entry.js",
+          "./www/build/index-eb926e82.js",
           "./www/build/index-ffa3d190.js",
           "./www/build/index.esm.js",
           "./www/build/lavva-js-sdk.esm-e185e4d4.js",
@@ -164,7 +166,7 @@
           "store2-f3f72e93.js",
           "utils-47bf880f.js"
         ],
-        "originalByteSize": 407880
+        "originalByteSize": 408873
       },
       {
         "key": "owm-daily.entry",
@@ -1262,6 +1264,9 @@
         },
         {
           "name": "historical"
+        },
+        {
+          "name": "historicalData"
         }
       ]
     },
@@ -3179,6 +3184,9 @@
             },
             {
               "name": "historical"
+            },
+            {
+              "name": "historicalData"
             }
           ],
           "methods": [],

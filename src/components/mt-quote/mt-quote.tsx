@@ -22,7 +22,6 @@ export class MtQuote {
     private graphLoaded = false;
 
     public chart: Chart;
-
     private chartUp: string;
     private chartDown: string;
 
@@ -89,6 +88,9 @@ export class MtQuote {
     @State()
     historical = new Map<string, Historical[]>();
 
+    @State()
+    historicalData = [];
+
     private translate(key, fallback: string) {
         return translate(key, fallback, this.translations, this.locale);
     }
@@ -102,8 +104,8 @@ export class MtQuote {
 
         const ns = store.namespace(`${this.namespace}.${this.channel}`);
 
-        const snapshot = new Map<string, Historical[]>((ns.get('history', [])).map(x => {
-            return [x.Symbol, x] as [string, any]
+        const snapshot = new Map<string, Historical[]>((ns.get('history', this.historicalData)).map(x => {
+            return [x.Symbol, x.Data] as [string, any]
         }));
 
         this.historical = snapshot;
@@ -111,11 +113,21 @@ export class MtQuote {
         this.logger.log('cached historical found', snapshot);
     }
 
+    getQuoteColor(direction: number) {
+        const borderColor = direction === 1 ?
+            this.chartUp : ( direction === -1 ? this.chartDown : '#aaa' );
+        return borderColor.trim();
+    }
+
     saveHistory(pos: Historical) {
+        if (!this.graphLoaded) {
+            return;
+        }
+
         this.logger.log('saving historical', pos);
 
         if (this.historical.has(pos.Symbol)) {
-            if (this.historical.get(pos.Symbol)[0].Time > pos.Time) {
+            if (this.historical.get(pos.Symbol)[0].Time >= pos.Time) {
                 this.logger.log("detected older historical position", pos);
                 return;
             }
@@ -131,8 +143,15 @@ export class MtQuote {
         this.historical.set(pos.Symbol, data);
 
         const ns = store.namespace(`${this.namespace}.${this.channel}`);
-        const snapshot = Array.from(this.historical, ([name, value]) => ({ name, value }));
-        ns.set('history', snapshot);
+        this.historicalData = Array.from(this.historical, ([key, Data]) => ({ Symbol: key, Data }));
+        ns.set('history', this.historicalData);
+
+        this.logger.log('>> we have chart?', this.chart);
+
+        if (this.chart) {
+            this.chart.data.datasets = [ { data: data.map(pos => pos.Close) } ];
+            this.chart.update();
+        }
     }
 
     loadQuotes() {
@@ -149,7 +168,7 @@ export class MtQuote {
             return [x.Symbol, x] as [string, any]
         }));
 
-        this.logger.log('cached quotes found', this.quoteData);
+        this.logger.log('cached quotes loaded', this.quoteData);
     }
 
     saveQuote(quote: Quote) {
@@ -171,6 +190,11 @@ export class MtQuote {
 
         const ns = store.namespace(`${this.namespace}.${this.channel}`);
         ns.set('quotes', this.quoteData);
+
+        if (this.chart) {
+            this.chart.data.datasets[0].borderColor = this.getQuoteColor(quote.Direction);
+            this.chart.update();
+        }
     }
 
     connectedCallback() {
@@ -178,8 +202,8 @@ export class MtQuote {
 
         this.logger.log('widget attached', this.locale);
 
-        this.loadQuotes();
         this.loadHistory();
+        this.loadQuotes();
 
         this.loading = true;
 
@@ -218,6 +242,22 @@ export class MtQuote {
         this.subscriptions.unsubscribe();
     }
 
+    helloGraph(graph: HTMLCanvasElement) {
+        if (this.graphLoaded) {
+            return;
+        }
+
+        this.graph = graph;
+        this.renderChart({
+            data: this.historical.has(this.symbol) ? this.historical.get(this.symbol).map(pos => pos.Close): [],
+            direction: this.quotes.has(this.symbol) ? this.quotes.get(this.symbol).Direction : 0
+        });
+
+        this.graphLoaded = true;
+        this.chart.update();
+        this.logger.log('graph loaded', this.historical);
+    }
+
     renderLoading() {
         return (
             <div class="loader">
@@ -226,7 +266,7 @@ export class MtQuote {
         )
     }
 
-    renderChart(values: { data: number[], direction: 'up' | 'down' }) {
+    renderChart(values: { data: number[], direction: number }) {
         this.chartUp = getComputedStyle(this.element, null).
             getPropertyValue('--symbol-percent-up');
 
@@ -236,11 +276,9 @@ export class MtQuote {
         const data = {
             // labels : ["January", "February", "March","April","May","June","July"],
             labels: values.data.map(value => `${value}`),
-
             datasets : [
                 {
-                    borderColor: values.direction === 'up' ?
-                        this.chartUp : this.chartDown,
+                    borderColor: this.getQuoteColor(values.direction),
                     borderWidth: 1,
                     data: values.data,
                 }
@@ -279,8 +317,18 @@ export class MtQuote {
         });
     }
 
+    renderGraph() {
+        return <div class="graph">
+            <canvas ref={el => this.helloGraph(el)} height="70px"></canvas>
+        </div>
+    }
+
     renderSymbol() {
         if (!this.symbol) {
+            return this.renderLoading();
+        }
+
+        if (!this.quotes.has(this.symbol)) {
             return this.renderLoading();
         }
 
@@ -288,40 +336,26 @@ export class MtQuote {
             return this.renderLoading();
         }
 
+        /*
         if (!this.graphLoaded) {
+            this.logger.log('loading chart');
             if (this.graph) {
                 this.graphLoaded = true;
                 this.renderChart({
-                    data: [
-                        1.233, 1.445, 1.245,
-                        1.67, 1.333, 1.123,
-                        1.245, 1.67, 1.333,
-                        1.445, 1.245, 1.67,
-                        1.67, 1.67, 1.11,
-                        1.333, 1.123, 1.245,
-                        1.333, 1.123, 1.245,
-                        1.245, 1.333, 1.332,
-                        1.445, 1.245, 1.67,
-                        1.67, 1.67, 1.11,
-                    ],
-                    direction: 'down'
+                    data: this.historical.get(this.symbol).map(pos => pos.Close),
+                    direction: this.quotes.get(this.symbol).Direction
                 });
             }
-        }
+        }*/
 
         const quote = this.quotes.get(this.symbol);
         const change = parseFloat(`${quote.PerChange || 0}`).toFixed(3);
         const bid = !!quote.Digits ? parseFloat(`${quote.Bid}`).toFixed(quote.Digits) : quote.Bid;
 
-        return <div>
-            <div class="quote">
-                {this.label ? <div class="symbol">{this.symbol} ({this.label})</div> : <div class="symbol">{this.symbol}</div>}
-                <div class="bid">{bid}</div>
-                <div class={quote.PerChange > 0 ? "change up" : (quote.PerChange < 0 ? "change down" : "change")}>({quote.PerChange > 0 ? "+" : ""}{change}%)</div>
-            </div>
-            <div class="graph">
-                <canvas ref={el => this.graph = el} height="70px"></canvas>
-            </div>
+        return <div class="quote">
+            {this.label ? <div class="symbol">{this.symbol} ({this.label})</div> : <div class="symbol">{this.symbol}</div>}
+            <div class="bid">{bid}</div>
+            <div class={quote.PerChange > 0 ? "change up" : (quote.PerChange < 0 ? "change down" : "change")}>({quote.PerChange > 0 ? "+" : ""}{change}%)</div>
         </div>
     }
 
@@ -331,6 +365,7 @@ export class MtQuote {
             <div class={classes.join(" ")}>
                 {this.loading && this.renderLoading()}
                 {!this.loading && this.renderSymbol()}
+                {!this.loading && this.renderGraph()}
             </div>
         );
     }
