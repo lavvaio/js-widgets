@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-11-24T19:18:27",
+  "timestamp": "2021-11-27T10:31:04",
   "compiler": {
     "name": "node",
     "version": "14.15.0"
@@ -9,7 +9,7 @@
     "fsNamespace": "lavva-js-widgets",
     "components": 9,
     "entries": 9,
-    "bundles": 56,
+    "bundles": 54,
     "outputs": [
       {
         "name": "dist-custom-elements",
@@ -36,7 +36,7 @@
       },
       {
         "name": "dist-lazy",
-        "files": 42,
+        "files": 40,
         "generatedFiles": [
           "./dist/lavva-js-widgets/app-globals-0f993ce5.js",
           "./dist/lavva-js-widgets/css-shim-aac75381.js",
@@ -44,7 +44,6 @@
           "./dist/lavva-js-widgets/finnhub-news.entry.js",
           "./dist/lavva-js-widgets/fxcm-rates.entry.js",
           "./dist/lavva-js-widgets/index-eb926e82.js",
-          "./dist/lavva-js-widgets/index-ffa3d190.js",
           "./dist/lavva-js-widgets/index.esm.js",
           "./dist/lavva-js-widgets/lavva-js-sdk.esm-e185e4d4.js",
           "./dist/lavva-js-widgets/lavva-js-widgets.esm.js",
@@ -65,7 +64,6 @@
           "./www/build/finnhub-news.entry.js",
           "./www/build/fxcm-rates.entry.js",
           "./www/build/index-eb926e82.js",
-          "./www/build/index-ffa3d190.js",
           "./www/build/index.esm.js",
           "./www/build/lavva-js-sdk.esm-e185e4d4.js",
           "./www/build/lavva-js-widgets.esm.js",
@@ -116,7 +114,7 @@
         "bundleId": "finnhub-news",
         "fileName": "finnhub-news.entry.js",
         "imports": [
-          "index-ffa3d190.js",
+          "index-eb926e82.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
@@ -131,7 +129,7 @@
         "bundleId": "fxcm-rates",
         "fileName": "fxcm-rates.entry.js",
         "imports": [
-          "index-ffa3d190.js",
+          "index-eb926e82.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
@@ -146,7 +144,7 @@
         "bundleId": "mt-marquee",
         "fileName": "mt-marquee.entry.js",
         "imports": [
-          "index-ffa3d190.js",
+          "index-eb926e82.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-47bf880f.js"
@@ -161,12 +159,12 @@
         "bundleId": "mt-quote",
         "fileName": "mt-quote.entry.js",
         "imports": [
-          "index-ffa3d190.js",
+          "index-eb926e82.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-47bf880f.js"
         ],
-        "originalByteSize": 408873
+        "originalByteSize": 408545
       },
       {
         "key": "owm-daily.entry",
@@ -176,7 +174,7 @@
         "bundleId": "owm-daily",
         "fileName": "owm-daily.entry.js",
         "imports": [
-          "index-ffa3d190.js",
+          "index-eb926e82.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
@@ -191,7 +189,7 @@
         "bundleId": "twit-ter",
         "fileName": "twit-ter.entry.js",
         "imports": [
-          "index-ffa3d190.js",
+          "index-eb926e82.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
@@ -206,7 +204,7 @@
         "bundleId": "yahoo-quotes",
         "fileName": "yahoo-quotes.entry.js",
         "imports": [
-          "index-ffa3d190.js",
+          "index-eb926e82.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
@@ -221,7 +219,7 @@
         "bundleId": "owm-daily-item",
         "fileName": "owm-daily-item.entry.js",
         "imports": [
-          "index-ffa3d190.js",
+          "index-eb926e82.js",
           "utils-6f0cae60.js",
           "lavva-js-sdk.esm-e185e4d4.js"
         ],
@@ -235,7 +233,7 @@
         "bundleId": "yahoo-quote",
         "fileName": "yahoo-quote.entry.js",
         "imports": [
-          "index-ffa3d190.js"
+          "index-eb926e82.js"
         ],
         "originalByteSize": 2413
       }
@@ -1151,26 +1149,6 @@
           "internal": false
         },
         {
-          "name": "useCache",
-          "type": "boolean",
-          "attribute": "use-cache",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "defaultValue": "true",
-          "complexType": {
-            "original": "boolean",
-            "resolved": "boolean",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        },
-        {
           "name": "size",
           "type": "number",
           "attribute": "size",
@@ -1266,7 +1244,7 @@
           "name": "historical"
         },
         {
-          "name": "historicalData"
+          "name": "chartData"
         }
       ]
     },
@@ -3071,26 +3049,6 @@
               "internal": false
             },
             {
-              "name": "useCache",
-              "type": "boolean",
-              "attribute": "use-cache",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
               "name": "size",
               "type": "number",
               "attribute": "size",
@@ -3186,7 +3144,7 @@
               "name": "historical"
             },
             {
-              "name": "historicalData"
+              "name": "chartData"
             }
           ],
           "methods": [],
@@ -3233,7 +3191,7 @@
           "sourceMapPath": null,
           "hasAttributeChangedCallbackFn": false,
           "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
+          "hasComponentDidLoadFn": true,
           "hasComponentShouldUpdateFn": false,
           "hasComponentWillUpdateFn": false,
           "hasComponentDidUpdateFn": false,
@@ -3244,7 +3202,7 @@
           "hasDisconnectedCallbackFn": true,
           "hasElement": false,
           "hasEvent": false,
-          "hasLifecycle": false,
+          "hasLifecycle": true,
           "hasListener": false,
           "hasListenerTarget": false,
           "hasListenerTargetWindow": false,
@@ -4374,51 +4332,51 @@
   ],
   "componentGraph": {
     "sc-finnhub-news": [
-      "index-ffa3d190.js",
+      "index-eb926e82.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-6f0cae60.js"
     ],
     "sc-fxcm-rates": [
-      "index-ffa3d190.js",
+      "index-eb926e82.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-6f0cae60.js"
     ],
     "sc-mt-marquee": [
-      "index-ffa3d190.js",
+      "index-eb926e82.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-47bf880f.js"
     ],
     "sc-mt-quote": [
-      "index-ffa3d190.js",
+      "index-eb926e82.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-47bf880f.js"
     ],
     "sc-owm-daily": [
-      "index-ffa3d190.js",
+      "index-eb926e82.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-6f0cae60.js"
     ],
     "sc-owm-daily-item": [
-      "index-ffa3d190.js",
+      "index-eb926e82.js",
       "utils-6f0cae60.js",
       "lavva-js-sdk.esm-e185e4d4.js"
     ],
     "sc-twit-ter": [
-      "index-ffa3d190.js",
+      "index-eb926e82.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-6f0cae60.js"
     ],
     "sc-yahoo-quote": [
-      "index-ffa3d190.js"
+      "index-eb926e82.js"
     ],
     "sc-yahoo-quotes": [
-      "index-ffa3d190.js",
+      "index-eb926e82.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-6f0cae60.js"

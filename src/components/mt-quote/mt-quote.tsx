@@ -18,12 +18,11 @@ export class MtQuote {
     private connection: WebsocketConnection;
     private subscriptions = new Subscription();
 
-    private graph: HTMLCanvasElement;
-    private graphLoaded = false;
-
     public chart: Chart;
     private chartUp: string;
     private chartDown: string;
+    private canvas: HTMLCanvasElement;
+    private context: CanvasRenderingContext2D;
 
     @Element()
     element: HTMLElement;
@@ -57,9 +56,6 @@ export class MtQuote {
     snapshot = true;
 
     @Prop()
-    useCache = true;
-
-    @Prop()
     size = 20;
 
     @Prop()
@@ -86,31 +82,34 @@ export class MtQuote {
     quotes = new Map<string, Quote>();
 
     @State()
-    historical = new Map<string, Historical[]>();
+    historical = new Map<string, number>();
 
     @State()
-    historicalData = [];
+    chartData: { labels: string[], data: number[] } = { labels: [], data: [] };
 
     private translate(key, fallback: string) {
         return translate(key, fallback, this.translations, this.locale);
     }
 
+    private setCanvas(graph: HTMLCanvasElement) {
+        this.canvas = graph;
+        this.context = this.canvas.getContext('2d');
+    }
+
     loadHistory() {
         this.logger.log('loading history');
 
-        if (!this.useCache) {
+        const ns = store.namespace(`${this.namespace}.${this.channel}`);
+        const snapshot = ns.get('history', []) as Array<{ symbol: string; chart: [ string[], number[] ]}>;
+        const index = snapshot.findIndex(value => value.symbol === this.symbol);
+        if (index === -1) {
             return;
         }
 
-        const ns = store.namespace(`${this.namespace}.${this.channel}`);
-
-        const snapshot = new Map<string, Historical[]>((ns.get('history', this.historicalData)).map(x => {
-            return [x.Symbol, x.Data] as [string, any]
-        }));
-
-        this.historical = snapshot;
-
-        this.logger.log('cached historical found', snapshot);
+        const [ labels, data ] = snapshot[index].chart;
+        this.chartData = { labels, data };
+        this.historical.set(this.symbol, Date.parse(`${labels[labels.length - 1]}`));
+        this.logger.log('cached historical found', this.chartData);
     }
 
     getQuoteColor(direction: number) {
@@ -119,47 +118,55 @@ export class MtQuote {
         return borderColor.trim();
     }
 
+    addData(label, value) {
+        this.chart.data.labels.push(label);
+        this.chart.data.datasets.forEach((dataset) => {
+            dataset.data.push(value);
+        });
+        this.chart.update();
+
+        let labels = (this.chart.data.labels || []) as string[];
+        let data = (this.chart.data.datasets[0].data || []) as number[];
+
+        if (data.length > this.size) {
+            labels = labels.slice(0, this.size);
+            data = data.slice(0, this.size);
+        }
+
+        const ns = store.namespace(`${this.namespace}.${this.channel}`);
+        const snapshot = ns.get('history', []) as Array<any>;
+        const index = snapshot.findIndex(entry => entry.symbol === this.symbol);
+        if (index === -1) {
+            snapshot.push({ symbol: this.symbol, chart: [ labels, data ] });
+        } else {
+            snapshot[index] = { symbol: this.symbol, chart: [ labels, data ] };
+        }
+
+        ns.set('history', snapshot);
+    }
+
     saveHistory(pos: Historical) {
-        if (!this.graphLoaded) {
+        if (!this.chart) {
             return;
         }
 
-        this.logger.log('saving historical', pos);
+        // this.logger.log('saving historical', pos);
 
         if (this.historical.has(pos.Symbol)) {
-            if (this.historical.get(pos.Symbol)[0].Time >= pos.Time) {
-                this.logger.log("detected older historical position", pos);
+            const last = this.historical.get(pos.Symbol);
+            if (last >= pos.Time) {
+                this.logger.log("detected older historical position", new Date(last).toUTCString(), pos);
                 return;
             }
         }
 
-        const data = this.historical.has(pos.Symbol) ? this.historical.get(pos.Symbol) : [];
-        data.unshift(pos);
+        this.historical.set(this.symbol, pos.Time);
 
-        if (data.length > this.size) {
-            data.pop();
-        }
-
-        this.historical.set(pos.Symbol, data);
-
-        const ns = store.namespace(`${this.namespace}.${this.channel}`);
-        this.historicalData = Array.from(this.historical, ([key, Data]) => ({ Symbol: key, Data }));
-        ns.set('history', this.historicalData);
-
-        this.logger.log('>> we have chart?', this.chart);
-
-        if (this.chart) {
-            this.chart.data.datasets = [ { data: data.map(pos => pos.Close) } ];
-            this.chart.update();
-        }
+        this.addData(new Date(pos.Time).toUTCString(), pos.Close);
     }
 
     loadQuotes() {
         this.logger.log('loading quotes');
-
-        if (!this.useCache) {
-            return;
-        }
 
         const ns = store.namespace(`${this.namespace}.${this.channel}`);
         this.quoteData = ns.get('quotes', this.quoteData);
@@ -172,7 +179,7 @@ export class MtQuote {
     }
 
     saveQuote(quote: Quote) {
-        this.logger.log('saving quote', quote);
+        // this.logger.log('saving quote', quote);
 
         if (this.quotes.has(quote.Symbol)) {
             if (this.quotes.get(quote.Symbol).Time > quote.Time) {
@@ -183,10 +190,6 @@ export class MtQuote {
 
         this.quotes.set(quote.Symbol, quote);
         this.quoteData = Array.from(this.quotes, ([_, value]) => (value));
-
-        if (!this.useCache) {
-            return;
-        }
 
         const ns = store.namespace(`${this.namespace}.${this.channel}`);
         ns.set('quotes', this.quoteData);
@@ -199,12 +202,9 @@ export class MtQuote {
 
     connectedCallback() {
         this.createLogger(this.namespace, null);
-
         this.logger.log('widget attached', this.locale);
-
         this.loadHistory();
         this.loadQuotes();
-
         this.loading = true;
 
         this.connection = new WebsocketConnection({
@@ -217,12 +217,14 @@ export class MtQuote {
 
         this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
+            filter(message => message.key === this.symbol),
         ).subscribe(message => {
             this.logger.log('client connected', message.value.client_id, message);
         }));
 
         this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.DATA),
+            filter(message => message.key === this.symbol),
         ).subscribe(message => {
             if (message.category === 'history') {
                 this.saveHistory(message.value);
@@ -238,26 +240,6 @@ export class MtQuote {
         this.subscriptions.add(this.connection.connect());
     }
 
-    disconnectedCallback() {
-        this.subscriptions.unsubscribe();
-    }
-
-    helloGraph(graph: HTMLCanvasElement) {
-        if (this.graphLoaded) {
-            return;
-        }
-
-        this.graph = graph;
-        this.renderChart({
-            data: this.historical.has(this.symbol) ? this.historical.get(this.symbol).map(pos => pos.Close): [],
-            direction: this.quotes.has(this.symbol) ? this.quotes.get(this.symbol).Direction : 0
-        });
-
-        this.graphLoaded = true;
-        this.chart.update();
-        this.logger.log('graph loaded', this.historical);
-    }
-
     renderLoading() {
         return (
             <div class="loader">
@@ -266,7 +248,7 @@ export class MtQuote {
         )
     }
 
-    renderChart(values: { data: number[], direction: number }) {
+    renderChart(values: { data: number[], labels: string[], direction: number }) {
         this.chartUp = getComputedStyle(this.element, null).
             getPropertyValue('--symbol-percent-up');
 
@@ -274,8 +256,7 @@ export class MtQuote {
             getPropertyValue('--symbol-percent-down');
 
         const data = {
-            // labels : ["January", "February", "March","April","May","June","July"],
-            labels: values.data.map(value => `${value}`),
+            labels: values.labels,
             datasets : [
                 {
                     borderColor: this.getQuoteColor(values.direction),
@@ -285,7 +266,7 @@ export class MtQuote {
             ]
         }
 
-        this.chart = new Chart(this.graph.getContext('2d'), {
+        this.chart = new Chart(this.context, {
             type: 'line',
             data: data,
             options: {
@@ -317,12 +298,6 @@ export class MtQuote {
         });
     }
 
-    renderGraph() {
-        return <div class="graph">
-            <canvas ref={el => this.helloGraph(el)} height="70px"></canvas>
-        </div>
-    }
-
     renderSymbol() {
         if (!this.symbol) {
             return this.renderLoading();
@@ -331,22 +306,6 @@ export class MtQuote {
         if (!this.quotes.has(this.symbol)) {
             return this.renderLoading();
         }
-
-        if (!this.historical.has(this.symbol)) {
-            return this.renderLoading();
-        }
-
-        /*
-        if (!this.graphLoaded) {
-            this.logger.log('loading chart');
-            if (this.graph) {
-                this.graphLoaded = true;
-                this.renderChart({
-                    data: this.historical.get(this.symbol).map(pos => pos.Close),
-                    direction: this.quotes.get(this.symbol).Direction
-                });
-            }
-        }*/
 
         const quote = this.quotes.get(this.symbol);
         const change = parseFloat(`${quote.PerChange || 0}`).toFixed(3);
@@ -359,13 +318,27 @@ export class MtQuote {
         </div>
     }
 
+    componentDidLoad(): void {
+        this.renderChart({
+            data: this.chartData.data,
+            labels: this.chartData.labels,
+            direction: 0
+        });
+    }
+
+    disconnectedCallback() {
+        this.subscriptions.unsubscribe();
+    }
+
     render() {
         const classes = [ "size-default" ];
         return (
             <div class={classes.join(" ")}>
                 {this.loading && this.renderLoading()}
                 {!this.loading && this.renderSymbol()}
-                {!this.loading && this.renderGraph()}
+                <div class="graph">
+                    <canvas ref={ref => this.setCanvas(ref)} height="70px"></canvas>
+                </div>
             </div>
         );
     }

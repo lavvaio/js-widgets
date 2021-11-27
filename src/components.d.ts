@@ -98,7 +98,6 @@ export namespace Components {
             [key: string]: string;
         }
     };
-        "useCache": boolean;
     }
     interface OwmDaily {
         /**
@@ -339,7 +338,6 @@ declare namespace LocalJSX {
             [key: string]: string;
         }
     };
-        "useCache"?: boolean;
     }
     interface OwmDaily {
         /**
