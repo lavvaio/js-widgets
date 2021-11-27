@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-11-27T10:31:04",
+  "timestamp": "2021-11-27T10:41:52",
   "compiler": {
     "name": "node",
     "version": "14.15.0"
@@ -164,7 +164,7 @@
           "store2-f3f72e93.js",
           "utils-47bf880f.js"
         ],
-        "originalByteSize": 408545
+        "originalByteSize": 408875
       },
       {
         "key": "owm-daily.entry",
@@ -1156,7 +1156,7 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "20",
+          "defaultValue": "30",
           "complexType": {
             "original": "number",
             "resolved": "number",
@@ -1220,6 +1220,26 @@
           "complexType": {
             "original": "string",
             "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "showChart",
+          "type": "boolean",
+          "attribute": "show-chart",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
             "references": {}
           },
           "docs": {
@@ -3056,7 +3076,7 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "20",
+              "defaultValue": "30",
               "complexType": {
                 "original": "number",
                 "resolved": "number",
@@ -3120,6 +3140,26 @@
               "complexType": {
                 "original": "string",
                 "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "showChart",
+              "type": "boolean",
+              "attribute": "show-chart",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
                 "references": {}
               },
               "docs": {

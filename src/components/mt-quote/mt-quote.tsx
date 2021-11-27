@@ -56,7 +56,7 @@ export class MtQuote {
     snapshot = true;
 
     @Prop()
-    size = 20;
+    size = 30;
 
     @Prop()
     namespace = 'mt-quote';
@@ -71,6 +71,9 @@ export class MtQuote {
 
     @Prop()
     label = "";
+
+    @Prop()
+    showChart = true;
 
     @State()
     loading = true;
@@ -91,8 +94,12 @@ export class MtQuote {
         return translate(key, fallback, this.translations, this.locale);
     }
 
-    private setCanvas(graph: HTMLCanvasElement) {
-        this.canvas = graph;
+    private setCanvas(canvas: HTMLCanvasElement) {
+        if (!this.showChart) {
+            return;
+        }
+
+        this.canvas = canvas;
         this.context = this.canvas.getContext('2d');
     }
 
@@ -119,6 +126,10 @@ export class MtQuote {
     }
 
     addData(label, value) {
+        if (!this.showChart) {
+            return;
+        }
+
         this.chart.data.labels.push(label);
         this.chart.data.datasets.forEach((dataset) => {
             dataset.data.push(value);
@@ -146,6 +157,10 @@ export class MtQuote {
     }
 
     saveHistory(pos: Historical) {
+        if (!this.showChart) {
+            return;
+        }
+
         if (!this.chart) {
             return;
         }
@@ -194,6 +209,10 @@ export class MtQuote {
         const ns = store.namespace(`${this.namespace}.${this.channel}`);
         ns.set('quotes', this.quoteData);
 
+        if (!this.showChart) {
+            return;
+        }
+
         if (this.chart) {
             this.chart.data.datasets[0].borderColor = this.getQuoteColor(quote.Direction);
             this.chart.update();
@@ -227,7 +246,9 @@ export class MtQuote {
             filter(message => message.key === this.symbol),
         ).subscribe(message => {
             if (message.category === 'history') {
-                this.saveHistory(message.value);
+                if (this.showChart) {
+                    this.saveHistory(message.value);
+                }
             } else {
                 this.saveQuote(message.value);
             }
@@ -319,6 +340,10 @@ export class MtQuote {
     }
 
     componentDidLoad(): void {
+        if (!this.showChart) {
+            return;
+        }
+
         this.renderChart({
             data: this.chartData.data,
             labels: this.chartData.labels,
@@ -336,9 +361,10 @@ export class MtQuote {
             <div class={classes.join(" ")}>
                 {this.loading && this.renderLoading()}
                 {!this.loading && this.renderSymbol()}
+                {this.showChart &&
                 <div class="graph">
                     <canvas ref={ref => this.setCanvas(ref)} height="70px"></canvas>
-                </div>
+                </div>}
             </div>
         );
     }
