@@ -170,7 +170,7 @@ export class MtQuote {
         if (this.historical.has(pos.Symbol)) {
             const last = this.historical.get(pos.Symbol);
             if (last >= pos.Time) {
-                this.logger.log("detected older historical position", new Date(last).toUTCString(), pos);
+                // this.logger.log("detected older historical position", new Date(last).toUTCString(), pos);
                 return;
             }
         }
