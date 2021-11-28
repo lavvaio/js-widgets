@@ -329,13 +329,12 @@ export class MtQuote {
         }
 
         const quote = this.quotes.get(this.symbol);
-        const change = parseFloat(`${quote.PerChange || 0}`).toFixed(3);
-        const bid = !!quote.Digits ? parseFloat(`${quote.Bid}`).toFixed(quote.Digits) : quote.Bid;
+        const change = parseFloat(`${quote.PerDiff || 0}`).toFixed(3);
 
         return <div class="quote">
             {this.label ? <div class="symbol">{this.symbol} ({this.label})</div> : <div class="symbol">{this.symbol}</div>}
-            <div class="bid">{bid}</div>
-            <div class={quote.PerChange > 0 ? "change up" : (quote.PerChange < 0 ? "change down" : "change")}>({quote.PerChange > 0 ? "+" : ""}{change}%)</div>
+            <div class="bid">{quote.Bid}</div>
+            <div class={quote.PerDiff > 0 ? "change up" : (quote.PerDiff < 0 ? "change down" : "change")}>{quote.PerDiff > 0 ? "+" : ""}{quote.Diff} ({quote.PerDiff > 0 ? "+" : ""}{change}%)</div>
         </div>
     }
 

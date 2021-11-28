@@ -5,7 +5,8 @@ export interface Quote {
     Digits: number;
     Direction: number;
     Last: number;
-    PerChange: number;
+    Diff: number;
+    PerDiff: number;
     Period: string;
     PrevClose: number;
     Spread: number;

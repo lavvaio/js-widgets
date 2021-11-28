@@ -194,14 +194,14 @@ export class MtMarquee {
 
     renderSymbol(symbol: TradeSymbol) {
         const quote = this.storage.get(symbol.key);
-        const change = parseFloat(`${quote.PerChange || 0}`).toFixed(3);
+        const change = parseFloat(`${quote.PerDiff || 0}`).toFixed(3);
         const bid = !!quote.Digits ? parseFloat(`${quote.Bid}`).toFixed(quote.Digits) : quote.Bid;
 
         return (
             <div class="quote" onClick={_ => this.symbolClick.emit(symbol)}>
                 <span class="symbol">{symbol.label}</span>
                 <span class="bid">{bid}</span>
-                <span class={quote.PerChange > 0 ? "change up" : (quote.PerChange < 0 ? "change down" : "change")}>{quote.PerChange > 0 ? "+" : ""}{change}%</span>
+                <span class={quote.PerDiff > 0 ? "change up" : (quote.PerDiff < 0 ? "change down" : "change")}>{quote.PerDiff > 0 ? "+" : ""}{change}%</span>
             </div>
         )
     }
