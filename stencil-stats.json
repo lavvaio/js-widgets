@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-11-28T14:44:20",
+  "timestamp": "2021-11-28T16:20:45",
   "compiler": {
     "name": "node",
     "version": "14.15.0"
@@ -164,7 +164,7 @@
           "store2-f3f72e93.js",
           "utils-47bf880f.js"
         ],
-        "originalByteSize": 408917
+        "originalByteSize": 409015
       },
       {
         "key": "owm-daily.entry",

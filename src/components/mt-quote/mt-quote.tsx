@@ -134,14 +134,15 @@ export class MtQuote {
         this.chart.data.datasets.forEach((dataset) => {
             dataset.data.push(value);
         });
+
         this.chart.update();
 
         let labels = (this.chart.data.labels || []) as string[];
         let data = (this.chart.data.datasets[0].data || []) as number[];
 
         if (data.length > this.size) {
-            labels = labels.slice(0, this.size);
-            data = data.slice(0, this.size);
+            labels = labels.slice(-this.size);
+            data = data.slice(-this.size);
         }
 
         const ns = store.namespace(`${this.namespace}.${this.channel}`);
@@ -175,8 +176,8 @@ export class MtQuote {
             }
         }
 
+        this.logger.log('new historical position arrived', pos.Symbol, new Date(pos.Time).toUTCString());
         this.historical.set(this.symbol, pos.Time);
-
         this.addData(new Date(pos.Time).toUTCString(), pos.Close);
     }
 
