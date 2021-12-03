@@ -6,7 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { WebsocketConnection, WebsocketConnectionEncoding, WebsocketConnectionFormat } from "@anadyme/lavva-js-sdk";
-import { TradeSymbol } from "./shared/mt-quote";
+import { Category, TradeSymbol } from "./shared/mt-quote";
 export namespace Components {
     interface FinnhubNews {
         /**
@@ -99,6 +99,27 @@ export namespace Components {
             [key: string]: string;
         }
     };
+    }
+    interface MtRates {
+        "apiKey": string;
+        "channel": string;
+        "encoding": WebsocketConnectionEncoding;
+        "format": WebsocketConnectionFormat;
+        "groups": Category[];
+        "host": string;
+        "locale": string;
+        "names": boolean;
+        "namespace": string;
+        "size": 'default' | 'large';
+        "snapshot": boolean;
+        "tab": string;
+        "tabs": boolean;
+        "translations": {
+        [key: string]: {
+            [key: string]: string;
+        }
+    };
+        "useCache": boolean;
     }
     interface OwmDaily {
         /**
@@ -213,6 +234,12 @@ declare global {
         prototype: HTMLMtQuoteElement;
         new (): HTMLMtQuoteElement;
     };
+    interface HTMLMtRatesElement extends Components.MtRates, HTMLStencilElement {
+    }
+    var HTMLMtRatesElement: {
+        prototype: HTMLMtRatesElement;
+        new (): HTMLMtRatesElement;
+    };
     interface HTMLOwmDailyElement extends Components.OwmDaily, HTMLStencilElement {
     }
     var HTMLOwmDailyElement: {
@@ -248,6 +275,7 @@ declare global {
         "fxcm-rates": HTMLFxcmRatesElement;
         "mt-marquee": HTMLMtMarqueeElement;
         "mt-quote": HTMLMtQuoteElement;
+        "mt-rates": HTMLMtRatesElement;
         "owm-daily": HTMLOwmDailyElement;
         "owm-daily-item": HTMLOwmDailyItemElement;
         "twit-ter": HTMLTwitTerElement;
@@ -341,6 +369,28 @@ declare namespace LocalJSX {
         }
     };
     }
+    interface MtRates {
+        "apiKey"?: string;
+        "channel"?: string;
+        "encoding"?: WebsocketConnectionEncoding;
+        "format"?: WebsocketConnectionFormat;
+        "groups"?: Category[];
+        "host"?: string;
+        "locale"?: string;
+        "names"?: boolean;
+        "namespace"?: string;
+        "onTradeClick"?: (event: CustomEvent<TradeSymbol>) => void;
+        "size"?: 'default' | 'large';
+        "snapshot"?: boolean;
+        "tab"?: string;
+        "tabs"?: boolean;
+        "translations"?: {
+        [key: string]: {
+            [key: string]: string;
+        }
+    };
+        "useCache"?: boolean;
+    }
     interface OwmDaily {
         /**
           * Prop
@@ -421,6 +471,7 @@ declare namespace LocalJSX {
         "fxcm-rates": FxcmRates;
         "mt-marquee": MtMarquee;
         "mt-quote": MtQuote;
+        "mt-rates": MtRates;
         "owm-daily": OwmDaily;
         "owm-daily-item": OwmDailyItem;
         "twit-ter": TwitTer;
@@ -436,6 +487,7 @@ declare module "@stencil/core" {
             "fxcm-rates": LocalJSX.FxcmRates & JSXBase.HTMLAttributes<HTMLFxcmRatesElement>;
             "mt-marquee": LocalJSX.MtMarquee & JSXBase.HTMLAttributes<HTMLMtMarqueeElement>;
             "mt-quote": LocalJSX.MtQuote & JSXBase.HTMLAttributes<HTMLMtQuoteElement>;
+            "mt-rates": LocalJSX.MtRates & JSXBase.HTMLAttributes<HTMLMtRatesElement>;
             "owm-daily": LocalJSX.OwmDaily & JSXBase.HTMLAttributes<HTMLOwmDailyElement>;
             "owm-daily-item": LocalJSX.OwmDailyItem & JSXBase.HTMLAttributes<HTMLOwmDailyItemElement>;
             "twit-ter": LocalJSX.TwitTer & JSXBase.HTMLAttributes<HTMLTwitTerElement>;

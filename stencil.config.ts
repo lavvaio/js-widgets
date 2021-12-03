@@ -7,8 +7,9 @@ export const config: Config = {
         sass()
     ],
     bundles: [
-        { components: ['owm-daily'] },
-        { components: ['yahoo-quotes'] },
+        { components: ['mt-marquee'] },
+        { components: ['mt-quote'] },
+        { components: ['mt-rates'] },
     ],
     outputTargets: [
         {
@@ -31,7 +32,14 @@ export const config: Config = {
             type: 'www',
             serviceWorker: null, // disable service workers
             copy: [
-                //
+                {
+                    src: 'favicon.ico',
+                    dest: 'favicon.ico'
+                },
+                {
+                    src: 'components/mt-rates/assets',
+                    dest: 'build/assets'
+                }
             ]
         },
     ],

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-12-03T18:16:07",
+  "timestamp": "2021-12-03T18:32:13",
   "compiler": {
     "name": "node",
     "version": "14.15.0"
@@ -7,19 +7,20 @@
   "app": {
     "namespace": "LavvaJsWidgets",
     "fsNamespace": "lavva-js-widgets",
-    "components": 9,
-    "entries": 9,
-    "bundles": 54,
+    "components": 10,
+    "entries": 10,
+    "bundles": 57,
     "outputs": [
       {
         "name": "dist-custom-elements",
-        "files": 10,
+        "files": 11,
         "generatedFiles": [
           "./dist/components/finnhub-news.d.ts",
           "./dist/components/fxcm-rates.d.ts",
           "./dist/components/index.d.ts",
           "./dist/components/mt-marquee.d.ts",
           "./dist/components/mt-quote.d.ts",
+          "./dist/components/mt-rates.d.ts",
           "./dist/components/owm-daily-item.d.ts",
           "./dist/components/owm-daily.d.ts",
           "./dist/components/twit-ter.d.ts",
@@ -36,19 +37,20 @@
       },
       {
         "name": "dist-lazy",
-        "files": 40,
+        "files": 42,
         "generatedFiles": [
           "./dist/lavva-js-widgets/app-globals-0f993ce5.js",
           "./dist/lavva-js-widgets/css-shim-aac75381.js",
           "./dist/lavva-js-widgets/dom-c7604576.js",
           "./dist/lavva-js-widgets/finnhub-news.entry.js",
           "./dist/lavva-js-widgets/fxcm-rates.entry.js",
-          "./dist/lavva-js-widgets/index-eb926e82.js",
+          "./dist/lavva-js-widgets/index-27017b43.js",
           "./dist/lavva-js-widgets/index.esm.js",
           "./dist/lavva-js-widgets/lavva-js-sdk.esm-e185e4d4.js",
           "./dist/lavva-js-widgets/lavva-js-widgets.esm.js",
           "./dist/lavva-js-widgets/mt-marquee.entry.js",
           "./dist/lavva-js-widgets/mt-quote.entry.js",
+          "./dist/lavva-js-widgets/mt-rates.entry.js",
           "./dist/lavva-js-widgets/owm-daily-item.entry.js",
           "./dist/lavva-js-widgets/owm-daily.entry.js",
           "./dist/lavva-js-widgets/shadow-css-83bb1d14.js",
@@ -63,12 +65,13 @@
           "./www/build/dom-c7604576.js",
           "./www/build/finnhub-news.entry.js",
           "./www/build/fxcm-rates.entry.js",
-          "./www/build/index-eb926e82.js",
+          "./www/build/index-27017b43.js",
           "./www/build/index.esm.js",
           "./www/build/lavva-js-sdk.esm-e185e4d4.js",
           "./www/build/lavva-js-widgets.esm.js",
           "./www/build/mt-marquee.entry.js",
           "./www/build/mt-quote.entry.js",
+          "./www/build/mt-rates.entry.js",
           "./www/build/owm-daily-item.entry.js",
           "./www/build/owm-daily.entry.js",
           "./www/build/shadow-css-83bb1d14.js",
@@ -114,7 +117,7 @@
         "bundleId": "finnhub-news",
         "fileName": "finnhub-news.entry.js",
         "imports": [
-          "index-eb926e82.js",
+          "index-27017b43.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
@@ -129,7 +132,7 @@
         "bundleId": "fxcm-rates",
         "fileName": "fxcm-rates.entry.js",
         "imports": [
-          "index-eb926e82.js",
+          "index-27017b43.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
@@ -144,7 +147,7 @@
         "bundleId": "mt-marquee",
         "fileName": "mt-marquee.entry.js",
         "imports": [
-          "index-eb926e82.js",
+          "index-27017b43.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-47bf880f.js"
@@ -159,12 +162,27 @@
         "bundleId": "mt-quote",
         "fileName": "mt-quote.entry.js",
         "imports": [
-          "index-eb926e82.js",
+          "index-27017b43.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-47bf880f.js"
         ],
         "originalByteSize": 411865
+      },
+      {
+        "key": "mt-rates.entry",
+        "components": [
+          "mt-rates"
+        ],
+        "bundleId": "mt-rates",
+        "fileName": "mt-rates.entry.js",
+        "imports": [
+          "index-27017b43.js",
+          "lavva-js-sdk.esm-e185e4d4.js",
+          "store2-f3f72e93.js",
+          "utils-47bf880f.js"
+        ],
+        "originalByteSize": 17515
       },
       {
         "key": "owm-daily.entry",
@@ -174,7 +192,7 @@
         "bundleId": "owm-daily",
         "fileName": "owm-daily.entry.js",
         "imports": [
-          "index-eb926e82.js",
+          "index-27017b43.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
@@ -189,7 +207,7 @@
         "bundleId": "twit-ter",
         "fileName": "twit-ter.entry.js",
         "imports": [
-          "index-eb926e82.js",
+          "index-27017b43.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
@@ -204,7 +222,7 @@
         "bundleId": "yahoo-quotes",
         "fileName": "yahoo-quotes.entry.js",
         "imports": [
-          "index-eb926e82.js",
+          "index-27017b43.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
@@ -219,7 +237,7 @@
         "bundleId": "owm-daily-item",
         "fileName": "owm-daily-item.entry.js",
         "imports": [
-          "index-eb926e82.js",
+          "index-27017b43.js",
           "utils-6f0cae60.js",
           "lavva-js-sdk.esm-e185e4d4.js"
         ],
@@ -233,7 +251,7 @@
         "bundleId": "yahoo-quote",
         "fileName": "yahoo-quote.entry.js",
         "imports": [
-          "index-eb926e82.js"
+          "index-27017b43.js"
         ],
         "originalByteSize": 2413
       }
@@ -1265,6 +1283,386 @@
         },
         {
           "name": "chartData"
+        }
+      ]
+    },
+    {
+      "tag": "mt-rates",
+      "path": "./src/components/mt-rates/mt-rates.js",
+      "source": "./src/components/mt-rates/mt-rates.tsx",
+      "elementRef": null,
+      "componentClassName": "MT4Rates",
+      "assetsDirs": [
+        {
+          "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-rates/assets",
+          "cmpRelativePath": "./assets",
+          "originalComponentPath": "./assets"
+        }
+      ],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [
+        {
+          "name": "tradeClick",
+          "method": "tradeClick",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "complexType": {
+            "original": "TradeSymbol",
+            "resolved": "TradeSymbol",
+            "references": {
+              "TradeSymbol": {
+                "location": "import",
+                "path": "../../shared/mt-quote"
+              }
+            }
+          },
+          "internal": false
+        }
+      ],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "host",
+          "type": "string",
+          "attribute": "host",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'xxxxxxxxxx.apps.anadyme.com'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "channel",
+          "type": "string",
+          "attribute": "channel",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "locale",
+          "type": "string",
+          "attribute": "locale",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'en'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "size",
+          "type": "string",
+          "attribute": "size",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'default'",
+          "complexType": {
+            "original": "'default' | 'large'",
+            "resolved": "\"default\" | \"large\"",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "translations",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "null",
+          "complexType": {
+            "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
+            "resolved": "{ [key: string]: { [key: string]: string; }; }",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "tabs",
+          "type": "boolean",
+          "attribute": "tabs",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "names",
+          "type": "boolean",
+          "attribute": "names",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "tab",
+          "type": "string",
+          "attribute": "tab",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "\"most-traded\"",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "groups",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "defaultValue": "[\n        {\n            name: \"most-traded\",\n            label: this.translate(\"most-traded\", \"Most traded\"),\n            symbols: [\n                { key: \"BTCUSDm\", label: \"BTC/USD\" },\n                { key: \"XAUUSDm\", label: \"Gold/USD\" },\n                { key: \"EURUSDm\",  label: \"EUR/USD\" },\n                { key: \"USOILm\", label: \"US Oil\" },\n                { key: \"ETHUSDm\", label: \"ETH/USD\" }\n            ],\n        },\n        {\n            name: \"currencies\",\n            label: this.translate(\"currencies\", \"Currencies\"),\n            symbols: [\n                { key: \"EURUSDm\", label: \"EUR/USD\" },\n                { key: \"USDJPYm\", label: \"USD/JPY\" },\n                { key: \"GBPUSDm\",  label: \"GBP/USD\" },\n                { key: \"USDCHFm\", label: \"USD/CHF\" },\n                { key: \"USDCADm\", label: \"USD/CAD\" }\n            ]\n        },\n        {\n            name: \"indices\",\n            label: this.translate(\"indices\", \"Indices\"),\n            symbols: [\n                { key: \"USTECm\", label: \"US Tech 100\" },\n                { key: \"UK100m\", label: \"UK 100 Index\" },\n                { key: \"STOXX50m\",  label: \"EU 50 Index\" },\n                { key: \"HK50m\", label: \"HK 50 Index\" },\n                { key: \"DE30m\", label: \"DE 30 Index\" }\n            ]\n        },\n        {\n            name: \"digital\",\n            label: this.translate(\"digital\", \"Digital\"),\n            symbols: [\n                { key: \"BTCUSDm\", label: \"BTC/USD\" },\n                { key: \"BTCJPYm\", label: \"BTC/JPY\" },\n                { key: \"ETHUSDm\", label: \"ETH/USD\" },\n                { key: \"LTCUSDm\", label: \"LTC/USD\" },\n                { key: \"XRPUSDm\", label: \"XRP/USD\" },\n            ]\n        },\n        {\n            name: \"shares\",\n            label: this.translate(\"shares\", \"Shares\"),\n            symbols: [\n                { key: \"AAPLm\", label: \"Apple\" },\n                { key: \"BABAm\", label: \"AliBaba\" },\n                { key: \"Cm\", label: \"CitiGroup\" },\n                { key: \"KOm\", label: \"CocaCola\" },\n                { key: \"NFLXm\", label: \"Netflix\" },\n            ]\n        },\n        {\n            name: \"commodities\",\n            label: this.translate(\"commodities\", \"Commodities\"),\n            symbols: [\n                { key: \"XAUUSDm\", label: \"Gold/USD\" },\n                { key: \"XAGUSDm\", label: \"Silver/USD\" },\n                { key: \"USOILm\", label: \"US Crude Oil\" },\n                { key: \"XPDUSDm\", label: \"Palladium/USD\" },\n                { key: \"XPTUSDm\", label: \"Platinum/USD\" },\n            ]\n        }\n    ]",
+          "complexType": {
+            "original": "Category[]",
+            "resolved": "Category[]",
+            "references": {
+              "Category": {
+                "location": "import",
+                "path": "../../shared/mt-quote"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "attribute": "format",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'binary'",
+          "complexType": {
+            "original": "WebsocketConnectionFormat",
+            "resolved": "\"binary\" | \"text\"",
+            "references": {
+              "WebsocketConnectionFormat": {
+                "location": "import",
+                "path": "@anadyme/lavva-js-sdk"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "encoding",
+          "type": "string",
+          "attribute": "encoding",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'msgpack'",
+          "complexType": {
+            "original": "WebsocketConnectionEncoding",
+            "resolved": "\"json\" | \"msgpack\"",
+            "references": {
+              "WebsocketConnectionEncoding": {
+                "location": "import",
+                "path": "@anadyme/lavva-js-sdk"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "apiKey",
+          "type": "string",
+          "attribute": "api-key",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "snapshot",
+          "type": "boolean",
+          "attribute": "snapshot",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "useCache",
+          "type": "boolean",
+          "attribute": "use-cache",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "namespace",
+          "type": "string",
+          "attribute": "namespace",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'mt4-rates'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": false,
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "loading"
+        },
+        {
+          "name": "storage"
         }
       ]
     },
@@ -3299,6 +3697,474 @@
     {
       "cmps": [
         {
+          "tagName": "mt-rates",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "MT4Rates",
+          "elementRef": null,
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "host",
+              "type": "string",
+              "attribute": "host",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'xxxxxxxxxx.apps.anadyme.com'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "channel",
+              "type": "string",
+              "attribute": "channel",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "locale",
+              "type": "string",
+              "attribute": "locale",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'en'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "size",
+              "type": "string",
+              "attribute": "size",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'default'",
+              "complexType": {
+                "original": "'default' | 'large'",
+                "resolved": "\"default\" | \"large\"",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "translations",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "null",
+              "complexType": {
+                "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
+                "resolved": "{ [key: string]: { [key: string]: string; }; }",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "tabs",
+              "type": "boolean",
+              "attribute": "tabs",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "names",
+              "type": "boolean",
+              "attribute": "names",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "tab",
+              "type": "string",
+              "attribute": "tab",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "\"most-traded\"",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "groups",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "[\n        {\n            name: \"most-traded\",\n            label: this.translate(\"most-traded\", \"Most traded\"),\n            symbols: [\n                { key: \"BTCUSDm\", label: \"BTC/USD\" },\n                { key: \"XAUUSDm\", label: \"Gold/USD\" },\n                { key: \"EURUSDm\",  label: \"EUR/USD\" },\n                { key: \"USOILm\", label: \"US Oil\" },\n                { key: \"ETHUSDm\", label: \"ETH/USD\" }\n            ],\n        },\n        {\n            name: \"currencies\",\n            label: this.translate(\"currencies\", \"Currencies\"),\n            symbols: [\n                { key: \"EURUSDm\", label: \"EUR/USD\" },\n                { key: \"USDJPYm\", label: \"USD/JPY\" },\n                { key: \"GBPUSDm\",  label: \"GBP/USD\" },\n                { key: \"USDCHFm\", label: \"USD/CHF\" },\n                { key: \"USDCADm\", label: \"USD/CAD\" }\n            ]\n        },\n        {\n            name: \"indices\",\n            label: this.translate(\"indices\", \"Indices\"),\n            symbols: [\n                { key: \"USTECm\", label: \"US Tech 100\" },\n                { key: \"UK100m\", label: \"UK 100 Index\" },\n                { key: \"STOXX50m\",  label: \"EU 50 Index\" },\n                { key: \"HK50m\", label: \"HK 50 Index\" },\n                { key: \"DE30m\", label: \"DE 30 Index\" }\n            ]\n        },\n        {\n            name: \"digital\",\n            label: this.translate(\"digital\", \"Digital\"),\n            symbols: [\n                { key: \"BTCUSDm\", label: \"BTC/USD\" },\n                { key: \"BTCJPYm\", label: \"BTC/JPY\" },\n                { key: \"ETHUSDm\", label: \"ETH/USD\" },\n                { key: \"LTCUSDm\", label: \"LTC/USD\" },\n                { key: \"XRPUSDm\", label: \"XRP/USD\" },\n            ]\n        },\n        {\n            name: \"shares\",\n            label: this.translate(\"shares\", \"Shares\"),\n            symbols: [\n                { key: \"AAPLm\", label: \"Apple\" },\n                { key: \"BABAm\", label: \"AliBaba\" },\n                { key: \"Cm\", label: \"CitiGroup\" },\n                { key: \"KOm\", label: \"CocaCola\" },\n                { key: \"NFLXm\", label: \"Netflix\" },\n            ]\n        },\n        {\n            name: \"commodities\",\n            label: this.translate(\"commodities\", \"Commodities\"),\n            symbols: [\n                { key: \"XAUUSDm\", label: \"Gold/USD\" },\n                { key: \"XAGUSDm\", label: \"Silver/USD\" },\n                { key: \"USOILm\", label: \"US Crude Oil\" },\n                { key: \"XPDUSDm\", label: \"Palladium/USD\" },\n                { key: \"XPTUSDm\", label: \"Platinum/USD\" },\n            ]\n        }\n    ]",
+              "complexType": {
+                "original": "Category[]",
+                "resolved": "Category[]",
+                "references": {
+                  "Category": {
+                    "location": "import",
+                    "path": "../../shared/mt-quote"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "format",
+              "type": "string",
+              "attribute": "format",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'binary'",
+              "complexType": {
+                "original": "WebsocketConnectionFormat",
+                "resolved": "\"binary\" | \"text\"",
+                "references": {
+                  "WebsocketConnectionFormat": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "encoding",
+              "type": "string",
+              "attribute": "encoding",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'msgpack'",
+              "complexType": {
+                "original": "WebsocketConnectionEncoding",
+                "resolved": "\"json\" | \"msgpack\"",
+                "references": {
+                  "WebsocketConnectionEncoding": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "apiKey",
+              "type": "string",
+              "attribute": "api-key",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "snapshot",
+              "type": "boolean",
+              "attribute": "snapshot",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'mt4-rates'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "data"
+            },
+            {
+              "name": "loading"
+            },
+            {
+              "name": "storage"
+            }
+          ],
+          "methods": [],
+          "listeners": [],
+          "events": [
+            {
+              "name": "tradeClick",
+              "method": "tradeClick",
+              "bubbles": true,
+              "cancelable": true,
+              "composed": true,
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "complexType": {
+                "original": "TradeSymbol",
+                "resolved": "TradeSymbol",
+                "references": {
+                  "TradeSymbol": {
+                    "location": "import",
+                    "path": "../../shared/mt-quote"
+                  }
+                }
+              },
+              "internal": false
+            }
+          ],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MT-RATES",
+              "styleStr": null,
+              "styleIdentifier": "mtRatesStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-rates/mt-rates.scss",
+                  "relativePath": "mt-rates.scss",
+                  "originalComponentPath": "mt-rates.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [
+            {
+              "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-rates/assets",
+              "cmpRelativePath": "./assets",
+              "originalComponentPath": "./assets"
+            }
+          ],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-rates/mt-rates.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-rates/mt-rates.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": true,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": true,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": true,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "src",
+            "onClick"
+          ],
+          "htmlTagNames": [
+            "div",
+            "img",
+            "span",
+            "button",
+            "header",
+            "ul",
+            "li",
+            "section"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "mt-rates.entry"
+    },
+    {
+      "cmps": [
+        {
           "tagName": "owm-daily",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -4372,51 +5238,57 @@
   ],
   "componentGraph": {
     "sc-finnhub-news": [
-      "index-eb926e82.js",
+      "index-27017b43.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-6f0cae60.js"
     ],
     "sc-fxcm-rates": [
-      "index-eb926e82.js",
+      "index-27017b43.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-6f0cae60.js"
     ],
     "sc-mt-marquee": [
-      "index-eb926e82.js",
+      "index-27017b43.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-47bf880f.js"
     ],
     "sc-mt-quote": [
-      "index-eb926e82.js",
+      "index-27017b43.js",
+      "lavva-js-sdk.esm-e185e4d4.js",
+      "store2-f3f72e93.js",
+      "utils-47bf880f.js"
+    ],
+    "sc-mt-rates": [
+      "index-27017b43.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-47bf880f.js"
     ],
     "sc-owm-daily": [
-      "index-eb926e82.js",
+      "index-27017b43.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-6f0cae60.js"
     ],
     "sc-owm-daily-item": [
-      "index-eb926e82.js",
+      "index-27017b43.js",
       "utils-6f0cae60.js",
       "lavva-js-sdk.esm-e185e4d4.js"
     ],
     "sc-twit-ter": [
-      "index-eb926e82.js",
+      "index-27017b43.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-6f0cae60.js"
     ],
     "sc-yahoo-quote": [
-      "index-eb926e82.js"
+      "index-27017b43.js"
     ],
     "sc-yahoo-quotes": [
-      "index-eb926e82.js",
+      "index-27017b43.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-6f0cae60.js"
@@ -4435,6 +5307,9 @@
       "./src/utils"
     ],
     "./src/components/mt-quote/mt-quote.tsx": [
+      "./src/utils"
+    ],
+    "./src/components/mt-rates/mt-rates.tsx": [
       "./src/utils"
     ],
     "./src/components/owm-daily/owm-daily-item.tsx": [
