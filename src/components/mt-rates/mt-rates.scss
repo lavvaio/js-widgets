@@ -1,23 +1,28 @@
 :host {
-    position: relative;
+
+    --padding: 38px 40px;
+    --border-radius: 0;
+    --background-color: rgb(38, 38, 38);
+    --symbol-percent-up: rgb(0, 217, 100);
+    --symbol-percent-down: rgb(255, 0, 0);
 
     .size-default {
         max-width: 650px;
-        background: #151415;
+        background: var(--background-color);
         color: #DADBDF;
         font-size: 14px;
-        border-radius: 14px;
+        border-radius: var(--border-radius);
         position: relative;
 
         .right-faded {
             position: absolute;
             top: 0;
             right: 0;
-            background: #151415;
+            background: var(--background-color);
             background: linear-gradient(to right, transparent, #151415);
             height: 31px;
             width: 31px;
-            border-top-right-radius: 14px;
+            border-top-right-radius: var(--border-radius);
         }
 
         header {
@@ -240,10 +245,10 @@
                     flex: 0.8;
 
                     .up {
-                        color: #4B8AE9;
+                        color: var(--symbol-percent-up);
                     }
                     .down {
-                        color: #DA361B;
+                        color: var(--symbol-percent-down);
                     }
                 }
 
@@ -402,8 +407,7 @@
             }
 
             .body {
-                padding: 38px;
-                padding-top: 40px;
+                padding: var(--padding);
 
                 .column-names {
                     div {

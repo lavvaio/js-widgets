@@ -32,7 +32,8 @@
             }
 
             mt-quote {
-                min-width: 240px;;
+                min-width: 240px;
+                margin-right: 10px;
             }
 
             mt-quote:nth-child(2),
@@ -68,6 +69,13 @@
                 --symbol-percent-down: #DA361B;
             }
 
+            mt-rates.c1 {
+                --border-radius: 14px;
+                --background-color: #151415;
+                --symbol-percent-up: #4B8AE9;
+                --symbol-percent-down: #DA361B;
+            }
+
         </style>
     </head>
     <body>
@@ -76,17 +84,17 @@
         <mt-marquee host="3445fed92f02.cloud.anadyme.com" channel="mt5"></mt-marquee>
         <br />
         <div class="quotes">
-            <mt-quote style="margin-right: 10px;" host="3445fed92f02.cloud.anadyme.com" channel="mt5" symbol="XRPUSDm"></mt-quote>
-            <mt-quote style="margin-right: 10px;" host="3445fed92f02.cloud.anadyme.com" channel="mt5" symbol="XRPUSDm" show-chart="false"></mt-quote>
-            <mt-quote style="margin-right: 10px;" host="3445fed92f02.cloud.anadyme.com" channel="mt5" symbol="BTCJPYm" show-chart></mt-quote>
-            <mt-quote style="margin-right: 10px;" host="3445fed92f02.cloud.anadyme.com" channel="mt5" symbol="BTCJPYm" show-chart="false"></mt-quote>
-            <mt-quote style="margin-right: 10px;" host="3445fed92f02.cloud.anadyme.com" channel="mt5" symbol="LTCUSDm" show-chart></mt-quote>
-            <mt-quote style="margin-right: 10px;" host="3445fed92f02.cloud.anadyme.com" channel="mt5" symbol="LTCUSDm" show-chart="false"></mt-quote>
+            <mt-quote host="3445fed92f02.cloud.anadyme.com" channel="mt5" symbol="XRPUSDm"></mt-quote>
+            <mt-quote host="3445fed92f02.cloud.anadyme.com" channel="mt5" symbol="XRPUSDm" show-chart="false"></mt-quote>
+            <mt-quote host="3445fed92f02.cloud.anadyme.com" channel="mt5" symbol="BTCJPYm" show-chart></mt-quote>
+            <mt-quote host="3445fed92f02.cloud.anadyme.com" channel="mt5" symbol="BTCJPYm" show-chart="false"></mt-quote>
+            <mt-quote host="3445fed92f02.cloud.anadyme.com" channel="mt5" symbol="LTCUSDm" show-chart></mt-quote>
+            <mt-quote host="3445fed92f02.cloud.anadyme.com" channel="mt5" symbol="LTCUSDm" show-chart="false"></mt-quote>
         </div>
         <br />
         <mt-rates size="large" host="3445fed92f02.cloud.anadyme.com" channel="mt5"></mt-rates>
         <br />
-        <mt-rates size="large" host="3445fed92f02.cloud.anadyme.com" channel="mt5" tabs="false"></mt-rates>
+        <mt-rates class="c1" size="large" host="3445fed92f02.cloud.anadyme.com" channel="mt5" tabs="false"></mt-rates>
         <br />
         <mt-rates size="large" host="3445fed92f02.cloud.anadyme.com" channel="mt5" names="false"></mt-rates>
         <br />
