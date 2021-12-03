@@ -30,7 +30,7 @@ export interface Historical {
 export interface TradeSymbol {
     key: string;
     label: string;
-    src?: string;
+    image: string;
 }
 
 export interface Category {

@@ -1,5 +1,5 @@
 import { ClientMessageDataType, WebsocketConnection, WebsocketConnectionEncoding, WebsocketConnectionFormat } from '@anadyme/lavva-js-sdk';
-import { Event, EventEmitter, Component, h, Prop, State, getAssetPath } from '@stencil/core';
+import { Event, EventEmitter, Component, h, Prop, State } from '@stencil/core';
 import { filter, Subscription } from 'rxjs';
 import store from 'store2';
 import { Category, Quote, TradeSymbol } from '../../shared/mt-quote';
@@ -44,74 +44,74 @@ export class MT4Rates {
     names = true
 
     @Prop()
-    tab = "most-traded"
+    tab = "popular"
 
     @Prop({ mutable: true })
     groups: Category[] = [
         {
-            name: "most-traded",
-            label: this.translate("most-traded", "Most traded"),
+            name: "popular",
+            label: this.translate("popular", "Popular"),
             symbols: [
-                { key: "BTCUSDm", label: "BTC/USD" },
-                { key: "XAUUSDm", label: "Gold/USD" },
-                { key: "EURUSDm",  label: "EUR/USD" },
-                { key: "USOILm", label: "US Oil" },
-                { key: "ETHUSDm", label: "ETH/USD" }
+                { key: "BTCUSDm", label: "BTC/USD" , image: "/build/assets/svg/BTCUSDm.svg" },
+                { key: "XAUUSDm", label: "Gold/USD", image: "/build/assets/svg/XAUUSDm.svg" },
+                { key: "EURUSDm",  label: "EUR/USD", image: "/build/assets/svg/EURUSDm.svg" },
+                { key: "USOILm", label: "US Oil"   , image: "/build/assets/svg/USOILm.svg" },
+                { key: "ETHUSDm", label: "ETH/USD" , image: "/build/assets/svg/ETHUSDm.svg" },
             ],
         },
         {
-            name: "currencies",
-            label: this.translate("currencies", "Currencies"),
+            name: "forex",
+            label: this.translate("forex", "Forex"),
             symbols: [
-                { key: "EURUSDm", label: "EUR/USD" },
-                { key: "USDJPYm", label: "USD/JPY" },
-                { key: "GBPUSDm",  label: "GBP/USD" },
-                { key: "USDCHFm", label: "USD/CHF" },
-                { key: "USDCADm", label: "USD/CAD" }
+                { key: "EURUSDm", label: "EUR/USD" , image: "/build/assets/svg/EURUSDm.svg" },
+                { key: "USDJPYm", label: "USD/JPY" , image: "/build/assets/svg/USDJPYm.svg" },
+                { key: "GBPUSDm",  label: "GBP/USD", image: "/build/assets/svg/GBPUSDm.svg" },
+                { key: "USDCHFm", label: "USD/CHF" , image: "/build/assets/svg/USDCHFm.svg" },
+                { key: "USDCADm", label: "USD/CAD" , image: "/build/assets/svg/USDCADm.svg" },
             ]
         },
         {
-            name: "indices",
-            label: this.translate("indices", "Indices"),
+            name: "stocks",
+            label: this.translate("stocks", "Stocks"),
             symbols: [
-                { key: "USTECm", label: "US Tech 100" },
-                { key: "UK100m", label: "UK 100 Index" },
-                { key: "STOXX50m",  label: "EU 50 Index" },
-                { key: "HK50m", label: "HK 50 Index" },
-                { key: "DE30m", label: "DE 30 Index" }
+                { key: "USTECm", label: "US Tech 100"   , image: "/build/assets/svg/USTECm.svg" },
+                { key: "UK100m", label: "UK 100 Index"  , image: "/build/assets/svg/UK100m.svg" },
+                { key: "STOXX50m",  label: "EU 50 Index", image: "/build/assets/svg/STOXX50m.svg" },
+                { key: "HK50m", label: "HK 50 Index"    , image: "/build/assets/svg/HK50m.svg" },
+                { key: "DE30m", label: "DE 30 Index"    , image: "/build/assets/svg/DE30m.svg" },
             ]
         },
         {
-            name: "digital",
-            label: this.translate("digital", "Digital"),
+            name: "crypto",
+            label: this.translate("crypto", "Crypto"),
             symbols: [
-                { key: "BTCUSDm", label: "BTC/USD" },
-                { key: "BTCJPYm", label: "BTC/JPY" },
-                { key: "ETHUSDm", label: "ETH/USD" },
-                { key: "LTCUSDm", label: "LTC/USD" },
-                { key: "XRPUSDm", label: "XRP/USD" },
+                { key: "BTCUSDm", label: "BTC/USD", image: "/build/assets/svg/BTCUSDm.svg" },
+                { key: "BTCJPYm", label: "BTC/JPY", image: "/build/assets/svg/BTCJPYm.svg" },
+                { key: "ETHUSDm", label: "ETH/USD", image: "/build/assets/svg/ETHUSDm.svg" },
+                { key: "LTCUSDm", label: "LTC/USD", image: "/build/assets/svg/LTCUSDm.svg" },
+                { key: "XRPUSDm", label: "XRP/USD", image: "/build/assets/svg/XRPUSDm.svg" },
             ]
         },
         {
             name: "shares",
             label: this.translate("shares", "Shares"),
             symbols: [
-                { key: "AAPLm", label: "Apple" },
-                { key: "BABAm", label: "AliBaba" },
-                { key: "Cm", label: "CitiGroup" },
-                { key: "KOm", label: "CocaCola" },
-                { key: "NFLXm", label: "Netflix" },
+                { key: "AAPLm", label: "Apple"  , image: "/build/assets/svg/AAPLm.svg" },
+                { key: "BABAm", label: "AliBaba", image: "/build/assets/svg/BABAm.svg" },
+                { key: "Cm", label: "CitiGroup" , image: "/build/assets/svg/Cm.svg" },
+                { key: "KOm", label: "CocaCola" , image: "/build/assets/svg/KOm.svg" },
+                { key: "NFLXm", label: "Netflix", image: "/build/assets/svg/NFLXm.svg" },
             ]
         },
         {
-            name: "commodities",
-            label: this.translate("commodities", "Commodities"),
+            name: "precious-metal",
+            label: this.translate("precious-metal", "Precious metals"),
             symbols: [
-                { key: "XAUUSDm", label: "Gold/USD" },
-                { key: "XAGUSDm", label: "Silver/USD" },
-                { key: "USOILm", label: "US Crude Oil" },
-                { key: "XPDUSDm", label: "Palladium/USD" },
-                { key: "XPTUSDm", label: "Platinum/USD" },
+                { key: "XAUUSDm", label: "Gold/USD"     , image: "/build/assets/svg/XAUUSDm.svg" },
+                { key: "XAGUSDm", label: "Silver/USD"   , image: "/build/assets/svg/XAGUSDm.svg" },
+                { key: "XPDUSDm", label: "Palladium/USD", image: "/build/assets/svg/XPDUSDm.svg" },
+                { key: "XPTUSDm", label: "Platinum/USD" , image: "/build/assets/svg/XPTUSDm.svg" },
+                { key: "XPTUSDm", label: "Platinum/USD" , image: "/build/assets/svg/XPTUSDm.svg" },
             ]
         }
     ];
@@ -245,7 +245,7 @@ export class MT4Rates {
         const change = parseFloat(`${quote.PerDiff || 0}`).toFixed(3);
         return <div class="column-values">
             <div class="icon">
-                <img class={`${symbol.key} ${category.name}`} src={symbol.src ? symbol.src : getAssetPath(`./assets/svg/${symbol.key}.svg`)} />
+                <img class={`${symbol.key} ${category.name}`} src={symbol.image} />
             </div>
             {this.names &&
                 <div class="name"><span>{this.translate(symbol.key, symbol.label)}</span></div>

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-12-03T18:32:13",
+  "timestamp": "2021-12-03T18:47:16",
   "compiler": {
     "name": "node",
     "version": "14.15.0"
@@ -9,7 +9,7 @@
     "fsNamespace": "lavva-js-widgets",
     "components": 10,
     "entries": 10,
-    "bundles": 57,
+    "bundles": 59,
     "outputs": [
       {
         "name": "dist-custom-elements",
@@ -37,7 +37,7 @@
       },
       {
         "name": "dist-lazy",
-        "files": 42,
+        "files": 44,
         "generatedFiles": [
           "./dist/lavva-js-widgets/app-globals-0f993ce5.js",
           "./dist/lavva-js-widgets/css-shim-aac75381.js",
@@ -45,6 +45,7 @@
           "./dist/lavva-js-widgets/finnhub-news.entry.js",
           "./dist/lavva-js-widgets/fxcm-rates.entry.js",
           "./dist/lavva-js-widgets/index-27017b43.js",
+          "./dist/lavva-js-widgets/index-53ef1f0e.js",
           "./dist/lavva-js-widgets/index.esm.js",
           "./dist/lavva-js-widgets/lavva-js-sdk.esm-e185e4d4.js",
           "./dist/lavva-js-widgets/lavva-js-widgets.esm.js",
@@ -66,6 +67,7 @@
           "./www/build/finnhub-news.entry.js",
           "./www/build/fxcm-rates.entry.js",
           "./www/build/index-27017b43.js",
+          "./www/build/index-53ef1f0e.js",
           "./www/build/index.esm.js",
           "./www/build/lavva-js-sdk.esm-e185e4d4.js",
           "./www/build/lavva-js-widgets.esm.js",
@@ -117,7 +119,7 @@
         "bundleId": "finnhub-news",
         "fileName": "finnhub-news.entry.js",
         "imports": [
-          "index-27017b43.js",
+          "index-53ef1f0e.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
@@ -132,7 +134,7 @@
         "bundleId": "fxcm-rates",
         "fileName": "fxcm-rates.entry.js",
         "imports": [
-          "index-27017b43.js",
+          "index-53ef1f0e.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
@@ -147,12 +149,12 @@
         "bundleId": "mt-marquee",
         "fileName": "mt-marquee.entry.js",
         "imports": [
-          "index-27017b43.js",
+          "index-53ef1f0e.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-47bf880f.js"
         ],
-        "originalByteSize": 7871
+        "originalByteSize": 8831
       },
       {
         "key": "mt-quote.entry",
@@ -162,7 +164,7 @@
         "bundleId": "mt-quote",
         "fileName": "mt-quote.entry.js",
         "imports": [
-          "index-27017b43.js",
+          "index-53ef1f0e.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-47bf880f.js"
@@ -177,12 +179,12 @@
         "bundleId": "mt-rates",
         "fileName": "mt-rates.entry.js",
         "imports": [
-          "index-27017b43.js",
+          "index-53ef1f0e.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-47bf880f.js"
         ],
-        "originalByteSize": 17515
+        "originalByteSize": 18592
       },
       {
         "key": "owm-daily.entry",
@@ -192,7 +194,7 @@
         "bundleId": "owm-daily",
         "fileName": "owm-daily.entry.js",
         "imports": [
-          "index-27017b43.js",
+          "index-53ef1f0e.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
@@ -207,7 +209,7 @@
         "bundleId": "twit-ter",
         "fileName": "twit-ter.entry.js",
         "imports": [
-          "index-27017b43.js",
+          "index-53ef1f0e.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
@@ -222,7 +224,7 @@
         "bundleId": "yahoo-quotes",
         "fileName": "yahoo-quotes.entry.js",
         "imports": [
-          "index-27017b43.js",
+          "index-53ef1f0e.js",
           "lavva-js-sdk.esm-e185e4d4.js",
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
@@ -237,7 +239,7 @@
         "bundleId": "owm-daily-item",
         "fileName": "owm-daily-item.entry.js",
         "imports": [
-          "index-27017b43.js",
+          "index-53ef1f0e.js",
           "utils-6f0cae60.js",
           "lavva-js-sdk.esm-e185e4d4.js"
         ],
@@ -251,7 +253,7 @@
         "bundleId": "yahoo-quote",
         "fileName": "yahoo-quote.entry.js",
         "imports": [
-          "index-27017b43.js"
+          "index-53ef1f0e.js"
         ],
         "originalByteSize": 2413
       }
@@ -856,7 +858,7 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "[\n        { key: \"BTCUSDm\", label: \"BTC/USD\" },\n        { key: \"XAUUSDm\", label: \"Gold/USD\" },\n        { key: \"EURUSDm\",  label: \"EUR/USD\" },\n        { key: \"USOILm\", label: \"US Oil\" },\n        { key: \"ETHUSDm\", label: \"ETH/USD\" },\n        //\n        { key: \"USTECm\", label: \"US Tech 100\" },\n        { key: \"UK100m\", label: \"UK 100 Index\" },\n        { key: \"STOXX50m\",  label: \"EU 50 Index\" },\n        { key: \"HK50m\", label: \"HK 50 Index\" },\n        { key: \"DE30m\", label: \"DE 30 Index\" },\n        //\n        { key: \"BTCUSDm\", label: \"BTC/USD\" },\n        { key: \"BTCJPYm\", label: \"BTC/JPY\" },\n        { key: \"ETHUSDm\", label: \"ETH/USD\" },\n        { key: \"LTCUSDm\", label: \"LTC/USD\" },\n        { key: \"XRPUSDm\", label: \"XRP/USD\" },\n        //\n        { key: \"AAPLm\", label: \"Apple\" },\n        { key: \"BABAm\", label: \"AliBaba\" },\n        { key: \"Cm\", label: \"CitiGroup\" },\n        { key: \"KOm\", label: \"CocaCola\" },\n        { key: \"NFLXm\", label: \"Netflix\" },\n        //\n        { key: \"XAUUSDm\", label: \"Gold/USD\" },\n        { key: \"XAGUSDm\", label: \"Silver/USD\" },\n        { key: \"USOILm\", label: \"US Crude Oil\" },\n        { key: \"XPDUSDm\", label: \"Palladium/USD\" },\n        { key: \"XPTUSDm\", label: \"Platinum/USD\" },\n    ]",
+          "defaultValue": "[\n        { key: \"BTCUSDm\", label: \"BTC/USD\" , image: \"/build/assets/svg/BTCUSDm.svg\" },\n        { key: \"XAUUSDm\", label: \"Gold/USD\", image: \"/build/assets/svg/XAUUSDm.svg\" },\n        { key: \"EURUSDm\",  label: \"EUR/USD\", image: \"/build/assets/svg/EURUSDm.svg\" },\n        { key: \"USOILm\", label: \"US Oil\"   , image: \"/build/assets/svg/USOILm.svg\" },\n        { key: \"ETHUSDm\", label: \"ETH/USD\" , image: \"/build/assets/svg/ETHUSDm.svg\" },\n        //\n        { key: \"EURUSDm\", label: \"EUR/USD\" , image: \"/build/assets/svg/EURUSDm.svg\" },\n        { key: \"USDJPYm\", label: \"USD/JPY\" , image: \"/build/assets/svg/USDJPYm.svg\" },\n        { key: \"GBPUSDm\",  label: \"GBP/USD\", image: \"/build/assets/svg/GBPUSDm.svg\" },\n        { key: \"USDCHFm\", label: \"USD/CHF\" , image: \"/build/assets/svg/USDCHFm.svg\" },\n        { key: \"USDCADm\", label: \"USD/CAD\" , image: \"/build/assets/svg/USDCADm.svg\" },\n        //\n        { key: \"USTECm\", label: \"US Tech 100\"   , image: \"/build/assets/svg/USTECm.svg\" },\n        { key: \"UK100m\", label: \"UK 100 Index\"  , image: \"/build/assets/svg/UK100m.svg\" },\n        { key: \"STOXX50m\",  label: \"EU 50 Index\", image: \"/build/assets/svg/STOXX50m.svg\" },\n        { key: \"HK50m\", label: \"HK 50 Index\"    , image: \"/build/assets/svg/HK50m.svg\" },\n        { key: \"DE30m\", label: \"DE 30 Index\"    , image: \"/build/assets/svg/DE30m.svg\" },\n        //\n        { key: \"BTCUSDm\", label: \"BTC/USD\", image: \"/build/assets/svg/BTCUSDm.svg\" },\n        { key: \"BTCJPYm\", label: \"BTC/JPY\", image: \"/build/assets/svg/BTCJPYm.svg\" },\n        { key: \"ETHUSDm\", label: \"ETH/USD\", image: \"/build/assets/svg/ETHUSDm.svg\" },\n        { key: \"LTCUSDm\", label: \"LTC/USD\", image: \"/build/assets/svg/LTCUSDm.svg\" },\n        { key: \"XRPUSDm\", label: \"XRP/USD\", image: \"/build/assets/svg/XRPUSDm.svg\" },\n        //\n        { key: \"AAPLm\", label: \"Apple\"  , image: \"/build/assets/svg/AAPLm.svg\" },\n        { key: \"BABAm\", label: \"AliBaba\", image: \"/build/assets/svg/BABAm.svg\" },\n        { key: \"Cm\", label: \"CitiGroup\" , image: \"/build/assets/svg/Cm.svg\" },\n        { key: \"KOm\", label: \"CocaCola\" , image: \"/build/assets/svg/KOm.svg\" },\n        { key: \"NFLXm\", label: \"Netflix\", image: \"/build/assets/svg/NFLXm.svg\" },\n    ]",
           "complexType": {
             "original": "TradeSymbol[]",
             "resolved": "TradeSymbol[]",
@@ -1486,7 +1488,7 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "\"most-traded\"",
+          "defaultValue": "\"popular\"",
           "complexType": {
             "original": "string",
             "resolved": "string",
@@ -1505,7 +1507,7 @@
           "mutable": true,
           "required": false,
           "optional": false,
-          "defaultValue": "[\n        {\n            name: \"most-traded\",\n            label: this.translate(\"most-traded\", \"Most traded\"),\n            symbols: [\n                { key: \"BTCUSDm\", label: \"BTC/USD\" },\n                { key: \"XAUUSDm\", label: \"Gold/USD\" },\n                { key: \"EURUSDm\",  label: \"EUR/USD\" },\n                { key: \"USOILm\", label: \"US Oil\" },\n                { key: \"ETHUSDm\", label: \"ETH/USD\" }\n            ],\n        },\n        {\n            name: \"currencies\",\n            label: this.translate(\"currencies\", \"Currencies\"),\n            symbols: [\n                { key: \"EURUSDm\", label: \"EUR/USD\" },\n                { key: \"USDJPYm\", label: \"USD/JPY\" },\n                { key: \"GBPUSDm\",  label: \"GBP/USD\" },\n                { key: \"USDCHFm\", label: \"USD/CHF\" },\n                { key: \"USDCADm\", label: \"USD/CAD\" }\n            ]\n        },\n        {\n            name: \"indices\",\n            label: this.translate(\"indices\", \"Indices\"),\n            symbols: [\n                { key: \"USTECm\", label: \"US Tech 100\" },\n                { key: \"UK100m\", label: \"UK 100 Index\" },\n                { key: \"STOXX50m\",  label: \"EU 50 Index\" },\n                { key: \"HK50m\", label: \"HK 50 Index\" },\n                { key: \"DE30m\", label: \"DE 30 Index\" }\n            ]\n        },\n        {\n            name: \"digital\",\n            label: this.translate(\"digital\", \"Digital\"),\n            symbols: [\n                { key: \"BTCUSDm\", label: \"BTC/USD\" },\n                { key: \"BTCJPYm\", label: \"BTC/JPY\" },\n                { key: \"ETHUSDm\", label: \"ETH/USD\" },\n                { key: \"LTCUSDm\", label: \"LTC/USD\" },\n                { key: \"XRPUSDm\", label: \"XRP/USD\" },\n            ]\n        },\n        {\n            name: \"shares\",\n            label: this.translate(\"shares\", \"Shares\"),\n            symbols: [\n                { key: \"AAPLm\", label: \"Apple\" },\n                { key: \"BABAm\", label: \"AliBaba\" },\n                { key: \"Cm\", label: \"CitiGroup\" },\n                { key: \"KOm\", label: \"CocaCola\" },\n                { key: \"NFLXm\", label: \"Netflix\" },\n            ]\n        },\n        {\n            name: \"commodities\",\n            label: this.translate(\"commodities\", \"Commodities\"),\n            symbols: [\n                { key: \"XAUUSDm\", label: \"Gold/USD\" },\n                { key: \"XAGUSDm\", label: \"Silver/USD\" },\n                { key: \"USOILm\", label: \"US Crude Oil\" },\n                { key: \"XPDUSDm\", label: \"Palladium/USD\" },\n                { key: \"XPTUSDm\", label: \"Platinum/USD\" },\n            ]\n        }\n    ]",
+          "defaultValue": "[\n        {\n            name: \"popular\",\n            label: this.translate(\"popular\", \"Popular\"),\n            symbols: [\n                { key: \"BTCUSDm\", label: \"BTC/USD\" , image: \"/build/assets/svg/BTCUSDm.svg\" },\n                { key: \"XAUUSDm\", label: \"Gold/USD\", image: \"/build/assets/svg/XAUUSDm.svg\" },\n                { key: \"EURUSDm\",  label: \"EUR/USD\", image: \"/build/assets/svg/EURUSDm.svg\" },\n                { key: \"USOILm\", label: \"US Oil\"   , image: \"/build/assets/svg/USOILm.svg\" },\n                { key: \"ETHUSDm\", label: \"ETH/USD\" , image: \"/build/assets/svg/ETHUSDm.svg\" },\n            ],\n        },\n        {\n            name: \"forex\",\n            label: this.translate(\"forex\", \"Forex\"),\n            symbols: [\n                { key: \"EURUSDm\", label: \"EUR/USD\" , image: \"/build/assets/svg/EURUSDm.svg\" },\n                { key: \"USDJPYm\", label: \"USD/JPY\" , image: \"/build/assets/svg/USDJPYm.svg\" },\n                { key: \"GBPUSDm\",  label: \"GBP/USD\", image: \"/build/assets/svg/GBPUSDm.svg\" },\n                { key: \"USDCHFm\", label: \"USD/CHF\" , image: \"/build/assets/svg/USDCHFm.svg\" },\n                { key: \"USDCADm\", label: \"USD/CAD\" , image: \"/build/assets/svg/USDCADm.svg\" },\n            ]\n        },\n        {\n            name: \"stocks\",\n            label: this.translate(\"stocks\", \"Stocks\"),\n            symbols: [\n                { key: \"USTECm\", label: \"US Tech 100\"   , image: \"/build/assets/svg/USTECm.svg\" },\n                { key: \"UK100m\", label: \"UK 100 Index\"  , image: \"/build/assets/svg/UK100m.svg\" },\n                { key: \"STOXX50m\",  label: \"EU 50 Index\", image: \"/build/assets/svg/STOXX50m.svg\" },\n                { key: \"HK50m\", label: \"HK 50 Index\"    , image: \"/build/assets/svg/HK50m.svg\" },\n                { key: \"DE30m\", label: \"DE 30 Index\"    , image: \"/build/assets/svg/DE30m.svg\" },\n            ]\n        },\n        {\n            name: \"crypto\",\n            label: this.translate(\"crypto\", \"Crypto\"),\n            symbols: [\n                { key: \"BTCUSDm\", label: \"BTC/USD\", image: \"/build/assets/svg/BTCUSDm.svg\" },\n                { key: \"BTCJPYm\", label: \"BTC/JPY\", image: \"/build/assets/svg/BTCJPYm.svg\" },\n                { key: \"ETHUSDm\", label: \"ETH/USD\", image: \"/build/assets/svg/ETHUSDm.svg\" },\n                { key: \"LTCUSDm\", label: \"LTC/USD\", image: \"/build/assets/svg/LTCUSDm.svg\" },\n                { key: \"XRPUSDm\", label: \"XRP/USD\", image: \"/build/assets/svg/XRPUSDm.svg\" },\n            ]\n        },\n        {\n            name: \"shares\",\n            label: this.translate(\"shares\", \"Shares\"),\n            symbols: [\n                { key: \"AAPLm\", label: \"Apple\"  , image: \"/build/assets/svg/AAPLm.svg\" },\n                { key: \"BABAm\", label: \"AliBaba\", image: \"/build/assets/svg/BABAm.svg\" },\n                { key: \"Cm\", label: \"CitiGroup\" , image: \"/build/assets/svg/Cm.svg\" },\n                { key: \"KOm\", label: \"CocaCola\" , image: \"/build/assets/svg/KOm.svg\" },\n                { key: \"NFLXm\", label: \"Netflix\", image: \"/build/assets/svg/NFLXm.svg\" },\n            ]\n        },\n        {\n            name: \"precious-metal\",\n            label: this.translate(\"precious-metal\", \"Precious metals\"),\n            symbols: [\n                { key: \"XAUUSDm\", label: \"Gold/USD\"     , image: \"/build/assets/svg/XAUUSDm.svg\" },\n                { key: \"XAGUSDm\", label: \"Silver/USD\"   , image: \"/build/assets/svg/XAGUSDm.svg\" },\n                { key: \"XPDUSDm\", label: \"Palladium/USD\", image: \"/build/assets/svg/XPDUSDm.svg\" },\n                { key: \"XPTUSDm\", label: \"Platinum/USD\" , image: \"/build/assets/svg/XPTUSDm.svg\" },\n                { key: \"XPTUSDm\", label: \"Platinum/USD\" , image: \"/build/assets/svg/XPTUSDm.svg\" },\n            ]\n        }\n    ]",
           "complexType": {
             "original": "Category[]",
             "resolved": "Category[]",
@@ -3046,7 +3048,7 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "[\n        { key: \"BTCUSDm\", label: \"BTC/USD\" },\n        { key: \"XAUUSDm\", label: \"Gold/USD\" },\n        { key: \"EURUSDm\",  label: \"EUR/USD\" },\n        { key: \"USOILm\", label: \"US Oil\" },\n        { key: \"ETHUSDm\", label: \"ETH/USD\" },\n        //\n        { key: \"USTECm\", label: \"US Tech 100\" },\n        { key: \"UK100m\", label: \"UK 100 Index\" },\n        { key: \"STOXX50m\",  label: \"EU 50 Index\" },\n        { key: \"HK50m\", label: \"HK 50 Index\" },\n        { key: \"DE30m\", label: \"DE 30 Index\" },\n        //\n        { key: \"BTCUSDm\", label: \"BTC/USD\" },\n        { key: \"BTCJPYm\", label: \"BTC/JPY\" },\n        { key: \"ETHUSDm\", label: \"ETH/USD\" },\n        { key: \"LTCUSDm\", label: \"LTC/USD\" },\n        { key: \"XRPUSDm\", label: \"XRP/USD\" },\n        //\n        { key: \"AAPLm\", label: \"Apple\" },\n        { key: \"BABAm\", label: \"AliBaba\" },\n        { key: \"Cm\", label: \"CitiGroup\" },\n        { key: \"KOm\", label: \"CocaCola\" },\n        { key: \"NFLXm\", label: \"Netflix\" },\n        //\n        { key: \"XAUUSDm\", label: \"Gold/USD\" },\n        { key: \"XAGUSDm\", label: \"Silver/USD\" },\n        { key: \"USOILm\", label: \"US Crude Oil\" },\n        { key: \"XPDUSDm\", label: \"Palladium/USD\" },\n        { key: \"XPTUSDm\", label: \"Platinum/USD\" },\n    ]",
+              "defaultValue": "[\n        { key: \"BTCUSDm\", label: \"BTC/USD\" , image: \"/build/assets/svg/BTCUSDm.svg\" },\n        { key: \"XAUUSDm\", label: \"Gold/USD\", image: \"/build/assets/svg/XAUUSDm.svg\" },\n        { key: \"EURUSDm\",  label: \"EUR/USD\", image: \"/build/assets/svg/EURUSDm.svg\" },\n        { key: \"USOILm\", label: \"US Oil\"   , image: \"/build/assets/svg/USOILm.svg\" },\n        { key: \"ETHUSDm\", label: \"ETH/USD\" , image: \"/build/assets/svg/ETHUSDm.svg\" },\n        //\n        { key: \"EURUSDm\", label: \"EUR/USD\" , image: \"/build/assets/svg/EURUSDm.svg\" },\n        { key: \"USDJPYm\", label: \"USD/JPY\" , image: \"/build/assets/svg/USDJPYm.svg\" },\n        { key: \"GBPUSDm\",  label: \"GBP/USD\", image: \"/build/assets/svg/GBPUSDm.svg\" },\n        { key: \"USDCHFm\", label: \"USD/CHF\" , image: \"/build/assets/svg/USDCHFm.svg\" },\n        { key: \"USDCADm\", label: \"USD/CAD\" , image: \"/build/assets/svg/USDCADm.svg\" },\n        //\n        { key: \"USTECm\", label: \"US Tech 100\"   , image: \"/build/assets/svg/USTECm.svg\" },\n        { key: \"UK100m\", label: \"UK 100 Index\"  , image: \"/build/assets/svg/UK100m.svg\" },\n        { key: \"STOXX50m\",  label: \"EU 50 Index\", image: \"/build/assets/svg/STOXX50m.svg\" },\n        { key: \"HK50m\", label: \"HK 50 Index\"    , image: \"/build/assets/svg/HK50m.svg\" },\n        { key: \"DE30m\", label: \"DE 30 Index\"    , image: \"/build/assets/svg/DE30m.svg\" },\n        //\n        { key: \"BTCUSDm\", label: \"BTC/USD\", image: \"/build/assets/svg/BTCUSDm.svg\" },\n        { key: \"BTCJPYm\", label: \"BTC/JPY\", image: \"/build/assets/svg/BTCJPYm.svg\" },\n        { key: \"ETHUSDm\", label: \"ETH/USD\", image: \"/build/assets/svg/ETHUSDm.svg\" },\n        { key: \"LTCUSDm\", label: \"LTC/USD\", image: \"/build/assets/svg/LTCUSDm.svg\" },\n        { key: \"XRPUSDm\", label: \"XRP/USD\", image: \"/build/assets/svg/XRPUSDm.svg\" },\n        //\n        { key: \"AAPLm\", label: \"Apple\"  , image: \"/build/assets/svg/AAPLm.svg\" },\n        { key: \"BABAm\", label: \"AliBaba\", image: \"/build/assets/svg/BABAm.svg\" },\n        { key: \"Cm\", label: \"CitiGroup\" , image: \"/build/assets/svg/Cm.svg\" },\n        { key: \"KOm\", label: \"CocaCola\" , image: \"/build/assets/svg/KOm.svg\" },\n        { key: \"NFLXm\", label: \"Netflix\", image: \"/build/assets/svg/NFLXm.svg\" },\n    ]",
               "complexType": {
                 "original": "TradeSymbol[]",
                 "resolved": "TradeSymbol[]",
@@ -3851,7 +3853,7 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "\"most-traded\"",
+              "defaultValue": "\"popular\"",
               "complexType": {
                 "original": "string",
                 "resolved": "string",
@@ -3870,7 +3872,7 @@
               "mutable": true,
               "required": false,
               "optional": false,
-              "defaultValue": "[\n        {\n            name: \"most-traded\",\n            label: this.translate(\"most-traded\", \"Most traded\"),\n            symbols: [\n                { key: \"BTCUSDm\", label: \"BTC/USD\" },\n                { key: \"XAUUSDm\", label: \"Gold/USD\" },\n                { key: \"EURUSDm\",  label: \"EUR/USD\" },\n                { key: \"USOILm\", label: \"US Oil\" },\n                { key: \"ETHUSDm\", label: \"ETH/USD\" }\n            ],\n        },\n        {\n            name: \"currencies\",\n            label: this.translate(\"currencies\", \"Currencies\"),\n            symbols: [\n                { key: \"EURUSDm\", label: \"EUR/USD\" },\n                { key: \"USDJPYm\", label: \"USD/JPY\" },\n                { key: \"GBPUSDm\",  label: \"GBP/USD\" },\n                { key: \"USDCHFm\", label: \"USD/CHF\" },\n                { key: \"USDCADm\", label: \"USD/CAD\" }\n            ]\n        },\n        {\n            name: \"indices\",\n            label: this.translate(\"indices\", \"Indices\"),\n            symbols: [\n                { key: \"USTECm\", label: \"US Tech 100\" },\n                { key: \"UK100m\", label: \"UK 100 Index\" },\n                { key: \"STOXX50m\",  label: \"EU 50 Index\" },\n                { key: \"HK50m\", label: \"HK 50 Index\" },\n                { key: \"DE30m\", label: \"DE 30 Index\" }\n            ]\n        },\n        {\n            name: \"digital\",\n            label: this.translate(\"digital\", \"Digital\"),\n            symbols: [\n                { key: \"BTCUSDm\", label: \"BTC/USD\" },\n                { key: \"BTCJPYm\", label: \"BTC/JPY\" },\n                { key: \"ETHUSDm\", label: \"ETH/USD\" },\n                { key: \"LTCUSDm\", label: \"LTC/USD\" },\n                { key: \"XRPUSDm\", label: \"XRP/USD\" },\n            ]\n        },\n        {\n            name: \"shares\",\n            label: this.translate(\"shares\", \"Shares\"),\n            symbols: [\n                { key: \"AAPLm\", label: \"Apple\" },\n                { key: \"BABAm\", label: \"AliBaba\" },\n                { key: \"Cm\", label: \"CitiGroup\" },\n                { key: \"KOm\", label: \"CocaCola\" },\n                { key: \"NFLXm\", label: \"Netflix\" },\n            ]\n        },\n        {\n            name: \"commodities\",\n            label: this.translate(\"commodities\", \"Commodities\"),\n            symbols: [\n                { key: \"XAUUSDm\", label: \"Gold/USD\" },\n                { key: \"XAGUSDm\", label: \"Silver/USD\" },\n                { key: \"USOILm\", label: \"US Crude Oil\" },\n                { key: \"XPDUSDm\", label: \"Palladium/USD\" },\n                { key: \"XPTUSDm\", label: \"Platinum/USD\" },\n            ]\n        }\n    ]",
+              "defaultValue": "[\n        {\n            name: \"popular\",\n            label: this.translate(\"popular\", \"Popular\"),\n            symbols: [\n                { key: \"BTCUSDm\", label: \"BTC/USD\" , image: \"/build/assets/svg/BTCUSDm.svg\" },\n                { key: \"XAUUSDm\", label: \"Gold/USD\", image: \"/build/assets/svg/XAUUSDm.svg\" },\n                { key: \"EURUSDm\",  label: \"EUR/USD\", image: \"/build/assets/svg/EURUSDm.svg\" },\n                { key: \"USOILm\", label: \"US Oil\"   , image: \"/build/assets/svg/USOILm.svg\" },\n                { key: \"ETHUSDm\", label: \"ETH/USD\" , image: \"/build/assets/svg/ETHUSDm.svg\" },\n            ],\n        },\n        {\n            name: \"forex\",\n            label: this.translate(\"forex\", \"Forex\"),\n            symbols: [\n                { key: \"EURUSDm\", label: \"EUR/USD\" , image: \"/build/assets/svg/EURUSDm.svg\" },\n                { key: \"USDJPYm\", label: \"USD/JPY\" , image: \"/build/assets/svg/USDJPYm.svg\" },\n                { key: \"GBPUSDm\",  label: \"GBP/USD\", image: \"/build/assets/svg/GBPUSDm.svg\" },\n                { key: \"USDCHFm\", label: \"USD/CHF\" , image: \"/build/assets/svg/USDCHFm.svg\" },\n                { key: \"USDCADm\", label: \"USD/CAD\" , image: \"/build/assets/svg/USDCADm.svg\" },\n            ]\n        },\n        {\n            name: \"stocks\",\n            label: this.translate(\"stocks\", \"Stocks\"),\n            symbols: [\n                { key: \"USTECm\", label: \"US Tech 100\"   , image: \"/build/assets/svg/USTECm.svg\" },\n                { key: \"UK100m\", label: \"UK 100 Index\"  , image: \"/build/assets/svg/UK100m.svg\" },\n                { key: \"STOXX50m\",  label: \"EU 50 Index\", image: \"/build/assets/svg/STOXX50m.svg\" },\n                { key: \"HK50m\", label: \"HK 50 Index\"    , image: \"/build/assets/svg/HK50m.svg\" },\n                { key: \"DE30m\", label: \"DE 30 Index\"    , image: \"/build/assets/svg/DE30m.svg\" },\n            ]\n        },\n        {\n            name: \"crypto\",\n            label: this.translate(\"crypto\", \"Crypto\"),\n            symbols: [\n                { key: \"BTCUSDm\", label: \"BTC/USD\", image: \"/build/assets/svg/BTCUSDm.svg\" },\n                { key: \"BTCJPYm\", label: \"BTC/JPY\", image: \"/build/assets/svg/BTCJPYm.svg\" },\n                { key: \"ETHUSDm\", label: \"ETH/USD\", image: \"/build/assets/svg/ETHUSDm.svg\" },\n                { key: \"LTCUSDm\", label: \"LTC/USD\", image: \"/build/assets/svg/LTCUSDm.svg\" },\n                { key: \"XRPUSDm\", label: \"XRP/USD\", image: \"/build/assets/svg/XRPUSDm.svg\" },\n            ]\n        },\n        {\n            name: \"shares\",\n            label: this.translate(\"shares\", \"Shares\"),\n            symbols: [\n                { key: \"AAPLm\", label: \"Apple\"  , image: \"/build/assets/svg/AAPLm.svg\" },\n                { key: \"BABAm\", label: \"AliBaba\", image: \"/build/assets/svg/BABAm.svg\" },\n                { key: \"Cm\", label: \"CitiGroup\" , image: \"/build/assets/svg/Cm.svg\" },\n                { key: \"KOm\", label: \"CocaCola\" , image: \"/build/assets/svg/KOm.svg\" },\n                { key: \"NFLXm\", label: \"Netflix\", image: \"/build/assets/svg/NFLXm.svg\" },\n            ]\n        },\n        {\n            name: \"precious-metal\",\n            label: this.translate(\"precious-metal\", \"Precious metals\"),\n            symbols: [\n                { key: \"XAUUSDm\", label: \"Gold/USD\"     , image: \"/build/assets/svg/XAUUSDm.svg\" },\n                { key: \"XAGUSDm\", label: \"Silver/USD\"   , image: \"/build/assets/svg/XAGUSDm.svg\" },\n                { key: \"XPDUSDm\", label: \"Palladium/USD\", image: \"/build/assets/svg/XPDUSDm.svg\" },\n                { key: \"XPTUSDm\", label: \"Platinum/USD\" , image: \"/build/assets/svg/XPTUSDm.svg\" },\n                { key: \"XPTUSDm\", label: \"Platinum/USD\" , image: \"/build/assets/svg/XPTUSDm.svg\" },\n            ]\n        }\n    ]",
               "complexType": {
                 "original": "Category[]",
                 "resolved": "Category[]",
@@ -5238,57 +5240,57 @@
   ],
   "componentGraph": {
     "sc-finnhub-news": [
-      "index-27017b43.js",
+      "index-53ef1f0e.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-6f0cae60.js"
     ],
     "sc-fxcm-rates": [
-      "index-27017b43.js",
+      "index-53ef1f0e.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-6f0cae60.js"
     ],
     "sc-mt-marquee": [
-      "index-27017b43.js",
+      "index-53ef1f0e.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-47bf880f.js"
     ],
     "sc-mt-quote": [
-      "index-27017b43.js",
+      "index-53ef1f0e.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-47bf880f.js"
     ],
     "sc-mt-rates": [
-      "index-27017b43.js",
+      "index-53ef1f0e.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-47bf880f.js"
     ],
     "sc-owm-daily": [
-      "index-27017b43.js",
+      "index-53ef1f0e.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-6f0cae60.js"
     ],
     "sc-owm-daily-item": [
-      "index-27017b43.js",
+      "index-53ef1f0e.js",
       "utils-6f0cae60.js",
       "lavva-js-sdk.esm-e185e4d4.js"
     ],
     "sc-twit-ter": [
-      "index-27017b43.js",
+      "index-53ef1f0e.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-6f0cae60.js"
     ],
     "sc-yahoo-quote": [
-      "index-27017b43.js"
+      "index-53ef1f0e.js"
     ],
     "sc-yahoo-quotes": [
-      "index-27017b43.js",
+      "index-53ef1f0e.js",
       "lavva-js-sdk.esm-e185e4d4.js",
       "store2-f3f72e93.js",
       "utils-6f0cae60.js"
