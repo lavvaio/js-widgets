@@ -104,8 +104,8 @@ export class MT4Rates {
             ]
         },
         {
-            name: "precious-metal",
-            label: this.translate("precious-metal", "Precious metals"),
+            name: "metal",
+            label: this.translate("metal", "Metals"),
             symbols: [
                 { key: "XAUUSDm", label: "Gold/USD"     , image: "/build/assets/svg/XAUUSDm.svg" },
                 { key: "XAGUSDm", label: "Silver/USD"   , image: "/build/assets/svg/XAGUSDm.svg" },

@@ -24,12 +24,12 @@
 :host {
     --padding: 14px;
     --font-size: 14px;
-    --background-color: #151415;
+    --background-color: rgb(38, 38, 38);
 
     --symbol-name-color: #dadbdf;
     --symbol-value-color: #ffffff;
-    --symbol-percent-up: #4B8AE9;
-    --symbol-percent-down: #DA361B;
+    --symbol-percent-up: rgb(0, 217, 100);
+    --symbol-percent-down: rgb(255, 0, 0);
 
     --symbol-loading-font-size: 0.875rem;
     --symbol-loading-color: #dadbdf;
