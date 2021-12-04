@@ -18,7 +18,7 @@ export class FinnhubNewsComponent implements LavvaWidget {
     connection!: WebsocketConnection;
 
     @Prop()
-    dataChannel!: string;
+    channel!: string;
 
     @Prop()
     dataKey: string = undefined;
@@ -56,14 +56,14 @@ export class FinnhubNewsComponent implements LavvaWidget {
             throw new Error('connection was not found');
         }
 
-        this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
+        this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
         ).subscribe(message => {
             this.log('client connected', message.value.client_id);
             this.size = message.value.channel_size;
         }));
 
-        this.subscriptions.add(this.connection.channelStream<FinnhubNewsItem>(this.dataChannel).pipe(
+        this.subscriptions.add(this.connection.channelStream<FinnhubNewsItem>(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.DATA),
             filter(message => this.dataKey === undefined ? true : message.key === this.dataKey),
         ).subscribe(message => {
@@ -74,7 +74,7 @@ export class FinnhubNewsComponent implements LavvaWidget {
     loadNews() {
         if (this.useCache) {
             const ns = store.namespace(this.namespace);
-            this.data = ns.get(this.dataChannel, this.data);
+            this.data = ns.get(this.channel, this.data);
         }
     }
 
@@ -87,7 +87,7 @@ export class FinnhubNewsComponent implements LavvaWidget {
             this.data = [ news, ...this.data.slice(0, this.size - 1) ].sort((a, b) => b.datetime - a.datetime);
             if (this.useCache) {
                 const ns = store.namespace(this.namespace);
-                ns.set(this.dataChannel, this.data);
+                ns.set(this.channel, this.data);
             }
         });
     }

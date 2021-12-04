@@ -3,7 +3,7 @@ import { Component, Prop, h, State, Watch, Element, Method } from "@stencil/core
 import { filter, Subscription } from "rxjs";
 import store from "store2";
 import { Historical, Quote } from "../../shared/mt-quote";
-import { createLogger, translate } from "../../utils";
+import { createLogger, translate } from '../../shared/utils';
 import Chart from 'chart.js/auto';
 
 @Component({

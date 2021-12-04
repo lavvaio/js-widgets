@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-12-04T06:04:56",
+  "timestamp": "2021-12-04T06:34:11",
   "compiler": {
     "name": "node",
     "version": "14.15.0"
@@ -9,78 +9,139 @@
     "fsNamespace": "lavva-js-widgets",
     "components": 10,
     "entries": 10,
-    "bundles": 57,
+    "bundles": 112,
     "outputs": [
       {
+        "name": "dist-collection",
+        "files": 17,
+        "generatedFiles": [
+          "./dist/collection/components/finnhub-news/finnhub-news.js",
+          "./dist/collection/components/finnhub-news/finnhub.js",
+          "./dist/collection/components/fxcm-rates/fxcm-rates.js",
+          "./dist/collection/components/fxcm-rates/fxcm.js",
+          "./dist/collection/components/mt-marquee/mt-marquee.js",
+          "./dist/collection/components/mt-quote/mt-quote.js",
+          "./dist/collection/components/mt-rates/mt-rates.js",
+          "./dist/collection/components/owm-daily/owm-daily-item.js",
+          "./dist/collection/components/owm-daily/owm-daily.js",
+          "./dist/collection/components/twitter/twitr.js",
+          "./dist/collection/components/yahoo-quotes/yahoo-quote.js",
+          "./dist/collection/components/yahoo-quotes/yahoo-quotes.js",
+          "./dist/collection/index.js",
+          "./dist/collection/shared/index.js",
+          "./dist/collection/shared/model.js",
+          "./dist/collection/shared/mt-quote.js",
+          "./dist/collection/shared/utils.js"
+        ]
+      },
+      {
         "name": "dist-custom-elements",
-        "files": 11,
+        "files": 26,
         "generatedFiles": [
           "./dist/components/finnhub-news.d.ts",
+          "./dist/components/finnhub-news.js",
           "./dist/components/fxcm-rates.d.ts",
+          "./dist/components/fxcm-rates.js",
           "./dist/components/index.d.ts",
+          "./dist/components/index.js",
           "./dist/components/mt-marquee.d.ts",
+          "./dist/components/mt-marquee.js",
           "./dist/components/mt-quote.d.ts",
+          "./dist/components/mt-quote.js",
           "./dist/components/mt-rates.d.ts",
+          "./dist/components/mt-rates.js",
           "./dist/components/owm-daily-item.d.ts",
+          "./dist/components/owm-daily-item.js",
+          "./dist/components/owm-daily-item2.js",
           "./dist/components/owm-daily.d.ts",
+          "./dist/components/owm-daily.js",
+          "./dist/components/store2.js",
           "./dist/components/twit-ter.d.ts",
+          "./dist/components/twit-ter.js",
+          "./dist/components/utils.js",
           "./dist/components/yahoo-quote.d.ts",
-          "./dist/components/yahoo-quotes.d.ts"
+          "./dist/components/yahoo-quote.js",
+          "./dist/components/yahoo-quote2.js",
+          "./dist/components/yahoo-quotes.d.ts",
+          "./dist/components/yahoo-quotes.js"
         ]
       },
       {
         "name": "dist-custom-elements-bundle",
-        "files": 1,
+        "files": 2,
         "generatedFiles": [
-          "./dist/custom-elements/index.d.ts"
+          "./dist/custom-elements/index.d.ts",
+          "./dist/custom-elements/index.js"
         ]
       },
       {
         "name": "dist-lazy",
-        "files": 42,
+        "files": 64,
         "generatedFiles": [
-          "./dist/lavva-js-widgets/app-globals-0f993ce5.js",
-          "./dist/lavva-js-widgets/css-shim-aac75381.js",
-          "./dist/lavva-js-widgets/dom-c7604576.js",
-          "./dist/lavva-js-widgets/finnhub-news.entry.js",
-          "./dist/lavva-js-widgets/fxcm-rates.entry.js",
-          "./dist/lavva-js-widgets/index-53ef1f0e.js",
+          "./dist/cjs/finnhub-news.cjs.entry.js",
+          "./dist/cjs/fxcm-rates.cjs.entry.js",
+          "./dist/cjs/index-8499e96d.js",
+          "./dist/cjs/index.cjs.js",
+          "./dist/cjs/lavva-js-widgets.cjs.js",
+          "./dist/cjs/loader.cjs.js",
+          "./dist/cjs/mt-marquee.cjs.entry.js",
+          "./dist/cjs/mt-quote.cjs.entry.js",
+          "./dist/cjs/mt-rates.cjs.entry.js",
+          "./dist/cjs/owm-daily-item.cjs.entry.js",
+          "./dist/cjs/owm-daily.cjs.entry.js",
+          "./dist/cjs/store2-a98cb247.js",
+          "./dist/cjs/twit-ter.cjs.entry.js",
+          "./dist/cjs/utils-67cdd245.js",
+          "./dist/cjs/yahoo-quote.cjs.entry.js",
+          "./dist/cjs/yahoo-quotes.cjs.entry.js",
+          "./dist/esm/finnhub-news.entry.js",
+          "./dist/esm/fxcm-rates.entry.js",
+          "./dist/esm/index-3efefcbd.js",
+          "./dist/esm/index.js",
+          "./dist/esm/lavva-js-widgets.js",
+          "./dist/esm/loader.js",
+          "./dist/esm/mt-marquee.entry.js",
+          "./dist/esm/mt-quote.entry.js",
+          "./dist/esm/mt-rates.entry.js",
+          "./dist/esm/owm-daily-item.entry.js",
+          "./dist/esm/owm-daily.entry.js",
+          "./dist/esm/store2-5cffcc22.js",
+          "./dist/esm/twit-ter.entry.js",
+          "./dist/esm/utils-2a738923.js",
+          "./dist/esm/yahoo-quote.entry.js",
+          "./dist/esm/yahoo-quotes.entry.js",
+          "./dist/index.cjs.js",
+          "./dist/index.js",
           "./dist/lavva-js-widgets/index.esm.js",
-          "./dist/lavva-js-widgets/lavva-js-sdk.esm-e185e4d4.js",
           "./dist/lavva-js-widgets/lavva-js-widgets.esm.js",
-          "./dist/lavva-js-widgets/mt-marquee.entry.js",
-          "./dist/lavva-js-widgets/mt-quote.entry.js",
-          "./dist/lavva-js-widgets/mt-rates.entry.js",
-          "./dist/lavva-js-widgets/owm-daily-item.entry.js",
-          "./dist/lavva-js-widgets/owm-daily.entry.js",
-          "./dist/lavva-js-widgets/shadow-css-83bb1d14.js",
-          "./dist/lavva-js-widgets/store2-f3f72e93.js",
-          "./dist/lavva-js-widgets/twit-ter.entry.js",
-          "./dist/lavva-js-widgets/utils-47bf880f.js",
-          "./dist/lavva-js-widgets/utils-6f0cae60.js",
-          "./dist/lavva-js-widgets/yahoo-quote.entry.js",
-          "./dist/lavva-js-widgets/yahoo-quotes.entry.js",
-          "./www/build/app-globals-0f993ce5.js",
-          "./www/build/css-shim-aac75381.js",
-          "./www/build/dom-c7604576.js",
-          "./www/build/finnhub-news.entry.js",
-          "./www/build/fxcm-rates.entry.js",
-          "./www/build/index-53ef1f0e.js",
+          "./dist/lavva-js-widgets/p-0e53612f.entry.js",
+          "./dist/lavva-js-widgets/p-10eeb9e6.js",
+          "./dist/lavva-js-widgets/p-146099e0.entry.js",
+          "./dist/lavva-js-widgets/p-1ff9f46f.entry.js",
+          "./dist/lavva-js-widgets/p-2926933f.entry.js",
+          "./dist/lavva-js-widgets/p-4a8ba8e8.entry.js",
+          "./dist/lavva-js-widgets/p-6ee57445.entry.js",
+          "./dist/lavva-js-widgets/p-6fdb396c.js",
+          "./dist/lavva-js-widgets/p-78e26b1a.entry.js",
+          "./dist/lavva-js-widgets/p-bac57872.entry.js",
+          "./dist/lavva-js-widgets/p-c212c8a0.js",
+          "./dist/lavva-js-widgets/p-f62df35d.entry.js",
+          "./dist/lavva-js-widgets/p-f67c9a67.entry.js",
           "./www/build/index.esm.js",
-          "./www/build/lavva-js-sdk.esm-e185e4d4.js",
           "./www/build/lavva-js-widgets.esm.js",
-          "./www/build/mt-marquee.entry.js",
-          "./www/build/mt-quote.entry.js",
-          "./www/build/mt-rates.entry.js",
-          "./www/build/owm-daily-item.entry.js",
-          "./www/build/owm-daily.entry.js",
-          "./www/build/shadow-css-83bb1d14.js",
-          "./www/build/store2-f3f72e93.js",
-          "./www/build/twit-ter.entry.js",
-          "./www/build/utils-47bf880f.js",
-          "./www/build/utils-6f0cae60.js",
-          "./www/build/yahoo-quote.entry.js",
-          "./www/build/yahoo-quotes.entry.js"
+          "./www/build/p-0e53612f.entry.js",
+          "./www/build/p-10eeb9e6.js",
+          "./www/build/p-146099e0.entry.js",
+          "./www/build/p-1ff9f46f.entry.js",
+          "./www/build/p-2926933f.entry.js",
+          "./www/build/p-4a8ba8e8.entry.js",
+          "./www/build/p-6ee57445.entry.js",
+          "./www/build/p-6fdb396c.js",
+          "./www/build/p-78e26b1a.entry.js",
+          "./www/build/p-bac57872.entry.js",
+          "./www/build/p-c212c8a0.js",
+          "./www/build/p-f62df35d.entry.js",
+          "./www/build/p-f67c9a67.entry.js"
         ]
       },
       {
@@ -101,44 +162,153 @@
     ]
   },
   "options": {
-    "minifyJs": false,
-    "minifyCss": false,
-    "hashFileNames": false,
+    "minifyJs": true,
+    "minifyCss": true,
+    "hashFileNames": true,
     "hashedFileNameLength": 8,
     "buildEs5": false
   },
   "formats": {
     "esmBrowser": [
       {
+        "key": "mt-marquee.entry",
+        "components": [
+          "mt-marquee"
+        ],
+        "bundleId": "p-78e26b1a",
+        "fileName": "p-78e26b1a.entry.js",
+        "imports": [
+          "p-10eeb9e6.js",
+          "p-c212c8a0.js",
+          "p-6fdb396c.js"
+        ],
+        "originalByteSize": 8862
+      },
+      {
+        "key": "mt-quote.entry",
+        "components": [
+          "mt-quote"
+        ],
+        "bundleId": "p-146099e0",
+        "fileName": "p-146099e0.entry.js",
+        "imports": [
+          "p-10eeb9e6.js",
+          "p-c212c8a0.js",
+          "p-6fdb396c.js"
+        ],
+        "originalByteSize": 411524
+      },
+      {
+        "key": "mt-rates.entry",
+        "components": [
+          "mt-rates"
+        ],
+        "bundleId": "p-bac57872",
+        "fileName": "p-bac57872.entry.js",
+        "imports": [
+          "p-10eeb9e6.js",
+          "p-c212c8a0.js",
+          "p-6fdb396c.js"
+        ],
+        "originalByteSize": 20105
+      },
+      {
         "key": "finnhub-news.entry",
         "components": [
           "finnhub-news"
         ],
-        "bundleId": "finnhub-news",
-        "fileName": "finnhub-news.entry.js",
+        "bundleId": "p-6ee57445",
+        "fileName": "p-6ee57445.entry.js",
         "imports": [
-          "index-53ef1f0e.js",
-          "lavva-js-sdk.esm-e185e4d4.js",
-          "store2-f3f72e93.js",
-          "utils-6f0cae60.js"
+          "p-10eeb9e6.js",
+          "p-c212c8a0.js",
+          "p-6fdb396c.js"
         ],
-        "originalByteSize": 4140
+        "originalByteSize": 4062
       },
       {
         "key": "fxcm-rates.entry",
         "components": [
           "fxcm-rates"
         ],
-        "bundleId": "fxcm-rates",
-        "fileName": "fxcm-rates.entry.js",
+        "bundleId": "p-f67c9a67",
+        "fileName": "p-f67c9a67.entry.js",
         "imports": [
-          "index-53ef1f0e.js",
-          "lavva-js-sdk.esm-e185e4d4.js",
-          "store2-f3f72e93.js",
-          "utils-6f0cae60.js"
+          "p-10eeb9e6.js",
+          "p-c212c8a0.js",
+          "p-6fdb396c.js"
         ],
-        "originalByteSize": 3924
+        "originalByteSize": 3846
       },
+      {
+        "key": "owm-daily.entry",
+        "components": [
+          "owm-daily"
+        ],
+        "bundleId": "p-2926933f",
+        "fileName": "p-2926933f.entry.js",
+        "imports": [
+          "p-10eeb9e6.js",
+          "p-c212c8a0.js",
+          "p-6fdb396c.js"
+        ],
+        "originalByteSize": 4786
+      },
+      {
+        "key": "twit-ter.entry",
+        "components": [
+          "twit-ter"
+        ],
+        "bundleId": "p-0e53612f",
+        "fileName": "p-0e53612f.entry.js",
+        "imports": [
+          "p-10eeb9e6.js",
+          "p-c212c8a0.js",
+          "p-6fdb396c.js"
+        ],
+        "originalByteSize": 5297
+      },
+      {
+        "key": "yahoo-quotes.entry",
+        "components": [
+          "yahoo-quotes"
+        ],
+        "bundleId": "p-4a8ba8e8",
+        "fileName": "p-4a8ba8e8.entry.js",
+        "imports": [
+          "p-10eeb9e6.js",
+          "p-c212c8a0.js",
+          "p-6fdb396c.js"
+        ],
+        "originalByteSize": 2430
+      },
+      {
+        "key": "owm-daily-item.entry",
+        "components": [
+          "owm-daily-item"
+        ],
+        "bundleId": "p-1ff9f46f",
+        "fileName": "p-1ff9f46f.entry.js",
+        "imports": [
+          "p-10eeb9e6.js",
+          "p-c212c8a0.js"
+        ],
+        "originalByteSize": 1949
+      },
+      {
+        "key": "yahoo-quote.entry",
+        "components": [
+          "yahoo-quote"
+        ],
+        "bundleId": "p-f62df35d",
+        "fileName": "p-f62df35d.entry.js",
+        "imports": [
+          "p-10eeb9e6.js"
+        ],
+        "originalByteSize": 2409
+      }
+    ],
+    "esm": [
       {
         "key": "mt-marquee.entry",
         "components": [
@@ -147,12 +317,11 @@
         "bundleId": "mt-marquee",
         "fileName": "mt-marquee.entry.js",
         "imports": [
-          "index-53ef1f0e.js",
-          "lavva-js-sdk.esm-e185e4d4.js",
-          "store2-f3f72e93.js",
-          "utils-47bf880f.js"
+          "index-3efefcbd.js",
+          "utils-2a738923.js",
+          "store2-5cffcc22.js"
         ],
-        "originalByteSize": 8924
+        "originalByteSize": 8875
       },
       {
         "key": "mt-quote.entry",
@@ -162,12 +331,11 @@
         "bundleId": "mt-quote",
         "fileName": "mt-quote.entry.js",
         "imports": [
-          "index-53ef1f0e.js",
-          "lavva-js-sdk.esm-e185e4d4.js",
-          "store2-f3f72e93.js",
-          "utils-47bf880f.js"
+          "index-3efefcbd.js",
+          "utils-2a738923.js",
+          "store2-5cffcc22.js"
         ],
-        "originalByteSize": 411899
+        "originalByteSize": 411537
       },
       {
         "key": "mt-rates.entry",
@@ -177,12 +345,39 @@
         "bundleId": "mt-rates",
         "fileName": "mt-rates.entry.js",
         "imports": [
-          "index-53ef1f0e.js",
-          "lavva-js-sdk.esm-e185e4d4.js",
-          "store2-f3f72e93.js",
-          "utils-47bf880f.js"
+          "index-3efefcbd.js",
+          "utils-2a738923.js",
+          "store2-5cffcc22.js"
         ],
-        "originalByteSize": 20170
+        "originalByteSize": 20118
+      },
+      {
+        "key": "finnhub-news.entry",
+        "components": [
+          "finnhub-news"
+        ],
+        "bundleId": "finnhub-news",
+        "fileName": "finnhub-news.entry.js",
+        "imports": [
+          "index-3efefcbd.js",
+          "utils-2a738923.js",
+          "store2-5cffcc22.js"
+        ],
+        "originalByteSize": 4075
+      },
+      {
+        "key": "fxcm-rates.entry",
+        "components": [
+          "fxcm-rates"
+        ],
+        "bundleId": "fxcm-rates",
+        "fileName": "fxcm-rates.entry.js",
+        "imports": [
+          "index-3efefcbd.js",
+          "utils-2a738923.js",
+          "store2-5cffcc22.js"
+        ],
+        "originalByteSize": 3859
       },
       {
         "key": "owm-daily.entry",
@@ -192,12 +387,11 @@
         "bundleId": "owm-daily",
         "fileName": "owm-daily.entry.js",
         "imports": [
-          "index-53ef1f0e.js",
-          "lavva-js-sdk.esm-e185e4d4.js",
-          "store2-f3f72e93.js",
-          "utils-6f0cae60.js"
+          "index-3efefcbd.js",
+          "utils-2a738923.js",
+          "store2-5cffcc22.js"
         ],
-        "originalByteSize": 3528
+        "originalByteSize": 4799
       },
       {
         "key": "twit-ter.entry",
@@ -207,12 +401,11 @@
         "bundleId": "twit-ter",
         "fileName": "twit-ter.entry.js",
         "imports": [
-          "index-53ef1f0e.js",
-          "lavva-js-sdk.esm-e185e4d4.js",
-          "store2-f3f72e93.js",
-          "utils-6f0cae60.js"
+          "index-3efefcbd.js",
+          "utils-2a738923.js",
+          "store2-5cffcc22.js"
         ],
-        "originalByteSize": 5375
+        "originalByteSize": 5310
       },
       {
         "key": "yahoo-quotes.entry",
@@ -222,12 +415,11 @@
         "bundleId": "yahoo-quotes",
         "fileName": "yahoo-quotes.entry.js",
         "imports": [
-          "index-53ef1f0e.js",
-          "lavva-js-sdk.esm-e185e4d4.js",
-          "store2-f3f72e93.js",
-          "utils-6f0cae60.js"
+          "index-3efefcbd.js",
+          "utils-2a738923.js",
+          "store2-5cffcc22.js"
         ],
-        "originalByteSize": 2508
+        "originalByteSize": 2443
       },
       {
         "key": "owm-daily-item.entry",
@@ -237,11 +429,10 @@
         "bundleId": "owm-daily-item",
         "fileName": "owm-daily-item.entry.js",
         "imports": [
-          "index-53ef1f0e.js",
-          "utils-6f0cae60.js",
-          "lavva-js-sdk.esm-e185e4d4.js"
+          "index-3efefcbd.js",
+          "utils-2a738923.js"
         ],
-        "originalByteSize": 1998
+        "originalByteSize": 1957
       },
       {
         "key": "yahoo-quote.entry",
@@ -251,15 +442,152 @@
         "bundleId": "yahoo-quote",
         "fileName": "yahoo-quote.entry.js",
         "imports": [
-          "index-53ef1f0e.js"
+          "index-3efefcbd.js"
         ],
         "originalByteSize": 2413
       }
     ],
-    "esm": [],
     "es5": [],
     "system": [],
-    "commonjs": []
+    "commonjs": [
+      {
+        "key": "mt-marquee.entry",
+        "components": [
+          "mt-marquee"
+        ],
+        "bundleId": "mt-marquee.cjs",
+        "fileName": "mt-marquee.cjs.entry.js",
+        "imports": [
+          "index-8499e96d.js",
+          "utils-67cdd245.js",
+          "store2-a98cb247.js"
+        ],
+        "originalByteSize": 8985
+      },
+      {
+        "key": "mt-quote.entry",
+        "components": [
+          "mt-quote"
+        ],
+        "bundleId": "mt-quote.cjs",
+        "fileName": "mt-quote.cjs.entry.js",
+        "imports": [
+          "index-8499e96d.js",
+          "utils-67cdd245.js",
+          "store2-a98cb247.js"
+        ],
+        "originalByteSize": 411668
+      },
+      {
+        "key": "mt-rates.entry",
+        "components": [
+          "mt-rates"
+        ],
+        "bundleId": "mt-rates.cjs",
+        "fileName": "mt-rates.cjs.entry.js",
+        "imports": [
+          "index-8499e96d.js",
+          "utils-67cdd245.js",
+          "store2-a98cb247.js"
+        ],
+        "originalByteSize": 20462
+      },
+      {
+        "key": "finnhub-news.entry",
+        "components": [
+          "finnhub-news"
+        ],
+        "bundleId": "finnhub-news.cjs",
+        "fileName": "finnhub-news.cjs.entry.js",
+        "imports": [
+          "index-8499e96d.js",
+          "utils-67cdd245.js",
+          "store2-a98cb247.js"
+        ],
+        "originalByteSize": 4230
+      },
+      {
+        "key": "fxcm-rates.entry",
+        "components": [
+          "fxcm-rates"
+        ],
+        "bundleId": "fxcm-rates.cjs",
+        "fileName": "fxcm-rates.cjs.entry.js",
+        "imports": [
+          "index-8499e96d.js",
+          "utils-67cdd245.js",
+          "store2-a98cb247.js"
+        ],
+        "originalByteSize": 4036
+      },
+      {
+        "key": "owm-daily.entry",
+        "components": [
+          "owm-daily"
+        ],
+        "bundleId": "owm-daily.cjs",
+        "fileName": "owm-daily.cjs.entry.js",
+        "imports": [
+          "index-8499e96d.js",
+          "utils-67cdd245.js",
+          "store2-a98cb247.js"
+        ],
+        "originalByteSize": 4917
+      },
+      {
+        "key": "twit-ter.entry",
+        "components": [
+          "twit-ter"
+        ],
+        "bundleId": "twit-ter.cjs",
+        "fileName": "twit-ter.cjs.entry.js",
+        "imports": [
+          "index-8499e96d.js",
+          "utils-67cdd245.js",
+          "store2-a98cb247.js"
+        ],
+        "originalByteSize": 5465
+      },
+      {
+        "key": "yahoo-quotes.entry",
+        "components": [
+          "yahoo-quotes"
+        ],
+        "bundleId": "yahoo-quotes.cjs",
+        "fileName": "yahoo-quotes.cjs.entry.js",
+        "imports": [
+          "index-8499e96d.js",
+          "utils-67cdd245.js",
+          "store2-a98cb247.js"
+        ],
+        "originalByteSize": 2536
+      },
+      {
+        "key": "owm-daily-item.entry",
+        "components": [
+          "owm-daily-item"
+        ],
+        "bundleId": "owm-daily-item.cjs",
+        "fileName": "owm-daily-item.cjs.entry.js",
+        "imports": [
+          "index-8499e96d.js",
+          "utils-67cdd245.js"
+        ],
+        "originalByteSize": 2077
+      },
+      {
+        "key": "yahoo-quote.entry",
+        "components": [
+          "yahoo-quote"
+        ],
+        "bundleId": "yahoo-quote.cjs",
+        "fileName": "yahoo-quote.cjs.entry.js",
+        "imports": [
+          "index-8499e96d.js"
+        ],
+        "originalByteSize": 2572
+      }
+    ]
   },
   "components": [
     {
@@ -330,14 +658,14 @@
           },
           "docs": {
             "tags": [],
-            "text": "Prop"
+            "text": ""
           },
           "internal": false
         },
         {
-          "name": "dataChannel",
+          "name": "channel",
           "type": "string",
-          "attribute": "data-channel",
+          "attribute": "channel",
           "reflect": false,
           "mutable": false,
           "required": true,
@@ -512,14 +840,14 @@
           },
           "docs": {
             "tags": [],
-            "text": "Prop"
+            "text": ""
           },
           "internal": false
         },
         {
-          "name": "dataChannel",
+          "name": "channel",
           "type": "string",
-          "attribute": "data-channel",
+          "attribute": "channel",
           "reflect": false,
           "mutable": false,
           "required": true,
@@ -1419,7 +1747,7 @@
       "path": "./src/components/mt-rates/mt-rates.js",
       "source": "./src/components/mt-rates/mt-rates.tsx",
       "elementRef": null,
-      "componentClassName": "MT4Rates",
+      "componentClassName": "MTRates",
       "assetsDirs": [
         {
           "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-rates/assets",
@@ -1469,7 +1797,7 @@
         {
           "name": "log",
           "docs": {
-            "text": "",
+            "text": "Method",
             "tags": []
           },
           "complexType": {
@@ -1527,7 +1855,7 @@
           },
           "docs": {
             "tags": [],
-            "text": ""
+            "text": "Prop"
           },
           "internal": false
         },
@@ -1780,7 +2108,7 @@
           },
           "docs": {
             "tags": [],
-            "text": ""
+            "text": "Prop"
           },
           "internal": false
         },
@@ -1800,7 +2128,7 @@
           },
           "docs": {
             "tags": [],
-            "text": ""
+            "text": "Prop (optional)"
           },
           "internal": false
         },
@@ -1912,14 +2240,14 @@
           },
           "docs": {
             "tags": [],
-            "text": "Prop"
+            "text": ""
           },
           "internal": false
         },
         {
-          "name": "dataChannel",
+          "name": "channel",
           "type": "string",
-          "attribute": "data-channel",
+          "attribute": "channel",
           "reflect": false,
           "mutable": false,
           "required": true,
@@ -2182,14 +2510,14 @@
           },
           "docs": {
             "tags": [],
-            "text": "Prop"
+            "text": ""
           },
           "internal": false
         },
         {
-          "name": "dataChannel",
+          "name": "channel",
           "type": "string",
-          "attribute": "data-channel",
+          "attribute": "channel",
           "reflect": false,
           "mutable": false,
           "required": true,
@@ -2441,14 +2769,14 @@
           },
           "docs": {
             "tags": [],
-            "text": "Prop"
+            "text": ""
           },
           "internal": false
         },
         {
-          "name": "dataChannel",
+          "name": "channel",
           "type": "string",
-          "attribute": "data-channel",
+          "attribute": "channel",
           "reflect": false,
           "mutable": false,
           "required": true,
@@ -2557,561 +2885,6 @@
     }
   ],
   "entries": [
-    {
-      "cmps": [
-        {
-          "tagName": "finnhub-news",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "FinnhubNewsComponent",
-          "elementRef": null,
-          "encapsulation": "none",
-          "shadowDelegatesFocus": null,
-          "properties": [
-            {
-              "name": "connection",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": true,
-              "optional": false,
-              "complexType": {
-                "original": "WebsocketConnection",
-                "resolved": "WebsocketConnection",
-                "references": {
-                  "WebsocketConnection": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "dataChannel",
-              "type": "string",
-              "attribute": "data-channel",
-              "reflect": false,
-              "mutable": false,
-              "required": true,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "dataKey",
-              "type": "string",
-              "attribute": "data-key",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "undefined",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop (optional)"
-              },
-              "internal": false
-            },
-            {
-              "name": "namespace",
-              "type": "string",
-              "attribute": "namespace",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'finnhub-news'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop (optional)"
-              },
-              "internal": false
-            },
-            {
-              "name": "useCache",
-              "type": "boolean",
-              "attribute": "use-cache",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "debug",
-              "type": "boolean",
-              "attribute": "debug",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [
-            {
-              "name": "size"
-            },
-            {
-              "name": "data"
-            }
-          ],
-          "methods": [
-            {
-              "name": "log",
-              "docs": {
-                "text": "Method",
-                "tags": []
-              },
-              "complexType": {
-                "signature": "(...args: any[]) => Promise<void>",
-                "parameters": [
-                  {
-                    "tags": [],
-                    "text": ""
-                  }
-                ],
-                "references": {
-                  "Promise": {
-                    "location": "global"
-                  }
-                },
-                "return": "Promise<void>"
-              },
-              "internal": false
-            }
-          ],
-          "listeners": [],
-          "events": [],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "FINNHUB-NEWS",
-              "styleStr": null,
-              "styleIdentifier": "finnhubNewsStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/finnhub-news/finnhub-news.scss",
-                  "relativePath": "./finnhub-news.scss",
-                  "originalComponentPath": "./finnhub-news.scss"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/finnhub-news/finnhub-news.js",
-          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/finnhub-news/finnhub-news.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": true,
-          "hasDisconnectedCallbackFn": true,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": true,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": false,
-          "hasPropBoolean": true,
-          "hasPropString": true,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": true,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": true,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "class",
-            "src",
-            "alt",
-            "title",
-            "innerHTML",
-            "href",
-            "target"
-          ],
-          "htmlTagNames": [
-            "div",
-            "ul",
-            "li",
-            "img",
-            "span",
-            "a"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [],
-          "directDependents": []
-        }
-      ],
-      "entryKey": "finnhub-news.entry"
-    },
-    {
-      "cmps": [
-        {
-          "tagName": "fxcm-rates",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "FXCMRatesComponent",
-          "elementRef": null,
-          "encapsulation": "none",
-          "shadowDelegatesFocus": null,
-          "properties": [
-            {
-              "name": "connection",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": true,
-              "optional": false,
-              "complexType": {
-                "original": "WebsocketConnection",
-                "resolved": "WebsocketConnection",
-                "references": {
-                  "WebsocketConnection": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "dataChannel",
-              "type": "string",
-              "attribute": "data-channel",
-              "reflect": false,
-              "mutable": false,
-              "required": true,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "dataKey",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "[]",
-              "complexType": {
-                "original": "string[]",
-                "resolved": "string[]",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop (optional)"
-              },
-              "internal": false
-            },
-            {
-              "name": "namespace",
-              "type": "string",
-              "attribute": "namespace",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'fxcm-rates'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop (optional)"
-              },
-              "internal": false
-            },
-            {
-              "name": "useCache",
-              "type": "boolean",
-              "attribute": "use-cache",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "symbolNames",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "[]",
-              "complexType": {
-                "original": "any[]",
-                "resolved": "any[]",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "debug",
-              "type": "boolean",
-              "attribute": "debug",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [
-            {
-              "name": "rates"
-            },
-            {
-              "name": "data"
-            },
-            {
-              "name": "size"
-            }
-          ],
-          "methods": [
-            {
-              "name": "log",
-              "docs": {
-                "text": "Method",
-                "tags": []
-              },
-              "complexType": {
-                "signature": "(...args: any[]) => Promise<void>",
-                "parameters": [
-                  {
-                    "tags": [],
-                    "text": ""
-                  }
-                ],
-                "references": {
-                  "Promise": {
-                    "location": "global"
-                  }
-                },
-                "return": "Promise<void>"
-              },
-              "internal": false
-            }
-          ],
-          "listeners": [],
-          "events": [],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "FXCM-RATES",
-              "styleStr": null,
-              "styleIdentifier": "fxcmRatesStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/fxcm-rates/fxcm-rates.scss",
-                  "relativePath": "./fxcm-rates.scss",
-                  "originalComponentPath": "./fxcm-rates.scss"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/fxcm-rates/fxcm-rates.js",
-          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/fxcm-rates/fxcm-rates.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": true,
-          "hasDisconnectedCallbackFn": true,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": true,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": false,
-          "hasPropBoolean": true,
-          "hasPropString": true,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": true,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": false,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": true,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "class"
-          ],
-          "htmlTagNames": [
-            "div",
-            "section"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [],
-          "directDependents": []
-        }
-      ],
-      "entryKey": "fxcm-rates.entry"
-    },
     {
       "cmps": [
         {
@@ -4060,7 +3833,7 @@
           "tagName": "mt-rates",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
-          "componentClassName": "MT4Rates",
+          "componentClassName": "MTRates",
           "elementRef": null,
           "encapsulation": "shadow",
           "shadowDelegatesFocus": false,
@@ -4100,7 +3873,7 @@
               },
               "docs": {
                 "tags": [],
-                "text": ""
+                "text": "Prop"
               },
               "internal": false
             },
@@ -4353,7 +4126,7 @@
               },
               "docs": {
                 "tags": [],
-                "text": ""
+                "text": "Prop"
               },
               "internal": false
             },
@@ -4373,7 +4146,7 @@
               },
               "docs": {
                 "tags": [],
-                "text": ""
+                "text": "Prop (optional)"
               },
               "internal": false
             },
@@ -4414,7 +4187,7 @@
             {
               "name": "log",
               "docs": {
-                "text": "",
+                "text": "Method",
                 "tags": []
               },
               "complexType": {
@@ -4569,6 +4342,561 @@
     {
       "cmps": [
         {
+          "tagName": "finnhub-news",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "FinnhubNewsComponent",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "connection",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "WebsocketConnection",
+                "resolved": "WebsocketConnection",
+                "references": {
+                  "WebsocketConnection": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "channel",
+              "type": "string",
+              "attribute": "channel",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "dataKey",
+              "type": "string",
+              "attribute": "data-key",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "undefined",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'finnhub-news'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "debug",
+              "type": "boolean",
+              "attribute": "debug",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "size"
+            },
+            {
+              "name": "data"
+            }
+          ],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "Method",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "FINNHUB-NEWS",
+              "styleStr": null,
+              "styleIdentifier": "finnhubNewsStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/finnhub-news/finnhub-news.scss",
+                  "relativePath": "./finnhub-news.scss",
+                  "originalComponentPath": "./finnhub-news.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/finnhub-news/finnhub-news.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/finnhub-news/finnhub-news.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "src",
+            "alt",
+            "title",
+            "innerHTML",
+            "href",
+            "target"
+          ],
+          "htmlTagNames": [
+            "div",
+            "ul",
+            "li",
+            "img",
+            "span",
+            "a"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "finnhub-news.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "fxcm-rates",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "FXCMRatesComponent",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "connection",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "WebsocketConnection",
+                "resolved": "WebsocketConnection",
+                "references": {
+                  "WebsocketConnection": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "channel",
+              "type": "string",
+              "attribute": "channel",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "dataKey",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "[]",
+              "complexType": {
+                "original": "string[]",
+                "resolved": "string[]",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'fxcm-rates'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "symbolNames",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "[]",
+              "complexType": {
+                "original": "any[]",
+                "resolved": "any[]",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "debug",
+              "type": "boolean",
+              "attribute": "debug",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "rates"
+            },
+            {
+              "name": "data"
+            },
+            {
+              "name": "size"
+            }
+          ],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "Method",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "FXCM-RATES",
+              "styleStr": null,
+              "styleIdentifier": "fxcmRatesStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/fxcm-rates/fxcm-rates.scss",
+                  "relativePath": "./fxcm-rates.scss",
+                  "originalComponentPath": "./fxcm-rates.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/fxcm-rates/fxcm-rates.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/fxcm-rates/fxcm-rates.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class"
+          ],
+          "htmlTagNames": [
+            "div",
+            "section"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "fxcm-rates.entry"
+    },
+    {
+      "cmps": [
+        {
           "tagName": "owm-daily",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -4596,14 +4924,14 @@
               },
               "docs": {
                 "tags": [],
-                "text": "Prop"
+                "text": ""
               },
               "internal": false
             },
             {
-              "name": "dataChannel",
+              "name": "channel",
               "type": "string",
-              "attribute": "data-channel",
+              "attribute": "channel",
               "reflect": false,
               "mutable": false,
               "required": true,
@@ -4867,14 +5195,14 @@
               },
               "docs": {
                 "tags": [],
-                "text": "Prop"
+                "text": ""
               },
               "internal": false
             },
             {
-              "name": "dataChannel",
+              "name": "channel",
               "type": "string",
-              "attribute": "data-channel",
+              "attribute": "channel",
               "reflect": false,
               "mutable": false,
               "required": true,
@@ -5135,14 +5463,14 @@
               },
               "docs": {
                 "tags": [],
-                "text": "Prop"
+                "text": ""
               },
               "internal": false
             },
             {
-              "name": "dataChannel",
+              "name": "channel",
               "type": "string",
-              "attribute": "data-channel",
+              "attribute": "channel",
               "reflect": false,
               "mutable": false,
               "required": true,
@@ -5702,60 +6030,51 @@
   ],
   "componentGraph": {
     "sc-finnhub-news": [
-      "index-53ef1f0e.js",
-      "lavva-js-sdk.esm-e185e4d4.js",
-      "store2-f3f72e93.js",
-      "utils-6f0cae60.js"
+      "p-10eeb9e6.js",
+      "p-c212c8a0.js",
+      "p-6fdb396c.js"
     ],
     "sc-fxcm-rates": [
-      "index-53ef1f0e.js",
-      "lavva-js-sdk.esm-e185e4d4.js",
-      "store2-f3f72e93.js",
-      "utils-6f0cae60.js"
+      "p-10eeb9e6.js",
+      "p-c212c8a0.js",
+      "p-6fdb396c.js"
     ],
     "sc-mt-marquee": [
-      "index-53ef1f0e.js",
-      "lavva-js-sdk.esm-e185e4d4.js",
-      "store2-f3f72e93.js",
-      "utils-47bf880f.js"
+      "p-10eeb9e6.js",
+      "p-c212c8a0.js",
+      "p-6fdb396c.js"
     ],
     "sc-mt-quote": [
-      "index-53ef1f0e.js",
-      "lavva-js-sdk.esm-e185e4d4.js",
-      "store2-f3f72e93.js",
-      "utils-47bf880f.js"
+      "p-10eeb9e6.js",
+      "p-c212c8a0.js",
+      "p-6fdb396c.js"
     ],
     "sc-mt-rates": [
-      "index-53ef1f0e.js",
-      "lavva-js-sdk.esm-e185e4d4.js",
-      "store2-f3f72e93.js",
-      "utils-47bf880f.js"
+      "p-10eeb9e6.js",
+      "p-c212c8a0.js",
+      "p-6fdb396c.js"
     ],
     "sc-owm-daily": [
-      "index-53ef1f0e.js",
-      "lavva-js-sdk.esm-e185e4d4.js",
-      "store2-f3f72e93.js",
-      "utils-6f0cae60.js"
+      "p-10eeb9e6.js",
+      "p-c212c8a0.js",
+      "p-6fdb396c.js"
     ],
     "sc-owm-daily-item": [
-      "index-53ef1f0e.js",
-      "utils-6f0cae60.js",
-      "lavva-js-sdk.esm-e185e4d4.js"
+      "p-10eeb9e6.js",
+      "p-c212c8a0.js"
     ],
     "sc-twit-ter": [
-      "index-53ef1f0e.js",
-      "lavva-js-sdk.esm-e185e4d4.js",
-      "store2-f3f72e93.js",
-      "utils-6f0cae60.js"
+      "p-10eeb9e6.js",
+      "p-c212c8a0.js",
+      "p-6fdb396c.js"
     ],
     "sc-yahoo-quote": [
-      "index-53ef1f0e.js"
+      "p-10eeb9e6.js"
     ],
     "sc-yahoo-quotes": [
-      "index-53ef1f0e.js",
-      "lavva-js-sdk.esm-e185e4d4.js",
-      "store2-f3f72e93.js",
-      "utils-6f0cae60.js"
+      "p-10eeb9e6.js",
+      "p-c212c8a0.js",
+      "p-6fdb396c.js"
     ]
   },
   "sourceGraph": {
@@ -5768,13 +6087,13 @@
     ],
     "./src/components/fxcm-rates/fxcm.ts": [],
     "./src/components/mt-marquee/mt-marquee.tsx": [
-      "./src/utils"
+      "./src/shared/utils"
     ],
     "./src/components/mt-quote/mt-quote.tsx": [
-      "./src/utils"
+      "./src/shared/utils"
     ],
     "./src/components/mt-rates/mt-rates.tsx": [
-      "./src/utils"
+      "./src/shared/utils"
     ],
     "./src/components/owm-daily/owm-daily-item.tsx": [
       "./src/shared/utils"
@@ -5790,10 +6109,10 @@
       "./src/shared/utils"
     ],
     "./src/index.ts": [],
+    "./src/shared/index.ts": [],
     "./src/shared/model.ts": [],
     "./src/shared/mt-quote.ts": [],
-    "./src/shared/utils.ts": [],
-    "./src/utils.ts": []
+    "./src/shared/utils.ts": []
   },
   "collections": []
 }

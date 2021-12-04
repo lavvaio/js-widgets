@@ -12,11 +12,8 @@ export namespace Components {
         /**
           * Prop
          */
+        "channel": string;
         "connection": WebsocketConnection;
-        /**
-          * Prop
-         */
-        "dataChannel": string;
         /**
           * Prop (optional)
          */
@@ -39,11 +36,8 @@ export namespace Components {
         /**
           * Prop
          */
+        "channel": string;
         "connection": WebsocketConnection;
-        /**
-          * Prop
-         */
-        "dataChannel": string;
         /**
           * Prop (optional)
          */
@@ -108,6 +102,9 @@ export namespace Components {
     }
     interface MtRates {
         "apiKey": string;
+        /**
+          * Prop
+         */
         "channel": string;
         "debug": boolean;
         "encoding": WebsocketConnectionEncoding;
@@ -115,8 +112,14 @@ export namespace Components {
         "groups": Category[];
         "host": string;
         "locale": string;
+        /**
+          * Method
+         */
         "log": (...args: any[]) => Promise<void>;
         "names": boolean;
+        /**
+          * Prop (optional)
+         */
         "namespace": string;
         "size": 'default' | 'large';
         "snapshot": boolean;
@@ -127,17 +130,17 @@ export namespace Components {
             [key: string]: string;
         }
     };
+        /**
+          * Prop
+         */
         "useCache": boolean;
     }
     interface OwmDaily {
         /**
           * Prop
          */
+        "channel": string;
         "connection": WebsocketConnection;
-        /**
-          * Prop
-         */
-        "dataChannel": string;
         /**
           * Prop (optional)
          */
@@ -165,11 +168,8 @@ export namespace Components {
         /**
           * Prop
          */
+        "channel": string;
         "connection": WebsocketConnection;
-        /**
-          * Prop
-         */
-        "dataChannel": string;
         /**
           * Prop (optional)
          */
@@ -196,11 +196,8 @@ export namespace Components {
         /**
           * Prop
          */
+        "channel": string;
         "connection": WebsocketConnection;
-        /**
-          * Prop
-         */
-        "dataChannel": string;
         /**
           * Prop (optional)
          */
@@ -299,11 +296,8 @@ declare namespace LocalJSX {
         /**
           * Prop
          */
+        "channel": string;
         "connection": WebsocketConnection;
-        /**
-          * Prop
-         */
-        "dataChannel": string;
         /**
           * Prop (optional)
          */
@@ -322,11 +316,8 @@ declare namespace LocalJSX {
         /**
           * Prop
          */
+        "channel": string;
         "connection": WebsocketConnection;
-        /**
-          * Prop
-         */
-        "dataChannel": string;
         /**
           * Prop (optional)
          */
@@ -386,6 +377,9 @@ declare namespace LocalJSX {
     }
     interface MtRates {
         "apiKey"?: string;
+        /**
+          * Prop
+         */
         "channel"?: string;
         "debug"?: boolean;
         "encoding"?: WebsocketConnectionEncoding;
@@ -394,6 +388,9 @@ declare namespace LocalJSX {
         "host"?: string;
         "locale"?: string;
         "names"?: boolean;
+        /**
+          * Prop (optional)
+         */
         "namespace"?: string;
         "onTradeClick"?: (event: CustomEvent<TradeSymbol>) => void;
         "size"?: 'default' | 'large';
@@ -405,17 +402,17 @@ declare namespace LocalJSX {
             [key: string]: string;
         }
     };
+        /**
+          * Prop
+         */
         "useCache"?: boolean;
     }
     interface OwmDaily {
         /**
           * Prop
          */
+        "channel": string;
         "connection": WebsocketConnection;
-        /**
-          * Prop
-         */
-        "dataChannel": string;
         /**
           * Prop (optional)
          */
@@ -439,11 +436,8 @@ declare namespace LocalJSX {
         /**
           * Prop
          */
+        "channel": string;
         "connection": WebsocketConnection;
-        /**
-          * Prop
-         */
-        "dataChannel": string;
         /**
           * Prop (optional)
          */
@@ -466,11 +460,8 @@ declare namespace LocalJSX {
         /**
           * Prop
          */
+        "channel": string;
         "connection": WebsocketConnection;
-        /**
-          * Prop
-         */
-        "dataChannel": string;
         /**
           * Prop (optional)
          */

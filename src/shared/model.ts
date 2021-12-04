@@ -1,14 +1,8 @@
-import { WebsocketConnection } from "@anadyme/lavva-js-sdk";
-
 export interface LavvaWidget {
     /**
      * Prop
      */
-    connection: WebsocketConnection;
-    /**
-     * Prop
-     */
-    dataChannel: string;
+    channel: string;
     /**
      * Prop (optional)
      */

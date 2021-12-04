@@ -17,7 +17,7 @@ export class OpenWeatherComponent implements LavvaWidget {
     connection!: WebsocketConnection;
 
     @Prop()
-    dataChannel!: string;
+    channel!: string;
 
     @Prop()
     dataKey: string = undefined;
@@ -52,13 +52,13 @@ export class OpenWeatherComponent implements LavvaWidget {
             throw new Error('connection was not found');
         }
 
-        this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
+        this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
         ).subscribe(message => {
             this.log('client connected', message.value.client_id);
         }));
 
-        this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
+        this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.DATA),
             filter(message => this.dataKey === undefined ? true : message.key === this.dataKey),
             debounceTime(150),
@@ -71,14 +71,14 @@ export class OpenWeatherComponent implements LavvaWidget {
         this.data = weather;
         if (this.useCache) {
             const ns = store.namespace(this.namespace);
-            ns.set(this.dataChannel, weather);
+            ns.set(this.channel, weather);
         }
     }
 
     loadWeather() {
         if (this.useCache) {
             const ns = store.namespace(this.namespace);
-            this.data = ns.get(this.dataChannel, this.data);
+            this.data = ns.get(this.channel, this.data);
         }
     }
 

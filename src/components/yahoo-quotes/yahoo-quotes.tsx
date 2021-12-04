@@ -17,7 +17,7 @@ export class YahooQuotesComponent implements LavvaWidget {
     connection!: WebsocketConnection;
 
     @Prop()
-    dataChannel!: string;
+    channel!: string;
 
     @Prop()
     dataKey: string = undefined;
@@ -55,13 +55,13 @@ export class YahooQuotesComponent implements LavvaWidget {
             throw new Error('connection was not found');
         }
 
-        this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
+        this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
         ).subscribe(message => {
             this.log('client connected', message.value.client_id);
         }));
 
-        this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
+        this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.DATA),
             filter(message => this.dataKey === undefined ? true : message.key === this.dataKey),
             // debounceTime(150),
@@ -75,14 +75,14 @@ export class YahooQuotesComponent implements LavvaWidget {
         this.data = Array.from(this.symbols, ([name, value]) => ({ name, value }));
         if (this.useCache) {
             const ns = store.namespace(this.namespace);
-            ns.set(this.dataChannel, this.data);
+            ns.set(this.channel, this.data);
         }
     }
 
     loadQuotes() {
         if (this.useCache) {
             const ns = store.namespace(this.namespace);
-            this.data = ns.get(this.dataChannel, this.data);
+            this.data = ns.get(this.channel, this.data);
             this.symbols = new Map<string, any>((this.data || []).map(x => [x.name, x.value] as [string, any]));
         }
     }

@@ -2,8 +2,9 @@ import { ClientMessageDataType, WebsocketConnection, WebsocketConnectionEncoding
 import { Event, EventEmitter, Component, h, Prop, State, Method } from '@stencil/core';
 import { filter, Subscription } from 'rxjs';
 import store from 'store2';
+import { LavvaWidget } from '../../shared/model';
 import { Category, Quote, TradeSymbol } from '../../shared/mt-quote';
-import { createLogger, translate } from '../../utils';
+import { createLogger, translate } from '../../shared/utils';
 
 
 @Component({
@@ -12,7 +13,7 @@ import { createLogger, translate } from '../../utils';
     shadow: true,
     assetsDirs: [ './assets' ]
 })
-export class MT4Rates {
+export class MTRates implements LavvaWidget {
 
     private connection: WebsocketConnection;
     private logger = createLogger('mt-rates');

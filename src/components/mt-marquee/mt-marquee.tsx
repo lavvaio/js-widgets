@@ -2,7 +2,7 @@ import { ClientMessageDataType, LVLogger, WebsocketConnection, WebsocketConnecti
 import { Component, Event, EventEmitter, h, Method, Prop, State, Watch } from '@stencil/core';
 import { filter, Subscription } from 'rxjs';
 import store from 'store2';
-import { createLogger, translate } from "../../utils";
+import { createLogger, translate } from '../../shared/utils';
 import { Quote, TradeSymbol } from '../../shared/mt-quote';
 
 @Component({
