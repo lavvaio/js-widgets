@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-12-04T05:41:16",
+  "timestamp": "2021-12-04T05:55:34",
   "compiler": {
     "name": "node",
     "version": "14.15.0"
@@ -122,7 +122,7 @@
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
         ],
-        "originalByteSize": 4093
+        "originalByteSize": 4140
       },
       {
         "key": "fxcm-rates.entry",
@@ -137,7 +137,7 @@
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
         ],
-        "originalByteSize": 3952
+        "originalByteSize": 3924
       },
       {
         "key": "mt-marquee.entry",
@@ -152,7 +152,7 @@
           "store2-f3f72e93.js",
           "utils-47bf880f.js"
         ],
-        "originalByteSize": 8855
+        "originalByteSize": 8924
       },
       {
         "key": "mt-quote.entry",
@@ -167,7 +167,7 @@
           "store2-f3f72e93.js",
           "utils-47bf880f.js"
         ],
-        "originalByteSize": 411865
+        "originalByteSize": 411899
       },
       {
         "key": "mt-rates.entry",
@@ -182,7 +182,7 @@
           "store2-f3f72e93.js",
           "utils-47bf880f.js"
         ],
-        "originalByteSize": 20101
+        "originalByteSize": 20170
       },
       {
         "key": "owm-daily.entry",
@@ -197,7 +197,7 @@
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
         ],
-        "originalByteSize": 3549
+        "originalByteSize": 3528
       },
       {
         "key": "twit-ter.entry",
@@ -212,7 +212,7 @@
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
         ],
-        "originalByteSize": 5396
+        "originalByteSize": 5375
       },
       {
         "key": "yahoo-quotes.entry",
@@ -227,7 +227,7 @@
           "store2-f3f72e93.js",
           "utils-6f0cae60.js"
         ],
-        "originalByteSize": 2529
+        "originalByteSize": 2508
       },
       {
         "key": "owm-daily-item.entry",
@@ -412,6 +412,26 @@
             "text": "Prop"
           },
           "internal": false
+        },
+        {
+          "name": "debug",
+          "type": "boolean",
+          "attribute": "debug",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
         }
       ],
       "shadowDelegatesFocus": null,
@@ -592,6 +612,26 @@
             "text": ""
           },
           "internal": false
+        },
+        {
+          "name": "debug",
+          "type": "boolean",
+          "attribute": "debug",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
         }
       ],
       "shadowDelegatesFocus": null,
@@ -658,7 +698,31 @@
       "legacyConnect": [],
       "legacyContext": [],
       "listeners": [],
-      "methods": [],
+      "methods": [
+        {
+          "name": "log",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "(...args: any[]) => Promise<void>",
+            "parameters": [
+              {
+                "tags": [],
+                "text": ""
+              }
+            ],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        }
+      ],
       "potentialCmpRefs": [],
       "properties": [
         {
@@ -952,6 +1016,26 @@
             "text": ""
           },
           "internal": false
+        },
+        {
+          "name": "debug",
+          "type": "boolean",
+          "attribute": "debug",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
         }
       ],
       "shadowDelegatesFocus": false,
@@ -995,7 +1079,31 @@
       "legacyConnect": [],
       "legacyContext": [],
       "listeners": [],
-      "methods": [],
+      "methods": [
+        {
+          "name": "log",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "(...args: any[]) => Promise<void>",
+            "parameters": [
+              {
+                "tags": [],
+                "text": ""
+              }
+            ],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        }
+      ],
       "potentialCmpRefs": [],
       "properties": [
         {
@@ -1265,6 +1373,26 @@
             "text": ""
           },
           "internal": false
+        },
+        {
+          "name": "debug",
+          "type": "boolean",
+          "attribute": "debug",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
         }
       ],
       "shadowDelegatesFocus": false,
@@ -1337,7 +1465,31 @@
       "legacyConnect": [],
       "legacyContext": [],
       "listeners": [],
-      "methods": [],
+      "methods": [
+        {
+          "name": "log",
+          "docs": {
+            "text": "",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "(...args: any[]) => Promise<void>",
+            "parameters": [
+              {
+                "tags": [],
+                "text": ""
+              }
+            ],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        }
+      ],
       "potentialCmpRefs": [],
       "properties": [
         {
@@ -1651,6 +1803,26 @@
             "text": ""
           },
           "internal": false
+        },
+        {
+          "name": "debug",
+          "type": "boolean",
+          "attribute": "debug",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
         }
       ],
       "shadowDelegatesFocus": false,
@@ -1820,6 +1992,26 @@
           "docs": {
             "tags": [],
             "text": "Prop"
+          },
+          "internal": false
+        },
+        {
+          "name": "debug",
+          "type": "boolean",
+          "attribute": "debug",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
           },
           "internal": false
         }
@@ -2072,6 +2264,26 @@
             "text": "Prop"
           },
           "internal": false
+        },
+        {
+          "name": "debug",
+          "type": "boolean",
+          "attribute": "debug",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
         }
       ],
       "shadowDelegatesFocus": null,
@@ -2311,6 +2523,26 @@
             "text": "Prop"
           },
           "internal": false
+        },
+        {
+          "name": "debug",
+          "type": "boolean",
+          "attribute": "debug",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
         }
       ],
       "shadowDelegatesFocus": null,
@@ -2435,6 +2667,26 @@
               "docs": {
                 "tags": [],
                 "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "debug",
+              "type": "boolean",
+              "attribute": "debug",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
               },
               "internal": false
             }
@@ -2700,6 +2952,26 @@
               "complexType": {
                 "original": "any[]",
                 "resolved": "any[]",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "debug",
+              "type": "boolean",
+              "attribute": "debug",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
                 "references": {}
               },
               "docs": {
@@ -3142,6 +3414,26 @@
                 "text": ""
               },
               "internal": false
+            },
+            {
+              "name": "debug",
+              "type": "boolean",
+              "attribute": "debug",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
             }
           ],
           "virtualProperties": [],
@@ -3156,7 +3448,31 @@
               "name": "storage"
             }
           ],
-          "methods": [],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
           "listeners": [],
           "events": [
             {
@@ -3242,7 +3558,7 @@
           "hasListenerTargetBody": false,
           "hasListenerTargetParent": false,
           "hasMember": true,
-          "hasMethod": false,
+          "hasMethod": true,
           "hasMode": false,
           "hasAttribute": true,
           "hasProp": true,
@@ -3565,6 +3881,26 @@
                 "text": ""
               },
               "internal": false
+            },
+            {
+              "name": "debug",
+              "type": "boolean",
+              "attribute": "debug",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
             }
           ],
           "virtualProperties": [],
@@ -3585,7 +3921,31 @@
               "name": "chartData"
             }
           ],
-          "methods": [],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
           "listeners": [],
           "events": [],
           "watchers": [
@@ -3648,7 +4008,7 @@
           "hasListenerTargetBody": false,
           "hasListenerTargetParent": false,
           "hasMember": true,
-          "hasMethod": false,
+          "hasMethod": true,
           "hasMode": false,
           "hasAttribute": true,
           "hasProp": true,
@@ -4016,6 +4376,26 @@
                 "text": ""
               },
               "internal": false
+            },
+            {
+              "name": "debug",
+              "type": "boolean",
+              "attribute": "debug",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
             }
           ],
           "virtualProperties": [],
@@ -4030,7 +4410,31 @@
               "name": "storage"
             }
           ],
-          "methods": [],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
           "listeners": [],
           "events": [
             {
@@ -4111,7 +4515,7 @@
           "hasListenerTargetBody": false,
           "hasListenerTargetParent": false,
           "hasMember": true,
-          "hasMethod": false,
+          "hasMethod": true,
           "hasMode": false,
           "hasAttribute": true,
           "hasProp": true,
@@ -4272,6 +4676,26 @@
               "docs": {
                 "tags": [],
                 "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "debug",
+              "type": "boolean",
+              "attribute": "debug",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
               },
               "internal": false
             }
@@ -4525,6 +4949,26 @@
                 "text": "Prop"
               },
               "internal": false
+            },
+            {
+              "name": "debug",
+              "type": "boolean",
+              "attribute": "debug",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
             }
           ],
           "virtualProperties": [],
@@ -4771,6 +5215,26 @@
               "docs": {
                 "tags": [],
                 "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "debug",
+              "type": "boolean",
+              "attribute": "debug",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
               },
               "internal": false
             }

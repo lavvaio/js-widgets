@@ -21,6 +21,7 @@ export namespace Components {
           * Prop (optional)
          */
         "dataKey": string;
+        "debug": boolean;
         /**
           * Method
          */
@@ -47,6 +48,7 @@ export namespace Components {
           * Prop (optional)
          */
         "dataKey": string[];
+        "debug": boolean;
         /**
           * Method
          */
@@ -66,10 +68,12 @@ export namespace Components {
         "apiKey": string;
         "center": boolean;
         "channel": string;
+        "debug": boolean;
         "encoding": WebsocketConnectionEncoding;
         "format": WebsocketConnectionFormat;
         "host": string;
         "locale": string;
+        "log": (...args: any[]) => Promise<void>;
         "namespace": string;
         "size": 'default' | 'large';
         "snapshot": boolean;
@@ -84,11 +88,13 @@ export namespace Components {
     interface MtQuote {
         "apiKey": string;
         "channel": string;
+        "debug": boolean;
         "encoding": WebsocketConnectionEncoding;
         "format": WebsocketConnectionFormat;
         "host": string;
         "label": string;
         "locale": string;
+        "log": (...args: any[]) => Promise<void>;
         "namespace": string;
         "showChart": boolean;
         "size": number;
@@ -103,11 +109,13 @@ export namespace Components {
     interface MtRates {
         "apiKey": string;
         "channel": string;
+        "debug": boolean;
         "encoding": WebsocketConnectionEncoding;
         "format": WebsocketConnectionFormat;
         "groups": Category[];
         "host": string;
         "locale": string;
+        "log": (...args: any[]) => Promise<void>;
         "names": boolean;
         "namespace": string;
         "size": 'default' | 'large';
@@ -134,6 +142,7 @@ export namespace Components {
           * Prop (optional)
          */
         "dataKey": string;
+        "debug": boolean;
         /**
           * Method
          */
@@ -165,6 +174,7 @@ export namespace Components {
           * Prop (optional)
          */
         "dataKey": string;
+        "debug": boolean;
         /**
           * Method
          */
@@ -195,6 +205,7 @@ export namespace Components {
           * Prop (optional)
          */
         "dataKey": string;
+        "debug": boolean;
         /**
           * Method
          */
@@ -297,6 +308,7 @@ declare namespace LocalJSX {
           * Prop (optional)
          */
         "dataKey"?: string;
+        "debug"?: boolean;
         /**
           * Prop (optional)
          */
@@ -319,6 +331,7 @@ declare namespace LocalJSX {
           * Prop (optional)
          */
         "dataKey"?: string[];
+        "debug"?: boolean;
         /**
           * Prop (optional)
          */
@@ -334,6 +347,7 @@ declare namespace LocalJSX {
         "apiKey"?: string;
         "center"?: boolean;
         "channel"?: string;
+        "debug"?: boolean;
         "encoding"?: WebsocketConnectionEncoding;
         "format"?: WebsocketConnectionFormat;
         "host"?: string;
@@ -353,6 +367,7 @@ declare namespace LocalJSX {
     interface MtQuote {
         "apiKey"?: string;
         "channel"?: string;
+        "debug"?: boolean;
         "encoding"?: WebsocketConnectionEncoding;
         "format"?: WebsocketConnectionFormat;
         "host"?: string;
@@ -372,6 +387,7 @@ declare namespace LocalJSX {
     interface MtRates {
         "apiKey"?: string;
         "channel"?: string;
+        "debug"?: boolean;
         "encoding"?: WebsocketConnectionEncoding;
         "format"?: WebsocketConnectionFormat;
         "groups"?: Category[];
@@ -404,6 +420,7 @@ declare namespace LocalJSX {
           * Prop (optional)
          */
         "dataKey"?: string;
+        "debug"?: boolean;
         /**
           * Prop (optional)
          */
@@ -431,6 +448,7 @@ declare namespace LocalJSX {
           * Prop (optional)
          */
         "dataKey"?: string;
+        "debug"?: boolean;
         /**
           * Prop (optional)
          */
@@ -457,6 +475,7 @@ declare namespace LocalJSX {
           * Prop (optional)
          */
         "dataKey"?: string;
+        "debug"?: boolean;
         /**
           * Prop (optional)
          */

@@ -35,9 +35,14 @@ export class FinnhubNewsComponent implements LavvaWidget {
     @State()
     data: FinnhubNewsItem[] = [];
 
+    @Prop()
+    debug = false;
+
     @Method()
     async log(...args: any[]) {
-        this.logger.log(...args);
+        if (this.debug) {
+            this.logger.log(...args);
+        }
     }
 
     private logger = createLogger('finnhub-news');
@@ -54,7 +59,7 @@ export class FinnhubNewsComponent implements LavvaWidget {
         this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
         ).subscribe(message => {
-            this.logger.log('client connected', message.value.client_id);
+            this.log('client connected', message.value.client_id);
             this.size = message.value.channel_size;
         }));
 

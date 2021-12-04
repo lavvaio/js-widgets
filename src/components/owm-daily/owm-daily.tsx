@@ -31,9 +31,14 @@ export class OpenWeatherComponent implements LavvaWidget {
     @Prop()
     useCache = true;
 
+    @Prop()
+    debug = false;
+
     @Method()
     async log(...args: any[]) {
-        this.logger.log(...args);
+        if (this.debug) {
+            this.logger.log(...args);
+        }
     }
 
     private logger = createLogger('owm');
@@ -50,7 +55,7 @@ export class OpenWeatherComponent implements LavvaWidget {
         this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
         ).subscribe(message => {
-            this.logger.log('client connected', message.value.client_id);
+            this.log('client connected', message.value.client_id);
         }));
 
         this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
@@ -58,7 +63,6 @@ export class OpenWeatherComponent implements LavvaWidget {
             filter(message => this.dataKey === undefined ? true : message.key === this.dataKey),
             debounceTime(150),
         ).subscribe(message => {
-            // this.logger.log('message arrived', this.dataKey, message);
             this.saveWeather(message.value);
         }));
     }

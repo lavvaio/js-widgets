@@ -34,9 +34,14 @@ export class TwitrComponent implements LavvaWidget {
     @State()
     data = [];
 
+    @Prop()
+    debug = false;
+
     @Method()
     async log(...args: any[]) {
-        this.logger.log(...args);
+        if (this.debug) {
+            this.logger.log(...args);
+        }
     }
 
     private logger = createLogger('twitr');
@@ -53,7 +58,7 @@ export class TwitrComponent implements LavvaWidget {
         this.subscriptions.add(this.connection.channelStream(this.dataChannel).pipe(
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
         ).subscribe(message => {
-            this.logger.log('client connected', message.value.client_id);
+            this.log('client connected', message.value.client_id);
             this.size = message.value.channel_size;
         }));
 
@@ -61,7 +66,6 @@ export class TwitrComponent implements LavvaWidget {
             filter(message => message.type === ClientMessageDataType.DATA),
             filter(message => this.dataKey === undefined ? true : message.key === this.dataKey),
         ).subscribe(message => {
-            // this.logger.log('message arrived', this.dataKey, message);
             this.saveTwit(message.value);
         }));
     }

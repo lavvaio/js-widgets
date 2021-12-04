@@ -1,5 +1,5 @@
 import { ClientMessageDataType, LVLogger, WebsocketConnection, WebsocketConnectionEncoding, WebsocketConnectionFormat } from "@anadyme/lavva-js-sdk";
-import { Component, Prop, h, State, Watch, Element } from "@stencil/core";
+import { Component, Prop, h, State, Watch, Element, Method } from "@stencil/core";
 import { filter, Subscription } from "rxjs";
 import store from "store2";
 import { Historical, Quote } from "../../shared/mt-quote";
@@ -90,6 +90,16 @@ export class MtQuote {
     @State()
     chartData: { labels: string[], data: number[] } = { labels: [], data: [] };
 
+    @Prop()
+    debug = false;
+
+    @Method()
+    async log(...args: any[]) {
+        if (this.debug) {
+            this.logger.log(...args);
+        }
+    }
+
     private translate(key, fallback: string) {
         return translate(key, fallback, this.translations, this.locale);
     }
@@ -104,7 +114,7 @@ export class MtQuote {
     }
 
     loadHistory() {
-        this.logger.log('loading history');
+        this.log('loading history');
 
         const ns = store.namespace(`${this.namespace}.${this.channel}`);
         const snapshot = ns.get('history', []) as Array<{ symbol: string; chart: [ string[], number[] ]}>;
@@ -116,7 +126,7 @@ export class MtQuote {
         const [ labels, data ] = snapshot[index].chart;
         this.chartData = { labels, data };
         this.historical.set(this.symbol, Date.parse(`${labels[labels.length - 1]}`));
-        this.logger.log('cached historical found', this.chartData);
+        this.log('cached historical found', this.chartData);
     }
 
     getQuoteColor(direction: number) {
@@ -166,23 +176,23 @@ export class MtQuote {
             return;
         }
 
-        // this.logger.log('saving historical', pos);
+        // this.log('saving historical', pos);
 
         if (this.historical.has(pos.Symbol)) {
             const last = this.historical.get(pos.Symbol);
             if (last >= pos.Time) {
-                // this.logger.log("detected older historical position", new Date(last).toUTCString(), pos);
+                // this.log("detected older historical position", new Date(last).toUTCString(), pos);
                 return;
             }
         }
 
-        this.logger.log('new historical position arrived', pos.Symbol, new Date(pos.Time).toUTCString());
+        this.log('new historical position arrived', pos.Symbol, new Date(pos.Time).toUTCString());
         this.historical.set(this.symbol, pos.Time);
         this.addData(new Date(pos.Time).toUTCString(), pos.Close);
     }
 
     loadQuotes() {
-        this.logger.log('loading quotes');
+        this.log('loading quotes');
 
         const ns = store.namespace(`${this.namespace}.${this.channel}`);
         this.quoteData = ns.get('quotes', this.quoteData);
@@ -191,15 +201,15 @@ export class MtQuote {
             return [x.Symbol, x] as [string, any]
         }));
 
-        this.logger.log('cached quotes loaded', this.quoteData);
+        this.log('cached quotes loaded', this.quoteData);
     }
 
     saveQuote(quote: Quote) {
-        // this.logger.log('saving quote', quote);
+        // this.log('saving quote', quote);
 
         if (this.quotes.has(quote.Symbol)) {
             if (this.quotes.get(quote.Symbol).Time > quote.Time) {
-                this.logger.log("detected older quote", quote);
+                this.log("detected older quote", quote);
                 return;
             }
         }
@@ -222,7 +232,7 @@ export class MtQuote {
 
     connectedCallback() {
         this.createLogger(this.namespace, null);
-        this.logger.log('widget attached', this.locale);
+        this.log('widget attached', this.locale);
         this.loadHistory();
         this.loadQuotes();
         this.loading = true;
@@ -239,7 +249,7 @@ export class MtQuote {
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
             filter(message => message.key === this.symbol),
         ).subscribe(message => {
-            this.logger.log('client connected', message.value.client_id, message);
+            this.log('client connected', message.value.client_id, message);
         }));
 
         this.subscriptions.add(this.connection.channelStream(this.channel).pipe(

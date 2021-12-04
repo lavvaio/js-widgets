@@ -1,5 +1,5 @@
 import { ClientMessageDataType, LVLogger, WebsocketConnection, WebsocketConnectionEncoding, WebsocketConnectionFormat } from '@anadyme/lavva-js-sdk';
-import { Component, Event, EventEmitter, h, Prop, State, Watch } from '@stencil/core';
+import { Component, Event, EventEmitter, h, Method, Prop, State, Watch } from '@stencil/core';
 import { filter, Subscription } from 'rxjs';
 import store from 'store2';
 import { createLogger, translate } from "../../utils";
@@ -110,6 +110,16 @@ export class MtMarquee {
     @State()
     storage = new Map<string, Quote>();
 
+    @Prop()
+    debug = false;
+
+    @Method()
+    async log(...args: any[]) {
+        if (this.debug) {
+            this.logger.log(...args);
+        }
+    }
+
     private marqueeSet = false;
     private ref: HTMLElement = null;
 
@@ -118,7 +128,7 @@ export class MtMarquee {
     }
 
     loadQuotes() {
-        this.logger.log('loading quotes');
+        this.log('loading quotes');
 
         if (this.useCache) {
             const ns = store.namespace(this.namespace);
@@ -127,16 +137,16 @@ export class MtMarquee {
                 return [x.Symbol, x] as [string, any]
             }));
 
-            this.logger.log('cached quotes found', this.data);
+            this.log('cached quotes found', this.data);
         }
     }
 
     saveQuote(quote: Quote) {
-        this.logger.log('>> saving quote', quote);
+        this.log('>> saving quote', quote);
 
         if (this.storage.has(quote.Symbol)) {
             if (this.storage.get(quote.Symbol).Time > quote.Time) {
-                this.logger.log("detected older quote", quote);
+                this.log("detected older quote", quote);
                 return;
             }
         }
@@ -154,7 +164,7 @@ export class MtMarquee {
     connectedCallback() {
         this.createLogger(this.namespace, null);
 
-        this.logger.log('widget attached', this.locale);
+        this.log('widget attached', this.locale);
 
         this.loadQuotes();
 
@@ -169,7 +179,7 @@ export class MtMarquee {
         this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
         ).subscribe(message => {
-            this.logger.log('client connected', message.value.client_id, message);
+            this.log('client connected', message.value.client_id, message);
         }));
 
         this.subscriptions.add(this.connection.channelStream(this.channel).pipe(

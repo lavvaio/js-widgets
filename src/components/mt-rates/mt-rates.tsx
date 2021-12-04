@@ -1,5 +1,5 @@
 import { ClientMessageDataType, WebsocketConnection, WebsocketConnectionEncoding, WebsocketConnectionFormat } from '@anadyme/lavva-js-sdk';
-import { Event, EventEmitter, Component, h, Prop, State } from '@stencil/core';
+import { Event, EventEmitter, Component, h, Prop, State, Method } from '@stencil/core';
 import { filter, Subscription } from 'rxjs';
 import store from 'store2';
 import { Category, Quote, TradeSymbol } from '../../shared/mt-quote';
@@ -146,6 +146,16 @@ export class MT4Rates {
     @Prop()
     namespace = 'mt-rates';
 
+    @Prop()
+    debug = false;
+
+    @Method()
+    async log(...args: any[]) {
+        if (this.debug) {
+            this.logger.log(...args);
+        }
+    }
+
     private translate(key, fallback: string) {
         return translate(key, fallback, this.translations, this.locale);
     }
@@ -155,7 +165,7 @@ export class MT4Rates {
     }
 
     connectedCallback() {
-        this.logger.log('widget attached', this.tab);
+        this.log('widget attached', this.tab);
 
         const found = this.groups.findIndex(value => value.name === this.tab)
         if (found >= 0) {
@@ -177,14 +187,14 @@ export class MT4Rates {
         this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
         ).subscribe(message => {
-            this.logger.log('client connected', message.value.client_id, message);
+            this.log('client connected', message.value.client_id, message);
         }));
 
         this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.DATA),
             filter(message => message.category === 'ticks'),
         ).subscribe(message => {
-            // this.logger.log('message received', message.value);
+            // this.log('message received', message.value);
             this.saveQuote(message.value);
         }));
 
@@ -194,7 +204,7 @@ export class MT4Rates {
     saveQuote(quote: Quote) {
         if (this.storage.has(quote.Symbol)) {
             if (this.storage.get(quote.Symbol).Time > quote.Time) {
-                this.logger.log("detected older quote", quote);
+                this.log("detected older quote", quote);
                 return;
             }
         }
@@ -210,7 +220,7 @@ export class MT4Rates {
     }
 
     loadQuotes() {
-        this.logger.log('loading quotes');
+        this.log('loading quotes');
 
         if (this.useCache) {
             const ns = store.namespace(this.namespace);
@@ -219,7 +229,7 @@ export class MT4Rates {
                 return [x.Symbol, x] as [string, any]
             }));
 
-            this.logger.log('cached quotes found', this.storage);
+            this.log('cached quotes found', this.storage);
         }
     }
 
