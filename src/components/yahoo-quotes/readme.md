@@ -12,6 +12,7 @@
 | `connection` _(required)_  | --             | Prop            | `WebsocketConnection` | `undefined`      |
 | `dataChannel` _(required)_ | `data-channel` | Prop            | `string`              | `undefined`      |
 | `dataKey`                  | `data-key`     | Prop (optional) | `string`              | `undefined`      |
+| `debug`                    | `debug`        |                 | `boolean`             | `false`          |
 | `namespace`                | `namespace`    | Prop (optional) | `string`              | `'yahoo-quotes'` |
 | `useCache`                 | `use-cache`    | Prop            | `boolean`             | `true`           |
 
