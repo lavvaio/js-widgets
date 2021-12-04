@@ -91,6 +91,9 @@ export class MtQuote {
     chartData: { labels: string[], data: number[] } = { labels: [], data: [] };
 
     @Prop()
+    useCache = true;
+
+    @Prop()
     debug = false;
 
     @Method()

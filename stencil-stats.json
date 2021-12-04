@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-12-04T06:34:11",
+  "timestamp": "2021-12-04T06:38:26",
   "compiler": {
     "name": "node",
     "version": "14.15.0"
@@ -116,8 +116,8 @@
           "./dist/lavva-js-widgets/lavva-js-widgets.esm.js",
           "./dist/lavva-js-widgets/p-0e53612f.entry.js",
           "./dist/lavva-js-widgets/p-10eeb9e6.js",
-          "./dist/lavva-js-widgets/p-146099e0.entry.js",
           "./dist/lavva-js-widgets/p-1ff9f46f.entry.js",
+          "./dist/lavva-js-widgets/p-285dc04e.entry.js",
           "./dist/lavva-js-widgets/p-2926933f.entry.js",
           "./dist/lavva-js-widgets/p-4a8ba8e8.entry.js",
           "./dist/lavva-js-widgets/p-6ee57445.entry.js",
@@ -131,8 +131,8 @@
           "./www/build/lavva-js-widgets.esm.js",
           "./www/build/p-0e53612f.entry.js",
           "./www/build/p-10eeb9e6.js",
-          "./www/build/p-146099e0.entry.js",
           "./www/build/p-1ff9f46f.entry.js",
+          "./www/build/p-285dc04e.entry.js",
           "./www/build/p-2926933f.entry.js",
           "./www/build/p-4a8ba8e8.entry.js",
           "./www/build/p-6ee57445.entry.js",
@@ -189,14 +189,14 @@
         "components": [
           "mt-quote"
         ],
-        "bundleId": "p-146099e0",
-        "fileName": "p-146099e0.entry.js",
+        "bundleId": "p-285dc04e",
+        "fileName": "p-285dc04e.entry.js",
         "imports": [
           "p-10eeb9e6.js",
           "p-c212c8a0.js",
           "p-6fdb396c.js"
         ],
-        "originalByteSize": 411524
+        "originalByteSize": 411550
       },
       {
         "key": "mt-rates.entry",
@@ -335,7 +335,7 @@
           "utils-2a738923.js",
           "store2-5cffcc22.js"
         ],
-        "originalByteSize": 411537
+        "originalByteSize": 411563
       },
       {
         "key": "mt-rates.entry",
@@ -476,7 +476,7 @@
           "utils-67cdd245.js",
           "store2-a98cb247.js"
         ],
-        "originalByteSize": 411668
+        "originalByteSize": 411694
       },
       {
         "key": "mt-rates.entry",
@@ -1686,6 +1686,26 @@
           "name": "showChart",
           "type": "boolean",
           "attribute": "show-chart",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "useCache",
+          "type": "boolean",
+          "attribute": "use-cache",
           "reflect": false,
           "mutable": false,
           "required": false,
@@ -3639,6 +3659,26 @@
               "name": "showChart",
               "type": "boolean",
               "attribute": "show-chart",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
               "reflect": false,
               "mutable": false,
               "required": false,

@@ -99,6 +99,7 @@ export namespace Components {
             [key: string]: string;
         }
     };
+        "useCache": boolean;
     }
     interface MtRates {
         "apiKey": string;
@@ -374,6 +375,7 @@ declare namespace LocalJSX {
             [key: string]: string;
         }
     };
+        "useCache"?: boolean;
     }
     interface MtRates {
         "apiKey"?: string;

@@ -23,6 +23,7 @@
 | `snapshot`     | `snapshot`   |             | `boolean`                                        | `true`                                   |
 | `symbol`       | `symbol`     |             | `string`                                         | `"BTCUSDm"`                              |
 | `translations` | --           |             | `{ [key: string]: { [key: string]: string; }; }` | `null`                                   |
+| `useCache`     | `use-cache`  |             | `boolean`                                        | `true`                                   |
 
 
 ## Methods
