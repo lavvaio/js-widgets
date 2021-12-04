@@ -144,7 +144,7 @@ export class MT4Rates {
     useCache = true;
 
     @Prop()
-    namespace = 'mt4-rates';
+    namespace = 'mt-rates';
 
     private translate(key, fallback: string) {
         return translate(key, fallback, this.translations, this.locale);
@@ -273,7 +273,7 @@ export class MT4Rates {
             <div class={`size-default size-${this.size} ${this.tabs ? 'with-tabs' : 'no-tabs'} ${this.names ? 'with-names' : 'no-names'}`}>
                 {this.tabs && (
                     <div>
-                        <div class="right-faded"></div>
+                        <div class={ (this.groups[this.groups.length - 1].active) ? `active right-faded` : `right-faded` }></div>
                         <header>
                             <ul class="categories">
                                 {this.groups.map(group =>{

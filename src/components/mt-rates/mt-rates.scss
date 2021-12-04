@@ -5,6 +5,28 @@
     --background-color: rgb(38, 38, 38);
     --symbol-percent-up: rgb(0, 217, 100);
     --symbol-percent-down: rgb(255, 0, 0);
+    --symbol-space-between: 5px;
+    --tabs-padding: 0 25px;
+    --tabs-bottom-border: 0.5px solid #535358;
+    --tab-padding: 10px 0 6px 0;
+    --tab-color: inherit;
+    --tab-active-color: #FED831;
+    --tab-active-border-bottom: 1px solid #FED831;
+    --tab-bg-color: transparent;
+    --tab-active-bg-color: transparent;
+    --data-column-min-height: 59px;
+    --data-action-bg-color: #FED831;
+    --data-action-color: #131213;
+    --data-action-border-radius: 51px;
+
+    --data-column-header-bg-color: #1D1D20;
+    --data-column-header-text-color: #9C9CA2;
+    --data-column-value-bg-color: #1D1D20;
+    --data-column-value-text-color: #fff;
+    --data-column-value-hovered-bg-color: #282828;
+    --data-column-value-hovered-text-color: #fff;
+
+    display: block;
 
     .size-default {
         max-width: 650px;
@@ -19,10 +41,13 @@
             top: 0;
             right: 0;
             background: var(--background-color);
-            background: linear-gradient(to right, transparent, #151415);
+            background: linear-gradient(to right, transparent, var(--background-color));
             height: 31px;
             width: 31px;
             border-top-right-radius: var(--border-radius);
+            &.active {
+                background: linear-gradient(to right, transparent, var(--tab-active-bg-color));
+            }
         }
 
         header {
@@ -38,20 +63,21 @@
                 }
 
                 list-style: none;
-                padding: 0 25px;
-                border-bottom: 0.5px solid #535358;
+                padding: var(--tabs-padding);
+                border-bottom: var(--tabs-bottom-border);
                 display: flex;
                 margin: 0;
 
                 li {
                     font-weight: 400;
-                    padding-top: 10px;
-                    padding-bottom: 6px;
+                    padding: var(--tab-padding);
+                    color: var(--tab-color);
                     cursor: pointer;
                     text-align: center;
                     white-space: nowrap;
                     line-height: 15px;
                     flex: 1;
+                    background-color: var(--tab-bg-color);
 
                     @media only screen
                     and (max-width: 550px) {
@@ -68,10 +94,11 @@
                     }
 
                     &.active {
-                        color: #FED831;
+                        color: var(--tab-active-color);
+                        background-color: var(--tab-active-bg-color);
                         font-weight: 500;
                         span {
-                            border-bottom: 1px solid #FED831;
+                            border-bottom: var(--tab-active-border-bottom);
                         }
                     }
                 }
@@ -79,7 +106,7 @@
         }
 
         .body {
-            padding: 31px;
+            padding: var(--padding);
             position: relative;
 
             .loader {
@@ -102,7 +129,7 @@
             }
 
             .column-names {
-                background: #1D1D20;
+                background: var(--data-column-header-bg-color);
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -112,7 +139,7 @@
                     line-height: 20px;
                     padding: 7px 0;
                     text-align: left;
-                    color: #9C9CA2;
+                    color: var(--data-column-header-text-color);
                     flex: 1;
                 }
 
@@ -190,17 +217,18 @@
             }
 
             .column-values {
-                background: #1D1D20;
+                background: var(--data-column-value-bg-color);
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                margin-top: 5px;
-                color: #fff;
-                min-height: 59px;
+                margin-top: var(--symbol-space-between);
+                color: var(--data-column-value-text-color);
+                min-height: var(--data-column-min-height);
                 box-sizing: border-box;
 
                 &:hover {
-                    background: rgb(40, 40, 40);
+                    color: var(--data-column-value-hovered-text-color);
+                    background: var(--data-column-value-hovered-bg-color);
                 }
 
                 div {
@@ -228,11 +256,11 @@
 
                     button {
                         font: inherit;
-                        background: #FED831;
-                        color: #131213;
+                        background: var(--data-action-bg-color);
+                        color: var(--data-action-color);
                         border: 0;
                         width: 77px;
-                        border-radius: 51px;
+                        border-radius: var(--data-action-border-radius);
                         font-size: 12px;
                         font-weight: 500;
                         padding: 7px 5px;

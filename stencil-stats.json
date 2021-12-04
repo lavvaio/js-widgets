@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-12-03T19:10:00",
+  "timestamp": "2021-12-04T05:41:16",
   "compiler": {
     "name": "node",
     "version": "14.15.0"
@@ -9,7 +9,7 @@
     "fsNamespace": "lavva-js-widgets",
     "components": 10,
     "entries": 10,
-    "bundles": 59,
+    "bundles": 57,
     "outputs": [
       {
         "name": "dist-custom-elements",
@@ -37,14 +37,13 @@
       },
       {
         "name": "dist-lazy",
-        "files": 44,
+        "files": 42,
         "generatedFiles": [
           "./dist/lavva-js-widgets/app-globals-0f993ce5.js",
           "./dist/lavva-js-widgets/css-shim-aac75381.js",
           "./dist/lavva-js-widgets/dom-c7604576.js",
           "./dist/lavva-js-widgets/finnhub-news.entry.js",
           "./dist/lavva-js-widgets/fxcm-rates.entry.js",
-          "./dist/lavva-js-widgets/index-27017b43.js",
           "./dist/lavva-js-widgets/index-53ef1f0e.js",
           "./dist/lavva-js-widgets/index.esm.js",
           "./dist/lavva-js-widgets/lavva-js-sdk.esm-e185e4d4.js",
@@ -66,7 +65,6 @@
           "./www/build/dom-c7604576.js",
           "./www/build/finnhub-news.entry.js",
           "./www/build/fxcm-rates.entry.js",
-          "./www/build/index-27017b43.js",
           "./www/build/index-53ef1f0e.js",
           "./www/build/index.esm.js",
           "./www/build/lavva-js-sdk.esm-e185e4d4.js",
@@ -184,7 +182,7 @@
           "store2-f3f72e93.js",
           "utils-47bf880f.js"
         ],
-        "originalByteSize": 18787
+        "originalByteSize": 20101
       },
       {
         "key": "owm-daily.entry",
@@ -1642,7 +1640,7 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "'mt4-rates'",
+          "defaultValue": "'mt-rates'",
           "complexType": {
             "original": "string",
             "resolved": "string",
@@ -4007,7 +4005,7 @@
               "mutable": false,
               "required": false,
               "optional": false,
-              "defaultValue": "'mt4-rates'",
+              "defaultValue": "'mt-rates'",
               "complexType": {
                 "original": "string",
                 "resolved": "string",
