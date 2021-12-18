@@ -14,7 +14,7 @@ import { LavvaWidget } from '../../shared/model';
 export class OpenWeatherComponent implements LavvaWidget {
 
     @Prop()
-    connection!: WebsocketConnection;
+    connection: WebsocketConnection = null;
 
     @Prop()
     channel!: string;

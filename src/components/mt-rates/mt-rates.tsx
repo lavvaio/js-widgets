@@ -15,7 +15,6 @@ import { createLogger, translate } from '../../shared/utils';
 })
 export class MTRates implements LavvaWidget {
 
-    private connection: WebsocketConnection;
     private logger = createLogger('mt-rates');
     private subscriptions = new Subscription();
 
@@ -150,6 +149,9 @@ export class MTRates implements LavvaWidget {
     @Prop()
     debug = false;
 
+    @Prop()
+    connection: WebsocketConnection = null;
+
     @Method()
     async log(...args: any[]) {
         if (this.debug) {
@@ -177,13 +179,15 @@ export class MTRates implements LavvaWidget {
 
         this.loadQuotes();
 
-        this.connection = new WebsocketConnection({
-            host: this.host,
-            format: this.format,
-            encoding: this.encoding,
-            channels: this.channel ? [this.channel] : [],
-            apiKey: this.apiKey,
-        });
+        if (this.connection === null) {
+            this.connection = new WebsocketConnection({
+                host: this.host,
+                format: this.format,
+                encoding: this.encoding,
+                channels: this.channel ? [this.channel] : [],
+                apiKey: this.apiKey,
+            });
+        }
 
         this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),

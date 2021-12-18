@@ -15,7 +15,6 @@ import Chart from 'chart.js/auto';
 export class MtQuote {
 
     private logger: LVLogger;
-    private connection: WebsocketConnection;
     private subscriptions = new Subscription();
 
     public chart: Chart;
@@ -95,6 +94,9 @@ export class MtQuote {
 
     @Prop()
     debug = false;
+
+    @Prop()
+    connection: WebsocketConnection = null;
 
     @Method()
     async log(...args: any[]) {
@@ -240,13 +242,15 @@ export class MtQuote {
         this.loadQuotes();
         this.loading = true;
 
-        this.connection = new WebsocketConnection({
-            host: this.host,
-            format: this.format,
-            encoding: this.encoding,
-            channels: this.channel ? [this.channel] : [],
-            apiKey: this.apiKey,
-        });
+        if (this.connection === null) {
+            this.connection = new WebsocketConnection({
+                host: this.host,
+                format: this.format,
+                encoding: this.encoding,
+                channels: this.channel ? [this.channel] : [],
+                apiKey: this.apiKey,
+            });
+        }
 
         this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),

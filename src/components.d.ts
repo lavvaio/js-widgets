@@ -62,6 +62,7 @@ export namespace Components {
         "apiKey": string;
         "center": boolean;
         "channel": string;
+        "connection": WebsocketConnection;
         "debug": boolean;
         "encoding": WebsocketConnectionEncoding;
         "format": WebsocketConnectionFormat;
@@ -82,6 +83,7 @@ export namespace Components {
     interface MtQuote {
         "apiKey": string;
         "channel": string;
+        "connection": WebsocketConnection;
         "debug": boolean;
         "encoding": WebsocketConnectionEncoding;
         "format": WebsocketConnectionFormat;
@@ -107,6 +109,7 @@ export namespace Components {
           * Prop
          */
         "channel": string;
+        "connection": WebsocketConnection;
         "debug": boolean;
         "encoding": WebsocketConnectionEncoding;
         "format": WebsocketConnectionFormat;
@@ -339,6 +342,7 @@ declare namespace LocalJSX {
         "apiKey"?: string;
         "center"?: boolean;
         "channel"?: string;
+        "connection"?: WebsocketConnection;
         "debug"?: boolean;
         "encoding"?: WebsocketConnectionEncoding;
         "format"?: WebsocketConnectionFormat;
@@ -359,6 +363,7 @@ declare namespace LocalJSX {
     interface MtQuote {
         "apiKey"?: string;
         "channel"?: string;
+        "connection"?: WebsocketConnection;
         "debug"?: boolean;
         "encoding"?: WebsocketConnectionEncoding;
         "format"?: WebsocketConnectionFormat;
@@ -383,6 +388,7 @@ declare namespace LocalJSX {
           * Prop
          */
         "channel"?: string;
+        "connection"?: WebsocketConnection;
         "debug"?: boolean;
         "encoding"?: WebsocketConnectionEncoding;
         "format"?: WebsocketConnectionFormat;
@@ -414,7 +420,7 @@ declare namespace LocalJSX {
           * Prop
          */
         "channel": string;
-        "connection": WebsocketConnection;
+        "connection"?: WebsocketConnection;
         /**
           * Prop (optional)
          */

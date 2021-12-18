@@ -37,6 +37,10 @@ export const config: Config = {
                     dest: 'favicon.ico'
                 },
                 {
+                    src: 'demo.html',
+                    dest: 'demo.html'
+                },
+                {
                     src: 'components/mt-rates/assets',
                     dest: 'build/assets'
                 }

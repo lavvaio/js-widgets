@@ -14,7 +14,6 @@ import { Quote, TradeSymbol } from '../../shared/mt-quote';
 export class MtMarquee {
 
     private logger: LVLogger;
-    private connection: WebsocketConnection;
     private subscriptions = new Subscription();
 
     @Prop()
@@ -68,11 +67,11 @@ export class MtMarquee {
         { key: "HK50m", label: "HK 50 Index"    , image: "/build/assets/svg/HK50m.svg" },
         { key: "DE30m", label: "DE 30 Index"    , image: "/build/assets/svg/DE30m.svg" },
         //
-        { key: "BTCUSDm", label: "BTC/USD", image: "/build/assets/svg/BTCUSDm.svg" },
-        { key: "BTCJPYm", label: "BTC/JPY", image: "/build/assets/svg/BTCJPYm.svg" },
-        { key: "ETHUSDm", label: "ETH/USD", image: "/build/assets/svg/ETHUSDm.svg" },
-        { key: "LTCUSDm", label: "LTC/USD", image: "/build/assets/svg/LTCUSDm.svg" },
-        { key: "XRPUSDm", label: "XRP/USD", image: "/build/assets/svg/XRPUSDm.svg" },
+        { key: "XAUUSDm", label: "Gold/USD", image: "/build/assets/svg/XAUUSDm.svg" },
+        { key: "XAGUSDm", label: "Silver/USD", image: "/build/assets/svg/XAGUSDm.svg" },
+        { key: "USOILm", label: "US Crude Oil", image: "/build/assets/svg/USOILm.svg" },
+        { key: "XPDUSDm", label: "Palladium/USD", image: "/build/assets/svg/XPDUSDm.svg" },
+        { key: "XPTUSDm", label: "Platinum/USD", image: "/build/assets/svg/XPTUSDm.svg" },
         //
         { key: "AAPLm", label: "Apple"  , image: "/build/assets/svg/AAPLm.svg" },
         { key: "BABAm", label: "AliBaba", image: "/build/assets/svg/BABAm.svg" },
@@ -112,6 +111,9 @@ export class MtMarquee {
 
     @Prop()
     debug = false;
+
+    @Prop()
+    connection: WebsocketConnection = null;
 
     @Method()
     async log(...args: any[]) {
@@ -168,13 +170,15 @@ export class MtMarquee {
 
         this.loadQuotes();
 
-        this.connection = new WebsocketConnection({
-            host: this.host,
-            format: this.format,
-            encoding: this.encoding,
-            channels: this.channel ? [this.channel] : [],
-            apiKey: this.apiKey,
-        });
+        if (this.connection === null) {
+            this.connection = new WebsocketConnection({
+                host: this.host,
+                format: this.format,
+                encoding: this.encoding,
+                channels: this.channel ? [this.channel] : [],
+                apiKey: this.apiKey,
+            });
+        }
 
         this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),

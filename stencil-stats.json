@@ -1,5 +1,5 @@
 {
-  "timestamp": "2021-12-04T06:38:26",
+  "timestamp": "2021-12-18T16:37:43",
   "compiler": {
     "name": "node",
     "version": "14.15.0"
@@ -9,139 +9,74 @@
     "fsNamespace": "lavva-js-widgets",
     "components": 10,
     "entries": 10,
-    "bundles": 112,
+    "bundles": 53,
     "outputs": [
       {
-        "name": "dist-collection",
-        "files": 17,
-        "generatedFiles": [
-          "./dist/collection/components/finnhub-news/finnhub-news.js",
-          "./dist/collection/components/finnhub-news/finnhub.js",
-          "./dist/collection/components/fxcm-rates/fxcm-rates.js",
-          "./dist/collection/components/fxcm-rates/fxcm.js",
-          "./dist/collection/components/mt-marquee/mt-marquee.js",
-          "./dist/collection/components/mt-quote/mt-quote.js",
-          "./dist/collection/components/mt-rates/mt-rates.js",
-          "./dist/collection/components/owm-daily/owm-daily-item.js",
-          "./dist/collection/components/owm-daily/owm-daily.js",
-          "./dist/collection/components/twitter/twitr.js",
-          "./dist/collection/components/yahoo-quotes/yahoo-quote.js",
-          "./dist/collection/components/yahoo-quotes/yahoo-quotes.js",
-          "./dist/collection/index.js",
-          "./dist/collection/shared/index.js",
-          "./dist/collection/shared/model.js",
-          "./dist/collection/shared/mt-quote.js",
-          "./dist/collection/shared/utils.js"
-        ]
-      },
-      {
         "name": "dist-custom-elements",
-        "files": 26,
+        "files": 11,
         "generatedFiles": [
           "./dist/components/finnhub-news.d.ts",
-          "./dist/components/finnhub-news.js",
           "./dist/components/fxcm-rates.d.ts",
-          "./dist/components/fxcm-rates.js",
           "./dist/components/index.d.ts",
-          "./dist/components/index.js",
           "./dist/components/mt-marquee.d.ts",
-          "./dist/components/mt-marquee.js",
           "./dist/components/mt-quote.d.ts",
-          "./dist/components/mt-quote.js",
           "./dist/components/mt-rates.d.ts",
-          "./dist/components/mt-rates.js",
           "./dist/components/owm-daily-item.d.ts",
-          "./dist/components/owm-daily-item.js",
-          "./dist/components/owm-daily-item2.js",
           "./dist/components/owm-daily.d.ts",
-          "./dist/components/owm-daily.js",
-          "./dist/components/store2.js",
           "./dist/components/twit-ter.d.ts",
-          "./dist/components/twit-ter.js",
-          "./dist/components/utils.js",
           "./dist/components/yahoo-quote.d.ts",
-          "./dist/components/yahoo-quote.js",
-          "./dist/components/yahoo-quote2.js",
-          "./dist/components/yahoo-quotes.d.ts",
-          "./dist/components/yahoo-quotes.js"
+          "./dist/components/yahoo-quotes.d.ts"
         ]
       },
       {
         "name": "dist-custom-elements-bundle",
-        "files": 2,
+        "files": 1,
         "generatedFiles": [
-          "./dist/custom-elements/index.d.ts",
-          "./dist/custom-elements/index.js"
+          "./dist/custom-elements/index.d.ts"
         ]
       },
       {
         "name": "dist-lazy",
-        "files": 64,
+        "files": 38,
         "generatedFiles": [
-          "./dist/cjs/finnhub-news.cjs.entry.js",
-          "./dist/cjs/fxcm-rates.cjs.entry.js",
-          "./dist/cjs/index-8499e96d.js",
-          "./dist/cjs/index.cjs.js",
-          "./dist/cjs/lavva-js-widgets.cjs.js",
-          "./dist/cjs/loader.cjs.js",
-          "./dist/cjs/mt-marquee.cjs.entry.js",
-          "./dist/cjs/mt-quote.cjs.entry.js",
-          "./dist/cjs/mt-rates.cjs.entry.js",
-          "./dist/cjs/owm-daily-item.cjs.entry.js",
-          "./dist/cjs/owm-daily.cjs.entry.js",
-          "./dist/cjs/store2-a98cb247.js",
-          "./dist/cjs/twit-ter.cjs.entry.js",
-          "./dist/cjs/utils-67cdd245.js",
-          "./dist/cjs/yahoo-quote.cjs.entry.js",
-          "./dist/cjs/yahoo-quotes.cjs.entry.js",
-          "./dist/esm/finnhub-news.entry.js",
-          "./dist/esm/fxcm-rates.entry.js",
-          "./dist/esm/index-3efefcbd.js",
-          "./dist/esm/index.js",
-          "./dist/esm/lavva-js-widgets.js",
-          "./dist/esm/loader.js",
-          "./dist/esm/mt-marquee.entry.js",
-          "./dist/esm/mt-quote.entry.js",
-          "./dist/esm/mt-rates.entry.js",
-          "./dist/esm/owm-daily-item.entry.js",
-          "./dist/esm/owm-daily.entry.js",
-          "./dist/esm/store2-5cffcc22.js",
-          "./dist/esm/twit-ter.entry.js",
-          "./dist/esm/utils-2a738923.js",
-          "./dist/esm/yahoo-quote.entry.js",
-          "./dist/esm/yahoo-quotes.entry.js",
-          "./dist/index.cjs.js",
-          "./dist/index.js",
+          "./dist/lavva-js-widgets/app-globals-0f993ce5.js",
+          "./dist/lavva-js-widgets/css-shim-e92c84f4.js",
+          "./dist/lavva-js-widgets/dom-5fa525b8.js",
+          "./dist/lavva-js-widgets/finnhub-news.entry.js",
+          "./dist/lavva-js-widgets/fxcm-rates.entry.js",
+          "./dist/lavva-js-widgets/index-452e93f8.js",
           "./dist/lavva-js-widgets/index.esm.js",
           "./dist/lavva-js-widgets/lavva-js-widgets.esm.js",
-          "./dist/lavva-js-widgets/p-0e53612f.entry.js",
-          "./dist/lavva-js-widgets/p-10eeb9e6.js",
-          "./dist/lavva-js-widgets/p-1ff9f46f.entry.js",
-          "./dist/lavva-js-widgets/p-285dc04e.entry.js",
-          "./dist/lavva-js-widgets/p-2926933f.entry.js",
-          "./dist/lavva-js-widgets/p-4a8ba8e8.entry.js",
-          "./dist/lavva-js-widgets/p-6ee57445.entry.js",
-          "./dist/lavva-js-widgets/p-6fdb396c.js",
-          "./dist/lavva-js-widgets/p-78e26b1a.entry.js",
-          "./dist/lavva-js-widgets/p-bac57872.entry.js",
-          "./dist/lavva-js-widgets/p-c212c8a0.js",
-          "./dist/lavva-js-widgets/p-f62df35d.entry.js",
-          "./dist/lavva-js-widgets/p-f67c9a67.entry.js",
+          "./dist/lavva-js-widgets/mt-marquee.entry.js",
+          "./dist/lavva-js-widgets/mt-quote.entry.js",
+          "./dist/lavva-js-widgets/mt-rates.entry.js",
+          "./dist/lavva-js-widgets/owm-daily-item.entry.js",
+          "./dist/lavva-js-widgets/owm-daily.entry.js",
+          "./dist/lavva-js-widgets/shadow-css-b1ac6541.js",
+          "./dist/lavva-js-widgets/store2-f3f72e93.js",
+          "./dist/lavva-js-widgets/twit-ter.entry.js",
+          "./dist/lavva-js-widgets/utils-735c1d5c.js",
+          "./dist/lavva-js-widgets/yahoo-quote.entry.js",
+          "./dist/lavva-js-widgets/yahoo-quotes.entry.js",
+          "./www/build/app-globals-0f993ce5.js",
+          "./www/build/css-shim-e92c84f4.js",
+          "./www/build/dom-5fa525b8.js",
+          "./www/build/finnhub-news.entry.js",
+          "./www/build/fxcm-rates.entry.js",
+          "./www/build/index-452e93f8.js",
           "./www/build/index.esm.js",
           "./www/build/lavva-js-widgets.esm.js",
-          "./www/build/p-0e53612f.entry.js",
-          "./www/build/p-10eeb9e6.js",
-          "./www/build/p-1ff9f46f.entry.js",
-          "./www/build/p-285dc04e.entry.js",
-          "./www/build/p-2926933f.entry.js",
-          "./www/build/p-4a8ba8e8.entry.js",
-          "./www/build/p-6ee57445.entry.js",
-          "./www/build/p-6fdb396c.js",
-          "./www/build/p-78e26b1a.entry.js",
-          "./www/build/p-bac57872.entry.js",
-          "./www/build/p-c212c8a0.js",
-          "./www/build/p-f62df35d.entry.js",
-          "./www/build/p-f67c9a67.entry.js"
+          "./www/build/mt-marquee.entry.js",
+          "./www/build/mt-quote.entry.js",
+          "./www/build/mt-rates.entry.js",
+          "./www/build/owm-daily-item.entry.js",
+          "./www/build/owm-daily.entry.js",
+          "./www/build/shadow-css-b1ac6541.js",
+          "./www/build/store2-f3f72e93.js",
+          "./www/build/twit-ter.entry.js",
+          "./www/build/utils-735c1d5c.js",
+          "./www/build/yahoo-quote.entry.js",
+          "./www/build/yahoo-quotes.entry.js"
         ]
       },
       {
@@ -162,195 +97,14 @@
     ]
   },
   "options": {
-    "minifyJs": true,
-    "minifyCss": true,
-    "hashFileNames": true,
+    "minifyJs": false,
+    "minifyCss": false,
+    "hashFileNames": false,
     "hashedFileNameLength": 8,
     "buildEs5": false
   },
   "formats": {
     "esmBrowser": [
-      {
-        "key": "mt-marquee.entry",
-        "components": [
-          "mt-marquee"
-        ],
-        "bundleId": "p-78e26b1a",
-        "fileName": "p-78e26b1a.entry.js",
-        "imports": [
-          "p-10eeb9e6.js",
-          "p-c212c8a0.js",
-          "p-6fdb396c.js"
-        ],
-        "originalByteSize": 8862
-      },
-      {
-        "key": "mt-quote.entry",
-        "components": [
-          "mt-quote"
-        ],
-        "bundleId": "p-285dc04e",
-        "fileName": "p-285dc04e.entry.js",
-        "imports": [
-          "p-10eeb9e6.js",
-          "p-c212c8a0.js",
-          "p-6fdb396c.js"
-        ],
-        "originalByteSize": 411550
-      },
-      {
-        "key": "mt-rates.entry",
-        "components": [
-          "mt-rates"
-        ],
-        "bundleId": "p-bac57872",
-        "fileName": "p-bac57872.entry.js",
-        "imports": [
-          "p-10eeb9e6.js",
-          "p-c212c8a0.js",
-          "p-6fdb396c.js"
-        ],
-        "originalByteSize": 20105
-      },
-      {
-        "key": "finnhub-news.entry",
-        "components": [
-          "finnhub-news"
-        ],
-        "bundleId": "p-6ee57445",
-        "fileName": "p-6ee57445.entry.js",
-        "imports": [
-          "p-10eeb9e6.js",
-          "p-c212c8a0.js",
-          "p-6fdb396c.js"
-        ],
-        "originalByteSize": 4062
-      },
-      {
-        "key": "fxcm-rates.entry",
-        "components": [
-          "fxcm-rates"
-        ],
-        "bundleId": "p-f67c9a67",
-        "fileName": "p-f67c9a67.entry.js",
-        "imports": [
-          "p-10eeb9e6.js",
-          "p-c212c8a0.js",
-          "p-6fdb396c.js"
-        ],
-        "originalByteSize": 3846
-      },
-      {
-        "key": "owm-daily.entry",
-        "components": [
-          "owm-daily"
-        ],
-        "bundleId": "p-2926933f",
-        "fileName": "p-2926933f.entry.js",
-        "imports": [
-          "p-10eeb9e6.js",
-          "p-c212c8a0.js",
-          "p-6fdb396c.js"
-        ],
-        "originalByteSize": 4786
-      },
-      {
-        "key": "twit-ter.entry",
-        "components": [
-          "twit-ter"
-        ],
-        "bundleId": "p-0e53612f",
-        "fileName": "p-0e53612f.entry.js",
-        "imports": [
-          "p-10eeb9e6.js",
-          "p-c212c8a0.js",
-          "p-6fdb396c.js"
-        ],
-        "originalByteSize": 5297
-      },
-      {
-        "key": "yahoo-quotes.entry",
-        "components": [
-          "yahoo-quotes"
-        ],
-        "bundleId": "p-4a8ba8e8",
-        "fileName": "p-4a8ba8e8.entry.js",
-        "imports": [
-          "p-10eeb9e6.js",
-          "p-c212c8a0.js",
-          "p-6fdb396c.js"
-        ],
-        "originalByteSize": 2430
-      },
-      {
-        "key": "owm-daily-item.entry",
-        "components": [
-          "owm-daily-item"
-        ],
-        "bundleId": "p-1ff9f46f",
-        "fileName": "p-1ff9f46f.entry.js",
-        "imports": [
-          "p-10eeb9e6.js",
-          "p-c212c8a0.js"
-        ],
-        "originalByteSize": 1949
-      },
-      {
-        "key": "yahoo-quote.entry",
-        "components": [
-          "yahoo-quote"
-        ],
-        "bundleId": "p-f62df35d",
-        "fileName": "p-f62df35d.entry.js",
-        "imports": [
-          "p-10eeb9e6.js"
-        ],
-        "originalByteSize": 2409
-      }
-    ],
-    "esm": [
-      {
-        "key": "mt-marquee.entry",
-        "components": [
-          "mt-marquee"
-        ],
-        "bundleId": "mt-marquee",
-        "fileName": "mt-marquee.entry.js",
-        "imports": [
-          "index-3efefcbd.js",
-          "utils-2a738923.js",
-          "store2-5cffcc22.js"
-        ],
-        "originalByteSize": 8875
-      },
-      {
-        "key": "mt-quote.entry",
-        "components": [
-          "mt-quote"
-        ],
-        "bundleId": "mt-quote",
-        "fileName": "mt-quote.entry.js",
-        "imports": [
-          "index-3efefcbd.js",
-          "utils-2a738923.js",
-          "store2-5cffcc22.js"
-        ],
-        "originalByteSize": 411563
-      },
-      {
-        "key": "mt-rates.entry",
-        "components": [
-          "mt-rates"
-        ],
-        "bundleId": "mt-rates",
-        "fileName": "mt-rates.entry.js",
-        "imports": [
-          "index-3efefcbd.js",
-          "utils-2a738923.js",
-          "store2-5cffcc22.js"
-        ],
-        "originalByteSize": 20118
-      },
       {
         "key": "finnhub-news.entry",
         "components": [
@@ -359,9 +113,9 @@
         "bundleId": "finnhub-news",
         "fileName": "finnhub-news.entry.js",
         "imports": [
-          "index-3efefcbd.js",
-          "utils-2a738923.js",
-          "store2-5cffcc22.js"
+          "index-452e93f8.js",
+          "utils-735c1d5c.js",
+          "store2-f3f72e93.js"
         ],
         "originalByteSize": 4075
       },
@@ -373,11 +127,53 @@
         "bundleId": "fxcm-rates",
         "fileName": "fxcm-rates.entry.js",
         "imports": [
-          "index-3efefcbd.js",
-          "utils-2a738923.js",
-          "store2-5cffcc22.js"
+          "index-452e93f8.js",
+          "utils-735c1d5c.js",
+          "store2-f3f72e93.js"
         ],
         "originalByteSize": 3859
+      },
+      {
+        "key": "mt-marquee.entry",
+        "components": [
+          "mt-marquee"
+        ],
+        "bundleId": "mt-marquee",
+        "fileName": "mt-marquee.entry.js",
+        "imports": [
+          "index-452e93f8.js",
+          "utils-735c1d5c.js",
+          "store2-f3f72e93.js"
+        ],
+        "originalByteSize": 8977
+      },
+      {
+        "key": "mt-quote.entry",
+        "components": [
+          "mt-quote"
+        ],
+        "bundleId": "mt-quote",
+        "fileName": "mt-quote.entry.js",
+        "imports": [
+          "index-452e93f8.js",
+          "utils-735c1d5c.js",
+          "store2-f3f72e93.js"
+        ],
+        "originalByteSize": 411964
+      },
+      {
+        "key": "mt-rates.entry",
+        "components": [
+          "mt-rates"
+        ],
+        "bundleId": "mt-rates",
+        "fileName": "mt-rates.entry.js",
+        "imports": [
+          "index-452e93f8.js",
+          "utils-735c1d5c.js",
+          "store2-f3f72e93.js"
+        ],
+        "originalByteSize": 20202
       },
       {
         "key": "owm-daily.entry",
@@ -387,11 +183,11 @@
         "bundleId": "owm-daily",
         "fileName": "owm-daily.entry.js",
         "imports": [
-          "index-3efefcbd.js",
-          "utils-2a738923.js",
-          "store2-5cffcc22.js"
+          "index-452e93f8.js",
+          "utils-735c1d5c.js",
+          "store2-f3f72e93.js"
         ],
-        "originalByteSize": 4799
+        "originalByteSize": 3491
       },
       {
         "key": "twit-ter.entry",
@@ -401,9 +197,9 @@
         "bundleId": "twit-ter",
         "fileName": "twit-ter.entry.js",
         "imports": [
-          "index-3efefcbd.js",
-          "utils-2a738923.js",
-          "store2-5cffcc22.js"
+          "index-452e93f8.js",
+          "utils-735c1d5c.js",
+          "store2-f3f72e93.js"
         ],
         "originalByteSize": 5310
       },
@@ -415,9 +211,9 @@
         "bundleId": "yahoo-quotes",
         "fileName": "yahoo-quotes.entry.js",
         "imports": [
-          "index-3efefcbd.js",
-          "utils-2a738923.js",
-          "store2-5cffcc22.js"
+          "index-452e93f8.js",
+          "utils-735c1d5c.js",
+          "store2-f3f72e93.js"
         ],
         "originalByteSize": 2443
       },
@@ -429,8 +225,8 @@
         "bundleId": "owm-daily-item",
         "fileName": "owm-daily-item.entry.js",
         "imports": [
-          "index-3efefcbd.js",
-          "utils-2a738923.js"
+          "index-452e93f8.js",
+          "utils-735c1d5c.js"
         ],
         "originalByteSize": 1957
       },
@@ -442,152 +238,15 @@
         "bundleId": "yahoo-quote",
         "fileName": "yahoo-quote.entry.js",
         "imports": [
-          "index-3efefcbd.js"
+          "index-452e93f8.js"
         ],
         "originalByteSize": 2413
       }
     ],
+    "esm": [],
     "es5": [],
     "system": [],
-    "commonjs": [
-      {
-        "key": "mt-marquee.entry",
-        "components": [
-          "mt-marquee"
-        ],
-        "bundleId": "mt-marquee.cjs",
-        "fileName": "mt-marquee.cjs.entry.js",
-        "imports": [
-          "index-8499e96d.js",
-          "utils-67cdd245.js",
-          "store2-a98cb247.js"
-        ],
-        "originalByteSize": 8985
-      },
-      {
-        "key": "mt-quote.entry",
-        "components": [
-          "mt-quote"
-        ],
-        "bundleId": "mt-quote.cjs",
-        "fileName": "mt-quote.cjs.entry.js",
-        "imports": [
-          "index-8499e96d.js",
-          "utils-67cdd245.js",
-          "store2-a98cb247.js"
-        ],
-        "originalByteSize": 411694
-      },
-      {
-        "key": "mt-rates.entry",
-        "components": [
-          "mt-rates"
-        ],
-        "bundleId": "mt-rates.cjs",
-        "fileName": "mt-rates.cjs.entry.js",
-        "imports": [
-          "index-8499e96d.js",
-          "utils-67cdd245.js",
-          "store2-a98cb247.js"
-        ],
-        "originalByteSize": 20462
-      },
-      {
-        "key": "finnhub-news.entry",
-        "components": [
-          "finnhub-news"
-        ],
-        "bundleId": "finnhub-news.cjs",
-        "fileName": "finnhub-news.cjs.entry.js",
-        "imports": [
-          "index-8499e96d.js",
-          "utils-67cdd245.js",
-          "store2-a98cb247.js"
-        ],
-        "originalByteSize": 4230
-      },
-      {
-        "key": "fxcm-rates.entry",
-        "components": [
-          "fxcm-rates"
-        ],
-        "bundleId": "fxcm-rates.cjs",
-        "fileName": "fxcm-rates.cjs.entry.js",
-        "imports": [
-          "index-8499e96d.js",
-          "utils-67cdd245.js",
-          "store2-a98cb247.js"
-        ],
-        "originalByteSize": 4036
-      },
-      {
-        "key": "owm-daily.entry",
-        "components": [
-          "owm-daily"
-        ],
-        "bundleId": "owm-daily.cjs",
-        "fileName": "owm-daily.cjs.entry.js",
-        "imports": [
-          "index-8499e96d.js",
-          "utils-67cdd245.js",
-          "store2-a98cb247.js"
-        ],
-        "originalByteSize": 4917
-      },
-      {
-        "key": "twit-ter.entry",
-        "components": [
-          "twit-ter"
-        ],
-        "bundleId": "twit-ter.cjs",
-        "fileName": "twit-ter.cjs.entry.js",
-        "imports": [
-          "index-8499e96d.js",
-          "utils-67cdd245.js",
-          "store2-a98cb247.js"
-        ],
-        "originalByteSize": 5465
-      },
-      {
-        "key": "yahoo-quotes.entry",
-        "components": [
-          "yahoo-quotes"
-        ],
-        "bundleId": "yahoo-quotes.cjs",
-        "fileName": "yahoo-quotes.cjs.entry.js",
-        "imports": [
-          "index-8499e96d.js",
-          "utils-67cdd245.js",
-          "store2-a98cb247.js"
-        ],
-        "originalByteSize": 2536
-      },
-      {
-        "key": "owm-daily-item.entry",
-        "components": [
-          "owm-daily-item"
-        ],
-        "bundleId": "owm-daily-item.cjs",
-        "fileName": "owm-daily-item.cjs.entry.js",
-        "imports": [
-          "index-8499e96d.js",
-          "utils-67cdd245.js"
-        ],
-        "originalByteSize": 2077
-      },
-      {
-        "key": "yahoo-quote.entry",
-        "components": [
-          "yahoo-quote"
-        ],
-        "bundleId": "yahoo-quote.cjs",
-        "fileName": "yahoo-quote.cjs.entry.js",
-        "imports": [
-          "index-8499e96d.js"
-        ],
-        "originalByteSize": 2572
-      }
-    ]
+    "commonjs": []
   },
   "components": [
     {
@@ -1248,7 +907,7 @@
           "mutable": false,
           "required": false,
           "optional": false,
-          "defaultValue": "[\n        { key: \"BTCUSDm\", label: \"BTC/USD\" , image: \"/build/assets/svg/BTCUSDm.svg\" },\n        { key: \"XAUUSDm\", label: \"Gold/USD\", image: \"/build/assets/svg/XAUUSDm.svg\" },\n        { key: \"EURUSDm\",  label: \"EUR/USD\", image: \"/build/assets/svg/EURUSDm.svg\" },\n        { key: \"USOILm\", label: \"US Oil\"   , image: \"/build/assets/svg/USOILm.svg\" },\n        { key: \"ETHUSDm\", label: \"ETH/USD\" , image: \"/build/assets/svg/ETHUSDm.svg\" },\n        //\n        { key: \"EURUSDm\", label: \"EUR/USD\" , image: \"/build/assets/svg/EURUSDm.svg\" },\n        { key: \"USDJPYm\", label: \"USD/JPY\" , image: \"/build/assets/svg/USDJPYm.svg\" },\n        { key: \"GBPUSDm\",  label: \"GBP/USD\", image: \"/build/assets/svg/GBPUSDm.svg\" },\n        { key: \"USDCHFm\", label: \"USD/CHF\" , image: \"/build/assets/svg/USDCHFm.svg\" },\n        { key: \"USDCADm\", label: \"USD/CAD\" , image: \"/build/assets/svg/USDCADm.svg\" },\n        //\n        { key: \"USTECm\", label: \"US Tech 100\"   , image: \"/build/assets/svg/USTECm.svg\" },\n        { key: \"UK100m\", label: \"UK 100 Index\"  , image: \"/build/assets/svg/UK100m.svg\" },\n        { key: \"STOXX50m\",  label: \"EU 50 Index\", image: \"/build/assets/svg/STOXX50m.svg\" },\n        { key: \"HK50m\", label: \"HK 50 Index\"    , image: \"/build/assets/svg/HK50m.svg\" },\n        { key: \"DE30m\", label: \"DE 30 Index\"    , image: \"/build/assets/svg/DE30m.svg\" },\n        //\n        { key: \"BTCUSDm\", label: \"BTC/USD\", image: \"/build/assets/svg/BTCUSDm.svg\" },\n        { key: \"BTCJPYm\", label: \"BTC/JPY\", image: \"/build/assets/svg/BTCJPYm.svg\" },\n        { key: \"ETHUSDm\", label: \"ETH/USD\", image: \"/build/assets/svg/ETHUSDm.svg\" },\n        { key: \"LTCUSDm\", label: \"LTC/USD\", image: \"/build/assets/svg/LTCUSDm.svg\" },\n        { key: \"XRPUSDm\", label: \"XRP/USD\", image: \"/build/assets/svg/XRPUSDm.svg\" },\n        //\n        { key: \"AAPLm\", label: \"Apple\"  , image: \"/build/assets/svg/AAPLm.svg\" },\n        { key: \"BABAm\", label: \"AliBaba\", image: \"/build/assets/svg/BABAm.svg\" },\n        { key: \"Cm\", label: \"CitiGroup\" , image: \"/build/assets/svg/Cm.svg\" },\n        { key: \"KOm\", label: \"CocaCola\" , image: \"/build/assets/svg/KOm.svg\" },\n        { key: \"NFLXm\", label: \"Netflix\", image: \"/build/assets/svg/NFLXm.svg\" },\n    ]",
+          "defaultValue": "[\n        { key: \"BTCUSDm\", label: \"BTC/USD\" , image: \"/build/assets/svg/BTCUSDm.svg\" },\n        { key: \"XAUUSDm\", label: \"Gold/USD\", image: \"/build/assets/svg/XAUUSDm.svg\" },\n        { key: \"EURUSDm\",  label: \"EUR/USD\", image: \"/build/assets/svg/EURUSDm.svg\" },\n        { key: \"USOILm\", label: \"US Oil\"   , image: \"/build/assets/svg/USOILm.svg\" },\n        { key: \"ETHUSDm\", label: \"ETH/USD\" , image: \"/build/assets/svg/ETHUSDm.svg\" },\n        //\n        { key: \"EURUSDm\", label: \"EUR/USD\" , image: \"/build/assets/svg/EURUSDm.svg\" },\n        { key: \"USDJPYm\", label: \"USD/JPY\" , image: \"/build/assets/svg/USDJPYm.svg\" },\n        { key: \"GBPUSDm\",  label: \"GBP/USD\", image: \"/build/assets/svg/GBPUSDm.svg\" },\n        { key: \"USDCHFm\", label: \"USD/CHF\" , image: \"/build/assets/svg/USDCHFm.svg\" },\n        { key: \"USDCADm\", label: \"USD/CAD\" , image: \"/build/assets/svg/USDCADm.svg\" },\n        //\n        { key: \"USTECm\", label: \"US Tech 100\"   , image: \"/build/assets/svg/USTECm.svg\" },\n        { key: \"UK100m\", label: \"UK 100 Index\"  , image: \"/build/assets/svg/UK100m.svg\" },\n        { key: \"STOXX50m\",  label: \"EU 50 Index\", image: \"/build/assets/svg/STOXX50m.svg\" },\n        { key: \"HK50m\", label: \"HK 50 Index\"    , image: \"/build/assets/svg/HK50m.svg\" },\n        { key: \"DE30m\", label: \"DE 30 Index\"    , image: \"/build/assets/svg/DE30m.svg\" },\n        //\n        { key: \"XAUUSDm\", label: \"Gold/USD\", image: \"/build/assets/svg/XAUUSDm.svg\" },\n        { key: \"XAGUSDm\", label: \"Silver/USD\", image: \"/build/assets/svg/XAGUSDm.svg\" },\n        { key: \"USOILm\", label: \"US Crude Oil\", image: \"/build/assets/svg/USOILm.svg\" },\n        { key: \"XPDUSDm\", label: \"Palladium/USD\", image: \"/build/assets/svg/XPDUSDm.svg\" },\n        { key: \"XPTUSDm\", label: \"Platinum/USD\", image: \"/build/assets/svg/XPTUSDm.svg\" },\n        //\n        { key: \"AAPLm\", label: \"Apple\"  , image: \"/build/assets/svg/AAPLm.svg\" },\n        { key: \"BABAm\", label: \"AliBaba\", image: \"/build/assets/svg/BABAm.svg\" },\n        { key: \"Cm\", label: \"CitiGroup\" , image: \"/build/assets/svg/Cm.svg\" },\n        { key: \"KOm\", label: \"CocaCola\" , image: \"/build/assets/svg/KOm.svg\" },\n        { key: \"NFLXm\", label: \"Netflix\", image: \"/build/assets/svg/NFLXm.svg\" },\n    ]",
           "complexType": {
             "original": "TradeSymbol[]",
             "resolved": "TradeSymbol[]",
@@ -1358,6 +1017,30 @@
             "original": "boolean",
             "resolved": "boolean",
             "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "connection",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "null",
+          "complexType": {
+            "original": "WebsocketConnection",
+            "resolved": "WebsocketConnection",
+            "references": {
+              "WebsocketConnection": {
+                "location": "import",
+                "path": "@anadyme/lavva-js-sdk"
+              }
+            }
           },
           "docs": {
             "tags": [],
@@ -1735,6 +1418,30 @@
             "original": "boolean",
             "resolved": "boolean",
             "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "connection",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "null",
+          "complexType": {
+            "original": "WebsocketConnection",
+            "resolved": "WebsocketConnection",
+            "references": {
+              "WebsocketConnection": {
+                "location": "import",
+                "path": "@anadyme/lavva-js-sdk"
+              }
+            }
           },
           "docs": {
             "tags": [],
@@ -2171,6 +1878,30 @@
             "text": ""
           },
           "internal": false
+        },
+        {
+          "name": "connection",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "null",
+          "complexType": {
+            "original": "WebsocketConnection",
+            "resolved": "WebsocketConnection",
+            "references": {
+              "WebsocketConnection": {
+                "location": "import",
+                "path": "@anadyme/lavva-js-sdk"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
         }
       ],
       "shadowDelegatesFocus": false,
@@ -2246,8 +1977,9 @@
           "type": "unknown",
           "reflect": false,
           "mutable": false,
-          "required": true,
+          "required": false,
           "optional": false,
+          "defaultValue": "null",
           "complexType": {
             "original": "WebsocketConnection",
             "resolved": "WebsocketConnection",
@@ -2908,1480 +2640,6 @@
     {
       "cmps": [
         {
-          "tagName": "mt-marquee",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "MtMarquee",
-          "elementRef": null,
-          "encapsulation": "shadow",
-          "shadowDelegatesFocus": false,
-          "properties": [
-            {
-              "name": "host",
-              "type": "string",
-              "attribute": "host",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'xxxxxxxxxx.apps.anadyme.com'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "translations",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "null",
-              "complexType": {
-                "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
-                "resolved": "{ [key: string]: { [key: string]: string; }; }",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "channel",
-              "type": "string",
-              "attribute": "channel",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "locale",
-              "type": "string",
-              "attribute": "locale",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'en'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "format",
-              "type": "string",
-              "attribute": "format",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'binary'",
-              "complexType": {
-                "original": "WebsocketConnectionFormat",
-                "resolved": "\"binary\" | \"text\"",
-                "references": {
-                  "WebsocketConnectionFormat": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "encoding",
-              "type": "string",
-              "attribute": "encoding",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'msgpack'",
-              "complexType": {
-                "original": "WebsocketConnectionEncoding",
-                "resolved": "\"json\" | \"msgpack\"",
-                "references": {
-                  "WebsocketConnectionEncoding": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "size",
-              "type": "string",
-              "attribute": "size",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'default'",
-              "complexType": {
-                "original": "'default' | 'large'",
-                "resolved": "\"default\" | \"large\"",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "center",
-              "type": "boolean",
-              "attribute": "center",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "animation",
-              "type": "boolean",
-              "attribute": "animation",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "symbols",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "[\n        { key: \"BTCUSDm\", label: \"BTC/USD\" , image: \"/build/assets/svg/BTCUSDm.svg\" },\n        { key: \"XAUUSDm\", label: \"Gold/USD\", image: \"/build/assets/svg/XAUUSDm.svg\" },\n        { key: \"EURUSDm\",  label: \"EUR/USD\", image: \"/build/assets/svg/EURUSDm.svg\" },\n        { key: \"USOILm\", label: \"US Oil\"   , image: \"/build/assets/svg/USOILm.svg\" },\n        { key: \"ETHUSDm\", label: \"ETH/USD\" , image: \"/build/assets/svg/ETHUSDm.svg\" },\n        //\n        { key: \"EURUSDm\", label: \"EUR/USD\" , image: \"/build/assets/svg/EURUSDm.svg\" },\n        { key: \"USDJPYm\", label: \"USD/JPY\" , image: \"/build/assets/svg/USDJPYm.svg\" },\n        { key: \"GBPUSDm\",  label: \"GBP/USD\", image: \"/build/assets/svg/GBPUSDm.svg\" },\n        { key: \"USDCHFm\", label: \"USD/CHF\" , image: \"/build/assets/svg/USDCHFm.svg\" },\n        { key: \"USDCADm\", label: \"USD/CAD\" , image: \"/build/assets/svg/USDCADm.svg\" },\n        //\n        { key: \"USTECm\", label: \"US Tech 100\"   , image: \"/build/assets/svg/USTECm.svg\" },\n        { key: \"UK100m\", label: \"UK 100 Index\"  , image: \"/build/assets/svg/UK100m.svg\" },\n        { key: \"STOXX50m\",  label: \"EU 50 Index\", image: \"/build/assets/svg/STOXX50m.svg\" },\n        { key: \"HK50m\", label: \"HK 50 Index\"    , image: \"/build/assets/svg/HK50m.svg\" },\n        { key: \"DE30m\", label: \"DE 30 Index\"    , image: \"/build/assets/svg/DE30m.svg\" },\n        //\n        { key: \"BTCUSDm\", label: \"BTC/USD\", image: \"/build/assets/svg/BTCUSDm.svg\" },\n        { key: \"BTCJPYm\", label: \"BTC/JPY\", image: \"/build/assets/svg/BTCJPYm.svg\" },\n        { key: \"ETHUSDm\", label: \"ETH/USD\", image: \"/build/assets/svg/ETHUSDm.svg\" },\n        { key: \"LTCUSDm\", label: \"LTC/USD\", image: \"/build/assets/svg/LTCUSDm.svg\" },\n        { key: \"XRPUSDm\", label: \"XRP/USD\", image: \"/build/assets/svg/XRPUSDm.svg\" },\n        //\n        { key: \"AAPLm\", label: \"Apple\"  , image: \"/build/assets/svg/AAPLm.svg\" },\n        { key: \"BABAm\", label: \"AliBaba\", image: \"/build/assets/svg/BABAm.svg\" },\n        { key: \"Cm\", label: \"CitiGroup\" , image: \"/build/assets/svg/Cm.svg\" },\n        { key: \"KOm\", label: \"CocaCola\" , image: \"/build/assets/svg/KOm.svg\" },\n        { key: \"NFLXm\", label: \"Netflix\", image: \"/build/assets/svg/NFLXm.svg\" },\n    ]",
-              "complexType": {
-                "original": "TradeSymbol[]",
-                "resolved": "TradeSymbol[]",
-                "references": {
-                  "TradeSymbol": {
-                    "location": "import",
-                    "path": "../../shared/mt-quote"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "apiKey",
-              "type": "string",
-              "attribute": "api-key",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "snapshot",
-              "type": "boolean",
-              "attribute": "snapshot",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "useCache",
-              "type": "boolean",
-              "attribute": "use-cache",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "namespace",
-              "type": "string",
-              "attribute": "namespace",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'mt-marquee'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "debug",
-              "type": "boolean",
-              "attribute": "debug",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [
-            {
-              "name": "data"
-            },
-            {
-              "name": "loading"
-            },
-            {
-              "name": "storage"
-            }
-          ],
-          "methods": [
-            {
-              "name": "log",
-              "docs": {
-                "text": "",
-                "tags": []
-              },
-              "complexType": {
-                "signature": "(...args: any[]) => Promise<void>",
-                "parameters": [
-                  {
-                    "tags": [],
-                    "text": ""
-                  }
-                ],
-                "references": {
-                  "Promise": {
-                    "location": "global"
-                  }
-                },
-                "return": "Promise<void>"
-              },
-              "internal": false
-            }
-          ],
-          "listeners": [],
-          "events": [
-            {
-              "name": "symbolClick",
-              "method": "symbolClick",
-              "bubbles": true,
-              "cancelable": true,
-              "composed": true,
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "complexType": {
-                "original": "TradeSymbol",
-                "resolved": "TradeSymbol",
-                "references": {
-                  "TradeSymbol": {
-                    "location": "import",
-                    "path": "../../shared/mt-quote"
-                  }
-                }
-              },
-              "internal": false
-            }
-          ],
-          "watchers": [
-            {
-              "propName": "namespace",
-              "methodName": "createLogger"
-            }
-          ],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "MT-MARQUEE",
-              "styleStr": null,
-              "styleIdentifier": "mtMarqueeStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-marquee/mt-marquee.scss",
-                  "relativePath": "mt-marquee.scss",
-                  "originalComponentPath": "mt-marquee.scss"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [
-            {
-              "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-marquee/assets",
-              "cmpRelativePath": "./assets",
-              "originalComponentPath": "./assets"
-            }
-          ],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-marquee/mt-marquee.js",
-          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-marquee/mt-marquee.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": true,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": true,
-          "hasDisconnectedCallbackFn": true,
-          "hasElement": false,
-          "hasEvent": true,
-          "hasLifecycle": true,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": true,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": false,
-          "hasPropBoolean": true,
-          "hasPropString": true,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": true,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": true,
-          "hasVdomPropOrAttr": false,
-          "hasVdomRef": true,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": true,
-          "hasWatchCallback": true,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "class",
-            "onClick",
-            "ref"
-          ],
-          "htmlTagNames": [
-            "div",
-            "span"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [],
-          "directDependents": []
-        }
-      ],
-      "entryKey": "mt-marquee.entry"
-    },
-    {
-      "cmps": [
-        {
-          "tagName": "mt-quote",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "MtQuote",
-          "elementRef": "element",
-          "encapsulation": "shadow",
-          "shadowDelegatesFocus": false,
-          "properties": [
-            {
-              "name": "host",
-              "type": "string",
-              "attribute": "host",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'xxxxxxxxxx.apps.anadyme.com'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "translations",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "null",
-              "complexType": {
-                "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
-                "resolved": "{ [key: string]: { [key: string]: string; }; }",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "channel",
-              "type": "string",
-              "attribute": "channel",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "locale",
-              "type": "string",
-              "attribute": "locale",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'en'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "format",
-              "type": "string",
-              "attribute": "format",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'binary'",
-              "complexType": {
-                "original": "WebsocketConnectionFormat",
-                "resolved": "\"binary\" | \"text\"",
-                "references": {
-                  "WebsocketConnectionFormat": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "encoding",
-              "type": "string",
-              "attribute": "encoding",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'msgpack'",
-              "complexType": {
-                "original": "WebsocketConnectionEncoding",
-                "resolved": "\"json\" | \"msgpack\"",
-                "references": {
-                  "WebsocketConnectionEncoding": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "apiKey",
-              "type": "string",
-              "attribute": "api-key",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "snapshot",
-              "type": "boolean",
-              "attribute": "snapshot",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "size",
-              "type": "number",
-              "attribute": "size",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "30",
-              "complexType": {
-                "original": "number",
-                "resolved": "number",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "namespace",
-              "type": "string",
-              "attribute": "namespace",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'mt-quote'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "symbol",
-              "type": "string",
-              "attribute": "symbol",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "\"BTCUSDm\"",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "label",
-              "type": "string",
-              "attribute": "label",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "\"\"",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "showChart",
-              "type": "boolean",
-              "attribute": "show-chart",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "useCache",
-              "type": "boolean",
-              "attribute": "use-cache",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "debug",
-              "type": "boolean",
-              "attribute": "debug",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [
-            {
-              "name": "loading"
-            },
-            {
-              "name": "quoteData"
-            },
-            {
-              "name": "quotes"
-            },
-            {
-              "name": "historical"
-            },
-            {
-              "name": "chartData"
-            }
-          ],
-          "methods": [
-            {
-              "name": "log",
-              "docs": {
-                "text": "",
-                "tags": []
-              },
-              "complexType": {
-                "signature": "(...args: any[]) => Promise<void>",
-                "parameters": [
-                  {
-                    "tags": [],
-                    "text": ""
-                  }
-                ],
-                "references": {
-                  "Promise": {
-                    "location": "global"
-                  }
-                },
-                "return": "Promise<void>"
-              },
-              "internal": false
-            }
-          ],
-          "listeners": [],
-          "events": [],
-          "watchers": [
-            {
-              "propName": "namespace",
-              "methodName": "createLogger"
-            }
-          ],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "MT-QUOTE",
-              "styleStr": null,
-              "styleIdentifier": "mtQuoteStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-quote/mt-quote.scss",
-                  "relativePath": "mt-quote.scss",
-                  "originalComponentPath": "mt-quote.scss"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [
-            {
-              "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-quote/assets",
-              "cmpRelativePath": "./assets",
-              "originalComponentPath": "./assets"
-            }
-          ],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-quote/mt-quote.js",
-          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-quote/mt-quote.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": true,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": true,
-          "hasDisconnectedCallbackFn": true,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": true,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": true,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": true,
-          "hasPropBoolean": true,
-          "hasPropString": true,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": true,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": true,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": true,
-          "hasWatchCallback": true,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "class",
-            "ref",
-            "height"
-          ],
-          "htmlTagNames": [
-            "div",
-            "span",
-            "canvas"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [],
-          "directDependents": []
-        }
-      ],
-      "entryKey": "mt-quote.entry"
-    },
-    {
-      "cmps": [
-        {
-          "tagName": "mt-rates",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "MTRates",
-          "elementRef": null,
-          "encapsulation": "shadow",
-          "shadowDelegatesFocus": false,
-          "properties": [
-            {
-              "name": "host",
-              "type": "string",
-              "attribute": "host",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'xxxxxxxxxx.apps.anadyme.com'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "channel",
-              "type": "string",
-              "attribute": "channel",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "locale",
-              "type": "string",
-              "attribute": "locale",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'en'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "size",
-              "type": "string",
-              "attribute": "size",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'default'",
-              "complexType": {
-                "original": "'default' | 'large'",
-                "resolved": "\"default\" | \"large\"",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "translations",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "null",
-              "complexType": {
-                "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
-                "resolved": "{ [key: string]: { [key: string]: string; }; }",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "tabs",
-              "type": "boolean",
-              "attribute": "tabs",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "names",
-              "type": "boolean",
-              "attribute": "names",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "tab",
-              "type": "string",
-              "attribute": "tab",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "\"popular\"",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "groups",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": true,
-              "required": false,
-              "optional": false,
-              "defaultValue": "[\n        {\n            name: \"popular\",\n            label: this.translate(\"popular\", \"Popular\"),\n            symbols: [\n                { key: \"BTCUSDm\", label: \"BTC/USD\" , image: \"/build/assets/svg/BTCUSDm.svg\" },\n                { key: \"XAUUSDm\", label: \"Gold/USD\", image: \"/build/assets/svg/XAUUSDm.svg\" },\n                { key: \"EURUSDm\",  label: \"EUR/USD\", image: \"/build/assets/svg/EURUSDm.svg\" },\n                { key: \"USOILm\", label: \"US Oil\"   , image: \"/build/assets/svg/USOILm.svg\" },\n                { key: \"ETHUSDm\", label: \"ETH/USD\" , image: \"/build/assets/svg/ETHUSDm.svg\" },\n            ],\n        },\n        {\n            name: \"forex\",\n            label: this.translate(\"forex\", \"Forex\"),\n            symbols: [\n                { key: \"EURUSDm\", label: \"EUR/USD\" , image: \"/build/assets/svg/EURUSDm.svg\" },\n                { key: \"USDJPYm\", label: \"USD/JPY\" , image: \"/build/assets/svg/USDJPYm.svg\" },\n                { key: \"GBPUSDm\",  label: \"GBP/USD\", image: \"/build/assets/svg/GBPUSDm.svg\" },\n                { key: \"USDCHFm\", label: \"USD/CHF\" , image: \"/build/assets/svg/USDCHFm.svg\" },\n                { key: \"USDCADm\", label: \"USD/CAD\" , image: \"/build/assets/svg/USDCADm.svg\" },\n            ]\n        },\n        {\n            name: \"stocks\",\n            label: this.translate(\"stocks\", \"Stocks\"),\n            symbols: [\n                { key: \"USTECm\", label: \"US Tech 100\"   , image: \"/build/assets/svg/USTECm.svg\" },\n                { key: \"UK100m\", label: \"UK 100 Index\"  , image: \"/build/assets/svg/UK100m.svg\" },\n                { key: \"STOXX50m\",  label: \"EU 50 Index\", image: \"/build/assets/svg/STOXX50m.svg\" },\n                { key: \"HK50m\", label: \"HK 50 Index\"    , image: \"/build/assets/svg/HK50m.svg\" },\n                { key: \"DE30m\", label: \"DE 30 Index\"    , image: \"/build/assets/svg/DE30m.svg\" },\n            ]\n        },\n        {\n            name: \"crypto\",\n            label: this.translate(\"crypto\", \"Crypto\"),\n            symbols: [\n                { key: \"BTCUSDm\", label: \"BTC/USD\", image: \"/build/assets/svg/BTCUSDm.svg\" },\n                { key: \"BTCJPYm\", label: \"BTC/JPY\", image: \"/build/assets/svg/BTCJPYm.svg\" },\n                { key: \"ETHUSDm\", label: \"ETH/USD\", image: \"/build/assets/svg/ETHUSDm.svg\" },\n                { key: \"LTCUSDm\", label: \"LTC/USD\", image: \"/build/assets/svg/LTCUSDm.svg\" },\n                { key: \"XRPUSDm\", label: \"XRP/USD\", image: \"/build/assets/svg/XRPUSDm.svg\" },\n            ]\n        },\n        {\n            name: \"shares\",\n            label: this.translate(\"shares\", \"Shares\"),\n            symbols: [\n                { key: \"AAPLm\", label: \"Apple\"  , image: \"/build/assets/svg/AAPLm.svg\" },\n                { key: \"BABAm\", label: \"AliBaba\", image: \"/build/assets/svg/BABAm.svg\" },\n                { key: \"Cm\", label: \"CitiGroup\" , image: \"/build/assets/svg/Cm.svg\" },\n                { key: \"KOm\", label: \"CocaCola\" , image: \"/build/assets/svg/KOm.svg\" },\n                { key: \"NFLXm\", label: \"Netflix\", image: \"/build/assets/svg/NFLXm.svg\" },\n            ]\n        },\n        {\n            name: \"metal\",\n            label: this.translate(\"metal\", \"Metals\"),\n            symbols: [\n                { key: \"XAUUSDm\", label: \"Gold/USD\"     , image: \"/build/assets/svg/XAUUSDm.svg\" },\n                { key: \"XAGUSDm\", label: \"Silver/USD\"   , image: \"/build/assets/svg/XAGUSDm.svg\" },\n                { key: \"XPDUSDm\", label: \"Palladium/USD\", image: \"/build/assets/svg/XPDUSDm.svg\" },\n                { key: \"XPTUSDm\", label: \"Platinum/USD\" , image: \"/build/assets/svg/XPTUSDm.svg\" },\n                { key: \"XPTUSDm\", label: \"Platinum/USD\" , image: \"/build/assets/svg/XPTUSDm.svg\" },\n            ]\n        }\n    ]",
-              "complexType": {
-                "original": "Category[]",
-                "resolved": "Category[]",
-                "references": {
-                  "Category": {
-                    "location": "import",
-                    "path": "../../shared/mt-quote"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "format",
-              "type": "string",
-              "attribute": "format",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'binary'",
-              "complexType": {
-                "original": "WebsocketConnectionFormat",
-                "resolved": "\"binary\" | \"text\"",
-                "references": {
-                  "WebsocketConnectionFormat": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "encoding",
-              "type": "string",
-              "attribute": "encoding",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'msgpack'",
-              "complexType": {
-                "original": "WebsocketConnectionEncoding",
-                "resolved": "\"json\" | \"msgpack\"",
-                "references": {
-                  "WebsocketConnectionEncoding": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "apiKey",
-              "type": "string",
-              "attribute": "api-key",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "snapshot",
-              "type": "boolean",
-              "attribute": "snapshot",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "useCache",
-              "type": "boolean",
-              "attribute": "use-cache",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "namespace",
-              "type": "string",
-              "attribute": "namespace",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'mt-rates'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop (optional)"
-              },
-              "internal": false
-            },
-            {
-              "name": "debug",
-              "type": "boolean",
-              "attribute": "debug",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [
-            {
-              "name": "data"
-            },
-            {
-              "name": "loading"
-            },
-            {
-              "name": "storage"
-            }
-          ],
-          "methods": [
-            {
-              "name": "log",
-              "docs": {
-                "text": "Method",
-                "tags": []
-              },
-              "complexType": {
-                "signature": "(...args: any[]) => Promise<void>",
-                "parameters": [
-                  {
-                    "tags": [],
-                    "text": ""
-                  }
-                ],
-                "references": {
-                  "Promise": {
-                    "location": "global"
-                  }
-                },
-                "return": "Promise<void>"
-              },
-              "internal": false
-            }
-          ],
-          "listeners": [],
-          "events": [
-            {
-              "name": "tradeClick",
-              "method": "tradeClick",
-              "bubbles": true,
-              "cancelable": true,
-              "composed": true,
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "complexType": {
-                "original": "TradeSymbol",
-                "resolved": "TradeSymbol",
-                "references": {
-                  "TradeSymbol": {
-                    "location": "import",
-                    "path": "../../shared/mt-quote"
-                  }
-                }
-              },
-              "internal": false
-            }
-          ],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "MT-RATES",
-              "styleStr": null,
-              "styleIdentifier": "mtRatesStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-rates/mt-rates.scss",
-                  "relativePath": "mt-rates.scss",
-                  "originalComponentPath": "mt-rates.scss"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [
-            {
-              "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-rates/assets",
-              "cmpRelativePath": "./assets",
-              "originalComponentPath": "./assets"
-            }
-          ],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-rates/mt-rates.js",
-          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-rates/mt-rates.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": true,
-          "hasDisconnectedCallbackFn": true,
-          "hasElement": false,
-          "hasEvent": true,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": true,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": false,
-          "hasPropBoolean": true,
-          "hasPropString": true,
-          "hasPropMutable": true,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": true,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": true,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": true,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "class",
-            "src",
-            "onClick"
-          ],
-          "htmlTagNames": [
-            "div",
-            "img",
-            "span",
-            "button",
-            "header",
-            "ul",
-            "li",
-            "section"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [],
-          "directDependents": []
-        }
-      ],
-      "entryKey": "mt-rates.entry"
-    },
-    {
-      "cmps": [
-        {
           "tagName": "finnhub-news",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -4937,6 +3195,1552 @@
     {
       "cmps": [
         {
+          "tagName": "mt-marquee",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "MtMarquee",
+          "elementRef": null,
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "host",
+              "type": "string",
+              "attribute": "host",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'xxxxxxxxxx.apps.anadyme.com'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "translations",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "null",
+              "complexType": {
+                "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
+                "resolved": "{ [key: string]: { [key: string]: string; }; }",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "channel",
+              "type": "string",
+              "attribute": "channel",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "locale",
+              "type": "string",
+              "attribute": "locale",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'en'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "format",
+              "type": "string",
+              "attribute": "format",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'binary'",
+              "complexType": {
+                "original": "WebsocketConnectionFormat",
+                "resolved": "\"binary\" | \"text\"",
+                "references": {
+                  "WebsocketConnectionFormat": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "encoding",
+              "type": "string",
+              "attribute": "encoding",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'msgpack'",
+              "complexType": {
+                "original": "WebsocketConnectionEncoding",
+                "resolved": "\"json\" | \"msgpack\"",
+                "references": {
+                  "WebsocketConnectionEncoding": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "size",
+              "type": "string",
+              "attribute": "size",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'default'",
+              "complexType": {
+                "original": "'default' | 'large'",
+                "resolved": "\"default\" | \"large\"",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "center",
+              "type": "boolean",
+              "attribute": "center",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "animation",
+              "type": "boolean",
+              "attribute": "animation",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "symbols",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "[\n        { key: \"BTCUSDm\", label: \"BTC/USD\" , image: \"/build/assets/svg/BTCUSDm.svg\" },\n        { key: \"XAUUSDm\", label: \"Gold/USD\", image: \"/build/assets/svg/XAUUSDm.svg\" },\n        { key: \"EURUSDm\",  label: \"EUR/USD\", image: \"/build/assets/svg/EURUSDm.svg\" },\n        { key: \"USOILm\", label: \"US Oil\"   , image: \"/build/assets/svg/USOILm.svg\" },\n        { key: \"ETHUSDm\", label: \"ETH/USD\" , image: \"/build/assets/svg/ETHUSDm.svg\" },\n        //\n        { key: \"EURUSDm\", label: \"EUR/USD\" , image: \"/build/assets/svg/EURUSDm.svg\" },\n        { key: \"USDJPYm\", label: \"USD/JPY\" , image: \"/build/assets/svg/USDJPYm.svg\" },\n        { key: \"GBPUSDm\",  label: \"GBP/USD\", image: \"/build/assets/svg/GBPUSDm.svg\" },\n        { key: \"USDCHFm\", label: \"USD/CHF\" , image: \"/build/assets/svg/USDCHFm.svg\" },\n        { key: \"USDCADm\", label: \"USD/CAD\" , image: \"/build/assets/svg/USDCADm.svg\" },\n        //\n        { key: \"USTECm\", label: \"US Tech 100\"   , image: \"/build/assets/svg/USTECm.svg\" },\n        { key: \"UK100m\", label: \"UK 100 Index\"  , image: \"/build/assets/svg/UK100m.svg\" },\n        { key: \"STOXX50m\",  label: \"EU 50 Index\", image: \"/build/assets/svg/STOXX50m.svg\" },\n        { key: \"HK50m\", label: \"HK 50 Index\"    , image: \"/build/assets/svg/HK50m.svg\" },\n        { key: \"DE30m\", label: \"DE 30 Index\"    , image: \"/build/assets/svg/DE30m.svg\" },\n        //\n        { key: \"XAUUSDm\", label: \"Gold/USD\", image: \"/build/assets/svg/XAUUSDm.svg\" },\n        { key: \"XAGUSDm\", label: \"Silver/USD\", image: \"/build/assets/svg/XAGUSDm.svg\" },\n        { key: \"USOILm\", label: \"US Crude Oil\", image: \"/build/assets/svg/USOILm.svg\" },\n        { key: \"XPDUSDm\", label: \"Palladium/USD\", image: \"/build/assets/svg/XPDUSDm.svg\" },\n        { key: \"XPTUSDm\", label: \"Platinum/USD\", image: \"/build/assets/svg/XPTUSDm.svg\" },\n        //\n        { key: \"AAPLm\", label: \"Apple\"  , image: \"/build/assets/svg/AAPLm.svg\" },\n        { key: \"BABAm\", label: \"AliBaba\", image: \"/build/assets/svg/BABAm.svg\" },\n        { key: \"Cm\", label: \"CitiGroup\" , image: \"/build/assets/svg/Cm.svg\" },\n        { key: \"KOm\", label: \"CocaCola\" , image: \"/build/assets/svg/KOm.svg\" },\n        { key: \"NFLXm\", label: \"Netflix\", image: \"/build/assets/svg/NFLXm.svg\" },\n    ]",
+              "complexType": {
+                "original": "TradeSymbol[]",
+                "resolved": "TradeSymbol[]",
+                "references": {
+                  "TradeSymbol": {
+                    "location": "import",
+                    "path": "../../shared/mt-quote"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "apiKey",
+              "type": "string",
+              "attribute": "api-key",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "snapshot",
+              "type": "boolean",
+              "attribute": "snapshot",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'mt-marquee'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "debug",
+              "type": "boolean",
+              "attribute": "debug",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "connection",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "null",
+              "complexType": {
+                "original": "WebsocketConnection",
+                "resolved": "WebsocketConnection",
+                "references": {
+                  "WebsocketConnection": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "data"
+            },
+            {
+              "name": "loading"
+            },
+            {
+              "name": "storage"
+            }
+          ],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [
+            {
+              "name": "symbolClick",
+              "method": "symbolClick",
+              "bubbles": true,
+              "cancelable": true,
+              "composed": true,
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "complexType": {
+                "original": "TradeSymbol",
+                "resolved": "TradeSymbol",
+                "references": {
+                  "TradeSymbol": {
+                    "location": "import",
+                    "path": "../../shared/mt-quote"
+                  }
+                }
+              },
+              "internal": false
+            }
+          ],
+          "watchers": [
+            {
+              "propName": "namespace",
+              "methodName": "createLogger"
+            }
+          ],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MT-MARQUEE",
+              "styleStr": null,
+              "styleIdentifier": "mtMarqueeStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-marquee/mt-marquee.scss",
+                  "relativePath": "mt-marquee.scss",
+                  "originalComponentPath": "mt-marquee.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [
+            {
+              "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-marquee/assets",
+              "cmpRelativePath": "./assets",
+              "originalComponentPath": "./assets"
+            }
+          ],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-marquee/mt-marquee.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-marquee/mt-marquee.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": true,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": true,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": true,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": true,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": true,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "onClick",
+            "ref"
+          ],
+          "htmlTagNames": [
+            "div",
+            "span"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "mt-marquee.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "mt-quote",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "MtQuote",
+          "elementRef": "element",
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "host",
+              "type": "string",
+              "attribute": "host",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'xxxxxxxxxx.apps.anadyme.com'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "translations",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "null",
+              "complexType": {
+                "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
+                "resolved": "{ [key: string]: { [key: string]: string; }; }",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "channel",
+              "type": "string",
+              "attribute": "channel",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "locale",
+              "type": "string",
+              "attribute": "locale",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'en'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "format",
+              "type": "string",
+              "attribute": "format",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'binary'",
+              "complexType": {
+                "original": "WebsocketConnectionFormat",
+                "resolved": "\"binary\" | \"text\"",
+                "references": {
+                  "WebsocketConnectionFormat": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "encoding",
+              "type": "string",
+              "attribute": "encoding",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'msgpack'",
+              "complexType": {
+                "original": "WebsocketConnectionEncoding",
+                "resolved": "\"json\" | \"msgpack\"",
+                "references": {
+                  "WebsocketConnectionEncoding": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "apiKey",
+              "type": "string",
+              "attribute": "api-key",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "snapshot",
+              "type": "boolean",
+              "attribute": "snapshot",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "size",
+              "type": "number",
+              "attribute": "size",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "30",
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'mt-quote'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "symbol",
+              "type": "string",
+              "attribute": "symbol",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "\"BTCUSDm\"",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "label",
+              "type": "string",
+              "attribute": "label",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "\"\"",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "showChart",
+              "type": "boolean",
+              "attribute": "show-chart",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "debug",
+              "type": "boolean",
+              "attribute": "debug",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "connection",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "null",
+              "complexType": {
+                "original": "WebsocketConnection",
+                "resolved": "WebsocketConnection",
+                "references": {
+                  "WebsocketConnection": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "loading"
+            },
+            {
+              "name": "quoteData"
+            },
+            {
+              "name": "quotes"
+            },
+            {
+              "name": "historical"
+            },
+            {
+              "name": "chartData"
+            }
+          ],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [
+            {
+              "propName": "namespace",
+              "methodName": "createLogger"
+            }
+          ],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MT-QUOTE",
+              "styleStr": null,
+              "styleIdentifier": "mtQuoteStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-quote/mt-quote.scss",
+                  "relativePath": "mt-quote.scss",
+                  "originalComponentPath": "mt-quote.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [
+            {
+              "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-quote/assets",
+              "cmpRelativePath": "./assets",
+              "originalComponentPath": "./assets"
+            }
+          ],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-quote/mt-quote.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-quote/mt-quote.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": true,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": true,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": true,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": true,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": true,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "ref",
+            "height"
+          ],
+          "htmlTagNames": [
+            "div",
+            "span",
+            "canvas"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "mt-quote.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "mt-rates",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "MTRates",
+          "elementRef": null,
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "host",
+              "type": "string",
+              "attribute": "host",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'xxxxxxxxxx.apps.anadyme.com'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "channel",
+              "type": "string",
+              "attribute": "channel",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "locale",
+              "type": "string",
+              "attribute": "locale",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'en'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "size",
+              "type": "string",
+              "attribute": "size",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'default'",
+              "complexType": {
+                "original": "'default' | 'large'",
+                "resolved": "\"default\" | \"large\"",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "translations",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "null",
+              "complexType": {
+                "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
+                "resolved": "{ [key: string]: { [key: string]: string; }; }",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "tabs",
+              "type": "boolean",
+              "attribute": "tabs",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "names",
+              "type": "boolean",
+              "attribute": "names",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "tab",
+              "type": "string",
+              "attribute": "tab",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "\"popular\"",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "groups",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "[\n        {\n            name: \"popular\",\n            label: this.translate(\"popular\", \"Popular\"),\n            symbols: [\n                { key: \"BTCUSDm\", label: \"BTC/USD\" , image: \"/build/assets/svg/BTCUSDm.svg\" },\n                { key: \"XAUUSDm\", label: \"Gold/USD\", image: \"/build/assets/svg/XAUUSDm.svg\" },\n                { key: \"EURUSDm\",  label: \"EUR/USD\", image: \"/build/assets/svg/EURUSDm.svg\" },\n                { key: \"USOILm\", label: \"US Oil\"   , image: \"/build/assets/svg/USOILm.svg\" },\n                { key: \"ETHUSDm\", label: \"ETH/USD\" , image: \"/build/assets/svg/ETHUSDm.svg\" },\n            ],\n        },\n        {\n            name: \"forex\",\n            label: this.translate(\"forex\", \"Forex\"),\n            symbols: [\n                { key: \"EURUSDm\", label: \"EUR/USD\" , image: \"/build/assets/svg/EURUSDm.svg\" },\n                { key: \"USDJPYm\", label: \"USD/JPY\" , image: \"/build/assets/svg/USDJPYm.svg\" },\n                { key: \"GBPUSDm\",  label: \"GBP/USD\", image: \"/build/assets/svg/GBPUSDm.svg\" },\n                { key: \"USDCHFm\", label: \"USD/CHF\" , image: \"/build/assets/svg/USDCHFm.svg\" },\n                { key: \"USDCADm\", label: \"USD/CAD\" , image: \"/build/assets/svg/USDCADm.svg\" },\n            ]\n        },\n        {\n            name: \"stocks\",\n            label: this.translate(\"stocks\", \"Stocks\"),\n            symbols: [\n                { key: \"USTECm\", label: \"US Tech 100\"   , image: \"/build/assets/svg/USTECm.svg\" },\n                { key: \"UK100m\", label: \"UK 100 Index\"  , image: \"/build/assets/svg/UK100m.svg\" },\n                { key: \"STOXX50m\",  label: \"EU 50 Index\", image: \"/build/assets/svg/STOXX50m.svg\" },\n                { key: \"HK50m\", label: \"HK 50 Index\"    , image: \"/build/assets/svg/HK50m.svg\" },\n                { key: \"DE30m\", label: \"DE 30 Index\"    , image: \"/build/assets/svg/DE30m.svg\" },\n            ]\n        },\n        {\n            name: \"crypto\",\n            label: this.translate(\"crypto\", \"Crypto\"),\n            symbols: [\n                { key: \"BTCUSDm\", label: \"BTC/USD\", image: \"/build/assets/svg/BTCUSDm.svg\" },\n                { key: \"BTCJPYm\", label: \"BTC/JPY\", image: \"/build/assets/svg/BTCJPYm.svg\" },\n                { key: \"ETHUSDm\", label: \"ETH/USD\", image: \"/build/assets/svg/ETHUSDm.svg\" },\n                { key: \"LTCUSDm\", label: \"LTC/USD\", image: \"/build/assets/svg/LTCUSDm.svg\" },\n                { key: \"XRPUSDm\", label: \"XRP/USD\", image: \"/build/assets/svg/XRPUSDm.svg\" },\n            ]\n        },\n        {\n            name: \"shares\",\n            label: this.translate(\"shares\", \"Shares\"),\n            symbols: [\n                { key: \"AAPLm\", label: \"Apple\"  , image: \"/build/assets/svg/AAPLm.svg\" },\n                { key: \"BABAm\", label: \"AliBaba\", image: \"/build/assets/svg/BABAm.svg\" },\n                { key: \"Cm\", label: \"CitiGroup\" , image: \"/build/assets/svg/Cm.svg\" },\n                { key: \"KOm\", label: \"CocaCola\" , image: \"/build/assets/svg/KOm.svg\" },\n                { key: \"NFLXm\", label: \"Netflix\", image: \"/build/assets/svg/NFLXm.svg\" },\n            ]\n        },\n        {\n            name: \"metal\",\n            label: this.translate(\"metal\", \"Metals\"),\n            symbols: [\n                { key: \"XAUUSDm\", label: \"Gold/USD\"     , image: \"/build/assets/svg/XAUUSDm.svg\" },\n                { key: \"XAGUSDm\", label: \"Silver/USD\"   , image: \"/build/assets/svg/XAGUSDm.svg\" },\n                { key: \"XPDUSDm\", label: \"Palladium/USD\", image: \"/build/assets/svg/XPDUSDm.svg\" },\n                { key: \"XPTUSDm\", label: \"Platinum/USD\" , image: \"/build/assets/svg/XPTUSDm.svg\" },\n                { key: \"XPTUSDm\", label: \"Platinum/USD\" , image: \"/build/assets/svg/XPTUSDm.svg\" },\n            ]\n        }\n    ]",
+              "complexType": {
+                "original": "Category[]",
+                "resolved": "Category[]",
+                "references": {
+                  "Category": {
+                    "location": "import",
+                    "path": "../../shared/mt-quote"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "format",
+              "type": "string",
+              "attribute": "format",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'binary'",
+              "complexType": {
+                "original": "WebsocketConnectionFormat",
+                "resolved": "\"binary\" | \"text\"",
+                "references": {
+                  "WebsocketConnectionFormat": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "encoding",
+              "type": "string",
+              "attribute": "encoding",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'msgpack'",
+              "complexType": {
+                "original": "WebsocketConnectionEncoding",
+                "resolved": "\"json\" | \"msgpack\"",
+                "references": {
+                  "WebsocketConnectionEncoding": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "apiKey",
+              "type": "string",
+              "attribute": "api-key",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "snapshot",
+              "type": "boolean",
+              "attribute": "snapshot",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'mt-rates'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "debug",
+              "type": "boolean",
+              "attribute": "debug",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "connection",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "null",
+              "complexType": {
+                "original": "WebsocketConnection",
+                "resolved": "WebsocketConnection",
+                "references": {
+                  "WebsocketConnection": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "data"
+            },
+            {
+              "name": "loading"
+            },
+            {
+              "name": "storage"
+            }
+          ],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "Method",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [
+            {
+              "name": "tradeClick",
+              "method": "tradeClick",
+              "bubbles": true,
+              "cancelable": true,
+              "composed": true,
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "complexType": {
+                "original": "TradeSymbol",
+                "resolved": "TradeSymbol",
+                "references": {
+                  "TradeSymbol": {
+                    "location": "import",
+                    "path": "../../shared/mt-quote"
+                  }
+                }
+              },
+              "internal": false
+            }
+          ],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "MT-RATES",
+              "styleStr": null,
+              "styleIdentifier": "mtRatesStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-rates/mt-rates.scss",
+                  "relativePath": "mt-rates.scss",
+                  "originalComponentPath": "mt-rates.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [
+            {
+              "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-rates/assets",
+              "cmpRelativePath": "./assets",
+              "originalComponentPath": "./assets"
+            }
+          ],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-rates/mt-rates.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/mt-rates/mt-rates.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": true,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": true,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": true,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "src",
+            "onClick"
+          ],
+          "htmlTagNames": [
+            "div",
+            "img",
+            "span",
+            "button",
+            "header",
+            "ul",
+            "li",
+            "section"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "mt-rates.entry"
+    },
+    {
+      "cmps": [
+        {
           "tagName": "owm-daily",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -4950,8 +4754,9 @@
               "type": "unknown",
               "reflect": false,
               "mutable": false,
-              "required": true,
+              "required": false,
               "optional": false,
+              "defaultValue": "null",
               "complexType": {
                 "original": "WebsocketConnection",
                 "resolved": "WebsocketConnection",
@@ -6070,51 +5875,51 @@
   ],
   "componentGraph": {
     "sc-finnhub-news": [
-      "p-10eeb9e6.js",
-      "p-c212c8a0.js",
-      "p-6fdb396c.js"
+      "index-452e93f8.js",
+      "utils-735c1d5c.js",
+      "store2-f3f72e93.js"
     ],
     "sc-fxcm-rates": [
-      "p-10eeb9e6.js",
-      "p-c212c8a0.js",
-      "p-6fdb396c.js"
+      "index-452e93f8.js",
+      "utils-735c1d5c.js",
+      "store2-f3f72e93.js"
     ],
     "sc-mt-marquee": [
-      "p-10eeb9e6.js",
-      "p-c212c8a0.js",
-      "p-6fdb396c.js"
+      "index-452e93f8.js",
+      "utils-735c1d5c.js",
+      "store2-f3f72e93.js"
     ],
     "sc-mt-quote": [
-      "p-10eeb9e6.js",
-      "p-c212c8a0.js",
-      "p-6fdb396c.js"
+      "index-452e93f8.js",
+      "utils-735c1d5c.js",
+      "store2-f3f72e93.js"
     ],
     "sc-mt-rates": [
-      "p-10eeb9e6.js",
-      "p-c212c8a0.js",
-      "p-6fdb396c.js"
+      "index-452e93f8.js",
+      "utils-735c1d5c.js",
+      "store2-f3f72e93.js"
     ],
     "sc-owm-daily": [
-      "p-10eeb9e6.js",
-      "p-c212c8a0.js",
-      "p-6fdb396c.js"
+      "index-452e93f8.js",
+      "utils-735c1d5c.js",
+      "store2-f3f72e93.js"
     ],
     "sc-owm-daily-item": [
-      "p-10eeb9e6.js",
-      "p-c212c8a0.js"
+      "index-452e93f8.js",
+      "utils-735c1d5c.js"
     ],
     "sc-twit-ter": [
-      "p-10eeb9e6.js",
-      "p-c212c8a0.js",
-      "p-6fdb396c.js"
+      "index-452e93f8.js",
+      "utils-735c1d5c.js",
+      "store2-f3f72e93.js"
     ],
     "sc-yahoo-quote": [
-      "p-10eeb9e6.js"
+      "index-452e93f8.js"
     ],
     "sc-yahoo-quotes": [
-      "p-10eeb9e6.js",
-      "p-c212c8a0.js",
-      "p-6fdb396c.js"
+      "index-452e93f8.js",
+      "utils-735c1d5c.js",
+      "store2-f3f72e93.js"
     ]
   },
   "sourceGraph": {

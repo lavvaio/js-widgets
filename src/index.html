@@ -36,110 +36,42 @@
                 margin-right: 10px;
             }
 
-            mt-quote:nth-child(2),
-            mt-quote:nth-child(3) {
-                --padding: 20px 30px;
-                --border-radius: 14px;
-                --border-color: #151415;
-                --background-color: #151415;
-                --symbol-name-font-size: 1rem;
-                --symbol-name-color: #fed831;
-                --symbol-value-font-size: 2.25rem;
-                --symbol-value-color: #fff;
-                --symbol-percent-up: #4B8AE9;
-                --symbol-percent-down: #DA361B;
-            }
-
-            mt-quote:nth-child(5) {
-                --padding: 30px 60px;
-                --symbol-name-font-size: 1rem;
-                --symbol-value-font-size: 1.25rem;
-                --symbol-graph-height: 40px;
-                --symbol-graph-width: 70px;
-            }
-
-            mt-quote:nth-child(6) {
-                --symbol-value-font-size: 1.75rem;
-                min-width: 185px;
-            }
-
-            mt-marquee:nth-child(1) {
-                --background-color: #151415;
-                --symbol-percent-up: #4B8AE9;
-                --symbol-percent-down: #DA361B;
-            }
-
-            .c1 {
-                --border-radius: 14px;
-                --background-color: #151415;
-                --symbol-percent-up: #4B8AE9;
-                --symbol-percent-down: #DA361B;
-            }
-
-            .c2 {
-                border: 1px solid #ccc;
-
-                --padding: 0;
-                --background-color: #fff;
-                --symbol-percent-up: #39b54a;
-                --symbol-percent-down: #c00;
-                --symbol-space-between: 0;
-                --tabs-padding: 0;
-                --tabs-bottom-border: 0.5px solid #ccc;
-                --tab-color: #000;
-                --tab-padding: 15px 0;
-                --tab-bg-color: #fff;
-                --tab-active-color: #fff;
-                --tab-active-border-bottom: 1px solid transparent;
-                --tab-active-bg-color: #2e3192;
-                --data-column-min-height: 60px;
-                --data-action-color: #fff;
-                --data-action-bg-color: #39b54a;
-                --data-action-border-radius: 0;
-                --data-column-header-bg-color: #f8f9fa;
-                --data-column-header-text-color: #1D1D20;
-                --data-column-value-bg-color: #f8f9fa;
-                --data-column-value-text-color: #1D1D20;
-                --data-column-value-hovered-bg-color: #58595A;
-                --data-column-value-hovered-text-color: #fff;
-            }
-
         </style>
     </head>
     <body>
-        <mt-marquee host="3445fed92f02.cloud.anadyme.com" channel="mt5" animation=false></mt-marquee>
+        <mt-marquee host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" animation=false></mt-marquee>
         <br />
-        <mt-marquee host="3445fed92f02.cloud.anadyme.com" channel="mt5"></mt-marquee>
+        <mt-marquee host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-marquee>
         <br />
         <div class="quotes">
-            <mt-quote host="3445fed92f02.cloud.anadyme.com" channel="mt5" symbol="XRPUSDm"></mt-quote>
-            <mt-quote host="3445fed92f02.cloud.anadyme.com" channel="mt5" symbol="XRPUSDm" show-chart="false"></mt-quote>
-            <mt-quote host="3445fed92f02.cloud.anadyme.com" channel="mt5" symbol="BTCJPYm" show-chart></mt-quote>
-            <mt-quote host="3445fed92f02.cloud.anadyme.com" channel="mt5" symbol="BTCJPYm" show-chart="false"></mt-quote>
-            <mt-quote host="3445fed92f02.cloud.anadyme.com" channel="mt5" symbol="LTCUSDm" show-chart></mt-quote>
-            <mt-quote host="3445fed92f02.cloud.anadyme.com" channel="mt5" symbol="LTCUSDm" show-chart="false"></mt-quote>
+            <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="BTCUSDm"></mt-quote>
+            <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="XRPUSDm" show-chart="false"></mt-quote>
+            <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="EURUSDm" show-chart></mt-quote>
+            <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="BTCJPYm" show-chart="false"></mt-quote>
+            <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="AAPLm" show-chart></mt-quote>
+            <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="LTCUSDm" show-chart="false"></mt-quote>
         </div>
         <br />
         <div style="display: flex;max-width:1310px">
-            <mt-rates style="flex:1;margin-right: 10px;" host="3445fed92f02.cloud.anadyme.com" channel="mt5"></mt-rates>
+            <mt-rates style="flex:1;margin-right: 10px;" host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-rates>
             <div style="flex: 1;">
-                <mt-rates class="c2" host="3445fed92f02.cloud.anadyme.com" channel="mt5"></mt-rates>
+                <mt-rates class="c2" host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-rates>
             </div>
         </div>
         <br />
-        <mt-rates class="c1" size="large" host="3445fed92f02.cloud.anadyme.com" channel="mt5" tabs="true"></mt-rates>
+        <mt-rates class="c1" size="large" host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" tabs="true"></mt-rates>
         <br />
-        <mt-rates size="large" host="3445fed92f02.cloud.anadyme.com" channel="mt5"></mt-rates>
+        <mt-rates size="large" host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-rates>
         <br />
-        <mt-rates size="large" host="3445fed92f02.cloud.anadyme.com" channel="mt5" names="false"></mt-rates>
+        <mt-rates size="large" host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" names="false"></mt-rates>
         <br />
-        <mt-rates size="large" host="3445fed92f02.cloud.anadyme.com" channel="mt5" tabs="false" names="false"></mt-rates>
+        <mt-rates size="large" host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" tabs="false" names="false"></mt-rates>
         <br />
-        <mt-rates host="3445fed92f02.cloud.anadyme.com" channel="mt5" tabs="false"></mt-rates>
+        <mt-rates host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" tabs="false"></mt-rates>
         <br />
-        <mt-rates host="3445fed92f02.cloud.anadyme.com" channel="mt5" names="false"></mt-rates>
+        <mt-rates host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" names="false"></mt-rates>
         <br />
-        <mt-rates host="3445fed92f02.cloud.anadyme.com" channel="mt5" tabs="false" names="false"></mt-rates>
+        <mt-rates host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" tabs="false" names="false"></mt-rates>
         <br />
     </body>
 </html>
