@@ -112,7 +112,7 @@ export class MtMarquee {
     @Prop()
     debug = false;
 
-    @Prop()
+    @Prop({ mutable: true })
     connection: WebsocketConnection = null;
 
     @Method()

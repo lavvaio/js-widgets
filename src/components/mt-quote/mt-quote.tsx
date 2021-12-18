@@ -95,7 +95,7 @@ export class MtQuote {
     @Prop()
     debug = false;
 
-    @Prop()
+    @Prop({ mutable: true })
     connection: WebsocketConnection = null;
 
     @Method()

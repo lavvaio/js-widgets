@@ -9,6 +9,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
         <script type="module" src="/build/lavva-js-widgets.esm.js"></script>
         <script nomodule src="/build/lavva-js-widgets.js"></script>
 
@@ -32,51 +34,13 @@
             }
 
             mt-quote {
-                min-width: 240px;
-                margin-right: 10px;
+                --background-color: #f8f9fa;
+                --symbol-value-color: #000;
+                --border-color: #ccc;
+                --symbol-name-color: #2e3192;
             }
 
-            mt-quote:nth-child(2),
-            mt-quote:nth-child(3) {
-                --padding: 20px 30px;
-                --border-radius: 14px;
-                --border-color: #151415;
-                --background-color: #151415;
-                --symbol-name-font-size: 1rem;
-                --symbol-name-color: #fed831;
-                --symbol-value-font-size: 2.25rem;
-                --symbol-value-color: #fff;
-                --symbol-percent-up: #4B8AE9;
-                --symbol-percent-down: #DA361B;
-            }
-
-            mt-quote:nth-child(5) {
-                --padding: 30px 60px;
-                --symbol-name-font-size: 1rem;
-                --symbol-value-font-size: 1.25rem;
-                --symbol-graph-height: 40px;
-                --symbol-graph-width: 70px;
-            }
-
-            mt-quote:nth-child(6) {
-                --symbol-value-font-size: 1.75rem;
-                min-width: 185px;
-            }
-
-            mt-marquee:nth-child(1) {
-                --background-color: #151415;
-                --symbol-percent-up: #4B8AE9;
-                --symbol-percent-down: #DA361B;
-            }
-
-            .c1 {
-                --border-radius: 14px;
-                --background-color: #151415;
-                --symbol-percent-up: #4B8AE9;
-                --symbol-percent-down: #DA361B;
-            }
-
-            .c2 {
+            mt-rates {
                 border: 1px solid #ccc;
 
                 --padding: 0;
@@ -104,26 +68,67 @@
                 --data-column-value-hovered-text-color: #fff;
             }
 
+            .top {
+                min-height: 500px;
+                background: url('https://capital.com/files/banners_home/homepage_banner.png') center;
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
+
+            .container {
+                margin-top: 50px;
+            }
+
+            .container:first-child {
+                margin-top: 0;
+            }
+
+            .container:last-child {
+                margin-bottom: 50px;
+            }
+
         </style>
     </head>
     <body>
-        <mt-marquee host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" animation=false></mt-marquee>
-        <br />
         <mt-marquee host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-marquee>
-        <br />
-        <div class="quotes">
-            <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="EURUSDm"></mt-quote>
-            <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="XRPUSDm" show-chart="false"></mt-quote>
-            <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="BTCUSDm" show-chart></mt-quote>
-            <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="BTCJPYm" show-chart="false"></mt-quote>
-            <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="LTCUSDm" show-chart></mt-quote>
-            <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="LTCUSDm" show-chart="false"></mt-quote>
+
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        &nbsp;
+                    </div>
+                    <div class="col">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
         </div>
-        <br />
-        <div style="display: flex;max-width:1310px">
-            <mt-rates class="c2" size="large" style="flex:1;margin-right: 10px;" host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-rates>
-            <div style="flex: 1;">
-                <mt-rates class="c2" host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-rates>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <mt-rates class="c2" size="large" style="flex:1;margin-right: 10px;" host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-rates>
+                </div>
+                <div class="col">
+                    <mt-rates class="c2" host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-rates>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="BTCUSDm"></mt-quote>
+                </div>
+                <div class="col">
+                    <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="EURUSDm"></mt-quote>
+                </div>
+                <div class="col">
+                    <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="AAPLm"></mt-quote>
+                </div>
+                <div class="col">
+                    <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="USOILm"></mt-quote>
+                </div>
             </div>
         </div>
     </body>
