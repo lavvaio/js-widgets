@@ -57,6 +57,36 @@ export namespace Components {
          */
         "useCache": boolean;
     }
+    interface LvTwitter {
+        "apiKey": string;
+        /**
+          * Prop
+         */
+        "channel": string;
+        "connection": WebsocketConnection;
+        "debug": boolean;
+        "encoding": WebsocketConnectionEncoding;
+        "format": WebsocketConnectionFormat;
+        "host": string;
+        "locale": string;
+        /**
+          * Method
+         */
+        "log": (...args: any[]) => Promise<void>;
+        /**
+          * Prop (optional)
+         */
+        "namespace": string;
+        "translations": {
+        [key: string]: {
+            [key: string]: string;
+        }
+    };
+        /**
+          * Prop
+         */
+        "useCache": boolean;
+    }
     interface MtMarquee {
         "animation": boolean;
         "apiKey": string;
@@ -168,30 +198,6 @@ export namespace Components {
         "seq": number;
         "weekDays": string[];
     }
-    interface TwitTer {
-        /**
-          * Prop
-         */
-        "channel": string;
-        "connection": WebsocketConnection;
-        /**
-          * Prop (optional)
-         */
-        "dataKey": string;
-        "debug": boolean;
-        /**
-          * Method
-         */
-        "log": (...args: any[]) => Promise<void>;
-        /**
-          * Prop (optional)
-         */
-        "namespace": string;
-        /**
-          * Prop
-         */
-        "useCache": boolean;
-    }
     interface YahooQuote {
         "data": any;
         "symbol": string;
@@ -234,6 +240,12 @@ declare global {
         prototype: HTMLFxcmRatesElement;
         new (): HTMLFxcmRatesElement;
     };
+    interface HTMLLvTwitterElement extends Components.LvTwitter, HTMLStencilElement {
+    }
+    var HTMLLvTwitterElement: {
+        prototype: HTMLLvTwitterElement;
+        new (): HTMLLvTwitterElement;
+    };
     interface HTMLMtMarqueeElement extends Components.MtMarquee, HTMLStencilElement {
     }
     var HTMLMtMarqueeElement: {
@@ -264,12 +276,6 @@ declare global {
         prototype: HTMLOwmDailyItemElement;
         new (): HTMLOwmDailyItemElement;
     };
-    interface HTMLTwitTerElement extends Components.TwitTer, HTMLStencilElement {
-    }
-    var HTMLTwitTerElement: {
-        prototype: HTMLTwitTerElement;
-        new (): HTMLTwitTerElement;
-    };
     interface HTMLYahooQuoteElement extends Components.YahooQuote, HTMLStencilElement {
     }
     var HTMLYahooQuoteElement: {
@@ -285,12 +291,12 @@ declare global {
     interface HTMLElementTagNameMap {
         "finnhub-news": HTMLFinnhubNewsElement;
         "fxcm-rates": HTMLFxcmRatesElement;
+        "lv-twitter": HTMLLvTwitterElement;
         "mt-marquee": HTMLMtMarqueeElement;
         "mt-quote": HTMLMtQuoteElement;
         "mt-rates": HTMLMtRatesElement;
         "owm-daily": HTMLOwmDailyElement;
         "owm-daily-item": HTMLOwmDailyItemElement;
-        "twit-ter": HTMLTwitTerElement;
         "yahoo-quote": HTMLYahooQuoteElement;
         "yahoo-quotes": HTMLYahooQuotesElement;
     }
@@ -332,6 +338,32 @@ declare namespace LocalJSX {
          */
         "namespace"?: string;
         "symbolNames"?: any[];
+        /**
+          * Prop
+         */
+        "useCache"?: boolean;
+    }
+    interface LvTwitter {
+        "apiKey"?: string;
+        /**
+          * Prop
+         */
+        "channel"?: string;
+        "connection"?: WebsocketConnection;
+        "debug"?: boolean;
+        "encoding"?: WebsocketConnectionEncoding;
+        "format"?: WebsocketConnectionFormat;
+        "host"?: string;
+        "locale"?: string;
+        /**
+          * Prop (optional)
+         */
+        "namespace"?: string;
+        "translations"?: {
+        [key: string]: {
+            [key: string]: string;
+        }
+    };
         /**
           * Prop
          */
@@ -440,26 +472,6 @@ declare namespace LocalJSX {
         "seq"?: number;
         "weekDays"?: string[];
     }
-    interface TwitTer {
-        /**
-          * Prop
-         */
-        "channel": string;
-        "connection": WebsocketConnection;
-        /**
-          * Prop (optional)
-         */
-        "dataKey"?: string;
-        "debug"?: boolean;
-        /**
-          * Prop (optional)
-         */
-        "namespace"?: string;
-        /**
-          * Prop
-         */
-        "useCache"?: boolean;
-    }
     interface YahooQuote {
         "data"?: any;
         "symbol"?: string;
@@ -487,12 +499,12 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "finnhub-news": FinnhubNews;
         "fxcm-rates": FxcmRates;
+        "lv-twitter": LvTwitter;
         "mt-marquee": MtMarquee;
         "mt-quote": MtQuote;
         "mt-rates": MtRates;
         "owm-daily": OwmDaily;
         "owm-daily-item": OwmDailyItem;
-        "twit-ter": TwitTer;
         "yahoo-quote": YahooQuote;
         "yahoo-quotes": YahooQuotes;
     }
@@ -503,12 +515,12 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "finnhub-news": LocalJSX.FinnhubNews & JSXBase.HTMLAttributes<HTMLFinnhubNewsElement>;
             "fxcm-rates": LocalJSX.FxcmRates & JSXBase.HTMLAttributes<HTMLFxcmRatesElement>;
+            "lv-twitter": LocalJSX.LvTwitter & JSXBase.HTMLAttributes<HTMLLvTwitterElement>;
             "mt-marquee": LocalJSX.MtMarquee & JSXBase.HTMLAttributes<HTMLMtMarqueeElement>;
             "mt-quote": LocalJSX.MtQuote & JSXBase.HTMLAttributes<HTMLMtQuoteElement>;
             "mt-rates": LocalJSX.MtRates & JSXBase.HTMLAttributes<HTMLMtRatesElement>;
             "owm-daily": LocalJSX.OwmDaily & JSXBase.HTMLAttributes<HTMLOwmDailyElement>;
             "owm-daily-item": LocalJSX.OwmDailyItem & JSXBase.HTMLAttributes<HTMLOwmDailyItemElement>;
-            "twit-ter": LocalJSX.TwitTer & JSXBase.HTMLAttributes<HTMLTwitTerElement>;
             "yahoo-quote": LocalJSX.YahooQuote & JSXBase.HTMLAttributes<HTMLYahooQuoteElement>;
             "yahoo-quotes": LocalJSX.YahooQuotes & JSXBase.HTMLAttributes<HTMLYahooQuotesElement>;
         }

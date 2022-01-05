@@ -1,15 +1,15 @@
 {
-  "timestamp": "2021-12-18T18:23:27",
+  "timestamp": "2022-01-05T17:10:07",
   "compiler": {
     "name": "node",
-    "version": "14.15.0"
+    "version": "14.18.2"
   },
   "app": {
     "namespace": "LavvaJsWidgets",
     "fsNamespace": "lavva-js-widgets",
     "components": 10,
     "entries": 10,
-    "bundles": 53,
+    "bundles": 55,
     "outputs": [
       {
         "name": "dist-custom-elements",
@@ -18,12 +18,12 @@
           "./dist/components/finnhub-news.d.ts",
           "./dist/components/fxcm-rates.d.ts",
           "./dist/components/index.d.ts",
+          "./dist/components/lv-twitter.d.ts",
           "./dist/components/mt-marquee.d.ts",
           "./dist/components/mt-quote.d.ts",
           "./dist/components/mt-rates.d.ts",
           "./dist/components/owm-daily-item.d.ts",
           "./dist/components/owm-daily.d.ts",
-          "./dist/components/twit-ter.d.ts",
           "./dist/components/yahoo-quote.d.ts",
           "./dist/components/yahoo-quotes.d.ts"
         ]
@@ -37,44 +37,46 @@
       },
       {
         "name": "dist-lazy",
-        "files": 38,
+        "files": 40,
         "generatedFiles": [
           "./dist/lavva-js-widgets/app-globals-0f993ce5.js",
-          "./dist/lavva-js-widgets/css-shim-e92c84f4.js",
-          "./dist/lavva-js-widgets/dom-5fa525b8.js",
+          "./dist/lavva-js-widgets/css-shim-94f8a22d.js",
+          "./dist/lavva-js-widgets/dom-ba83fb9d.js",
           "./dist/lavva-js-widgets/finnhub-news.entry.js",
           "./dist/lavva-js-widgets/fxcm-rates.entry.js",
-          "./dist/lavva-js-widgets/index-452e93f8.js",
+          "./dist/lavva-js-widgets/index-11bf1847.js",
+          "./dist/lavva-js-widgets/index-f3a53f62.js",
           "./dist/lavva-js-widgets/index.esm.js",
           "./dist/lavva-js-widgets/lavva-js-widgets.esm.js",
+          "./dist/lavva-js-widgets/lv-twitter.entry.js",
           "./dist/lavva-js-widgets/mt-marquee.entry.js",
           "./dist/lavva-js-widgets/mt-quote.entry.js",
           "./dist/lavva-js-widgets/mt-rates.entry.js",
           "./dist/lavva-js-widgets/owm-daily-item.entry.js",
           "./dist/lavva-js-widgets/owm-daily.entry.js",
-          "./dist/lavva-js-widgets/shadow-css-b1ac6541.js",
-          "./dist/lavva-js-widgets/store2-f3f72e93.js",
-          "./dist/lavva-js-widgets/twit-ter.entry.js",
-          "./dist/lavva-js-widgets/utils-735c1d5c.js",
+          "./dist/lavva-js-widgets/shadow-css-bfd5796e.js",
+          "./dist/lavva-js-widgets/store2-9e863996.js",
+          "./dist/lavva-js-widgets/utils-95104b80.js",
           "./dist/lavva-js-widgets/yahoo-quote.entry.js",
           "./dist/lavva-js-widgets/yahoo-quotes.entry.js",
           "./www/build/app-globals-0f993ce5.js",
-          "./www/build/css-shim-e92c84f4.js",
-          "./www/build/dom-5fa525b8.js",
+          "./www/build/css-shim-94f8a22d.js",
+          "./www/build/dom-ba83fb9d.js",
           "./www/build/finnhub-news.entry.js",
           "./www/build/fxcm-rates.entry.js",
-          "./www/build/index-452e93f8.js",
+          "./www/build/index-11bf1847.js",
+          "./www/build/index-f3a53f62.js",
           "./www/build/index.esm.js",
           "./www/build/lavva-js-widgets.esm.js",
+          "./www/build/lv-twitter.entry.js",
           "./www/build/mt-marquee.entry.js",
           "./www/build/mt-quote.entry.js",
           "./www/build/mt-rates.entry.js",
           "./www/build/owm-daily-item.entry.js",
           "./www/build/owm-daily.entry.js",
-          "./www/build/shadow-css-b1ac6541.js",
-          "./www/build/store2-f3f72e93.js",
-          "./www/build/twit-ter.entry.js",
-          "./www/build/utils-735c1d5c.js",
+          "./www/build/shadow-css-bfd5796e.js",
+          "./www/build/store2-9e863996.js",
+          "./www/build/utils-95104b80.js",
           "./www/build/yahoo-quote.entry.js",
           "./www/build/yahoo-quotes.entry.js"
         ]
@@ -113,11 +115,12 @@
         "bundleId": "finnhub-news",
         "fileName": "finnhub-news.entry.js",
         "imports": [
-          "index-452e93f8.js",
-          "utils-735c1d5c.js",
-          "store2-f3f72e93.js"
+          "index-11bf1847.js",
+          "utils-95104b80.js",
+          "store2-9e863996.js",
+          "index-f3a53f62.js"
         ],
-        "originalByteSize": 4075
+        "originalByteSize": 4105
       },
       {
         "key": "fxcm-rates.entry",
@@ -127,11 +130,27 @@
         "bundleId": "fxcm-rates",
         "fileName": "fxcm-rates.entry.js",
         "imports": [
-          "index-452e93f8.js",
-          "utils-735c1d5c.js",
-          "store2-f3f72e93.js"
+          "index-11bf1847.js",
+          "utils-95104b80.js",
+          "store2-9e863996.js",
+          "index-f3a53f62.js"
         ],
-        "originalByteSize": 3859
+        "originalByteSize": 3889
+      },
+      {
+        "key": "lv-twitter.entry",
+        "components": [
+          "lv-twitter"
+        ],
+        "bundleId": "lv-twitter",
+        "fileName": "lv-twitter.entry.js",
+        "imports": [
+          "index-11bf1847.js",
+          "utils-95104b80.js",
+          "store2-9e863996.js",
+          "index-f3a53f62.js"
+        ],
+        "originalByteSize": 5990
       },
       {
         "key": "mt-marquee.entry",
@@ -141,9 +160,9 @@
         "bundleId": "mt-marquee",
         "fileName": "mt-marquee.entry.js",
         "imports": [
-          "index-452e93f8.js",
-          "utils-735c1d5c.js",
-          "store2-f3f72e93.js"
+          "index-11bf1847.js",
+          "utils-95104b80.js",
+          "store2-9e863996.js"
         ],
         "originalByteSize": 8977
       },
@@ -155,11 +174,11 @@
         "bundleId": "mt-quote",
         "fileName": "mt-quote.entry.js",
         "imports": [
-          "index-452e93f8.js",
-          "utils-735c1d5c.js",
-          "store2-f3f72e93.js"
+          "index-11bf1847.js",
+          "utils-95104b80.js",
+          "store2-9e863996.js"
         ],
-        "originalByteSize": 411964
+        "originalByteSize": 413765
       },
       {
         "key": "mt-rates.entry",
@@ -169,9 +188,9 @@
         "bundleId": "mt-rates",
         "fileName": "mt-rates.entry.js",
         "imports": [
-          "index-452e93f8.js",
-          "utils-735c1d5c.js",
-          "store2-f3f72e93.js"
+          "index-11bf1847.js",
+          "utils-95104b80.js",
+          "store2-9e863996.js"
         ],
         "originalByteSize": 20202
       },
@@ -183,25 +202,12 @@
         "bundleId": "owm-daily",
         "fileName": "owm-daily.entry.js",
         "imports": [
-          "index-452e93f8.js",
-          "utils-735c1d5c.js",
-          "store2-f3f72e93.js"
+          "index-11bf1847.js",
+          "utils-95104b80.js",
+          "store2-9e863996.js",
+          "index-f3a53f62.js"
         ],
-        "originalByteSize": 3491
-      },
-      {
-        "key": "twit-ter.entry",
-        "components": [
-          "twit-ter"
-        ],
-        "bundleId": "twit-ter",
-        "fileName": "twit-ter.entry.js",
-        "imports": [
-          "index-452e93f8.js",
-          "utils-735c1d5c.js",
-          "store2-f3f72e93.js"
-        ],
-        "originalByteSize": 5310
+        "originalByteSize": 3521
       },
       {
         "key": "yahoo-quotes.entry",
@@ -211,11 +217,12 @@
         "bundleId": "yahoo-quotes",
         "fileName": "yahoo-quotes.entry.js",
         "imports": [
-          "index-452e93f8.js",
-          "utils-735c1d5c.js",
-          "store2-f3f72e93.js"
+          "index-11bf1847.js",
+          "utils-95104b80.js",
+          "store2-9e863996.js",
+          "index-f3a53f62.js"
         ],
-        "originalByteSize": 2443
+        "originalByteSize": 2473
       },
       {
         "key": "owm-daily-item.entry",
@@ -225,8 +232,8 @@
         "bundleId": "owm-daily-item",
         "fileName": "owm-daily-item.entry.js",
         "imports": [
-          "index-452e93f8.js",
-          "utils-735c1d5c.js"
+          "index-11bf1847.js",
+          "utils-95104b80.js"
         ],
         "originalByteSize": 1957
       },
@@ -238,7 +245,7 @@
         "bundleId": "yahoo-quote",
         "fileName": "yahoo-quote.entry.js",
         "imports": [
-          "index-452e93f8.js"
+          "index-11bf1847.js"
         ],
         "originalByteSize": 2413
       }
@@ -631,6 +638,298 @@
         },
         {
           "name": "size"
+        }
+      ]
+    },
+    {
+      "tag": "lv-twitter",
+      "path": "./src/components/twitter/twitter.js",
+      "source": "./src/components/twitter/twitter.tsx",
+      "elementRef": null,
+      "componentClassName": "TwitterComponent",
+      "assetsDirs": [],
+      "dependencies": [],
+      "dependents": [],
+      "directDependencies": [],
+      "directDependents": [],
+      "docs": {
+        "tags": [],
+        "text": ""
+      },
+      "encapsulation": "shadow",
+      "excludeFromCollection": false,
+      "events": [],
+      "internal": false,
+      "legacyConnect": [],
+      "legacyContext": [],
+      "listeners": [],
+      "methods": [
+        {
+          "name": "log",
+          "docs": {
+            "text": "Method",
+            "tags": []
+          },
+          "complexType": {
+            "signature": "(...args: any[]) => Promise<void>",
+            "parameters": [
+              {
+                "tags": [],
+                "text": ""
+              }
+            ],
+            "references": {
+              "Promise": {
+                "location": "global"
+              }
+            },
+            "return": "Promise<void>"
+          },
+          "internal": false
+        }
+      ],
+      "potentialCmpRefs": [],
+      "properties": [
+        {
+          "name": "host",
+          "type": "string",
+          "attribute": "host",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'xxxxxxxxxx.apps.anadyme.com'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "channel",
+          "type": "string",
+          "attribute": "channel",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop"
+          },
+          "internal": false
+        },
+        {
+          "name": "locale",
+          "type": "string",
+          "attribute": "locale",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'en'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "translations",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "null",
+          "complexType": {
+            "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
+            "resolved": "{ [key: string]: { [key: string]: string; }; }",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "debug",
+          "type": "boolean",
+          "attribute": "debug",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "useCache",
+          "type": "boolean",
+          "attribute": "use-cache",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop"
+          },
+          "internal": false
+        },
+        {
+          "name": "namespace",
+          "type": "string",
+          "attribute": "namespace",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'twitter'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": "Prop (optional)"
+          },
+          "internal": false
+        },
+        {
+          "name": "connection",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": true,
+          "required": false,
+          "optional": false,
+          "defaultValue": "null",
+          "complexType": {
+            "original": "WebsocketConnection",
+            "resolved": "WebsocketConnection",
+            "references": {
+              "WebsocketConnection": {
+                "location": "import",
+                "path": "@anadyme/lavva-js-sdk"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "attribute": "format",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'binary'",
+          "complexType": {
+            "original": "WebsocketConnectionFormat",
+            "resolved": "\"binary\" | \"text\"",
+            "references": {
+              "WebsocketConnectionFormat": {
+                "location": "import",
+                "path": "@anadyme/lavva-js-sdk"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "encoding",
+          "type": "string",
+          "attribute": "encoding",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'msgpack'",
+          "complexType": {
+            "original": "WebsocketConnectionEncoding",
+            "resolved": "\"json\" | \"msgpack\"",
+            "references": {
+              "WebsocketConnectionEncoding": {
+                "location": "import",
+                "path": "@anadyme/lavva-js-sdk"
+              }
+            }
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "apiKey",
+          "type": "string",
+          "attribute": "api-key",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'",
+          "complexType": {
+            "original": "string",
+            "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        }
+      ],
+      "shadowDelegatesFocus": false,
+      "states": [
+        {
+          "name": "size"
+        },
+        {
+          "name": "data"
         }
       ]
     },
@@ -2195,188 +2494,6 @@
       "states": []
     },
     {
-      "tag": "twit-ter",
-      "path": "./src/components/twitter/twitr.js",
-      "source": "./src/components/twitter/twitr.tsx",
-      "elementRef": null,
-      "componentClassName": "TwitrComponent",
-      "assetsDirs": [],
-      "dependencies": [],
-      "dependents": [],
-      "directDependencies": [],
-      "directDependents": [],
-      "docs": {
-        "tags": [],
-        "text": ""
-      },
-      "encapsulation": "none",
-      "excludeFromCollection": false,
-      "events": [],
-      "internal": false,
-      "legacyConnect": [],
-      "legacyContext": [],
-      "listeners": [],
-      "methods": [
-        {
-          "name": "log",
-          "docs": {
-            "text": "Method",
-            "tags": []
-          },
-          "complexType": {
-            "signature": "(...args: any[]) => Promise<void>",
-            "parameters": [
-              {
-                "tags": [],
-                "text": ""
-              }
-            ],
-            "references": {
-              "Promise": {
-                "location": "global"
-              }
-            },
-            "return": "Promise<void>"
-          },
-          "internal": false
-        }
-      ],
-      "potentialCmpRefs": [],
-      "properties": [
-        {
-          "name": "connection",
-          "type": "unknown",
-          "reflect": false,
-          "mutable": false,
-          "required": true,
-          "optional": false,
-          "complexType": {
-            "original": "WebsocketConnection",
-            "resolved": "WebsocketConnection",
-            "references": {
-              "WebsocketConnection": {
-                "location": "import",
-                "path": "@anadyme/lavva-js-sdk"
-              }
-            }
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        },
-        {
-          "name": "channel",
-          "type": "string",
-          "attribute": "channel",
-          "reflect": false,
-          "mutable": false,
-          "required": true,
-          "optional": false,
-          "complexType": {
-            "original": "string",
-            "resolved": "string",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": "Prop"
-          },
-          "internal": false
-        },
-        {
-          "name": "dataKey",
-          "type": "string",
-          "attribute": "data-key",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "defaultValue": "undefined",
-          "complexType": {
-            "original": "string",
-            "resolved": "string",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": "Prop (optional)"
-          },
-          "internal": false
-        },
-        {
-          "name": "namespace",
-          "type": "string",
-          "attribute": "namespace",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "defaultValue": "'twitr'",
-          "complexType": {
-            "original": "string",
-            "resolved": "string",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": "Prop (optional)"
-          },
-          "internal": false
-        },
-        {
-          "name": "useCache",
-          "type": "boolean",
-          "attribute": "use-cache",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "defaultValue": "true",
-          "complexType": {
-            "original": "boolean",
-            "resolved": "boolean",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": "Prop"
-          },
-          "internal": false
-        },
-        {
-          "name": "debug",
-          "type": "boolean",
-          "attribute": "debug",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "defaultValue": "false",
-          "complexType": {
-            "original": "boolean",
-            "resolved": "boolean",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        }
-      ],
-      "shadowDelegatesFocus": null,
-      "states": [
-        {
-          "name": "size"
-        },
-        {
-          "name": "data"
-        }
-      ]
-    },
-    {
       "tag": "yahoo-quote",
       "path": "./src/components/yahoo-quotes/yahoo-quote.js",
       "source": "./src/components/yahoo-quotes/yahoo-quote.tsx",
@@ -3191,6 +3308,385 @@
         }
       ],
       "entryKey": "fxcm-rates.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "lv-twitter",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "TwitterComponent",
+          "elementRef": null,
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "host",
+              "type": "string",
+              "attribute": "host",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'xxxxxxxxxx.apps.anadyme.com'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "channel",
+              "type": "string",
+              "attribute": "channel",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "locale",
+              "type": "string",
+              "attribute": "locale",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'en'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "translations",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "null",
+              "complexType": {
+                "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
+                "resolved": "{ [key: string]: { [key: string]: string; }; }",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "debug",
+              "type": "boolean",
+              "attribute": "debug",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'twitter'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "connection",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "null",
+              "complexType": {
+                "original": "WebsocketConnection",
+                "resolved": "WebsocketConnection",
+                "references": {
+                  "WebsocketConnection": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "format",
+              "type": "string",
+              "attribute": "format",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'binary'",
+              "complexType": {
+                "original": "WebsocketConnectionFormat",
+                "resolved": "\"binary\" | \"text\"",
+                "references": {
+                  "WebsocketConnectionFormat": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "encoding",
+              "type": "string",
+              "attribute": "encoding",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'msgpack'",
+              "complexType": {
+                "original": "WebsocketConnectionEncoding",
+                "resolved": "\"json\" | \"msgpack\"",
+                "references": {
+                  "WebsocketConnectionEncoding": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "apiKey",
+              "type": "string",
+              "attribute": "api-key",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "size"
+            },
+            {
+              "name": "data"
+            }
+          ],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "Method",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "LV-TWITTER",
+              "styleStr": null,
+              "styleIdentifier": "lvTwitterStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/twitter/twitter.scss",
+                  "relativePath": "./twitter.scss",
+                  "originalComponentPath": "./twitter.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/twitter/twitter.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/twitter/twitter.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": true,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "data-size",
+            "class",
+            "title",
+            "src",
+            "innerHTML"
+          ],
+          "htmlTagNames": [
+            "div",
+            "ul",
+            "li",
+            "img",
+            "span"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "lv-twitter.entry"
     },
     {
       "cmps": [
@@ -5013,274 +5509,6 @@
     {
       "cmps": [
         {
-          "tagName": "twit-ter",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "TwitrComponent",
-          "elementRef": null,
-          "encapsulation": "none",
-          "shadowDelegatesFocus": null,
-          "properties": [
-            {
-              "name": "connection",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": true,
-              "optional": false,
-              "complexType": {
-                "original": "WebsocketConnection",
-                "resolved": "WebsocketConnection",
-                "references": {
-                  "WebsocketConnection": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "channel",
-              "type": "string",
-              "attribute": "channel",
-              "reflect": false,
-              "mutable": false,
-              "required": true,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "dataKey",
-              "type": "string",
-              "attribute": "data-key",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "undefined",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop (optional)"
-              },
-              "internal": false
-            },
-            {
-              "name": "namespace",
-              "type": "string",
-              "attribute": "namespace",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'twitr'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop (optional)"
-              },
-              "internal": false
-            },
-            {
-              "name": "useCache",
-              "type": "boolean",
-              "attribute": "use-cache",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "debug",
-              "type": "boolean",
-              "attribute": "debug",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [
-            {
-              "name": "size"
-            },
-            {
-              "name": "data"
-            }
-          ],
-          "methods": [
-            {
-              "name": "log",
-              "docs": {
-                "text": "Method",
-                "tags": []
-              },
-              "complexType": {
-                "signature": "(...args: any[]) => Promise<void>",
-                "parameters": [
-                  {
-                    "tags": [],
-                    "text": ""
-                  }
-                ],
-                "references": {
-                  "Promise": {
-                    "location": "global"
-                  }
-                },
-                "return": "Promise<void>"
-              },
-              "internal": false
-            }
-          ],
-          "listeners": [],
-          "events": [],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "TWIT-TER",
-              "styleStr": null,
-              "styleIdentifier": "twitTerStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/twitter/twitr.scss",
-                  "relativePath": "./twitr.scss",
-                  "originalComponentPath": "./twitr.scss"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/twitter/twitr.js",
-          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/twitter/twitr.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": true,
-          "hasDisconnectedCallbackFn": true,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": true,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": false,
-          "hasPropBoolean": true,
-          "hasPropString": true,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": true,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": true,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "class",
-            "title",
-            "src",
-            "innerHTML"
-          ],
-          "htmlTagNames": [
-            "div",
-            "ul",
-            "li",
-            "img",
-            "span"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [],
-          "directDependents": []
-        }
-      ],
-      "entryKey": "twit-ter.entry"
-    },
-    {
-      "cmps": [
-        {
           "tagName": "yahoo-quotes",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -5875,51 +6103,56 @@
   ],
   "componentGraph": {
     "sc-finnhub-news": [
-      "index-452e93f8.js",
-      "utils-735c1d5c.js",
-      "store2-f3f72e93.js"
+      "index-11bf1847.js",
+      "utils-95104b80.js",
+      "store2-9e863996.js",
+      "index-f3a53f62.js"
     ],
     "sc-fxcm-rates": [
-      "index-452e93f8.js",
-      "utils-735c1d5c.js",
-      "store2-f3f72e93.js"
+      "index-11bf1847.js",
+      "utils-95104b80.js",
+      "store2-9e863996.js",
+      "index-f3a53f62.js"
+    ],
+    "sc-lv-twitter": [
+      "index-11bf1847.js",
+      "utils-95104b80.js",
+      "store2-9e863996.js",
+      "index-f3a53f62.js"
     ],
     "sc-mt-marquee": [
-      "index-452e93f8.js",
-      "utils-735c1d5c.js",
-      "store2-f3f72e93.js"
+      "index-11bf1847.js",
+      "utils-95104b80.js",
+      "store2-9e863996.js"
     ],
     "sc-mt-quote": [
-      "index-452e93f8.js",
-      "utils-735c1d5c.js",
-      "store2-f3f72e93.js"
+      "index-11bf1847.js",
+      "utils-95104b80.js",
+      "store2-9e863996.js"
     ],
     "sc-mt-rates": [
-      "index-452e93f8.js",
-      "utils-735c1d5c.js",
-      "store2-f3f72e93.js"
+      "index-11bf1847.js",
+      "utils-95104b80.js",
+      "store2-9e863996.js"
     ],
     "sc-owm-daily": [
-      "index-452e93f8.js",
-      "utils-735c1d5c.js",
-      "store2-f3f72e93.js"
+      "index-11bf1847.js",
+      "utils-95104b80.js",
+      "store2-9e863996.js",
+      "index-f3a53f62.js"
     ],
     "sc-owm-daily-item": [
-      "index-452e93f8.js",
-      "utils-735c1d5c.js"
-    ],
-    "sc-twit-ter": [
-      "index-452e93f8.js",
-      "utils-735c1d5c.js",
-      "store2-f3f72e93.js"
+      "index-11bf1847.js",
+      "utils-95104b80.js"
     ],
     "sc-yahoo-quote": [
-      "index-452e93f8.js"
+      "index-11bf1847.js"
     ],
     "sc-yahoo-quotes": [
-      "index-452e93f8.js",
-      "utils-735c1d5c.js",
-      "store2-f3f72e93.js"
+      "index-11bf1847.js",
+      "utils-95104b80.js",
+      "store2-9e863996.js",
+      "index-f3a53f62.js"
     ]
   },
   "sourceGraph": {
@@ -5946,7 +6179,7 @@
     "./src/components/owm-daily/owm-daily.tsx": [
       "./src/shared/utils"
     ],
-    "./src/components/twitter/twitr.tsx": [
+    "./src/components/twitter/twitter.tsx": [
       "./src/shared/utils"
     ],
     "./src/components/yahoo-quotes/yahoo-quote.tsx": [],

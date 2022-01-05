@@ -1,0 +1,99 @@
+:host {
+
+    --flex-direction: column;
+    --font: 14px Roboto, Helvetica, Arial, Tahoma, sans-serif;
+    --twit-margin: 0 0 20px 0;
+
+    font: var(--font);
+
+    .powered-by {
+        font-size: 0.6rem;
+        font-family: 'monospace';
+        opacity: 0.5;
+        padding: 2px 0;
+    }
+
+    .twitr {
+
+        .twits {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-direction: var(--flex-direction);
+
+            .twit {
+                display: flex;
+                margin: var(--twit-margin);
+                max-width: 500px;
+                min-width: 500px;
+                padding: 15px;
+                border-radius: 4px;
+                box-sizing: border-box;
+                border: 1px solid rgba(160, 200, 220, 0.12);
+
+                .avatar {
+                    height: 32px;
+                    width: 32px;
+                    border-radius: 4px;
+                }
+
+                .body {
+                    margin-left: 10px;
+
+                    .user {
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 18px;
+                        display: flex;
+
+                        .verified {
+                            opacity: 1;
+                            cursor: default;
+                            display: inline-block;
+                            width: 1em;
+                            height: 1.25em;
+                            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA3MiI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGg2NHY3MkgweiIvPjxwYXRoIGZpbGw9IiM4OGM5ZjkiIGQ9Ik0zIDM3LjMxNWMwIDQuMTI1IDIuMTYyIDcuNzI2IDUuMzYzIDkuNjI0LS4wNTYuNDY3LS4wOS45MzctLjA5IDEuNDIgMCA2LjEwMyA0LjcyIDExLjA0NSAxMC41NDYgMTEuMDQ1IDEuMjk1IDAgMi41NDItLjIzNCAzLjY4Ny0uNjg2QzI0LjIyIDYyLjQgMjcuODI3IDY0LjkzIDMyIDY0LjkzYzQuMTc0IDAgNy43ODItMi41MyA5LjQ5LTYuMjEzIDEuMTQ4LjQ1IDIuMzkuNjg1IDMuNjkuNjg1IDUuODI2IDAgMTAuNTQ2LTQuOTQgMTAuNTQ2LTExLjA0NSAwLS40ODMtLjAzNy0uOTUzLS4wOTMtMS40MkM1OC44MyA0NS4wNCA2MSA0MS40NCA2MSAzNy4zMTRjMC00LjM3LTIuNDItOC4xNS01LjkzMy05Ljk0Ni40MjctMS4yMDMuNjU4LTIuNS42NTgtMy44NjUgMC02LjEwNC00LjcyLTExLjA0NS0xMC41NDUtMTEuMDQ1LTEuMzAyIDAtMi41NDMuMjMyLTMuNjkuNjg4LTEuNzA3LTMuNjg1LTUuMzE1LTYuMjE2LTkuNDktNi4yMTYtNC4xNzMgMC03Ljc3OCAyLjUzLTkuNDkyIDYuMjE2LTEuMTQ2LS40NTUtMi4zOTMtLjY4OC0zLjY4OC0uNjg4LTUuODI3IDAtMTAuNTQ1IDQuOTQtMTAuNTQ1IDExLjA0NSAwIDEuMzY0LjIzIDIuNjYyLjY1NiAzLjg2NEM1LjQyIDI5LjE2MyAzIDMyLjk0NCAzIDM3LjMxNHoiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMTcuODcgMzkuMDhsNy4wMTUgNi45NzhjLjU4NS41ODIgMS4zNS44NzMgMi4xMTYuODczLjc3IDAgMS41NDItLjI5NCAyLjEyNy0uODgzLjM0NC0uMzQ2IDE1Ljk4LTE1Ljk3NCAxNS45OC0xNS45NzQgMS4xNzItMS4xNzIgMS4xNzItMy4wNyAwLTQuMjQzLTEuMTctMS4xNy0zLjA3LTEuMTcyLTQuMjQyIDBsLTEzLjg3IDEzLjg2My00Ljg5Mi00Ljg2OGMtMS4xNzQtMS4xNjgtMy4wNzQtMS4xNjQtNC4yNDIuMDEtMS4xNjggMS4xNzYtMS4xNjMgMy4wNzUuMDEgNC4yNDR6Ii8+PC9zdmc+');
+                        }
+
+                        .handler {
+                            margin-left: 5px;
+                            font-size: 13px;
+                            line-height: 18px;
+                            font-weight: 300;
+                            color: #8899A6;
+                        }
+                    }
+
+                    .msg {
+                        font-size: 18px;
+                        line-height: 24px;
+                        font-weight: 300;
+                    }
+
+                    .time {
+                        margin-top: 5px;
+                        font-size: 12px;
+                        font-weight: 500;
+                        opacity: 0.6;
+                    }
+
+                    .source {
+                        color: #8899A6;
+                        font-size: 12px;
+                        margin-top: 5px;
+                        font-weight: 300;
+                        span {
+                            margin-right: 5px;
+                            a {
+                                color: #808080;
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}

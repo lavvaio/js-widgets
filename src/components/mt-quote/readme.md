@@ -11,6 +11,7 @@
 | -------------- | ------------ | ----------- | ------------------------------------------------ | ---------------------------------------- |
 | `apiKey`       | `api-key`    |             | `string`                                         | `'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'` |
 | `channel`      | `channel`    |             | `string`                                         | `undefined`                              |
+| `connection`   | --           |             | `WebsocketConnection`                            | `null`                                   |
 | `debug`        | `debug`      |             | `boolean`                                        | `false`                                  |
 | `encoding`     | `encoding`   |             | `"json" \| "msgpack"`                            | `'msgpack'`                              |
 | `format`       | `format`     |             | `"binary" \| "text"`                             | `'binary'`                               |

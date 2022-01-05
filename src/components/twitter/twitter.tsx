@@ -1,4 +1,4 @@
-import { ClientMessageDataType, WebsocketConnection } from '@anadyme/lavva-js-sdk';
+import { ClientMessageDataType, WebsocketConnection, WebsocketConnectionEncoding, WebsocketConnectionFormat } from '@anadyme/lavva-js-sdk';
 import { Component, h, Method, Prop, State } from '@stencil/core';
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
@@ -7,35 +7,57 @@ import { createLogger, loadImage } from '../../shared/utils';
 import { LavvaWidget } from '../../shared/model';
 
 @Component({
-    tag: 'twit-ter',
-    styleUrl: './twitr.scss',
-    shadow: false,
+    tag: 'lv-twitter',
+    styleUrl: './twitter.scss',
+    shadow: true,
 })
-export class TwitrComponent implements LavvaWidget {
+export class TwitterComponent implements LavvaWidget {
+
+    private logger = createLogger('twitter');
+    private subscriptions = new Subscription();
 
     @Prop()
-    connection!: WebsocketConnection;
+    host = 'xxxxxxxxxx.apps.anadyme.com';
 
     @Prop()
-    channel!: string;
+    channel: string;
 
     @Prop()
-    dataKey: string = undefined;
+    locale = 'en';
 
     @Prop()
-    namespace = 'twitr';
+    translations: {
+        [key: string]: {
+            [key: string]: string;
+        }
+    } = null;
+
+    @Prop()
+    debug = false;
 
     @Prop()
     useCache = true;
+
+    @Prop()
+    namespace = 'twitter';
+
+    @Prop({ mutable: true })
+    connection: WebsocketConnection = null;
+
+    @Prop()
+    format: WebsocketConnectionFormat = 'binary';
+
+    @Prop()
+    encoding: WebsocketConnectionEncoding = 'msgpack';
+
+    @Prop()
+    apiKey = 'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee';
 
     @State()
     size = 1;
 
     @State()
     data = [];
-
-    @Prop()
-    debug = false;
 
     @Method()
     async log(...args: any[]) {
@@ -44,15 +66,19 @@ export class TwitrComponent implements LavvaWidget {
         }
     }
 
-    private logger = createLogger('twitr');
-
-    private subscriptions = new Subscription();
-
     connectedCallback() {
+        this.log('widget attached');
+
         this.loadTwits();
 
-        if (!this.connection)  {
-            throw new Error('connection was not found');
+        if (this.connection === null) {
+            this.connection = new WebsocketConnection({
+                host: this.host,
+                format: this.format,
+                encoding: this.encoding,
+                channels: this.channel ? [this.channel] : [],
+                apiKey: this.apiKey,
+            });
         }
 
         this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
@@ -64,10 +90,12 @@ export class TwitrComponent implements LavvaWidget {
 
         this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.DATA),
-            filter(message => this.dataKey === undefined ? true : message.key === this.dataKey),
+            // filter(message => this.dataKey === undefined ? true : message.key === this.dataKey),
         ).subscribe(message => {
             this.saveTwit(message.value);
         }));
+
+        this.subscriptions.add(this.connection.connect());
     }
 
     loadTwits() {
@@ -78,7 +106,7 @@ export class TwitrComponent implements LavvaWidget {
     }
 
     saveTwit(twit: any) {
-        loadImage(twit.user.profile_image_url_https).then(_ => {
+        loadImage(twit.User.ProfileImageURLHttps).then(_ => {
             this.data = [ twit, ...this.data.slice(0, this.size - 1) ];
             if (this.useCache) {
                 const ns = store.namespace(this.namespace);
@@ -93,26 +121,26 @@ export class TwitrComponent implements LavvaWidget {
 
     render() {
         return (
-            <div>
+            <div data-size={this.size}>
                 <div class="twitr">
                     <ul class="twits">
                     {this.data.map(twit => {
                         return <li class="twit">
-                            <img class="avatar" title={ twit.user.name } src={ twit.user.profile_image_url_https } />
+                            <img class="avatar" title={ twit.User.Name } src={ twit.User.ProfileImageURLHttps } />
                             <div class="body">
                                 <div class="user">
-                                    <div>{ twit.user.name }</div>
-                                    { twit.user.verified ?
+                                    <div>{ twit.User.Name }</div>
+                                    { twit.User.Verified ?
                                     <div class="verified"></div>
                                     : null }
-                                    <div class="handler">@{ twit.user.screen_name }</div>
+                                    <div class="handler">@{ twit.User.ScreenName }</div>
                                 </div>
-                                <div class="msg">{ twit.text }</div>
-                                <div class="time">{ twit.created_at }</div>
-                                { twit.source ?
+                                <div class="msg">{ twit.Text }</div>
+                                <div class="time">{ twit.CreatedAt }</div>
+                                { twit.Source ?
                                 <div class="source">
                                     <span>Source:</span>
-                                    <span innerHTML={ twit.source }></span>
+                                    <span innerHTML={ twit.Source }></span>
                                 </div>
                                 : null }
                             </div>
