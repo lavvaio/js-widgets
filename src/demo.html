@@ -34,11 +34,10 @@
             }
 
             mt-quote {
-                /*
-                --background-color: #f8f9fa;
-                --symbol-value-color: #2e3192;
-                --border-color: #ccc;
-                --symbol-name-color: #000;*/
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                min-height: 235px;
             }
 
             mt-rates {
@@ -77,15 +76,24 @@
             }
 
             .container {
-                margin-top: 50px;
+                margin-top: 20px;
             }
 
             .container:first-child {
                 margin-top: 0;
             }
 
-            .container:last-child {
+            .container.last {
                 margin-bottom: 50px;
+            }
+
+            .c2 {
+                margin-bottom: 20px;
+            }
+
+            .c2.small {
+                max-width: 650px;
+                margin: 0 auto;
             }
 
         </style>
@@ -109,14 +117,14 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <mt-rates class="c2" size="large" style="flex:1;margin-right: 10px;" host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-rates>
+                    <mt-rates class="c2" size="large" style="flex:1;" host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-rates>
                 </div>
                 <div class="col">
-                    <mt-rates class="c2" host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-rates>
+                    <mt-rates class="c2 small" host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-rates>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container last">
             <div class="row">
                 <div class="col">
                     <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="BTCUSDm"></mt-quote>
