@@ -96,6 +96,15 @@
                 margin: 0 auto;
             }
 
+            lv-twitter {
+                --flex-direction: row;
+                --twit-margin: 0 20px 0 0;
+            }
+
+            .twits {
+                overflow: hidden;
+            }
+
         </style>
     </head>
     <body>
@@ -124,7 +133,7 @@
                 </div>
             </div>
         </div>
-        <div class="container last">
+        <div class="container">
             <div class="row">
                 <div class="col">
                     <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="BTCUSDm"></mt-quote>
@@ -137,6 +146,14 @@
                 </div>
                 <div class="col">
                     <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="USOILm"></mt-quote>
+                </div>
+            </div>
+        </div>
+
+        <div class="container last">
+            <div class="row">
+                <div class="col twits">
+                    <lv-twitter host="d05a0290f386.cloud.anadyme.com" channel="twits"></lv-twitter>
                 </div>
             </div>
         </div>

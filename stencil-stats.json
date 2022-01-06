@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-01-06T10:06:27",
+  "timestamp": "2022-01-06T10:19:20",
   "compiler": {
     "name": "node",
     "version": "14.18.2"
@@ -156,7 +156,7 @@
           "store2-aa76c88f.js",
           "index-2ab3381a.js"
         ],
-        "originalByteSize": 6111
+        "originalByteSize": 6333
       },
       {
         "key": "mt-marquee.entry",

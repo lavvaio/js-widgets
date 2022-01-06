@@ -1,8 +1,13 @@
 :host {
 
+    --display: flex;
     --flex-direction: column;
     --font: 14px Roboto, Helvetica, Arial, Tahoma, sans-serif;
     --twit-margin: 0 0 20px 0;
+
+    --grid-template-columns: auto;
+    --grid-template-rows: auto;
+    --grid-gap: 0;
 
     font: var(--font);
 
@@ -18,8 +23,13 @@
         .twits {
             list-style: none;
             padding-left: 0;
-            display: flex;
+
+            display: var(--display);
             flex-direction: var(--flex-direction);
+
+            grid-gap: var(--grid-gap);
+            grid-template-rows: var(--grid-template-rows);
+            grid-template-columns: var(--grid-template-columns);
 
             .twit {
                 display: flex;
@@ -41,7 +51,7 @@
                     margin-left: 10px;
 
                     .user {
-                        font-size: 14px;
+                        font-size: 1rem;
                         font-weight: 700;
                         line-height: 18px;
                         display: flex;
@@ -57,7 +67,7 @@
 
                         .handler {
                             margin-left: 5px;
-                            font-size: 13px;
+                            font-size: 0.9rem;
                             line-height: 18px;
                             font-weight: 300;
                             color: #8899A6;
@@ -65,21 +75,21 @@
                     }
 
                     .msg {
-                        font-size: 18px;
+                        font-size: 1.1rem;
                         line-height: 24px;
                         font-weight: 300;
                     }
 
                     .time {
                         margin-top: 5px;
-                        font-size: 12px;
+                        font-size: 0.8rem;
                         font-weight: 500;
                         opacity: 0.6;
                     }
 
                     .source {
                         color: #8899A6;
-                        font-size: 12px;
+                        font-size: 0.7rem;
                         margin-top: 5px;
                         font-weight: 300;
                         span {
