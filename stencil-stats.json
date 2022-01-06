@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-01-06T14:00:55",
+  "timestamp": "2022-01-06T14:10:39",
   "compiler": {
     "name": "node",
     "version": "14.18.2"
@@ -225,7 +225,7 @@
           "store2-c4e831ef.js",
           "utils-48ec6abc.js"
         ],
-        "originalByteSize": 20289
+        "originalByteSize": 20514
       },
       {
         "key": "owm-daily.entry",
@@ -2487,6 +2487,26 @@
           "required": false,
           "optional": false,
           "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "autoconnect",
+          "type": "boolean",
+          "attribute": "autoconnect",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
           "complexType": {
             "original": "boolean",
             "resolved": "boolean",
@@ -5720,6 +5740,26 @@
               "internal": false
             },
             {
+              "name": "autoconnect",
+              "type": "boolean",
+              "attribute": "autoconnect",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
               "name": "connection",
               "type": "unknown",
               "reflect": false,
@@ -5806,7 +5846,12 @@
               "internal": false
             }
           ],
-          "watchers": [],
+          "watchers": [
+            {
+              "propName": "connection",
+              "methodName": "connect"
+            }
+          ],
           "styles": [
             {
               "modeName": "$",
@@ -5884,7 +5929,7 @@
           "hasVdomRender": true,
           "hasVdomStyle": false,
           "hasVdomText": true,
-          "hasWatchCallback": false,
+          "hasWatchCallback": true,
           "isPlain": false,
           "htmlAttrNames": [
             "class",

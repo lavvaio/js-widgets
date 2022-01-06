@@ -148,6 +148,7 @@ export namespace Components {
     }
     interface MtRates {
         "apiKey": string;
+        "autoconnect": boolean;
         /**
           * Prop
          */
@@ -450,6 +451,7 @@ declare namespace LocalJSX {
     }
     interface MtRates {
         "apiKey"?: string;
+        "autoconnect"?: boolean;
         /**
           * Prop
          */
