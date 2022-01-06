@@ -113,7 +113,10 @@
         </style>
     </head>
     <body>
-        <mt-marquee host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-marquee>
+        <lv-conn channels="rates,news,weather,twits" host="d05a0290f386.cloud.anadyme.com"></lv-conn>
+        <lv-conn channels="rates" host="3fb2b9d5874e.cloud.anadyme.com"></lv-conn>
+
+        <mt-marquee class="rates" autoconnect=false host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-marquee>
 
         <div class="top">
             <div class="container">
@@ -131,26 +134,26 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <mt-rates class="c2" host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-rates>
+                    <mt-rates class="rates c2" autoconnect=false host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-rates>
                 </div>
                 <div class="col">
-                    <mt-rates class="c2 small" host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-rates>
+                    <mt-rates class="rates c2 small" autoconnect=false host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-rates>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="BTCUSDm"></mt-quote>
+                    <mt-quote class="rates" autoconnect=false host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="BTCUSDm"></mt-quote>
                 </div>
                 <div class="col">
-                    <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="EURUSDm"></mt-quote>
+                    <mt-quote class="rates" autoconnect=false host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="EURUSDm"></mt-quote>
                 </div>
                 <div class="col">
-                    <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="AAPLm"></mt-quote>
+                    <mt-quote class="rates" autoconnect=false host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="AAPLm"></mt-quote>
                 </div>
                 <div class="col">
-                    <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="USOILm"></mt-quote>
+                    <mt-quote class="rates" autoconnect=false host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="USOILm"></mt-quote>
                 </div>
             </div>
         </div>
@@ -158,9 +161,22 @@
         <div class="container last">
             <div class="row">
                 <div class="col twits">
-                    <lv-twitter size="9" host="d05a0290f386.cloud.anadyme.com" channel="twits"></lv-twitter>
+                    <lv-twitter class="twits" autoconnect=false size="9" host="d05a0290f386.cloud.anadyme.com" channel="twits"></lv-twitter>
                 </div>
             </div>
         </div>
+
+        <script>
+            document.getElementsByTagName('lv-conn')[0].addEventListener('open', function(e) {
+                Array.from(document.getElementsByClassName('twits')).forEach(widget => {
+                    widget.connection = e.detail;
+                });
+            });
+            document.getElementsByTagName('lv-conn')[1].addEventListener('open', function(e) {
+                Array.from(document.getElementsByClassName('rates')).forEach(widget => {
+                    widget.connection = e.detail;
+                });
+            });
+        </script>
     </body>
 </html>
