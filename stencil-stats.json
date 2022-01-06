@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-01-05T17:10:07",
+  "timestamp": "2022-01-06T09:37:20",
   "compiler": {
     "name": "node",
     "version": "14.18.2"
@@ -9,7 +9,7 @@
     "fsNamespace": "lavva-js-widgets",
     "components": 10,
     "entries": 10,
-    "bundles": 55,
+    "bundles": 59,
     "outputs": [
       {
         "name": "dist-custom-elements",
@@ -37,7 +37,7 @@
       },
       {
         "name": "dist-lazy",
-        "files": 40,
+        "files": 44,
         "generatedFiles": [
           "./dist/lavva-js-widgets/app-globals-0f993ce5.js",
           "./dist/lavva-js-widgets/css-shim-94f8a22d.js",
@@ -45,6 +45,7 @@
           "./dist/lavva-js-widgets/finnhub-news.entry.js",
           "./dist/lavva-js-widgets/fxcm-rates.entry.js",
           "./dist/lavva-js-widgets/index-11bf1847.js",
+          "./dist/lavva-js-widgets/index-2ab3381a.js",
           "./dist/lavva-js-widgets/index-f3a53f62.js",
           "./dist/lavva-js-widgets/index.esm.js",
           "./dist/lavva-js-widgets/lavva-js-widgets.esm.js",
@@ -56,6 +57,7 @@
           "./dist/lavva-js-widgets/owm-daily.entry.js",
           "./dist/lavva-js-widgets/shadow-css-bfd5796e.js",
           "./dist/lavva-js-widgets/store2-9e863996.js",
+          "./dist/lavva-js-widgets/store2-aa76c88f.js",
           "./dist/lavva-js-widgets/utils-95104b80.js",
           "./dist/lavva-js-widgets/yahoo-quote.entry.js",
           "./dist/lavva-js-widgets/yahoo-quotes.entry.js",
@@ -65,6 +67,7 @@
           "./www/build/finnhub-news.entry.js",
           "./www/build/fxcm-rates.entry.js",
           "./www/build/index-11bf1847.js",
+          "./www/build/index-2ab3381a.js",
           "./www/build/index-f3a53f62.js",
           "./www/build/index.esm.js",
           "./www/build/lavva-js-widgets.esm.js",
@@ -76,6 +79,7 @@
           "./www/build/owm-daily.entry.js",
           "./www/build/shadow-css-bfd5796e.js",
           "./www/build/store2-9e863996.js",
+          "./www/build/store2-aa76c88f.js",
           "./www/build/utils-95104b80.js",
           "./www/build/yahoo-quote.entry.js",
           "./www/build/yahoo-quotes.entry.js"
@@ -117,8 +121,8 @@
         "imports": [
           "index-11bf1847.js",
           "utils-95104b80.js",
-          "store2-9e863996.js",
-          "index-f3a53f62.js"
+          "store2-aa76c88f.js",
+          "index-2ab3381a.js"
         ],
         "originalByteSize": 4105
       },
@@ -132,8 +136,8 @@
         "imports": [
           "index-11bf1847.js",
           "utils-95104b80.js",
-          "store2-9e863996.js",
-          "index-f3a53f62.js"
+          "store2-aa76c88f.js",
+          "index-2ab3381a.js"
         ],
         "originalByteSize": 3889
       },
@@ -147,8 +151,8 @@
         "imports": [
           "index-11bf1847.js",
           "utils-95104b80.js",
-          "store2-9e863996.js",
-          "index-f3a53f62.js"
+          "store2-aa76c88f.js",
+          "index-2ab3381a.js"
         ],
         "originalByteSize": 5990
       },
@@ -162,7 +166,7 @@
         "imports": [
           "index-11bf1847.js",
           "utils-95104b80.js",
-          "store2-9e863996.js"
+          "store2-aa76c88f.js"
         ],
         "originalByteSize": 8977
       },
@@ -176,7 +180,7 @@
         "imports": [
           "index-11bf1847.js",
           "utils-95104b80.js",
-          "store2-9e863996.js"
+          "store2-aa76c88f.js"
         ],
         "originalByteSize": 413765
       },
@@ -190,7 +194,7 @@
         "imports": [
           "index-11bf1847.js",
           "utils-95104b80.js",
-          "store2-9e863996.js"
+          "store2-aa76c88f.js"
         ],
         "originalByteSize": 20202
       },
@@ -204,8 +208,8 @@
         "imports": [
           "index-11bf1847.js",
           "utils-95104b80.js",
-          "store2-9e863996.js",
-          "index-f3a53f62.js"
+          "store2-aa76c88f.js",
+          "index-2ab3381a.js"
         ],
         "originalByteSize": 3521
       },
@@ -219,8 +223,8 @@
         "imports": [
           "index-11bf1847.js",
           "utils-95104b80.js",
-          "store2-9e863996.js",
-          "index-f3a53f62.js"
+          "store2-aa76c88f.js",
+          "index-2ab3381a.js"
         ],
         "originalByteSize": 2473
       },
@@ -914,6 +918,26 @@
           "complexType": {
             "original": "string",
             "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "throttle",
+          "type": "number",
+          "attribute": "throttle",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "1000",
+          "complexType": {
+            "original": "number",
+            "resolved": "number",
             "references": {}
           },
           "docs": {
@@ -3551,6 +3575,26 @@
                 "text": ""
               },
               "internal": false
+            },
+            {
+              "name": "throttle",
+              "type": "number",
+              "attribute": "throttle",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "1000",
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
             }
           ],
           "virtualProperties": [],
@@ -3642,7 +3686,7 @@
           "hasMode": false,
           "hasAttribute": true,
           "hasProp": true,
-          "hasPropNumber": false,
+          "hasPropNumber": true,
           "hasPropBoolean": true,
           "hasPropString": true,
           "hasPropMutable": true,
@@ -6105,41 +6149,41 @@
     "sc-finnhub-news": [
       "index-11bf1847.js",
       "utils-95104b80.js",
-      "store2-9e863996.js",
-      "index-f3a53f62.js"
+      "store2-aa76c88f.js",
+      "index-2ab3381a.js"
     ],
     "sc-fxcm-rates": [
       "index-11bf1847.js",
       "utils-95104b80.js",
-      "store2-9e863996.js",
-      "index-f3a53f62.js"
+      "store2-aa76c88f.js",
+      "index-2ab3381a.js"
     ],
     "sc-lv-twitter": [
       "index-11bf1847.js",
       "utils-95104b80.js",
-      "store2-9e863996.js",
-      "index-f3a53f62.js"
+      "store2-aa76c88f.js",
+      "index-2ab3381a.js"
     ],
     "sc-mt-marquee": [
       "index-11bf1847.js",
       "utils-95104b80.js",
-      "store2-9e863996.js"
+      "store2-aa76c88f.js"
     ],
     "sc-mt-quote": [
       "index-11bf1847.js",
       "utils-95104b80.js",
-      "store2-9e863996.js"
+      "store2-aa76c88f.js"
     ],
     "sc-mt-rates": [
       "index-11bf1847.js",
       "utils-95104b80.js",
-      "store2-9e863996.js"
+      "store2-aa76c88f.js"
     ],
     "sc-owm-daily": [
       "index-11bf1847.js",
       "utils-95104b80.js",
-      "store2-9e863996.js",
-      "index-f3a53f62.js"
+      "store2-aa76c88f.js",
+      "index-2ab3381a.js"
     ],
     "sc-owm-daily-item": [
       "index-11bf1847.js",
@@ -6151,8 +6195,8 @@
     "sc-yahoo-quotes": [
       "index-11bf1847.js",
       "utils-95104b80.js",
-      "store2-9e863996.js",
-      "index-f3a53f62.js"
+      "store2-aa76c88f.js",
+      "index-2ab3381a.js"
     ]
   },
   "sourceGraph": {

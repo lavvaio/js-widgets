@@ -1,9 +1,9 @@
 import { ClientMessageDataType, WebsocketConnection, WebsocketConnectionEncoding, WebsocketConnectionFormat } from '@anadyme/lavva-js-sdk';
 import { Component, h, Method, Prop, State } from '@stencil/core';
-import { Subscription } from 'rxjs';
+import { Subscription, throttleTime } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import store from 'store2';
-import { createLogger, loadImage } from '../../shared/utils';
+import { createLogger } from '../../shared/utils';
 import { LavvaWidget } from '../../shared/model';
 
 @Component({
@@ -59,6 +59,9 @@ export class TwitterComponent implements LavvaWidget {
     @State()
     data = [];
 
+    @Prop()
+    throttle = 1000;
+
     @Method()
     async log(...args: any[]) {
         if (this.debug) {
@@ -90,7 +93,7 @@ export class TwitterComponent implements LavvaWidget {
 
         this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
             filter(message => message.type === ClientMessageDataType.DATA),
-            // filter(message => this.dataKey === undefined ? true : message.key === this.dataKey),
+            throttleTime(this.throttle),
         ).subscribe(message => {
             this.saveTwit(message.value);
         }));
@@ -106,13 +109,15 @@ export class TwitterComponent implements LavvaWidget {
     }
 
     saveTwit(twit: any) {
-        loadImage(twit.User.ProfileImageURLHttps).then(_ => {
-            this.data = [ twit, ...this.data.slice(0, this.size - 1) ];
-            if (this.useCache) {
-                const ns = store.namespace(this.namespace);
-                ns.set(this.channel, this.data);
-            }
-        });
+        this.data = [
+            twit,
+            ...this.data.slice(0, this.size - 1)
+        ];
+
+        if (this.useCache) {
+            const ns = store.namespace(this.namespace);
+            ns.set(this.channel, this.data);
+        }
     }
 
     disconnectedCallback() {
