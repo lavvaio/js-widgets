@@ -20,17 +20,17 @@ export class MtMarquee {
     host = 'xxxxxxxxxx.apps.anadyme.com';
 
     @Prop()
+    channel: string;
+
+    @Prop()
+    locale = 'en';
+
+    @Prop()
     translations: {
         [key: string]: {
             [key: string]: string;
         }
     } = null;
-
-    @Prop()
-    channel: string;
-
-    @Prop()
-    locale = 'en';
 
     @Prop()
     format: WebsocketConnectionFormat = 'binary';
@@ -112,8 +112,32 @@ export class MtMarquee {
     @Prop()
     debug = false;
 
+    @Prop()
+    autoconnect = true;
+
     @Prop({ mutable: true })
     connection: WebsocketConnection = null;
+
+    @Watch('connection')
+    connect(_, old) {
+        if (this.autoconnect && !!old) {
+            this.log('could not subscribe to events');
+            return;
+        }
+
+        this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
+            filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
+        ).subscribe(message => {
+            this.log('client connected', message.value.client_id, message);
+        }));
+
+        this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
+            filter(message => message.type === ClientMessageDataType.DATA),
+            filter(message => message.category === 'ticks'),
+        ).subscribe(message => {
+            this.saveQuote(message.value);
+        }));
+    }
 
     @Method()
     async log(...args: any[]) {
@@ -170,7 +194,7 @@ export class MtMarquee {
 
         this.loadQuotes();
 
-        if (this.connection === null) {
+        if (this.autoconnect) {
             this.connection = new WebsocketConnection({
                 host: this.host,
                 format: this.format,
@@ -178,22 +202,9 @@ export class MtMarquee {
                 channels: this.channel ? [this.channel] : [],
                 apiKey: this.apiKey,
             });
+
+            this.subscriptions.add(this.connection.connect());
         }
-
-        this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
-            filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
-        ).subscribe(message => {
-            this.log('client connected', message.value.client_id, message);
-        }));
-
-        this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
-            filter(message => message.type === ClientMessageDataType.DATA),
-            filter(message => message.category === 'ticks'),
-        ).subscribe(message => {
-            this.saveQuote(message.value);
-        }));
-
-        this.subscriptions.add(this.connection.connect());
     }
 
     componentWillUpdate() {

@@ -101,6 +101,7 @@ export namespace Components {
     interface MtMarquee {
         "animation": boolean;
         "apiKey": string;
+        "autoconnect": boolean;
         "center": boolean;
         "channel": string;
         "connection": WebsocketConnection;
@@ -402,6 +403,7 @@ declare namespace LocalJSX {
     interface MtMarquee {
         "animation"?: boolean;
         "apiKey"?: string;
+        "autoconnect"?: boolean;
         "center"?: boolean;
         "channel"?: string;
         "connection"?: WebsocketConnection;
