@@ -5,7 +5,7 @@ interface TwitProps {
 }
 
 export const Twit: FunctionalComponent<TwitProps> = ({ data }) => (
-    <li class="twit">
+    <li class="twit" data-id={data.IDStr}>
         <img class="avatar" title={ data.User.Name } src={ data.User.ProfileImageURLHttps } />
         <div class="body">
             <div class="user">

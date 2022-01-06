@@ -57,8 +57,17 @@ export namespace Components {
          */
         "useCache": boolean;
     }
+    interface LvConn {
+        "apiKey": string;
+        "channels": string | string[];
+        "encoding": WebsocketConnectionEncoding;
+        "format": WebsocketConnectionFormat;
+        "host": string;
+        "snapshot": boolean;
+    }
     interface LvTwitter {
         "apiKey": string;
+        "autoconnect": boolean;
         /**
           * Prop
          */
@@ -242,6 +251,12 @@ declare global {
         prototype: HTMLFxcmRatesElement;
         new (): HTMLFxcmRatesElement;
     };
+    interface HTMLLvConnElement extends Components.LvConn, HTMLStencilElement {
+    }
+    var HTMLLvConnElement: {
+        prototype: HTMLLvConnElement;
+        new (): HTMLLvConnElement;
+    };
     interface HTMLLvTwitterElement extends Components.LvTwitter, HTMLStencilElement {
     }
     var HTMLLvTwitterElement: {
@@ -293,6 +308,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "finnhub-news": HTMLFinnhubNewsElement;
         "fxcm-rates": HTMLFxcmRatesElement;
+        "lv-conn": HTMLLvConnElement;
         "lv-twitter": HTMLLvTwitterElement;
         "mt-marquee": HTMLMtMarqueeElement;
         "mt-quote": HTMLMtQuoteElement;
@@ -345,8 +361,18 @@ declare namespace LocalJSX {
          */
         "useCache"?: boolean;
     }
+    interface LvConn {
+        "apiKey"?: string;
+        "channels"?: string | string[];
+        "encoding"?: WebsocketConnectionEncoding;
+        "format"?: WebsocketConnectionFormat;
+        "host"?: string;
+        "onOpen"?: (event: CustomEvent<WebsocketConnection>) => void;
+        "snapshot"?: boolean;
+    }
     interface LvTwitter {
         "apiKey"?: string;
+        "autoconnect"?: boolean;
         /**
           * Prop
          */
@@ -503,6 +529,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "finnhub-news": FinnhubNews;
         "fxcm-rates": FxcmRates;
+        "lv-conn": LvConn;
         "lv-twitter": LvTwitter;
         "mt-marquee": MtMarquee;
         "mt-quote": MtQuote;
@@ -519,6 +546,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "finnhub-news": LocalJSX.FinnhubNews & JSXBase.HTMLAttributes<HTMLFinnhubNewsElement>;
             "fxcm-rates": LocalJSX.FxcmRates & JSXBase.HTMLAttributes<HTMLFxcmRatesElement>;
+            "lv-conn": LocalJSX.LvConn & JSXBase.HTMLAttributes<HTMLLvConnElement>;
             "lv-twitter": LocalJSX.LvTwitter & JSXBase.HTMLAttributes<HTMLLvTwitterElement>;
             "mt-marquee": LocalJSX.MtMarquee & JSXBase.HTMLAttributes<HTMLMtMarqueeElement>;
             "mt-quote": LocalJSX.MtQuote & JSXBase.HTMLAttributes<HTMLMtQuoteElement>;

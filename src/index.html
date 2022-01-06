@@ -39,13 +39,23 @@
         </style>
     </head>
     <body>
+        <lv-conn channels="rates,news,weather,twits" host="d05a0290f386.cloud.anadyme.com"></lv-conn>
+
         <!--
         <mt-marquee host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" animation=false></mt-marquee>
         <br />
         <mt-marquee host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-marquee>
         <br />-->
-        <lv-twitter host="d05a0290f386.cloud.anadyme.com" channel="twits"></lv-twitter>
+
+        <lv-twitter autoconnect=false host="d05a0290f386.cloud.anadyme.com" channel="twits"></lv-twitter>
         <br />
+        <script>
+            document.getElementsByTagName('lv-conn')[0].addEventListener('open', function(e) {
+                Array.from(document.getElementsByTagName('lv-twitter')).forEach(widget => {
+                    widget.connection = e.detail;
+                });
+            });
+        </script>
         <!--
         <div class="quotes">
             <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="BTCUSDm"></mt-quote>

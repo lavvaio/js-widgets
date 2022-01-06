@@ -1,5 +1,5 @@
 import { ClientMessageDataType, WebsocketConnection, WebsocketConnectionEncoding, WebsocketConnectionFormat } from '@anadyme/lavva-js-sdk';
-import { Component, h, Method, Prop, State } from '@stencil/core';
+import { Component, h, Method, Prop, State, Watch } from '@stencil/core';
 import { Subscription, throttleTime } from 'rxjs';
 import { filter } from 'rxjs/operators';
 import store from 'store2';
@@ -45,6 +45,30 @@ export class TwitterComponent implements LavvaWidget {
     @Prop({ mutable: true })
     connection: WebsocketConnection = null;
 
+    @Watch('connection')
+    connect(_, old) {
+        if (this.autoconnect && !!old) {
+            this.log('could not subscribe to events');
+            return;
+        }
+
+        this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
+            filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
+        ).subscribe(message => {
+            this.log('client connected', message.value.client_id);
+            if (this.size === undefined) {
+                this.size = message.value.channel_size;
+            }
+        }));
+
+        this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
+            filter(message => message.type === ClientMessageDataType.DATA),
+            throttleTime(this.throttle),
+        ).subscribe(message => {
+            this.saveTwit(message.value);
+        }));
+    }
+
     @Prop()
     format: WebsocketConnectionFormat = 'binary';
 
@@ -63,6 +87,9 @@ export class TwitterComponent implements LavvaWidget {
     @Prop()
     throttle = 1000;
 
+    @Prop()
+    autoconnect = true;
+
     @Method()
     async log(...args: any[]) {
         if (this.debug) {
@@ -75,7 +102,7 @@ export class TwitterComponent implements LavvaWidget {
 
         this.loadTwits();
 
-        if (this.connection === null) {
+        if (this.autoconnect) {
             this.connection = new WebsocketConnection({
                 host: this.host,
                 format: this.format,
@@ -83,25 +110,9 @@ export class TwitterComponent implements LavvaWidget {
                 channels: this.channel ? [this.channel] : [],
                 apiKey: this.apiKey,
             });
+
+            this.subscriptions.add(this.connection.connect());
         }
-
-        this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
-            filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
-        ).subscribe(message => {
-            this.log('client connected', message.value.client_id);
-            if (this.size === undefined) {
-                this.size = message.value.channel_size;
-            }
-        }));
-
-        this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
-            filter(message => message.type === ClientMessageDataType.DATA),
-            throttleTime(this.throttle),
-        ).subscribe(message => {
-            this.saveTwit(message.value);
-        }));
-
-        this.subscriptions.add(this.connection.connect());
     }
 
     loadTwits() {

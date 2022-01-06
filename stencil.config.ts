@@ -10,6 +10,8 @@ export const config: Config = {
         { components: ['mt-marquee'] },
         { components: ['mt-quote'] },
         { components: ['mt-rates'] },
+        { components: ['lv-twitter'] },
+        { components: ['lv-conn'] },
     ],
     outputTargets: [
         {
