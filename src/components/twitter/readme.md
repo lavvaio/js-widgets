@@ -18,6 +18,8 @@
 | `host`         | `host`      |                 | `string`                                         | `'xxxxxxxxxx.apps.anadyme.com'`          |
 | `locale`       | `locale`    |                 | `string`                                         | `'en'`                                   |
 | `namespace`    | `namespace` | Prop (optional) | `string`                                         | `'twitter'`                              |
+| `size`         | `size`      |                 | `any`                                            | `undefined`                              |
+| `throttle`     | `throttle`  |                 | `number`                                         | `1000`                                   |
 | `translations` | --          |                 | `{ [key: string]: { [key: string]: string; }; }` | `null`                                   |
 | `useCache`     | `use-cache` | Prop            | `boolean`                                        | `true`                                   |
 

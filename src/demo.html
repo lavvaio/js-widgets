@@ -97,12 +97,17 @@
             }
 
             lv-twitter {
-                --flex-direction: row;
-                --twit-margin: 0 20px 0 0;
+                /*--flex-direction: row;
+                --twit-margin: 0 20px 0 0;*/
+                --display: inline-grid;
+                --grid-gap: 20px;
+                --grid-template-columns: auto auto auto;
+                --twit-min-width: 33%;
+                --font: 12px Roboto, Helvetica, Arial, Tahoma, sans-serif;
             }
 
             .twits {
-                overflow: hidden;
+                /*overflow: hidden;*/
             }
 
         </style>
@@ -153,7 +158,7 @@
         <div class="container last">
             <div class="row">
                 <div class="col twits">
-                    <lv-twitter host="d05a0290f386.cloud.anadyme.com" channel="twits"></lv-twitter>
+                    <lv-twitter size="9" host="d05a0290f386.cloud.anadyme.com" channel="twits"></lv-twitter>
                 </div>
             </div>
         </div>

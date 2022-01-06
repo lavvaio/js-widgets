@@ -54,8 +54,8 @@ export class TwitterComponent implements LavvaWidget {
     @Prop()
     apiKey = 'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee';
 
-    @State()
-    size = 1;
+    @Prop({ mutable: true, reflect: true })
+    size = undefined;
 
     @State()
     data = [];
@@ -71,7 +71,7 @@ export class TwitterComponent implements LavvaWidget {
     }
 
     connectedCallback() {
-        this.log('widget attached');
+        this.log('widget attached', this.size, "xyz");
 
         this.loadTwits();
 
@@ -89,7 +89,9 @@ export class TwitterComponent implements LavvaWidget {
             filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
         ).subscribe(message => {
             this.log('client connected', message.value.client_id);
-            this.size = message.value.channel_size;
+            if (this.size === undefined) {
+                this.size = message.value.channel_size;
+            }
         }));
 
         this.subscriptions.add(this.connection.channelStream(this.channel).pipe(

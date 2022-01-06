@@ -77,6 +77,7 @@ export namespace Components {
           * Prop (optional)
          */
         "namespace": string;
+        "size": any;
         "throttle": number;
         "translations": {
         [key: string]: {
@@ -360,6 +361,7 @@ declare namespace LocalJSX {
           * Prop (optional)
          */
         "namespace"?: string;
+        "size"?: any;
         "throttle"?: number;
         "translations"?: {
         [key: string]: {

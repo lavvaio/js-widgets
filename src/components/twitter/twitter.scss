@@ -3,11 +3,14 @@
     --display: flex;
     --flex-direction: column;
     --font: 14px Roboto, Helvetica, Arial, Tahoma, sans-serif;
-    --twit-margin: 0 0 20px 0;
 
     --grid-template-columns: auto;
     --grid-template-rows: auto;
     --grid-gap: 0;
+
+    --twit-margin: 0 0 20px 0;
+    --twit-min-width: 500px;
+    --twit-max-width: 500px;
 
     font: var(--font);
 
@@ -19,10 +22,12 @@
     }
 
     .twitr {
+        font: inherit;
 
         .twits {
-            list-style: none;
+            font: inherit;
             padding-left: 0;
+            list-style: none;
 
             display: var(--display);
             flex-direction: var(--flex-direction);
@@ -34,8 +39,8 @@
             .twit {
                 display: flex;
                 margin: var(--twit-margin);
-                max-width: 500px;
-                min-width: 500px;
+                max-width: var(--twit-max-width);
+                min-width: var(--twit-min-width);
                 padding: 15px;
                 border-radius: 4px;
                 box-sizing: border-box;
