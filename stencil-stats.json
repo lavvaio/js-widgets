@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-01-06T09:37:20",
+  "timestamp": "2022-01-06T09:47:16",
   "compiler": {
     "name": "node",
     "version": "14.18.2"
@@ -9,7 +9,7 @@
     "fsNamespace": "lavva-js-widgets",
     "components": 10,
     "entries": 10,
-    "bundles": 59,
+    "bundles": 61,
     "outputs": [
       {
         "name": "dist-custom-elements",
@@ -37,7 +37,7 @@
       },
       {
         "name": "dist-lazy",
-        "files": 44,
+        "files": 46,
         "generatedFiles": [
           "./dist/lavva-js-widgets/app-globals-0f993ce5.js",
           "./dist/lavva-js-widgets/css-shim-94f8a22d.js",
@@ -46,6 +46,7 @@
           "./dist/lavva-js-widgets/fxcm-rates.entry.js",
           "./dist/lavva-js-widgets/index-11bf1847.js",
           "./dist/lavva-js-widgets/index-2ab3381a.js",
+          "./dist/lavva-js-widgets/index-778b0ec6.js",
           "./dist/lavva-js-widgets/index-f3a53f62.js",
           "./dist/lavva-js-widgets/index.esm.js",
           "./dist/lavva-js-widgets/lavva-js-widgets.esm.js",
@@ -68,6 +69,7 @@
           "./www/build/fxcm-rates.entry.js",
           "./www/build/index-11bf1847.js",
           "./www/build/index-2ab3381a.js",
+          "./www/build/index-778b0ec6.js",
           "./www/build/index-f3a53f62.js",
           "./www/build/index.esm.js",
           "./www/build/lavva-js-widgets.esm.js",
@@ -119,7 +121,7 @@
         "bundleId": "finnhub-news",
         "fileName": "finnhub-news.entry.js",
         "imports": [
-          "index-11bf1847.js",
+          "index-778b0ec6.js",
           "utils-95104b80.js",
           "store2-aa76c88f.js",
           "index-2ab3381a.js"
@@ -134,7 +136,7 @@
         "bundleId": "fxcm-rates",
         "fileName": "fxcm-rates.entry.js",
         "imports": [
-          "index-11bf1847.js",
+          "index-778b0ec6.js",
           "utils-95104b80.js",
           "store2-aa76c88f.js",
           "index-2ab3381a.js"
@@ -149,12 +151,12 @@
         "bundleId": "lv-twitter",
         "fileName": "lv-twitter.entry.js",
         "imports": [
-          "index-11bf1847.js",
+          "index-778b0ec6.js",
           "utils-95104b80.js",
           "store2-aa76c88f.js",
           "index-2ab3381a.js"
         ],
-        "originalByteSize": 5990
+        "originalByteSize": 6111
       },
       {
         "key": "mt-marquee.entry",
@@ -164,7 +166,7 @@
         "bundleId": "mt-marquee",
         "fileName": "mt-marquee.entry.js",
         "imports": [
-          "index-11bf1847.js",
+          "index-778b0ec6.js",
           "utils-95104b80.js",
           "store2-aa76c88f.js"
         ],
@@ -178,7 +180,7 @@
         "bundleId": "mt-quote",
         "fileName": "mt-quote.entry.js",
         "imports": [
-          "index-11bf1847.js",
+          "index-778b0ec6.js",
           "utils-95104b80.js",
           "store2-aa76c88f.js"
         ],
@@ -192,7 +194,7 @@
         "bundleId": "mt-rates",
         "fileName": "mt-rates.entry.js",
         "imports": [
-          "index-11bf1847.js",
+          "index-778b0ec6.js",
           "utils-95104b80.js",
           "store2-aa76c88f.js"
         ],
@@ -206,7 +208,7 @@
         "bundleId": "owm-daily",
         "fileName": "owm-daily.entry.js",
         "imports": [
-          "index-11bf1847.js",
+          "index-778b0ec6.js",
           "utils-95104b80.js",
           "store2-aa76c88f.js",
           "index-2ab3381a.js"
@@ -221,7 +223,7 @@
         "bundleId": "yahoo-quotes",
         "fileName": "yahoo-quotes.entry.js",
         "imports": [
-          "index-11bf1847.js",
+          "index-778b0ec6.js",
           "utils-95104b80.js",
           "store2-aa76c88f.js",
           "index-2ab3381a.js"
@@ -236,7 +238,7 @@
         "bundleId": "owm-daily-item",
         "fileName": "owm-daily-item.entry.js",
         "imports": [
-          "index-11bf1847.js",
+          "index-778b0ec6.js",
           "utils-95104b80.js"
         ],
         "originalByteSize": 1957
@@ -249,7 +251,7 @@
         "bundleId": "yahoo-quote",
         "fileName": "yahoo-quote.entry.js",
         "imports": [
-          "index-11bf1847.js"
+          "index-778b0ec6.js"
         ],
         "originalByteSize": 2413
       }
@@ -3697,7 +3699,7 @@
           "hasVdomAttribute": true,
           "hasVdomXlink": false,
           "hasVdomClass": true,
-          "hasVdomFunctional": false,
+          "hasVdomFunctional": true,
           "hasVdomKey": false,
           "hasVdomListener": false,
           "hasVdomPropOrAttr": true,
@@ -3710,6 +3712,7 @@
           "htmlAttrNames": [
             "data-size",
             "class",
+            "data",
             "title",
             "src",
             "innerHTML"
@@ -6147,53 +6150,53 @@
   ],
   "componentGraph": {
     "sc-finnhub-news": [
-      "index-11bf1847.js",
+      "index-778b0ec6.js",
       "utils-95104b80.js",
       "store2-aa76c88f.js",
       "index-2ab3381a.js"
     ],
     "sc-fxcm-rates": [
-      "index-11bf1847.js",
+      "index-778b0ec6.js",
       "utils-95104b80.js",
       "store2-aa76c88f.js",
       "index-2ab3381a.js"
     ],
     "sc-lv-twitter": [
-      "index-11bf1847.js",
+      "index-778b0ec6.js",
       "utils-95104b80.js",
       "store2-aa76c88f.js",
       "index-2ab3381a.js"
     ],
     "sc-mt-marquee": [
-      "index-11bf1847.js",
+      "index-778b0ec6.js",
       "utils-95104b80.js",
       "store2-aa76c88f.js"
     ],
     "sc-mt-quote": [
-      "index-11bf1847.js",
+      "index-778b0ec6.js",
       "utils-95104b80.js",
       "store2-aa76c88f.js"
     ],
     "sc-mt-rates": [
-      "index-11bf1847.js",
+      "index-778b0ec6.js",
       "utils-95104b80.js",
       "store2-aa76c88f.js"
     ],
     "sc-owm-daily": [
-      "index-11bf1847.js",
+      "index-778b0ec6.js",
       "utils-95104b80.js",
       "store2-aa76c88f.js",
       "index-2ab3381a.js"
     ],
     "sc-owm-daily-item": [
-      "index-11bf1847.js",
+      "index-778b0ec6.js",
       "utils-95104b80.js"
     ],
     "sc-yahoo-quote": [
-      "index-11bf1847.js"
+      "index-778b0ec6.js"
     ],
     "sc-yahoo-quotes": [
-      "index-11bf1847.js",
+      "index-778b0ec6.js",
       "utils-95104b80.js",
       "store2-aa76c88f.js",
       "index-2ab3381a.js"
@@ -6223,7 +6226,9 @@
     "./src/components/owm-daily/owm-daily.tsx": [
       "./src/shared/utils"
     ],
+    "./src/components/twitter/twit.tsx": [],
     "./src/components/twitter/twitter.tsx": [
+      "./src/components/twitter/twit",
       "./src/shared/utils"
     ],
     "./src/components/yahoo-quotes/yahoo-quote.tsx": [],

@@ -5,6 +5,7 @@ import { filter } from 'rxjs/operators';
 import store from 'store2';
 import { createLogger } from '../../shared/utils';
 import { LavvaWidget } from '../../shared/model';
+import { Twit } from './twit';
 
 @Component({
     tag: 'lv-twitter',
@@ -130,26 +131,7 @@ export class TwitterComponent implements LavvaWidget {
                 <div class="twitr">
                     <ul class="twits">
                     {this.data.map(twit => {
-                        return <li class="twit">
-                            <img class="avatar" title={ twit.User.Name } src={ twit.User.ProfileImageURLHttps } />
-                            <div class="body">
-                                <div class="user">
-                                    <div>{ twit.User.Name }</div>
-                                    { twit.User.Verified ?
-                                    <div class="verified"></div>
-                                    : null }
-                                    <div class="handler">@{ twit.User.ScreenName }</div>
-                                </div>
-                                <div class="msg">{ twit.Text }</div>
-                                <div class="time">{ twit.CreatedAt }</div>
-                                { twit.Source ?
-                                <div class="source">
-                                    <span>Source:</span>
-                                    <span innerHTML={ twit.Source }></span>
-                                </div>
-                                : null }
-                            </div>
-                        </li>
+                        return <Twit data={twit} />
                     })}
                     </ul>
                 </div>
