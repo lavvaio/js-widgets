@@ -33,6 +33,7 @@
 
             mt-quote {
                 min-width: 240px;
+                min-height: 215px;
                 margin-right: 10px;
             }
 
@@ -40,11 +41,21 @@
     </head>
     <body>
         <lv-conn channels="rates,news,weather,twits" host="d05a0290f386.cloud.anadyme.com"></lv-conn>
-        <lv-conn channels="rates,news,weather,twits" host="3fb2b9d5874e.cloud.anadyme.com"></lv-conn>
+        <lv-conn channels="rates" host="3fb2b9d5874e.cloud.anadyme.com"></lv-conn>
 
-        <mt-marquee autoconnect=false host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" animation=false></mt-marquee>
+        <mt-marquee class="rates" autoconnect=false host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" animation=false></mt-marquee>
         <br />
-        <mt-marquee autoconnect=false host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-marquee>
+        <mt-marquee class="rates" autoconnect=false host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-marquee>
+        <br />
+
+        <div class="quotes">
+            <mt-quote class="rates" autoconnect=false host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="BTCUSDm"></mt-quote>
+            <mt-quote class="rates" autoconnect=false host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="XRPUSDm" show-chart="false"></mt-quote>
+            <mt-quote class="rates" autoconnect=false host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="EURUSDm" show-chart></mt-quote>
+            <mt-quote class="rates" autoconnect=false host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="BTCJPYm" show-chart="false"></mt-quote>
+            <mt-quote class="rates" autoconnect=false host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="AAPLm" show-chart></mt-quote>
+            <mt-quote class="rates" autoconnect=false host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="LTCUSDm" show-chart="false"></mt-quote>
+        </div>
         <br />
 
         <lv-twitter size=6 autoconnect=false host="d05a0290f386.cloud.anadyme.com" channel="twits"></lv-twitter>
@@ -56,23 +67,13 @@
                     widget.connection = e.detail;
                 });
             });
-
             document.getElementsByTagName('lv-conn')[1].addEventListener('open', function(e) {
-                Array.from(document.getElementsByTagName('mt-marquee')).forEach(widget => {
+                Array.from(document.getElementsByClassName('rates')).forEach(widget => {
                     widget.connection = e.detail;
                 });
             });
         </script>
-
         <!--
-        <div class="quotes">
-            <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="BTCUSDm"></mt-quote>
-            <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="XRPUSDm" show-chart="false"></mt-quote>
-            <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="EURUSDm" show-chart></mt-quote>
-            <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="BTCJPYm" show-chart="false"></mt-quote>
-            <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="AAPLm" show-chart></mt-quote>
-            <mt-quote host="3fb2b9d5874e.cloud.anadyme.com" channel="rates" symbol="LTCUSDm" show-chart="false"></mt-quote>
-        </div>
         <br />
         <div style="display: flex;max-width:1310px">
             <mt-rates style="flex:1;margin-right: 10px;" host="3fb2b9d5874e.cloud.anadyme.com" channel="rates"></mt-rates>

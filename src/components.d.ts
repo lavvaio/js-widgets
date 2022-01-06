@@ -124,6 +124,7 @@ export namespace Components {
     }
     interface MtQuote {
         "apiKey": string;
+        "autoconnect": boolean;
         "channel": string;
         "connection": WebsocketConnection;
         "debug": boolean;
@@ -426,6 +427,7 @@ declare namespace LocalJSX {
     }
     interface MtQuote {
         "apiKey"?: string;
+        "autoconnect"?: boolean;
         "channel"?: string;
         "connection"?: WebsocketConnection;
         "debug"?: boolean;

@@ -96,8 +96,8 @@ export class MtMarquee {
     namespace = 'mt-marquee';
 
     @Watch('namespace')
-    createLogger(newValue: string, _: string) {
-        this.logger = createLogger(newValue, 'background-color:red;color:#fff;padding: 2px 4px;font-size:10px;border-radius:4px;');
+    createLogger() {
+        this.logger = createLogger(this.namespace, 'background-color:red;color:#fff;padding: 2px 4px;font-size:10px;border-radius:4px;');
     }
 
     @State()
@@ -188,8 +188,6 @@ export class MtMarquee {
     }
 
     connectedCallback() {
-        this.createLogger(this.namespace, null);
-
         this.log('widget attached', this.locale);
 
         this.loadQuotes();

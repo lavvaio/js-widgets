@@ -29,6 +29,7 @@
         border-radius: var(--border-radius);
         border: 1px solid transparent;
         border-color: var(--border-color);
+        min-height: inherit;
 
         .loader {
             font-family: inherit;

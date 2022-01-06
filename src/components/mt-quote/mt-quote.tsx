@@ -30,17 +30,17 @@ export class MtQuote {
     host = 'xxxxxxxxxx.apps.anadyme.com';
 
     @Prop()
+    channel: string;
+
+    @Prop()
+    locale = 'en';
+
+    @Prop()
     translations: {
         [key: string]: {
             [key: string]: string;
         }
     } = null;
-
-    @Prop()
-    channel: string;
-
-    @Prop()
-    locale = 'en';
 
     @Prop()
     format: WebsocketConnectionFormat = 'binary';
@@ -61,8 +61,8 @@ export class MtQuote {
     namespace = 'mt-quote';
 
     @Watch('namespace')
-    createLogger(newValue: string, _: string) {
-        this.logger = createLogger(newValue, 'background-color:red;color:#fff;padding: 2px 4px;font-size:10px;border-radius:4px;');
+    createLogger() {
+        this.logger = createLogger(this.namespace, 'background-color:red;color:#fff;padding: 2px 4px;font-size:10px;border-radius:4px;');
     }
 
     @Prop()
@@ -95,8 +95,45 @@ export class MtQuote {
     @Prop()
     debug = false;
 
+    @Prop()
+    autoconnect = true;
+
     @Prop({ mutable: true })
     connection: WebsocketConnection = null;
+
+    @Watch('connection')
+    connect(_, old) {
+        if (this.autoconnect && !!old) {
+            this.log('could not subscribe to events');
+            return;
+        }
+
+        this.loading = true;
+
+        this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
+            filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
+            filter(message => message.key === this.symbol),
+        ).subscribe(message => {
+            this.log('client connected', message.value.client_id, message);
+        }));
+
+        this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
+            filter(message => message.type === ClientMessageDataType.DATA),
+            filter(message => message.key === this.symbol),
+        ).subscribe(message => {
+            if (message.category === 'history') {
+                if (this.showChart) {
+                    this.saveHistory(message.value);
+                }
+            } else {
+                this.saveQuote(message.value);
+            }
+
+            if (this.loading) {
+                this.loading = false;
+            }
+        }));
+    }
 
     @Method()
     async log(...args: any[]) {
@@ -236,13 +273,13 @@ export class MtQuote {
     }
 
     connectedCallback() {
-        this.createLogger(this.namespace, null);
         this.log('widget attached', this.locale);
-        this.loadHistory();
-        this.loadQuotes();
-        this.loading = true;
 
-        if (this.connection === null) {
+        this.loadHistory();
+
+        this.loadQuotes();
+
+        if (this.autoconnect) {
             this.connection = new WebsocketConnection({
                 host: this.host,
                 format: this.format,
@@ -250,33 +287,9 @@ export class MtQuote {
                 channels: this.channel ? [this.channel] : [],
                 apiKey: this.apiKey,
             });
+
+            this.subscriptions.add(this.connection.connect());
         }
-
-        this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
-            filter(message => message.type === ClientMessageDataType.CLIENT_CONNECTED),
-            filter(message => message.key === this.symbol),
-        ).subscribe(message => {
-            this.log('client connected', message.value.client_id, message);
-        }));
-
-        this.subscriptions.add(this.connection.channelStream(this.channel).pipe(
-            filter(message => message.type === ClientMessageDataType.DATA),
-            filter(message => message.key === this.symbol),
-        ).subscribe(message => {
-            if (message.category === 'history') {
-                if (this.showChart) {
-                    this.saveHistory(message.value);
-                }
-            } else {
-                this.saveQuote(message.value);
-            }
-
-            if (this.loading) {
-                this.loading = false;
-            }
-        }));
-
-        this.subscriptions.add(this.connection.connect());
     }
 
     renderLoading() {

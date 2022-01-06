@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-01-06T13:46:29",
+  "timestamp": "2022-01-06T14:00:55",
   "compiler": {
     "name": "node",
     "version": "14.18.2"
@@ -193,7 +193,7 @@
           "store2-c4e831ef.js",
           "utils-48ec6abc.js"
         ],
-        "originalByteSize": 9248
+        "originalByteSize": 9198
       },
       {
         "key": "mt-quote.entry",
@@ -209,7 +209,7 @@
           "store2-c4e831ef.js",
           "utils-48ec6abc.js"
         ],
-        "originalByteSize": 413852
+        "originalByteSize": 414005
       },
       {
         "key": "mt-rates.entry",
@@ -1737,25 +1737,6 @@
           "internal": false
         },
         {
-          "name": "translations",
-          "type": "unknown",
-          "reflect": false,
-          "mutable": false,
-          "required": false,
-          "optional": false,
-          "defaultValue": "null",
-          "complexType": {
-            "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
-            "resolved": "{ [key: string]: { [key: string]: string; }; }",
-            "references": {}
-          },
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "internal": false
-        },
-        {
           "name": "channel",
           "type": "string",
           "attribute": "channel",
@@ -1786,6 +1767,25 @@
           "complexType": {
             "original": "string",
             "resolved": "string",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "translations",
+          "type": "unknown",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "null",
+          "complexType": {
+            "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
+            "resolved": "{ [key: string]: { [key: string]: string; }; }",
             "references": {}
           },
           "docs": {
@@ -2013,6 +2013,26 @@
           "required": false,
           "optional": false,
           "defaultValue": "false",
+          "complexType": {
+            "original": "boolean",
+            "resolved": "boolean",
+            "references": {}
+          },
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "internal": false
+        },
+        {
+          "name": "autoconnect",
+          "type": "boolean",
+          "attribute": "autoconnect",
+          "reflect": false,
+          "mutable": false,
+          "required": false,
+          "optional": false,
+          "defaultValue": "true",
           "complexType": {
             "original": "boolean",
             "resolved": "boolean",
@@ -4869,25 +4889,6 @@
               "internal": false
             },
             {
-              "name": "translations",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "null",
-              "complexType": {
-                "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
-                "resolved": "{ [key: string]: { [key: string]: string; }; }",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
               "name": "channel",
               "type": "string",
               "attribute": "channel",
@@ -4918,6 +4919,25 @@
               "complexType": {
                 "original": "string",
                 "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "translations",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "null",
+              "complexType": {
+                "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
+                "resolved": "{ [key: string]: { [key: string]: string; }; }",
                 "references": {}
               },
               "docs": {
@@ -5157,6 +5177,26 @@
               "internal": false
             },
             {
+              "name": "autoconnect",
+              "type": "boolean",
+              "attribute": "autoconnect",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
               "name": "connection",
               "type": "unknown",
               "reflect": false,
@@ -5230,6 +5270,10 @@
             {
               "propName": "namespace",
               "methodName": "createLogger"
+            },
+            {
+              "propName": "connection",
+              "methodName": "connect"
             }
           ],
           "styles": [
