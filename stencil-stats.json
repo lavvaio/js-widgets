@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-01-06T14:15:13",
+  "timestamp": "2022-01-08T19:21:53",
   "compiler": {
     "name": "node",
     "version": "14.18.2"
@@ -9,7 +9,7 @@
     "fsNamespace": "lavva-js-widgets",
     "components": 11,
     "entries": 11,
-    "bundles": 62,
+    "bundles": 58,
     "outputs": [
       {
         "name": "dist-custom-elements",
@@ -38,18 +38,16 @@
       },
       {
         "name": "dist-lazy",
-        "files": 46,
+        "files": 42,
         "generatedFiles": [
+          "./dist/lavva-js-widgets/anadyme-lavva-js-sdk-81c5f5ec.js",
           "./dist/lavva-js-widgets/app-globals-0f993ce5.js",
           "./dist/lavva-js-widgets/css-shim-94f8a22d.js",
           "./dist/lavva-js-widgets/dom-ba83fb9d.js",
           "./dist/lavva-js-widgets/finnhub-news.entry.js",
           "./dist/lavva-js-widgets/fxcm-rates.entry.js",
-          "./dist/lavva-js-widgets/index-0ff38c63.js",
           "./dist/lavva-js-widgets/index-2c65db04.js",
-          "./dist/lavva-js-widgets/index-484bc079.js",
           "./dist/lavva-js-widgets/index.esm.js",
-          "./dist/lavva-js-widgets/lavva-js-sdk.esm-f2702438.js",
           "./dist/lavva-js-widgets/lavva-js-widgets.esm.js",
           "./dist/lavva-js-widgets/lv-conn.entry.js",
           "./dist/lavva-js-widgets/lv-twitter.entry.js",
@@ -60,19 +58,17 @@
           "./dist/lavva-js-widgets/owm-daily.entry.js",
           "./dist/lavva-js-widgets/shadow-css-bfd5796e.js",
           "./dist/lavva-js-widgets/store2-c4e831ef.js",
-          "./dist/lavva-js-widgets/utils-48ec6abc.js",
+          "./dist/lavva-js-widgets/utils-e3289c35.js",
           "./dist/lavva-js-widgets/yahoo-quote.entry.js",
           "./dist/lavva-js-widgets/yahoo-quotes.entry.js",
+          "./www/build/anadyme-lavva-js-sdk-81c5f5ec.js",
           "./www/build/app-globals-0f993ce5.js",
           "./www/build/css-shim-94f8a22d.js",
           "./www/build/dom-ba83fb9d.js",
           "./www/build/finnhub-news.entry.js",
           "./www/build/fxcm-rates.entry.js",
-          "./www/build/index-0ff38c63.js",
           "./www/build/index-2c65db04.js",
-          "./www/build/index-484bc079.js",
           "./www/build/index.esm.js",
-          "./www/build/lavva-js-sdk.esm-f2702438.js",
           "./www/build/lavva-js-widgets.esm.js",
           "./www/build/lv-conn.entry.js",
           "./www/build/lv-twitter.entry.js",
@@ -83,7 +79,7 @@
           "./www/build/owm-daily.entry.js",
           "./www/build/shadow-css-bfd5796e.js",
           "./www/build/store2-c4e831ef.js",
-          "./www/build/utils-48ec6abc.js",
+          "./www/build/utils-e3289c35.js",
           "./www/build/yahoo-quote.entry.js",
           "./www/build/yahoo-quotes.entry.js"
         ]
@@ -123,13 +119,11 @@
         "fileName": "finnhub-news.entry.js",
         "imports": [
           "index-2c65db04.js",
-          "lavva-js-sdk.esm-f2702438.js",
-          "index-484bc079.js",
-          "index-0ff38c63.js",
+          "anadyme-lavva-js-sdk-81c5f5ec.js",
           "store2-c4e831ef.js",
-          "utils-48ec6abc.js"
+          "utils-e3289c35.js"
         ],
-        "originalByteSize": 4192
+        "originalByteSize": 4193
       },
       {
         "key": "fxcm-rates.entry",
@@ -140,13 +134,11 @@
         "fileName": "fxcm-rates.entry.js",
         "imports": [
           "index-2c65db04.js",
-          "lavva-js-sdk.esm-f2702438.js",
-          "index-484bc079.js",
-          "index-0ff38c63.js",
+          "anadyme-lavva-js-sdk-81c5f5ec.js",
           "store2-c4e831ef.js",
-          "utils-48ec6abc.js"
+          "utils-e3289c35.js"
         ],
-        "originalByteSize": 3976
+        "originalByteSize": 3977
       },
       {
         "key": "lv-conn.entry",
@@ -157,10 +149,9 @@
         "fileName": "lv-conn.entry.js",
         "imports": [
           "index-2c65db04.js",
-          "lavva-js-sdk.esm-f2702438.js",
-          "index-484bc079.js"
+          "anadyme-lavva-js-sdk-81c5f5ec.js"
         ],
-        "originalByteSize": 1459
+        "originalByteSize": 1466
       },
       {
         "key": "lv-twitter.entry",
@@ -171,13 +162,11 @@
         "fileName": "lv-twitter.entry.js",
         "imports": [
           "index-2c65db04.js",
-          "lavva-js-sdk.esm-f2702438.js",
-          "index-484bc079.js",
-          "index-0ff38c63.js",
+          "anadyme-lavva-js-sdk-81c5f5ec.js",
           "store2-c4e831ef.js",
-          "utils-48ec6abc.js"
+          "utils-e3289c35.js"
         ],
-        "originalByteSize": 6858
+        "originalByteSize": 6900
       },
       {
         "key": "mt-marquee.entry",
@@ -188,12 +177,11 @@
         "fileName": "mt-marquee.entry.js",
         "imports": [
           "index-2c65db04.js",
-          "lavva-js-sdk.esm-f2702438.js",
-          "index-484bc079.js",
+          "anadyme-lavva-js-sdk-81c5f5ec.js",
           "store2-c4e831ef.js",
-          "utils-48ec6abc.js"
+          "utils-e3289c35.js"
         ],
-        "originalByteSize": 9198
+        "originalByteSize": 9270
       },
       {
         "key": "mt-quote.entry",
@@ -204,12 +192,11 @@
         "fileName": "mt-quote.entry.js",
         "imports": [
           "index-2c65db04.js",
-          "lavva-js-sdk.esm-f2702438.js",
-          "index-484bc079.js",
+          "anadyme-lavva-js-sdk-81c5f5ec.js",
           "store2-c4e831ef.js",
-          "utils-48ec6abc.js"
+          "utils-e3289c35.js"
         ],
-        "originalByteSize": 414005
+        "originalByteSize": 414077
       },
       {
         "key": "mt-rates.entry",
@@ -220,12 +207,11 @@
         "fileName": "mt-rates.entry.js",
         "imports": [
           "index-2c65db04.js",
-          "lavva-js-sdk.esm-f2702438.js",
-          "index-484bc079.js",
+          "anadyme-lavva-js-sdk-81c5f5ec.js",
           "store2-c4e831ef.js",
-          "utils-48ec6abc.js"
+          "utils-e3289c35.js"
         ],
-        "originalByteSize": 20514
+        "originalByteSize": 20586
       },
       {
         "key": "owm-daily.entry",
@@ -236,13 +222,11 @@
         "fileName": "owm-daily.entry.js",
         "imports": [
           "index-2c65db04.js",
-          "lavva-js-sdk.esm-f2702438.js",
-          "index-484bc079.js",
-          "index-0ff38c63.js",
+          "anadyme-lavva-js-sdk-81c5f5ec.js",
           "store2-c4e831ef.js",
-          "utils-48ec6abc.js"
+          "utils-e3289c35.js"
         ],
-        "originalByteSize": 3608
+        "originalByteSize": 3609
       },
       {
         "key": "yahoo-quotes.entry",
@@ -253,13 +237,11 @@
         "fileName": "yahoo-quotes.entry.js",
         "imports": [
           "index-2c65db04.js",
-          "lavva-js-sdk.esm-f2702438.js",
-          "index-484bc079.js",
-          "index-0ff38c63.js",
+          "anadyme-lavva-js-sdk-81c5f5ec.js",
           "store2-c4e831ef.js",
-          "utils-48ec6abc.js"
+          "utils-e3289c35.js"
         ],
-        "originalByteSize": 2560
+        "originalByteSize": 2561
       },
       {
         "key": "owm-daily-item.entry",
@@ -270,10 +252,10 @@
         "fileName": "owm-daily-item.entry.js",
         "imports": [
           "index-2c65db04.js",
-          "utils-48ec6abc.js",
-          "lavva-js-sdk.esm-f2702438.js"
+          "utils-e3289c35.js",
+          "anadyme-lavva-js-sdk-81c5f5ec.js"
         ],
-        "originalByteSize": 1998
+        "originalByteSize": 2002
       },
       {
         "key": "yahoo-quote.entry",
@@ -6827,77 +6809,63 @@
   "componentGraph": {
     "sc-finnhub-news": [
       "index-2c65db04.js",
-      "lavva-js-sdk.esm-f2702438.js",
-      "index-484bc079.js",
-      "index-0ff38c63.js",
+      "anadyme-lavva-js-sdk-81c5f5ec.js",
       "store2-c4e831ef.js",
-      "utils-48ec6abc.js"
+      "utils-e3289c35.js"
     ],
     "sc-fxcm-rates": [
       "index-2c65db04.js",
-      "lavva-js-sdk.esm-f2702438.js",
-      "index-484bc079.js",
-      "index-0ff38c63.js",
+      "anadyme-lavva-js-sdk-81c5f5ec.js",
       "store2-c4e831ef.js",
-      "utils-48ec6abc.js"
+      "utils-e3289c35.js"
     ],
     "sc-lv-conn": [
       "index-2c65db04.js",
-      "lavva-js-sdk.esm-f2702438.js",
-      "index-484bc079.js"
+      "anadyme-lavva-js-sdk-81c5f5ec.js"
     ],
     "sc-lv-twitter": [
       "index-2c65db04.js",
-      "lavva-js-sdk.esm-f2702438.js",
-      "index-484bc079.js",
-      "index-0ff38c63.js",
+      "anadyme-lavva-js-sdk-81c5f5ec.js",
       "store2-c4e831ef.js",
-      "utils-48ec6abc.js"
+      "utils-e3289c35.js"
     ],
     "sc-mt-marquee": [
       "index-2c65db04.js",
-      "lavva-js-sdk.esm-f2702438.js",
-      "index-484bc079.js",
+      "anadyme-lavva-js-sdk-81c5f5ec.js",
       "store2-c4e831ef.js",
-      "utils-48ec6abc.js"
+      "utils-e3289c35.js"
     ],
     "sc-mt-quote": [
       "index-2c65db04.js",
-      "lavva-js-sdk.esm-f2702438.js",
-      "index-484bc079.js",
+      "anadyme-lavva-js-sdk-81c5f5ec.js",
       "store2-c4e831ef.js",
-      "utils-48ec6abc.js"
+      "utils-e3289c35.js"
     ],
     "sc-mt-rates": [
       "index-2c65db04.js",
-      "lavva-js-sdk.esm-f2702438.js",
-      "index-484bc079.js",
+      "anadyme-lavva-js-sdk-81c5f5ec.js",
       "store2-c4e831ef.js",
-      "utils-48ec6abc.js"
+      "utils-e3289c35.js"
     ],
     "sc-owm-daily": [
       "index-2c65db04.js",
-      "lavva-js-sdk.esm-f2702438.js",
-      "index-484bc079.js",
-      "index-0ff38c63.js",
+      "anadyme-lavva-js-sdk-81c5f5ec.js",
       "store2-c4e831ef.js",
-      "utils-48ec6abc.js"
+      "utils-e3289c35.js"
     ],
     "sc-owm-daily-item": [
       "index-2c65db04.js",
-      "utils-48ec6abc.js",
-      "lavva-js-sdk.esm-f2702438.js"
+      "utils-e3289c35.js",
+      "anadyme-lavva-js-sdk-81c5f5ec.js"
     ],
     "sc-yahoo-quote": [
       "index-2c65db04.js"
     ],
     "sc-yahoo-quotes": [
       "index-2c65db04.js",
-      "lavva-js-sdk.esm-f2702438.js",
-      "index-484bc079.js",
-      "index-0ff38c63.js",
+      "anadyme-lavva-js-sdk-81c5f5ec.js",
       "store2-c4e831ef.js",
-      "utils-48ec6abc.js"
+      "utils-e3289c35.js"
     ]
   },
   "sourceGraph": {

@@ -26,10 +26,11 @@
         "generate": "stencil generate"
     },
     "dependencies": {
-        "@anadyme/lavva-js-sdk": "./anadyme-lavva-js-sdk-1.2.3.tgz",
+        "@anadyme/lavva-js-sdk": "file:anadyme-lavva-js-sdk-1.3.0.tgz",
         "@stencil/core": "2.12.1",
         "chart.js": "~3.7.0",
-        "rxjs": "~7.4.0",
+        "msgpack-lite": "^0.1.26",
+        "rxjs": "~7.5.1",
         "store2": "2.13.1"
     },
     "license": "MIT",
