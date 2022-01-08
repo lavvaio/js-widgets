@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-01-08T19:21:53",
+  "timestamp": "2022-01-08T19:28:14",
   "compiler": {
     "name": "node",
     "version": "14.18.2"
@@ -9,79 +9,152 @@
     "fsNamespace": "lavva-js-widgets",
     "components": 11,
     "entries": 11,
-    "bundles": 58,
+    "bundles": 125,
     "outputs": [
       {
-        "name": "dist-custom-elements",
-        "files": 12,
+        "name": "dist-collection",
+        "files": 19,
         "generatedFiles": [
+          "./dist/collection/components/connection/connection.js",
+          "./dist/collection/components/finnhub-news/finnhub-news.js",
+          "./dist/collection/components/finnhub-news/finnhub.js",
+          "./dist/collection/components/fxcm-rates/fxcm-rates.js",
+          "./dist/collection/components/fxcm-rates/fxcm.js",
+          "./dist/collection/components/mt-marquee/mt-marquee.js",
+          "./dist/collection/components/mt-quote/mt-quote.js",
+          "./dist/collection/components/mt-rates/mt-rates.js",
+          "./dist/collection/components/owm-daily/owm-daily-item.js",
+          "./dist/collection/components/owm-daily/owm-daily.js",
+          "./dist/collection/components/twitter/twit.js",
+          "./dist/collection/components/twitter/twitter.js",
+          "./dist/collection/components/yahoo-quotes/yahoo-quote.js",
+          "./dist/collection/components/yahoo-quotes/yahoo-quotes.js",
+          "./dist/collection/index.js",
+          "./dist/collection/shared/index.js",
+          "./dist/collection/shared/model.js",
+          "./dist/collection/shared/mt-quote.js",
+          "./dist/collection/shared/utils.js"
+        ]
+      },
+      {
+        "name": "dist-custom-elements",
+        "files": 29,
+        "generatedFiles": [
+          "./dist/components/anadyme-lavva-js-sdk.js",
           "./dist/components/finnhub-news.d.ts",
+          "./dist/components/finnhub-news.js",
           "./dist/components/fxcm-rates.d.ts",
+          "./dist/components/fxcm-rates.js",
           "./dist/components/index.d.ts",
+          "./dist/components/index.js",
           "./dist/components/lv-conn.d.ts",
+          "./dist/components/lv-conn.js",
           "./dist/components/lv-twitter.d.ts",
+          "./dist/components/lv-twitter.js",
           "./dist/components/mt-marquee.d.ts",
+          "./dist/components/mt-marquee.js",
           "./dist/components/mt-quote.d.ts",
+          "./dist/components/mt-quote.js",
           "./dist/components/mt-rates.d.ts",
+          "./dist/components/mt-rates.js",
           "./dist/components/owm-daily-item.d.ts",
+          "./dist/components/owm-daily-item.js",
+          "./dist/components/owm-daily-item2.js",
           "./dist/components/owm-daily.d.ts",
+          "./dist/components/owm-daily.js",
+          "./dist/components/store2.js",
+          "./dist/components/utils.js",
           "./dist/components/yahoo-quote.d.ts",
-          "./dist/components/yahoo-quotes.d.ts"
+          "./dist/components/yahoo-quote.js",
+          "./dist/components/yahoo-quote2.js",
+          "./dist/components/yahoo-quotes.d.ts",
+          "./dist/components/yahoo-quotes.js"
         ]
       },
       {
         "name": "dist-custom-elements-bundle",
-        "files": 1,
+        "files": 2,
         "generatedFiles": [
-          "./dist/custom-elements/index.d.ts"
+          "./dist/custom-elements/index.d.ts",
+          "./dist/custom-elements/index.js"
         ]
       },
       {
         "name": "dist-lazy",
-        "files": 42,
+        "files": 72,
         "generatedFiles": [
-          "./dist/lavva-js-widgets/anadyme-lavva-js-sdk-81c5f5ec.js",
-          "./dist/lavva-js-widgets/app-globals-0f993ce5.js",
-          "./dist/lavva-js-widgets/css-shim-94f8a22d.js",
-          "./dist/lavva-js-widgets/dom-ba83fb9d.js",
-          "./dist/lavva-js-widgets/finnhub-news.entry.js",
-          "./dist/lavva-js-widgets/fxcm-rates.entry.js",
-          "./dist/lavva-js-widgets/index-2c65db04.js",
+          "./dist/cjs/anadyme-lavva-js-sdk-ccbea426.js",
+          "./dist/cjs/finnhub-news.cjs.entry.js",
+          "./dist/cjs/fxcm-rates.cjs.entry.js",
+          "./dist/cjs/index-fdebad4d.js",
+          "./dist/cjs/index.cjs.js",
+          "./dist/cjs/lavva-js-widgets.cjs.js",
+          "./dist/cjs/loader.cjs.js",
+          "./dist/cjs/lv-conn.cjs.entry.js",
+          "./dist/cjs/lv-twitter.cjs.entry.js",
+          "./dist/cjs/mt-marquee.cjs.entry.js",
+          "./dist/cjs/mt-quote.cjs.entry.js",
+          "./dist/cjs/mt-rates.cjs.entry.js",
+          "./dist/cjs/owm-daily-item.cjs.entry.js",
+          "./dist/cjs/owm-daily.cjs.entry.js",
+          "./dist/cjs/store2-1ce5e036.js",
+          "./dist/cjs/utils-73ca0ed2.js",
+          "./dist/cjs/yahoo-quote.cjs.entry.js",
+          "./dist/cjs/yahoo-quotes.cjs.entry.js",
+          "./dist/esm/anadyme-lavva-js-sdk-b82c6393.js",
+          "./dist/esm/finnhub-news.entry.js",
+          "./dist/esm/fxcm-rates.entry.js",
+          "./dist/esm/index-fcd386de.js",
+          "./dist/esm/index.js",
+          "./dist/esm/lavva-js-widgets.js",
+          "./dist/esm/loader.js",
+          "./dist/esm/lv-conn.entry.js",
+          "./dist/esm/lv-twitter.entry.js",
+          "./dist/esm/mt-marquee.entry.js",
+          "./dist/esm/mt-quote.entry.js",
+          "./dist/esm/mt-rates.entry.js",
+          "./dist/esm/owm-daily-item.entry.js",
+          "./dist/esm/owm-daily.entry.js",
+          "./dist/esm/store2-5cfbdaa8.js",
+          "./dist/esm/utils-3ebeee67.js",
+          "./dist/esm/yahoo-quote.entry.js",
+          "./dist/esm/yahoo-quotes.entry.js",
+          "./dist/index.cjs.js",
+          "./dist/index.js",
           "./dist/lavva-js-widgets/index.esm.js",
           "./dist/lavva-js-widgets/lavva-js-widgets.esm.js",
-          "./dist/lavva-js-widgets/lv-conn.entry.js",
-          "./dist/lavva-js-widgets/lv-twitter.entry.js",
-          "./dist/lavva-js-widgets/mt-marquee.entry.js",
-          "./dist/lavva-js-widgets/mt-quote.entry.js",
-          "./dist/lavva-js-widgets/mt-rates.entry.js",
-          "./dist/lavva-js-widgets/owm-daily-item.entry.js",
-          "./dist/lavva-js-widgets/owm-daily.entry.js",
-          "./dist/lavva-js-widgets/shadow-css-bfd5796e.js",
-          "./dist/lavva-js-widgets/store2-c4e831ef.js",
-          "./dist/lavva-js-widgets/utils-e3289c35.js",
-          "./dist/lavva-js-widgets/yahoo-quote.entry.js",
-          "./dist/lavva-js-widgets/yahoo-quotes.entry.js",
-          "./www/build/anadyme-lavva-js-sdk-81c5f5ec.js",
-          "./www/build/app-globals-0f993ce5.js",
-          "./www/build/css-shim-94f8a22d.js",
-          "./www/build/dom-ba83fb9d.js",
-          "./www/build/finnhub-news.entry.js",
-          "./www/build/fxcm-rates.entry.js",
-          "./www/build/index-2c65db04.js",
+          "./dist/lavva-js-widgets/p-189a6ab1.js",
+          "./dist/lavva-js-widgets/p-1c3cb269.js",
+          "./dist/lavva-js-widgets/p-43f7f9c2.entry.js",
+          "./dist/lavva-js-widgets/p-4b161d8e.entry.js",
+          "./dist/lavva-js-widgets/p-4ca9abbf.entry.js",
+          "./dist/lavva-js-widgets/p-4da51487.entry.js",
+          "./dist/lavva-js-widgets/p-4db6f794.entry.js",
+          "./dist/lavva-js-widgets/p-6e432b12.entry.js",
+          "./dist/lavva-js-widgets/p-777b19c8.entry.js",
+          "./dist/lavva-js-widgets/p-77c84d08.entry.js",
+          "./dist/lavva-js-widgets/p-878bd889.js",
+          "./dist/lavva-js-widgets/p-9875059f.entry.js",
+          "./dist/lavva-js-widgets/p-b0f56eea.js",
+          "./dist/lavva-js-widgets/p-bb376c19.entry.js",
+          "./dist/lavva-js-widgets/p-cb366982.entry.js",
           "./www/build/index.esm.js",
           "./www/build/lavva-js-widgets.esm.js",
-          "./www/build/lv-conn.entry.js",
-          "./www/build/lv-twitter.entry.js",
-          "./www/build/mt-marquee.entry.js",
-          "./www/build/mt-quote.entry.js",
-          "./www/build/mt-rates.entry.js",
-          "./www/build/owm-daily-item.entry.js",
-          "./www/build/owm-daily.entry.js",
-          "./www/build/shadow-css-bfd5796e.js",
-          "./www/build/store2-c4e831ef.js",
-          "./www/build/utils-e3289c35.js",
-          "./www/build/yahoo-quote.entry.js",
-          "./www/build/yahoo-quotes.entry.js"
+          "./www/build/p-189a6ab1.js",
+          "./www/build/p-1c3cb269.js",
+          "./www/build/p-43f7f9c2.entry.js",
+          "./www/build/p-4b161d8e.entry.js",
+          "./www/build/p-4ca9abbf.entry.js",
+          "./www/build/p-4da51487.entry.js",
+          "./www/build/p-4db6f794.entry.js",
+          "./www/build/p-6e432b12.entry.js",
+          "./www/build/p-777b19c8.entry.js",
+          "./www/build/p-77c84d08.entry.js",
+          "./www/build/p-878bd889.js",
+          "./www/build/p-9875059f.entry.js",
+          "./www/build/p-b0f56eea.js",
+          "./www/build/p-bb376c19.entry.js",
+          "./www/build/p-cb366982.entry.js"
         ]
       },
       {
@@ -102,72 +175,175 @@
     ]
   },
   "options": {
-    "minifyJs": false,
-    "minifyCss": false,
-    "hashFileNames": false,
+    "minifyJs": true,
+    "minifyCss": true,
+    "hashFileNames": true,
     "hashedFileNameLength": 8,
     "buildEs5": false
   },
   "formats": {
     "esmBrowser": [
       {
-        "key": "finnhub-news.entry",
+        "key": "mt-marquee.entry",
         "components": [
-          "finnhub-news"
+          "mt-marquee"
         ],
-        "bundleId": "finnhub-news",
-        "fileName": "finnhub-news.entry.js",
+        "bundleId": "p-43f7f9c2",
+        "fileName": "p-43f7f9c2.entry.js",
         "imports": [
-          "index-2c65db04.js",
-          "anadyme-lavva-js-sdk-81c5f5ec.js",
-          "store2-c4e831ef.js",
-          "utils-e3289c35.js"
+          "p-878bd889.js",
+          "p-189a6ab1.js",
+          "p-1c3cb269.js",
+          "p-b0f56eea.js"
         ],
-        "originalByteSize": 4193
+        "originalByteSize": 9238
       },
       {
-        "key": "fxcm-rates.entry",
+        "key": "mt-quote.entry",
         "components": [
-          "fxcm-rates"
+          "mt-quote"
         ],
-        "bundleId": "fxcm-rates",
-        "fileName": "fxcm-rates.entry.js",
+        "bundleId": "p-cb366982",
+        "fileName": "p-cb366982.entry.js",
         "imports": [
-          "index-2c65db04.js",
-          "anadyme-lavva-js-sdk-81c5f5ec.js",
-          "store2-c4e831ef.js",
-          "utils-e3289c35.js"
+          "p-878bd889.js",
+          "p-189a6ab1.js",
+          "p-1c3cb269.js",
+          "p-b0f56eea.js"
         ],
-        "originalByteSize": 3977
+        "originalByteSize": 413732
       },
       {
-        "key": "lv-conn.entry",
+        "key": "mt-rates.entry",
         "components": [
-          "lv-conn"
+          "mt-rates"
         ],
-        "bundleId": "lv-conn",
-        "fileName": "lv-conn.entry.js",
+        "bundleId": "p-77c84d08",
+        "fileName": "p-77c84d08.entry.js",
         "imports": [
-          "index-2c65db04.js",
-          "anadyme-lavva-js-sdk-81c5f5ec.js"
+          "p-878bd889.js",
+          "p-189a6ab1.js",
+          "p-1c3cb269.js",
+          "p-b0f56eea.js"
         ],
-        "originalByteSize": 1466
+        "originalByteSize": 20554
       },
       {
         "key": "lv-twitter.entry",
         "components": [
           "lv-twitter"
         ],
-        "bundleId": "lv-twitter",
-        "fileName": "lv-twitter.entry.js",
+        "bundleId": "p-4db6f794",
+        "fileName": "p-4db6f794.entry.js",
         "imports": [
-          "index-2c65db04.js",
-          "anadyme-lavva-js-sdk-81c5f5ec.js",
-          "store2-c4e831ef.js",
-          "utils-e3289c35.js"
+          "p-878bd889.js",
+          "p-189a6ab1.js",
+          "p-1c3cb269.js",
+          "p-b0f56eea.js"
         ],
-        "originalByteSize": 6900
+        "originalByteSize": 8759
       },
+      {
+        "key": "lv-conn.entry",
+        "components": [
+          "lv-conn"
+        ],
+        "bundleId": "p-bb376c19",
+        "fileName": "p-bb376c19.entry.js",
+        "imports": [
+          "p-878bd889.js",
+          "p-189a6ab1.js"
+        ],
+        "originalByteSize": 1443
+      },
+      {
+        "key": "finnhub-news.entry",
+        "components": [
+          "finnhub-news"
+        ],
+        "bundleId": "p-4ca9abbf",
+        "fileName": "p-4ca9abbf.entry.js",
+        "imports": [
+          "p-878bd889.js",
+          "p-189a6ab1.js",
+          "p-1c3cb269.js",
+          "p-b0f56eea.js"
+        ],
+        "originalByteSize": 4161
+      },
+      {
+        "key": "fxcm-rates.entry",
+        "components": [
+          "fxcm-rates"
+        ],
+        "bundleId": "p-6e432b12",
+        "fileName": "p-6e432b12.entry.js",
+        "imports": [
+          "p-878bd889.js",
+          "p-189a6ab1.js",
+          "p-1c3cb269.js",
+          "p-b0f56eea.js"
+        ],
+        "originalByteSize": 3945
+      },
+      {
+        "key": "owm-daily.entry",
+        "components": [
+          "owm-daily"
+        ],
+        "bundleId": "p-4da51487",
+        "fileName": "p-4da51487.entry.js",
+        "imports": [
+          "p-878bd889.js",
+          "p-189a6ab1.js",
+          "p-1c3cb269.js",
+          "p-b0f56eea.js"
+        ],
+        "originalByteSize": 4913
+      },
+      {
+        "key": "yahoo-quotes.entry",
+        "components": [
+          "yahoo-quotes"
+        ],
+        "bundleId": "p-9875059f",
+        "fileName": "p-9875059f.entry.js",
+        "imports": [
+          "p-878bd889.js",
+          "p-189a6ab1.js",
+          "p-1c3cb269.js",
+          "p-b0f56eea.js"
+        ],
+        "originalByteSize": 2529
+      },
+      {
+        "key": "owm-daily-item.entry",
+        "components": [
+          "owm-daily-item"
+        ],
+        "bundleId": "p-4b161d8e",
+        "fileName": "p-4b161d8e.entry.js",
+        "imports": [
+          "p-878bd889.js",
+          "p-b0f56eea.js",
+          "p-189a6ab1.js"
+        ],
+        "originalByteSize": 1975
+      },
+      {
+        "key": "yahoo-quote.entry",
+        "components": [
+          "yahoo-quote"
+        ],
+        "bundleId": "p-777b19c8",
+        "fileName": "p-777b19c8.entry.js",
+        "imports": [
+          "p-878bd889.js"
+        ],
+        "originalByteSize": 2409
+      }
+    ],
+    "esm": [
       {
         "key": "mt-marquee.entry",
         "components": [
@@ -176,10 +352,10 @@
         "bundleId": "mt-marquee",
         "fileName": "mt-marquee.entry.js",
         "imports": [
-          "index-2c65db04.js",
-          "anadyme-lavva-js-sdk-81c5f5ec.js",
-          "store2-c4e831ef.js",
-          "utils-e3289c35.js"
+          "index-fcd386de.js",
+          "anadyme-lavva-js-sdk-b82c6393.js",
+          "store2-5cfbdaa8.js",
+          "utils-3ebeee67.js"
         ],
         "originalByteSize": 9270
       },
@@ -191,12 +367,12 @@
         "bundleId": "mt-quote",
         "fileName": "mt-quote.entry.js",
         "imports": [
-          "index-2c65db04.js",
-          "anadyme-lavva-js-sdk-81c5f5ec.js",
-          "store2-c4e831ef.js",
-          "utils-e3289c35.js"
+          "index-fcd386de.js",
+          "anadyme-lavva-js-sdk-b82c6393.js",
+          "store2-5cfbdaa8.js",
+          "utils-3ebeee67.js"
         ],
-        "originalByteSize": 414077
+        "originalByteSize": 413764
       },
       {
         "key": "mt-rates.entry",
@@ -206,12 +382,70 @@
         "bundleId": "mt-rates",
         "fileName": "mt-rates.entry.js",
         "imports": [
-          "index-2c65db04.js",
-          "anadyme-lavva-js-sdk-81c5f5ec.js",
-          "store2-c4e831ef.js",
-          "utils-e3289c35.js"
+          "index-fcd386de.js",
+          "anadyme-lavva-js-sdk-b82c6393.js",
+          "store2-5cfbdaa8.js",
+          "utils-3ebeee67.js"
         ],
         "originalByteSize": 20586
+      },
+      {
+        "key": "lv-twitter.entry",
+        "components": [
+          "lv-twitter"
+        ],
+        "bundleId": "lv-twitter",
+        "fileName": "lv-twitter.entry.js",
+        "imports": [
+          "index-fcd386de.js",
+          "anadyme-lavva-js-sdk-b82c6393.js",
+          "store2-5cfbdaa8.js",
+          "utils-3ebeee67.js"
+        ],
+        "originalByteSize": 8791
+      },
+      {
+        "key": "lv-conn.entry",
+        "components": [
+          "lv-conn"
+        ],
+        "bundleId": "lv-conn",
+        "fileName": "lv-conn.entry.js",
+        "imports": [
+          "index-fcd386de.js",
+          "anadyme-lavva-js-sdk-b82c6393.js"
+        ],
+        "originalByteSize": 1466
+      },
+      {
+        "key": "finnhub-news.entry",
+        "components": [
+          "finnhub-news"
+        ],
+        "bundleId": "finnhub-news",
+        "fileName": "finnhub-news.entry.js",
+        "imports": [
+          "index-fcd386de.js",
+          "anadyme-lavva-js-sdk-b82c6393.js",
+          "store2-5cfbdaa8.js",
+          "utils-3ebeee67.js"
+        ],
+        "originalByteSize": 4193
+      },
+      {
+        "key": "fxcm-rates.entry",
+        "components": [
+          "fxcm-rates"
+        ],
+        "bundleId": "fxcm-rates",
+        "fileName": "fxcm-rates.entry.js",
+        "imports": [
+          "index-fcd386de.js",
+          "anadyme-lavva-js-sdk-b82c6393.js",
+          "store2-5cfbdaa8.js",
+          "utils-3ebeee67.js"
+        ],
+        "originalByteSize": 3977
       },
       {
         "key": "owm-daily.entry",
@@ -221,12 +455,12 @@
         "bundleId": "owm-daily",
         "fileName": "owm-daily.entry.js",
         "imports": [
-          "index-2c65db04.js",
-          "anadyme-lavva-js-sdk-81c5f5ec.js",
-          "store2-c4e831ef.js",
-          "utils-e3289c35.js"
+          "index-fcd386de.js",
+          "anadyme-lavva-js-sdk-b82c6393.js",
+          "store2-5cfbdaa8.js",
+          "utils-3ebeee67.js"
         ],
-        "originalByteSize": 3609
+        "originalByteSize": 4945
       },
       {
         "key": "yahoo-quotes.entry",
@@ -236,10 +470,10 @@
         "bundleId": "yahoo-quotes",
         "fileName": "yahoo-quotes.entry.js",
         "imports": [
-          "index-2c65db04.js",
-          "anadyme-lavva-js-sdk-81c5f5ec.js",
-          "store2-c4e831ef.js",
-          "utils-e3289c35.js"
+          "index-fcd386de.js",
+          "anadyme-lavva-js-sdk-b82c6393.js",
+          "store2-5cfbdaa8.js",
+          "utils-3ebeee67.js"
         ],
         "originalByteSize": 2561
       },
@@ -251,9 +485,9 @@
         "bundleId": "owm-daily-item",
         "fileName": "owm-daily-item.entry.js",
         "imports": [
-          "index-2c65db04.js",
-          "utils-e3289c35.js",
-          "anadyme-lavva-js-sdk-81c5f5ec.js"
+          "index-fcd386de.js",
+          "utils-3ebeee67.js",
+          "anadyme-lavva-js-sdk-b82c6393.js"
         ],
         "originalByteSize": 2002
       },
@@ -265,15 +499,174 @@
         "bundleId": "yahoo-quote",
         "fileName": "yahoo-quote.entry.js",
         "imports": [
-          "index-2c65db04.js"
+          "index-fcd386de.js"
         ],
         "originalByteSize": 2413
       }
     ],
-    "esm": [],
     "es5": [],
     "system": [],
-    "commonjs": []
+    "commonjs": [
+      {
+        "key": "mt-marquee.entry",
+        "components": [
+          "mt-marquee"
+        ],
+        "bundleId": "mt-marquee.cjs",
+        "fileName": "mt-marquee.cjs.entry.js",
+        "imports": [
+          "index-fdebad4d.js",
+          "anadyme-lavva-js-sdk-ccbea426.js",
+          "store2-1ce5e036.js",
+          "utils-73ca0ed2.js"
+        ],
+        "originalByteSize": 9436
+      },
+      {
+        "key": "mt-quote.entry",
+        "components": [
+          "mt-quote"
+        ],
+        "bundleId": "mt-quote.cjs",
+        "fileName": "mt-quote.cjs.entry.js",
+        "imports": [
+          "index-fdebad4d.js",
+          "anadyme-lavva-js-sdk-ccbea426.js",
+          "store2-1ce5e036.js",
+          "utils-73ca0ed2.js"
+        ],
+        "originalByteSize": 413963
+      },
+      {
+        "key": "mt-rates.entry",
+        "components": [
+          "mt-rates"
+        ],
+        "bundleId": "mt-rates.cjs",
+        "fileName": "mt-rates.cjs.entry.js",
+        "imports": [
+          "index-fdebad4d.js",
+          "anadyme-lavva-js-sdk-ccbea426.js",
+          "store2-1ce5e036.js",
+          "utils-73ca0ed2.js"
+        ],
+        "originalByteSize": 20986
+      },
+      {
+        "key": "lv-twitter.entry",
+        "components": [
+          "lv-twitter"
+        ],
+        "bundleId": "lv-twitter.cjs",
+        "fileName": "lv-twitter.cjs.entry.js",
+        "imports": [
+          "index-fdebad4d.js",
+          "anadyme-lavva-js-sdk-ccbea426.js",
+          "store2-1ce5e036.js",
+          "utils-73ca0ed2.js"
+        ],
+        "originalByteSize": 9023
+      },
+      {
+        "key": "lv-conn.entry",
+        "components": [
+          "lv-conn"
+        ],
+        "bundleId": "lv-conn.cjs",
+        "fileName": "lv-conn.cjs.entry.js",
+        "imports": [
+          "index-fdebad4d.js",
+          "anadyme-lavva-js-sdk-ccbea426.js"
+        ],
+        "originalByteSize": 1531
+      },
+      {
+        "key": "finnhub-news.entry",
+        "components": [
+          "finnhub-news"
+        ],
+        "bundleId": "finnhub-news.cjs",
+        "fileName": "finnhub-news.cjs.entry.js",
+        "imports": [
+          "index-fdebad4d.js",
+          "anadyme-lavva-js-sdk-ccbea426.js",
+          "store2-1ce5e036.js",
+          "utils-73ca0ed2.js"
+        ],
+        "originalByteSize": 4415
+      },
+      {
+        "key": "fxcm-rates.entry",
+        "components": [
+          "fxcm-rates"
+        ],
+        "bundleId": "fxcm-rates.cjs",
+        "fileName": "fxcm-rates.cjs.entry.js",
+        "imports": [
+          "index-fdebad4d.js",
+          "anadyme-lavva-js-sdk-ccbea426.js",
+          "store2-1ce5e036.js",
+          "utils-73ca0ed2.js"
+        ],
+        "originalByteSize": 4221
+      },
+      {
+        "key": "owm-daily.entry",
+        "components": [
+          "owm-daily"
+        ],
+        "bundleId": "owm-daily.cjs",
+        "fileName": "owm-daily.cjs.entry.js",
+        "imports": [
+          "index-fdebad4d.js",
+          "anadyme-lavva-js-sdk-ccbea426.js",
+          "store2-1ce5e036.js",
+          "utils-73ca0ed2.js"
+        ],
+        "originalByteSize": 5166
+      },
+      {
+        "key": "yahoo-quotes.entry",
+        "components": [
+          "yahoo-quotes"
+        ],
+        "bundleId": "yahoo-quotes.cjs",
+        "fileName": "yahoo-quotes.cjs.entry.js",
+        "imports": [
+          "index-fdebad4d.js",
+          "anadyme-lavva-js-sdk-ccbea426.js",
+          "store2-1ce5e036.js",
+          "utils-73ca0ed2.js"
+        ],
+        "originalByteSize": 2721
+      },
+      {
+        "key": "owm-daily-item.entry",
+        "components": [
+          "owm-daily-item"
+        ],
+        "bundleId": "owm-daily-item.cjs",
+        "fileName": "owm-daily-item.cjs.entry.js",
+        "imports": [
+          "index-fdebad4d.js",
+          "utils-73ca0ed2.js",
+          "anadyme-lavva-js-sdk-ccbea426.js"
+        ],
+        "originalByteSize": 2124
+      },
+      {
+        "key": "yahoo-quote.entry",
+        "components": [
+          "yahoo-quote"
+        ],
+        "bundleId": "yahoo-quote.cjs",
+        "fileName": "yahoo-quote.cjs.entry.js",
+        "imports": [
+          "index-fdebad4d.js"
+        ],
+        "originalByteSize": 2572
+      }
+    ]
   },
   "components": [
     {
@@ -3079,1250 +3472,6 @@
     {
       "cmps": [
         {
-          "tagName": "finnhub-news",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "FinnhubNewsComponent",
-          "elementRef": null,
-          "encapsulation": "none",
-          "shadowDelegatesFocus": null,
-          "properties": [
-            {
-              "name": "connection",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": true,
-              "optional": false,
-              "complexType": {
-                "original": "WebsocketConnection",
-                "resolved": "WebsocketConnection",
-                "references": {
-                  "WebsocketConnection": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "channel",
-              "type": "string",
-              "attribute": "channel",
-              "reflect": false,
-              "mutable": false,
-              "required": true,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "dataKey",
-              "type": "string",
-              "attribute": "data-key",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "undefined",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop (optional)"
-              },
-              "internal": false
-            },
-            {
-              "name": "namespace",
-              "type": "string",
-              "attribute": "namespace",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'finnhub-news'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop (optional)"
-              },
-              "internal": false
-            },
-            {
-              "name": "useCache",
-              "type": "boolean",
-              "attribute": "use-cache",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "debug",
-              "type": "boolean",
-              "attribute": "debug",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [
-            {
-              "name": "size"
-            },
-            {
-              "name": "data"
-            }
-          ],
-          "methods": [
-            {
-              "name": "log",
-              "docs": {
-                "text": "Method",
-                "tags": []
-              },
-              "complexType": {
-                "signature": "(...args: any[]) => Promise<void>",
-                "parameters": [
-                  {
-                    "tags": [],
-                    "text": ""
-                  }
-                ],
-                "references": {
-                  "Promise": {
-                    "location": "global"
-                  }
-                },
-                "return": "Promise<void>"
-              },
-              "internal": false
-            }
-          ],
-          "listeners": [],
-          "events": [],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "FINNHUB-NEWS",
-              "styleStr": null,
-              "styleIdentifier": "finnhubNewsStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/finnhub-news/finnhub-news.scss",
-                  "relativePath": "./finnhub-news.scss",
-                  "originalComponentPath": "./finnhub-news.scss"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/finnhub-news/finnhub-news.js",
-          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/finnhub-news/finnhub-news.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": true,
-          "hasDisconnectedCallbackFn": true,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": true,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": false,
-          "hasPropBoolean": true,
-          "hasPropString": true,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": true,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": true,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "class",
-            "src",
-            "alt",
-            "title",
-            "innerHTML",
-            "href",
-            "target"
-          ],
-          "htmlTagNames": [
-            "div",
-            "ul",
-            "li",
-            "img",
-            "span",
-            "a"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [],
-          "directDependents": []
-        }
-      ],
-      "entryKey": "finnhub-news.entry"
-    },
-    {
-      "cmps": [
-        {
-          "tagName": "fxcm-rates",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "FXCMRatesComponent",
-          "elementRef": null,
-          "encapsulation": "none",
-          "shadowDelegatesFocus": null,
-          "properties": [
-            {
-              "name": "connection",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": true,
-              "optional": false,
-              "complexType": {
-                "original": "WebsocketConnection",
-                "resolved": "WebsocketConnection",
-                "references": {
-                  "WebsocketConnection": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "channel",
-              "type": "string",
-              "attribute": "channel",
-              "reflect": false,
-              "mutable": false,
-              "required": true,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "dataKey",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "[]",
-              "complexType": {
-                "original": "string[]",
-                "resolved": "string[]",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop (optional)"
-              },
-              "internal": false
-            },
-            {
-              "name": "namespace",
-              "type": "string",
-              "attribute": "namespace",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'fxcm-rates'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop (optional)"
-              },
-              "internal": false
-            },
-            {
-              "name": "useCache",
-              "type": "boolean",
-              "attribute": "use-cache",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "symbolNames",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "[]",
-              "complexType": {
-                "original": "any[]",
-                "resolved": "any[]",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "debug",
-              "type": "boolean",
-              "attribute": "debug",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [
-            {
-              "name": "rates"
-            },
-            {
-              "name": "data"
-            },
-            {
-              "name": "size"
-            }
-          ],
-          "methods": [
-            {
-              "name": "log",
-              "docs": {
-                "text": "Method",
-                "tags": []
-              },
-              "complexType": {
-                "signature": "(...args: any[]) => Promise<void>",
-                "parameters": [
-                  {
-                    "tags": [],
-                    "text": ""
-                  }
-                ],
-                "references": {
-                  "Promise": {
-                    "location": "global"
-                  }
-                },
-                "return": "Promise<void>"
-              },
-              "internal": false
-            }
-          ],
-          "listeners": [],
-          "events": [],
-          "watchers": [],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "FXCM-RATES",
-              "styleStr": null,
-              "styleIdentifier": "fxcmRatesStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/fxcm-rates/fxcm-rates.scss",
-                  "relativePath": "./fxcm-rates.scss",
-                  "originalComponentPath": "./fxcm-rates.scss"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/fxcm-rates/fxcm-rates.js",
-          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/fxcm-rates/fxcm-rates.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": true,
-          "hasDisconnectedCallbackFn": true,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": true,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": false,
-          "hasPropBoolean": true,
-          "hasPropString": true,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": true,
-          "hasState": true,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": false,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": true,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "class"
-          ],
-          "htmlTagNames": [
-            "div",
-            "section"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [],
-          "directDependents": []
-        }
-      ],
-      "entryKey": "fxcm-rates.entry"
-    },
-    {
-      "cmps": [
-        {
-          "tagName": "lv-conn",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "LavvaConnection",
-          "elementRef": null,
-          "encapsulation": "none",
-          "shadowDelegatesFocus": null,
-          "properties": [
-            {
-              "name": "host",
-              "type": "string",
-              "attribute": "host",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'xxxxxxxxxx.apps.anadyme.com'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "channels",
-              "type": "string",
-              "attribute": "channels",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string | string[]",
-                "resolved": "string | string[]",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "format",
-              "type": "string",
-              "attribute": "format",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'binary'",
-              "complexType": {
-                "original": "WebsocketConnectionFormat",
-                "resolved": "\"binary\" | \"text\"",
-                "references": {
-                  "WebsocketConnectionFormat": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "encoding",
-              "type": "string",
-              "attribute": "encoding",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'msgpack'",
-              "complexType": {
-                "original": "WebsocketConnectionEncoding",
-                "resolved": "\"json\" | \"msgpack\"",
-                "references": {
-                  "WebsocketConnectionEncoding": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "apiKey",
-              "type": "string",
-              "attribute": "api-key",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "snapshot",
-              "type": "boolean",
-              "attribute": "snapshot",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [
-            {
-              "name": "connection"
-            }
-          ],
-          "methods": [],
-          "listeners": [],
-          "events": [
-            {
-              "name": "open",
-              "method": "open",
-              "bubbles": true,
-              "cancelable": true,
-              "composed": true,
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "complexType": {
-                "original": "WebsocketConnection",
-                "resolved": "WebsocketConnection",
-                "references": {
-                  "WebsocketConnection": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "internal": false
-            }
-          ],
-          "watchers": [],
-          "styles": [],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/connection/connection.js",
-          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/connection/connection.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": true,
-          "hasDisconnectedCallbackFn": true,
-          "hasElement": false,
-          "hasEvent": true,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": false,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": false,
-          "hasPropBoolean": true,
-          "hasPropString": true,
-          "hasPropMutable": false,
-          "hasReflect": false,
-          "hasRenderFn": false,
-          "hasState": true,
-          "hasStyle": false,
-          "hasVdomAttribute": false,
-          "hasVdomXlink": false,
-          "hasVdomClass": false,
-          "hasVdomFunctional": false,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": false,
-          "hasVdomRef": false,
-          "hasVdomRender": false,
-          "hasVdomStyle": false,
-          "hasVdomText": false,
-          "hasWatchCallback": false,
-          "isPlain": false,
-          "htmlAttrNames": [],
-          "htmlTagNames": [],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [],
-          "directDependents": []
-        }
-      ],
-      "entryKey": "lv-conn.entry"
-    },
-    {
-      "cmps": [
-        {
-          "tagName": "lv-twitter",
-          "excludeFromCollection": false,
-          "isCollectionDependency": false,
-          "componentClassName": "TwitterComponent",
-          "elementRef": null,
-          "encapsulation": "shadow",
-          "shadowDelegatesFocus": false,
-          "properties": [
-            {
-              "name": "host",
-              "type": "string",
-              "attribute": "host",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'xxxxxxxxxx.apps.anadyme.com'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "channel",
-              "type": "string",
-              "attribute": "channel",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "locale",
-              "type": "string",
-              "attribute": "locale",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'en'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "translations",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "null",
-              "complexType": {
-                "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
-                "resolved": "{ [key: string]: { [key: string]: string; }; }",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "debug",
-              "type": "boolean",
-              "attribute": "debug",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "false",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "useCache",
-              "type": "boolean",
-              "attribute": "use-cache",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop"
-              },
-              "internal": false
-            },
-            {
-              "name": "namespace",
-              "type": "string",
-              "attribute": "namespace",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'twitter'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": "Prop (optional)"
-              },
-              "internal": false
-            },
-            {
-              "name": "connection",
-              "type": "unknown",
-              "reflect": false,
-              "mutable": true,
-              "required": false,
-              "optional": false,
-              "defaultValue": "null",
-              "complexType": {
-                "original": "WebsocketConnection",
-                "resolved": "WebsocketConnection",
-                "references": {
-                  "WebsocketConnection": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "format",
-              "type": "string",
-              "attribute": "format",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'binary'",
-              "complexType": {
-                "original": "WebsocketConnectionFormat",
-                "resolved": "\"binary\" | \"text\"",
-                "references": {
-                  "WebsocketConnectionFormat": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "encoding",
-              "type": "string",
-              "attribute": "encoding",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'msgpack'",
-              "complexType": {
-                "original": "WebsocketConnectionEncoding",
-                "resolved": "\"json\" | \"msgpack\"",
-                "references": {
-                  "WebsocketConnectionEncoding": {
-                    "location": "import",
-                    "path": "@anadyme/lavva-js-sdk"
-                  }
-                }
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "apiKey",
-              "type": "string",
-              "attribute": "api-key",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'",
-              "complexType": {
-                "original": "string",
-                "resolved": "string",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "size",
-              "type": "any",
-              "attribute": "size",
-              "reflect": true,
-              "mutable": true,
-              "required": false,
-              "optional": false,
-              "defaultValue": "undefined",
-              "complexType": {
-                "original": "any",
-                "resolved": "any",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "throttle",
-              "type": "number",
-              "attribute": "throttle",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "1000",
-              "complexType": {
-                "original": "number",
-                "resolved": "number",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            },
-            {
-              "name": "autoconnect",
-              "type": "boolean",
-              "attribute": "autoconnect",
-              "reflect": false,
-              "mutable": false,
-              "required": false,
-              "optional": false,
-              "defaultValue": "true",
-              "complexType": {
-                "original": "boolean",
-                "resolved": "boolean",
-                "references": {}
-              },
-              "docs": {
-                "tags": [],
-                "text": ""
-              },
-              "internal": false
-            }
-          ],
-          "virtualProperties": [],
-          "states": [
-            {
-              "name": "data"
-            }
-          ],
-          "methods": [
-            {
-              "name": "log",
-              "docs": {
-                "text": "Method",
-                "tags": []
-              },
-              "complexType": {
-                "signature": "(...args: any[]) => Promise<void>",
-                "parameters": [
-                  {
-                    "tags": [],
-                    "text": ""
-                  }
-                ],
-                "references": {
-                  "Promise": {
-                    "location": "global"
-                  }
-                },
-                "return": "Promise<void>"
-              },
-              "internal": false
-            }
-          ],
-          "listeners": [],
-          "events": [],
-          "watchers": [
-            {
-              "propName": "connection",
-              "methodName": "connect"
-            }
-          ],
-          "styles": [
-            {
-              "modeName": "$",
-              "styleId": "LV-TWITTER",
-              "styleStr": null,
-              "styleIdentifier": "lvTwitterStyle",
-              "externalStyles": [
-                {
-                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/twitter/twitter.scss",
-                  "relativePath": "./twitter.scss",
-                  "originalComponentPath": "./twitter.scss"
-                }
-              ]
-            }
-          ],
-          "legacyConnect": [],
-          "legacyContext": [],
-          "internal": false,
-          "assetsDirs": [],
-          "styleDocs": [],
-          "docs": {
-            "tags": [],
-            "text": ""
-          },
-          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/twitter/twitter.js",
-          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/twitter/twitter.tsx",
-          "sourceMapPath": null,
-          "hasAttributeChangedCallbackFn": false,
-          "hasComponentWillLoadFn": false,
-          "hasComponentDidLoadFn": false,
-          "hasComponentShouldUpdateFn": false,
-          "hasComponentWillUpdateFn": false,
-          "hasComponentDidUpdateFn": false,
-          "hasComponentWillRenderFn": false,
-          "hasComponentDidRenderFn": false,
-          "hasComponentDidUnloadFn": false,
-          "hasConnectedCallbackFn": true,
-          "hasDisconnectedCallbackFn": true,
-          "hasElement": false,
-          "hasEvent": false,
-          "hasLifecycle": false,
-          "hasListener": false,
-          "hasListenerTarget": false,
-          "hasListenerTargetWindow": false,
-          "hasListenerTargetDocument": false,
-          "hasListenerTargetBody": false,
-          "hasListenerTargetParent": false,
-          "hasMember": true,
-          "hasMethod": true,
-          "hasMode": false,
-          "hasAttribute": true,
-          "hasProp": true,
-          "hasPropNumber": true,
-          "hasPropBoolean": true,
-          "hasPropString": true,
-          "hasPropMutable": true,
-          "hasReflect": true,
-          "hasRenderFn": true,
-          "hasState": true,
-          "hasStyle": true,
-          "hasVdomAttribute": true,
-          "hasVdomXlink": false,
-          "hasVdomClass": true,
-          "hasVdomFunctional": true,
-          "hasVdomKey": false,
-          "hasVdomListener": false,
-          "hasVdomPropOrAttr": true,
-          "hasVdomRef": false,
-          "hasVdomRender": true,
-          "hasVdomStyle": false,
-          "hasVdomText": true,
-          "hasWatchCallback": true,
-          "isPlain": false,
-          "htmlAttrNames": [
-            "data-size",
-            "class",
-            "data",
-            "data-id",
-            "title",
-            "src",
-            "innerHTML"
-          ],
-          "htmlTagNames": [
-            "div",
-            "ul",
-            "li",
-            "img",
-            "span"
-          ],
-          "htmlParts": [],
-          "isUpdateable": true,
-          "potentialCmpRefs": [],
-          "directDependencies": [],
-          "dependencies": [],
-          "dependents": [],
-          "directDependents": []
-        }
-      ],
-      "entryKey": "lv-twitter.entry"
-    },
-    {
-      "cmps": [
-        {
           "tagName": "mt-marquee",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -5942,6 +5091,1250 @@
     {
       "cmps": [
         {
+          "tagName": "lv-twitter",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "TwitterComponent",
+          "elementRef": null,
+          "encapsulation": "shadow",
+          "shadowDelegatesFocus": false,
+          "properties": [
+            {
+              "name": "host",
+              "type": "string",
+              "attribute": "host",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'xxxxxxxxxx.apps.anadyme.com'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "channel",
+              "type": "string",
+              "attribute": "channel",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "locale",
+              "type": "string",
+              "attribute": "locale",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'en'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "translations",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "null",
+              "complexType": {
+                "original": "{\n        [key: string]: {\n            [key: string]: string;\n        }\n    }",
+                "resolved": "{ [key: string]: { [key: string]: string; }; }",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "debug",
+              "type": "boolean",
+              "attribute": "debug",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'twitter'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "connection",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "null",
+              "complexType": {
+                "original": "WebsocketConnection",
+                "resolved": "WebsocketConnection",
+                "references": {
+                  "WebsocketConnection": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "format",
+              "type": "string",
+              "attribute": "format",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'binary'",
+              "complexType": {
+                "original": "WebsocketConnectionFormat",
+                "resolved": "\"binary\" | \"text\"",
+                "references": {
+                  "WebsocketConnectionFormat": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "encoding",
+              "type": "string",
+              "attribute": "encoding",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'msgpack'",
+              "complexType": {
+                "original": "WebsocketConnectionEncoding",
+                "resolved": "\"json\" | \"msgpack\"",
+                "references": {
+                  "WebsocketConnectionEncoding": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "apiKey",
+              "type": "string",
+              "attribute": "api-key",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "size",
+              "type": "any",
+              "attribute": "size",
+              "reflect": true,
+              "mutable": true,
+              "required": false,
+              "optional": false,
+              "defaultValue": "undefined",
+              "complexType": {
+                "original": "any",
+                "resolved": "any",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "throttle",
+              "type": "number",
+              "attribute": "throttle",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "1000",
+              "complexType": {
+                "original": "number",
+                "resolved": "number",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "autoconnect",
+              "type": "boolean",
+              "attribute": "autoconnect",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "data"
+            }
+          ],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "Method",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [
+            {
+              "propName": "connection",
+              "methodName": "connect"
+            }
+          ],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "LV-TWITTER",
+              "styleStr": null,
+              "styleIdentifier": "lvTwitterStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/twitter/twitter.scss",
+                  "relativePath": "./twitter.scss",
+                  "originalComponentPath": "./twitter.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/twitter/twitter.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/twitter/twitter.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": true,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": true,
+          "hasReflect": true,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": true,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": true,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "data-size",
+            "class",
+            "data",
+            "data-id",
+            "title",
+            "src",
+            "innerHTML"
+          ],
+          "htmlTagNames": [
+            "div",
+            "ul",
+            "li",
+            "img",
+            "span"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "lv-twitter.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "lv-conn",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "LavvaConnection",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "host",
+              "type": "string",
+              "attribute": "host",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'xxxxxxxxxx.apps.anadyme.com'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "channels",
+              "type": "string",
+              "attribute": "channels",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "complexType": {
+                "original": "string | string[]",
+                "resolved": "string | string[]",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "format",
+              "type": "string",
+              "attribute": "format",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'binary'",
+              "complexType": {
+                "original": "WebsocketConnectionFormat",
+                "resolved": "\"binary\" | \"text\"",
+                "references": {
+                  "WebsocketConnectionFormat": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "encoding",
+              "type": "string",
+              "attribute": "encoding",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'msgpack'",
+              "complexType": {
+                "original": "WebsocketConnectionEncoding",
+                "resolved": "\"json\" | \"msgpack\"",
+                "references": {
+                  "WebsocketConnectionEncoding": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "apiKey",
+              "type": "string",
+              "attribute": "api-key",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "snapshot",
+              "type": "boolean",
+              "attribute": "snapshot",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "connection"
+            }
+          ],
+          "methods": [],
+          "listeners": [],
+          "events": [
+            {
+              "name": "open",
+              "method": "open",
+              "bubbles": true,
+              "cancelable": true,
+              "composed": true,
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "complexType": {
+                "original": "WebsocketConnection",
+                "resolved": "WebsocketConnection",
+                "references": {
+                  "WebsocketConnection": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "internal": false
+            }
+          ],
+          "watchers": [],
+          "styles": [],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/connection/connection.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/connection/connection.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": true,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": false,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": false,
+          "hasState": true,
+          "hasStyle": false,
+          "hasVdomAttribute": false,
+          "hasVdomXlink": false,
+          "hasVdomClass": false,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": false,
+          "hasVdomStyle": false,
+          "hasVdomText": false,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [],
+          "htmlTagNames": [],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "lv-conn.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "finnhub-news",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "FinnhubNewsComponent",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "connection",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "WebsocketConnection",
+                "resolved": "WebsocketConnection",
+                "references": {
+                  "WebsocketConnection": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "channel",
+              "type": "string",
+              "attribute": "channel",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "dataKey",
+              "type": "string",
+              "attribute": "data-key",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "undefined",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'finnhub-news'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "debug",
+              "type": "boolean",
+              "attribute": "debug",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "size"
+            },
+            {
+              "name": "data"
+            }
+          ],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "Method",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "FINNHUB-NEWS",
+              "styleStr": null,
+              "styleIdentifier": "finnhubNewsStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/finnhub-news/finnhub-news.scss",
+                  "relativePath": "./finnhub-news.scss",
+                  "originalComponentPath": "./finnhub-news.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/finnhub-news/finnhub-news.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/finnhub-news/finnhub-news.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": true,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class",
+            "src",
+            "alt",
+            "title",
+            "innerHTML",
+            "href",
+            "target"
+          ],
+          "htmlTagNames": [
+            "div",
+            "ul",
+            "li",
+            "img",
+            "span",
+            "a"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "finnhub-news.entry"
+    },
+    {
+      "cmps": [
+        {
+          "tagName": "fxcm-rates",
+          "excludeFromCollection": false,
+          "isCollectionDependency": false,
+          "componentClassName": "FXCMRatesComponent",
+          "elementRef": null,
+          "encapsulation": "none",
+          "shadowDelegatesFocus": null,
+          "properties": [
+            {
+              "name": "connection",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "WebsocketConnection",
+                "resolved": "WebsocketConnection",
+                "references": {
+                  "WebsocketConnection": {
+                    "location": "import",
+                    "path": "@anadyme/lavva-js-sdk"
+                  }
+                }
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "channel",
+              "type": "string",
+              "attribute": "channel",
+              "reflect": false,
+              "mutable": false,
+              "required": true,
+              "optional": false,
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "dataKey",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "[]",
+              "complexType": {
+                "original": "string[]",
+                "resolved": "string[]",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "namespace",
+              "type": "string",
+              "attribute": "namespace",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "'fxcm-rates'",
+              "complexType": {
+                "original": "string",
+                "resolved": "string",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop (optional)"
+              },
+              "internal": false
+            },
+            {
+              "name": "useCache",
+              "type": "boolean",
+              "attribute": "use-cache",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "true",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": "Prop"
+              },
+              "internal": false
+            },
+            {
+              "name": "symbolNames",
+              "type": "unknown",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "[]",
+              "complexType": {
+                "original": "any[]",
+                "resolved": "any[]",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            },
+            {
+              "name": "debug",
+              "type": "boolean",
+              "attribute": "debug",
+              "reflect": false,
+              "mutable": false,
+              "required": false,
+              "optional": false,
+              "defaultValue": "false",
+              "complexType": {
+                "original": "boolean",
+                "resolved": "boolean",
+                "references": {}
+              },
+              "docs": {
+                "tags": [],
+                "text": ""
+              },
+              "internal": false
+            }
+          ],
+          "virtualProperties": [],
+          "states": [
+            {
+              "name": "rates"
+            },
+            {
+              "name": "data"
+            },
+            {
+              "name": "size"
+            }
+          ],
+          "methods": [
+            {
+              "name": "log",
+              "docs": {
+                "text": "Method",
+                "tags": []
+              },
+              "complexType": {
+                "signature": "(...args: any[]) => Promise<void>",
+                "parameters": [
+                  {
+                    "tags": [],
+                    "text": ""
+                  }
+                ],
+                "references": {
+                  "Promise": {
+                    "location": "global"
+                  }
+                },
+                "return": "Promise<void>"
+              },
+              "internal": false
+            }
+          ],
+          "listeners": [],
+          "events": [],
+          "watchers": [],
+          "styles": [
+            {
+              "modeName": "$",
+              "styleId": "FXCM-RATES",
+              "styleStr": null,
+              "styleIdentifier": "fxcmRatesStyle",
+              "externalStyles": [
+                {
+                  "absolutePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/fxcm-rates/fxcm-rates.scss",
+                  "relativePath": "./fxcm-rates.scss",
+                  "originalComponentPath": "./fxcm-rates.scss"
+                }
+              ]
+            }
+          ],
+          "legacyConnect": [],
+          "legacyContext": [],
+          "internal": false,
+          "assetsDirs": [],
+          "styleDocs": [],
+          "docs": {
+            "tags": [],
+            "text": ""
+          },
+          "jsFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/fxcm-rates/fxcm-rates.js",
+          "sourceFilePath": "/home/hellish/GolandProjects/lavva-js-widgets/src/components/fxcm-rates/fxcm-rates.tsx",
+          "sourceMapPath": null,
+          "hasAttributeChangedCallbackFn": false,
+          "hasComponentWillLoadFn": false,
+          "hasComponentDidLoadFn": false,
+          "hasComponentShouldUpdateFn": false,
+          "hasComponentWillUpdateFn": false,
+          "hasComponentDidUpdateFn": false,
+          "hasComponentWillRenderFn": false,
+          "hasComponentDidRenderFn": false,
+          "hasComponentDidUnloadFn": false,
+          "hasConnectedCallbackFn": true,
+          "hasDisconnectedCallbackFn": true,
+          "hasElement": false,
+          "hasEvent": false,
+          "hasLifecycle": false,
+          "hasListener": false,
+          "hasListenerTarget": false,
+          "hasListenerTargetWindow": false,
+          "hasListenerTargetDocument": false,
+          "hasListenerTargetBody": false,
+          "hasListenerTargetParent": false,
+          "hasMember": true,
+          "hasMethod": true,
+          "hasMode": false,
+          "hasAttribute": true,
+          "hasProp": true,
+          "hasPropNumber": false,
+          "hasPropBoolean": true,
+          "hasPropString": true,
+          "hasPropMutable": false,
+          "hasReflect": false,
+          "hasRenderFn": true,
+          "hasState": true,
+          "hasStyle": true,
+          "hasVdomAttribute": true,
+          "hasVdomXlink": false,
+          "hasVdomClass": true,
+          "hasVdomFunctional": false,
+          "hasVdomKey": false,
+          "hasVdomListener": false,
+          "hasVdomPropOrAttr": false,
+          "hasVdomRef": false,
+          "hasVdomRender": true,
+          "hasVdomStyle": false,
+          "hasVdomText": true,
+          "hasWatchCallback": false,
+          "isPlain": false,
+          "htmlAttrNames": [
+            "class"
+          ],
+          "htmlTagNames": [
+            "div",
+            "section"
+          ],
+          "htmlParts": [],
+          "isUpdateable": true,
+          "potentialCmpRefs": [],
+          "directDependencies": [],
+          "dependencies": [],
+          "dependents": [],
+          "directDependents": []
+        }
+      ],
+      "entryKey": "fxcm-rates.entry"
+    },
+    {
+      "cmps": [
+        {
           "tagName": "owm-daily",
           "excludeFromCollection": false,
           "isCollectionDependency": false,
@@ -6808,64 +7201,64 @@
   ],
   "componentGraph": {
     "sc-finnhub-news": [
-      "index-2c65db04.js",
-      "anadyme-lavva-js-sdk-81c5f5ec.js",
-      "store2-c4e831ef.js",
-      "utils-e3289c35.js"
+      "p-878bd889.js",
+      "p-189a6ab1.js",
+      "p-1c3cb269.js",
+      "p-b0f56eea.js"
     ],
     "sc-fxcm-rates": [
-      "index-2c65db04.js",
-      "anadyme-lavva-js-sdk-81c5f5ec.js",
-      "store2-c4e831ef.js",
-      "utils-e3289c35.js"
+      "p-878bd889.js",
+      "p-189a6ab1.js",
+      "p-1c3cb269.js",
+      "p-b0f56eea.js"
     ],
     "sc-lv-conn": [
-      "index-2c65db04.js",
-      "anadyme-lavva-js-sdk-81c5f5ec.js"
+      "p-878bd889.js",
+      "p-189a6ab1.js"
     ],
     "sc-lv-twitter": [
-      "index-2c65db04.js",
-      "anadyme-lavva-js-sdk-81c5f5ec.js",
-      "store2-c4e831ef.js",
-      "utils-e3289c35.js"
+      "p-878bd889.js",
+      "p-189a6ab1.js",
+      "p-1c3cb269.js",
+      "p-b0f56eea.js"
     ],
     "sc-mt-marquee": [
-      "index-2c65db04.js",
-      "anadyme-lavva-js-sdk-81c5f5ec.js",
-      "store2-c4e831ef.js",
-      "utils-e3289c35.js"
+      "p-878bd889.js",
+      "p-189a6ab1.js",
+      "p-1c3cb269.js",
+      "p-b0f56eea.js"
     ],
     "sc-mt-quote": [
-      "index-2c65db04.js",
-      "anadyme-lavva-js-sdk-81c5f5ec.js",
-      "store2-c4e831ef.js",
-      "utils-e3289c35.js"
+      "p-878bd889.js",
+      "p-189a6ab1.js",
+      "p-1c3cb269.js",
+      "p-b0f56eea.js"
     ],
     "sc-mt-rates": [
-      "index-2c65db04.js",
-      "anadyme-lavva-js-sdk-81c5f5ec.js",
-      "store2-c4e831ef.js",
-      "utils-e3289c35.js"
+      "p-878bd889.js",
+      "p-189a6ab1.js",
+      "p-1c3cb269.js",
+      "p-b0f56eea.js"
     ],
     "sc-owm-daily": [
-      "index-2c65db04.js",
-      "anadyme-lavva-js-sdk-81c5f5ec.js",
-      "store2-c4e831ef.js",
-      "utils-e3289c35.js"
+      "p-878bd889.js",
+      "p-189a6ab1.js",
+      "p-1c3cb269.js",
+      "p-b0f56eea.js"
     ],
     "sc-owm-daily-item": [
-      "index-2c65db04.js",
-      "utils-e3289c35.js",
-      "anadyme-lavva-js-sdk-81c5f5ec.js"
+      "p-878bd889.js",
+      "p-b0f56eea.js",
+      "p-189a6ab1.js"
     ],
     "sc-yahoo-quote": [
-      "index-2c65db04.js"
+      "p-878bd889.js"
     ],
     "sc-yahoo-quotes": [
-      "index-2c65db04.js",
-      "anadyme-lavva-js-sdk-81c5f5ec.js",
-      "store2-c4e831ef.js",
-      "utils-e3289c35.js"
+      "p-878bd889.js",
+      "p-189a6ab1.js",
+      "p-1c3cb269.js",
+      "p-b0f56eea.js"
     ]
   },
   "sourceGraph": {
