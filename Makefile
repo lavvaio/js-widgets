@@ -8,3 +8,7 @@ prod:
 	rm -rf www
 	yarn build
 	npm pack
+
+cdn: prod
+	mkdir -p cdn/${VERSION}
+	cp -rv www/build/* cdn/${VERSION}
